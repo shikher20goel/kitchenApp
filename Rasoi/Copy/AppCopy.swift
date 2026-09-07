@@ -32,6 +32,13 @@ enum AppCopy {
     Used only to centre a store search when you tap Find nearby. It is never sent anywhere else.
     """
 
+    static let findNearbyPrivacyNote = """
+    Tapping Search asks Apple Maps for shops near this zip code. Only the zip code and the words \
+    "grocery", "supermarket", "Indian grocery", "Spanish grocery" and "Asian grocery" are sent. \
+    Nothing about your family, your plan or your pantry leaves the phone, and nothing is saved \
+    until you tap Add.
+    """
+
     // MARK: - Feedback (shown after a meal is cooked)
 
     static let feedbackTitle = "How did it go?"

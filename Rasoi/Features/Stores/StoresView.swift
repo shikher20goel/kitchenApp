@@ -4,8 +4,10 @@ import SwiftUI
 /// Where the household shops, in the order they shop (SPEC §4.5).
 struct StoresView: View {
     @State private var model: StoresViewModel
+    @Environment(\.modelContext) private var context
     @State private var editing: Store?
     @State private var isAdding = false
+    @State private var isFinding = false
 
     init(context: ModelContext) {
         _model = State(initialValue: StoresViewModel(context: context))
@@ -31,13 +33,21 @@ struct StoresView: View {
         .navigationTitle("Stores")
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
-                Button { isAdding = true } label: { Image(systemName: "plus") }
-                    .accessibilityLabel("Add a store")
+                Menu {
+                    Button { isAdding = true } label: { Label("Add by hand", systemImage: "plus") }
+                    Button { isFinding = true } label: { Label("Find nearby", systemImage: "mappin.and.ellipse") }
+                } label: {
+                    Image(systemName: "plus")
+                }
+                .accessibilityLabel("Add a store")
             }
             ToolbarItem(placement: .topBarLeading) { EditButton() }
         }
         .sheet(isPresented: $isAdding) { StoreEditView(model: model, store: nil) }
         .sheet(item: $editing) { store in StoreEditView(model: model, store: store) }
+        .sheet(isPresented: $isFinding) {
+            FindStoresSheet(model: model, zipCode: DietProfile.current(in: context).zipCode)
+        }
         .onAppear { model.load() }
     }
 
