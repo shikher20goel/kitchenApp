@@ -32,6 +32,22 @@ enum AppCopy {
     Used only to centre a store search when you tap Find nearby. It is never sent anywhere else.
     """
 
+    // MARK: - Feedback (shown after a meal is cooked)
+
+    static let feedbackTitle = "How did it go?"
+
+    static let feedbackPrompt = """
+    Tap what happened for each person. Skip anyone you did not get to ask — Rasoi only learns \
+    from what you tell it.
+    """
+
+    static let feedbackNotePlaceholder = "Anything worth remembering?"
+
+    static let feedbackFooter = """
+    This is how Rasoi learns what works at your table. It is never a score, and nothing here is \
+    shown to your children.
+    """
+
     // MARK: - Data
 
     static let deleteAllDataTitle = "Delete all data"

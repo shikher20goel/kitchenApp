@@ -474,7 +474,7 @@
       ],
       "verify": "`bash scripts/verify.sh RasoiTests/FeedbackViewModelTests` green.",
       "gate": "AUTO",
-      "passes": false
+      "passes": true
     },
     {
       "id": "042",
