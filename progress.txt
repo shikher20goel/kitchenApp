@@ -31,3 +31,4 @@ TASK 014 done: ShelfLifeTests + PantryItemTests written first (freezer x6, expir
 TASK 015 done: PantryItem (upsert per ingredient+location, unit conversion, consume floors at 0) + ShelfLife engine; 48 tests green.
 TASK 016 done: RecipeTests written first (3 ingredients, totalMinutes, isQuick boundary, seedID uniqueness, scaling).
 TASK 017 done: Recipe (+MealType, RecipeSource, inline Codable RecipeIngredient, scaling); 56 tests green.
+TASK 018 done: MealPlanTests written first (weekStart Monday incl. Sunday, slot uniqueness, feedback upsert, reaction weights).
