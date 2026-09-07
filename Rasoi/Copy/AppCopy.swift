@@ -61,6 +61,41 @@ enum AppCopy {
     shown to your children.
     """
 
+    // MARK: - Nutrition and insights
+
+    /// Shown under the week summary when one food group is thin. Food groups only, never a
+    /// quantity, never advice about a person (R2).
+    static func lightOnHint(_ group: String) -> String {
+        "This week is light on \(group.lowercased()). A piece of fruit or a side salad covers it."
+    }
+
+    static let coverageDotsExplanation = """
+    A filled dot means the day's meals include that food group somewhere. It is a quick look at \
+    the shape of the week, not a measurement of what anyone ate.
+    """
+
+    static let insightsIntro = """
+    What Rasoi has learned from the meals you logged. It is here to help you plan, not to keep \
+    score — nothing on this screen is shown to your children.
+    """
+
+    static let insightsFavouritesTitle = "Goes down well"
+    static let insightsNotLatelyTitle = "Not lately"
+    static let insightsMostCookedTitle = "Cooked most"
+    static let insightsVarietyTitle = "Variety"
+
+    static func varietyLine(cuisines: Int, recipes: Int) -> String {
+        "\(recipes) different meals across \(cuisines) cuisines in the last four weeks."
+    }
+
+    static func cookedLine(planned: Int, cooked: Int) -> String {
+        "\(cooked) of \(planned) planned meals were cooked. Plans change — that is what they are for."
+    }
+
+    static let insightsEmpty = """
+    Nothing to show yet. Cook a few meals and tell Rasoi how they went, and this fills in.
+    """
+
     // MARK: - Data
 
     static let deleteAllDataTitle = "Delete all data"

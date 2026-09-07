@@ -19,6 +19,9 @@ final class PlanViewModel {
     /// Recomputed on `load()`. Never computed inside a view body: it reads the whole store, and
     /// SwiftUI evaluates a body far more often than the data changes.
     private(set) var summary = Summary(plannedMeals: 0, sureThings: 0, newRecipes: 0, totalSlots: 0)
+    /// Food-group coverage per day, and the week's one gentle hint (SPEC §5, R2).
+    private(set) var coverageByDay: [Date: DayCoverage] = [:]
+    private(set) var weeklyHint: String?
     private var cachedFeedback: [FeedbackEntry] = []
     private var cachedNewRecipeIDs: Set<String> = []
 
@@ -46,6 +49,33 @@ final class PlanViewModel {
         cachedFeedback = fetchFeedbackEntries()
         cachedNewRecipeIDs = Set(byID.keys).subtracting(Set(cachedFeedback.map(\.recipeID)))
         summary = makeSummary()
+        refreshCoverage()
+    }
+
+    /// Coverage dots for one day of the week.
+    func coverage(on day: Date) -> DayCoverage {
+        coverageByDay[Calendar.rasoi.startOfDay(for: day)]
+            ?? DayCoverage(date: Calendar.rasoi.startOfDay(for: day), covered: [], hasWholeGrain: false)
+    }
+
+    private func refreshCoverage() {
+        let ingredients = (try? context.fetch(FetchDescriptor<Ingredient>())) ?? []
+        let index = IngredientIndex(ingredients: ingredients)
+        var meals: [(Date, RecipeSummary)] = []
+        for slot in slots {
+            guard let recipe = slot.recipe else { continue }
+            meals.append((slot.date, RecipeSummary(recipe: recipe)))
+        }
+        var byDay: [Date: DayCoverage] = [:]
+        for day in MealPlan.days(ofWeekContaining: weekStart) {
+            let start = Calendar.rasoi.startOfDay(for: day)
+            let recipes = meals.filter { Calendar.rasoi.startOfDay(for: $0.0) == start }.map(\.1)
+            byDay[start] = NutritionCoverage.day(recipes, on: start, index: index)
+        }
+        coverageByDay = byDay
+        weeklyHint = meals.isEmpty
+            ? nil
+            : NutritionCoverage.week(meals, index: index).lightestGroup.map { AppCopy.lightOnHint($0.label) }
     }
 
     var days: [Date] { MealPlan.days(ofWeekContaining: weekStart) }

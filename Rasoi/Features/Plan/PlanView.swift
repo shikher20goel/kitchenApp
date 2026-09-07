@@ -33,7 +33,11 @@ struct PlanView: View {
                         slotRow(model: model, day: day, mealType: mealType, dayIndex: index)
                     }
                 } header: {
-                    Text(dayTitle(day))
+                    HStack {
+                        Text(dayTitle(day))
+                        Spacer()
+                        CoverageDots(coverage: model.coverage(on: day), showsLabels: false)
+                    }
                 }
             }
         }
@@ -138,6 +142,14 @@ struct WeekSummaryCard: View {
                     stat("\(summary.sureThings)", "sure things")
                     stat("\(summary.newRecipes)", "new")
                 }
+                if let hint = model.weeklyHint {
+                    Label(hint, systemImage: "leaf")
+                        .font(.footnote)
+                        .foregroundStyle(Theme.textSecondary)
+                }
+                Text(AppCopy.coverageDotsExplanation)
+                    .font(.caption)
+                    .foregroundStyle(Theme.textSecondary)
             }
         }
         .rasoiCard()
