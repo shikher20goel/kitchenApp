@@ -47,3 +47,11 @@ TASK 026 done: DietFilterTests + engine fixtures written first (each rule alone,
 TASK 027 done: DietFilter + engine snapshots (RecipeSummary, IngredientFacts/Index, DietRules); 114 tests green.
 TASK 028 implemented, awaiting human review (docs/SEED-RECIPES.md — 51 recipes, 185 ingredients; regenerate with scripts/gen-seed-doc.py).
 TASK 029 done: FamilyViewModel (+10 tests), FamilyListView, MemberEditView, ChipField/FlowLayout design components.
+LESSON (task 030): same container-lifetime trap as task 007, now via a test helper that returned
+  (stack, viewModel) and was destructured with `let (_, model)` — the discarded stack deallocated
+  the container and every model object trapped with "destroyed by calling ModelContext.reset".
+  Test helpers must hand back ONE value that owns the container. Also: a hand-built Calendar has
+  no locale, so weekdaySymbols came back abbreviated — Calendar.rasoi now sets .autoupdatingCurrent.
+  And killing verify.sh mid-build corrupts build/DerivedData ("disk I/O error" on build.db):
+  rm -rf build/DerivedData and re-run.
+TASK 030 done: DietSettingsViewModel (+12 tests: zip validation, alias-canonical exclusions, appliance/cuisine toggles, clamps), DietSettingsView, AppCopy started.

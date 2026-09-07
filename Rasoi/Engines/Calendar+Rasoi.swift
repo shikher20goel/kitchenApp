@@ -7,6 +7,9 @@ extension Calendar {
     /// planning deterministic for a given input (SPEC R5).
     static var rasoi: Calendar {
         var calendar = Calendar(identifier: .gregorian)
+        // Without an explicit locale a hand-built calendar has none, and `weekdaySymbols` comes
+        // back abbreviated ("Sun" rather than "Sunday").
+        calendar.locale = .autoupdatingCurrent
         calendar.firstWeekday = 2 // Monday
         calendar.minimumDaysInFirstWeek = 4
         return calendar
