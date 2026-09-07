@@ -39,9 +39,13 @@ final class AgeBandTests: XCTestCase {
         XCTAssertEqual(band(bornOn: dob, at: D.date(2026, 5, 1)), .preschool)
     }
 
-    func testLeapDayBirthdayCountsOnMarchFirstInCommonYears() {
+    /// A 29 February date of birth has no birthday in a common year. Rasoi follows Foundation's
+    /// calendar arithmetic, which rolls the anniversary back to 28 February, so the child moves up
+    /// a band on the earlier of the two conventional dates rather than a day late.
+    func testLeapDayBirthdayCountsOnFebruaryTwentyEighthInCommonYears() {
         let dob = D.date(2020, 2, 29)
-        XCTAssertEqual(AgeBand.years(dob: dob, on: D.date(2021, 2, 28)), 0)
+        XCTAssertEqual(AgeBand.years(dob: dob, on: D.date(2021, 2, 27)), 0)
+        XCTAssertEqual(AgeBand.years(dob: dob, on: D.date(2021, 2, 28)), 1)
         XCTAssertEqual(AgeBand.years(dob: dob, on: D.date(2021, 3, 1)), 1)
         XCTAssertEqual(AgeBand.years(dob: dob, on: D.date(2024, 2, 29)), 4)
     }

@@ -9,3 +9,11 @@ TASK 003 done: verify.sh green on iPhone 17 sim, 3 test cases (SmokeTests x2 + L
 TASK 004 done: configure-signing.sh free/full/none touch only the DEVELOPMENT_TEAM line; verify.sh still green.
 TASK 005 done: Persistence.swift (schema registry, shared + inMemory), TestContainer helper, PersistenceTests green.
 TASK 006 done: AgeBandTests + HouseholdMemberTests written first (red until 007), plus D date fixtures.
+LESSON (task 007): SwiftData traps (EXC_BREAKPOINT inside SwiftData, "Restarting after unexpected
+  exit") on the first insert/fetch when the ModelContainer is not retained — a ModelContext does
+  NOT keep its container alive. RasoiTests/Support/TestContainer.swift therefore hands tests a
+  TestStack (container + context); never write `let ctx = try TestContainer.make().mainContext`.
+  Second gotcha found the same hour: do NOT pass `schema:` to ModelConfiguration and also to
+  ModelContainer(for:) — build the container as ModelContainer(for: schema, configurations:
+  ModelConfiguration(isStoredInMemoryOnly:)).
+TASK 007 done: HouseholdMember model + AgeBand engine + Calendar.rasoi; 18 unit tests green.

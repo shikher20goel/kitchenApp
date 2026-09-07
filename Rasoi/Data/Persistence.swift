@@ -9,20 +9,22 @@ import SwiftData
 enum Persistence {
     /// Every `@Model` type Rasoi persists, in the order they were introduced.
     static var models: [any PersistentModel.Type] {
-        []
+        [
+            HouseholdMember.self,
+        ]
     }
 
-    static var schema: Schema {
-        Schema(models)
-    }
+    /// Built once: `ModelConfiguration` and `ModelContainer` must be handed the *same* schema
+    /// instance, or SwiftData cannot resolve entities and traps on the first insert.
+    static let schema = Schema(models)
 
     /// Builds a container. `inMemory` gives a throw-away store for tests and previews.
     static func makeContainer(inMemory: Bool = false) throws -> ModelContainer {
-        let configuration = ModelConfiguration(
-            schema: schema,
-            isStoredInMemoryOnly: inMemory
-        )
-        return try ModelContainer(for: schema, configurations: [configuration])
+        // The configuration deliberately does NOT carry its own `schema:` — handing a separate
+        // Schema instance to both the configuration and the container leaves SwiftData unable to
+        // resolve entities, and it traps on the first insert or fetch.
+        let configuration = ModelConfiguration(isStoredInMemoryOnly: inMemory)
+        return try ModelContainer(for: schema, configurations: configuration)
     }
 
     /// A throw-away in-memory container. Tests and SwiftUI previews use this.

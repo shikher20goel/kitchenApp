@@ -5,7 +5,8 @@ import XCTest
 final class HouseholdMemberTests: XCTestCase {
     @MainActor
     func testInsertAndFetch() throws {
-        let context = try TestContainer.makeContext()
+        let stack = try TestContainer.makeStack()
+        let context = stack.context
         context.insert(HouseholdMember(name: "Aarav", dateOfBirth: D.olderChildDOB, role: .child))
         try context.save()
 
@@ -18,7 +19,8 @@ final class HouseholdMemberTests: XCTestCase {
 
     @MainActor
     func testSortOrderOrdersTheHousehold() throws {
-        let context = try TestContainer.makeContext()
+        let stack = try TestContainer.makeStack()
+        let context = stack.context
         context.insert(HouseholdMember(name: "Third", dateOfBirth: D.adultDOB, role: .adult, sortOrder: 2))
         context.insert(HouseholdMember(name: "First", dateOfBirth: D.adultDOB, role: .adult, sortOrder: 0))
         context.insert(HouseholdMember(name: "Second", dateOfBirth: D.youngChildDOB, role: .child, sortOrder: 1))
@@ -30,20 +32,22 @@ final class HouseholdMemberTests: XCTestCase {
 
     @MainActor
     func testActiveFilterHidesInactiveMembers() throws {
-        let context = try TestContainer.makeContext()
+        let stack = try TestContainer.makeStack()
+        let context = stack.context
         let away = HouseholdMember(name: "Away", dateOfBirth: D.adultDOB, role: .adult)
         away.isActive = false
         context.insert(away)
         context.insert(HouseholdMember(name: "Here", dateOfBirth: D.adultDOB, role: .adult))
         try context.save()
 
-        let descriptor = FetchDescriptor<HouseholdMember>(predicate: #Predicate { $0.isActive })
+        let descriptor = FetchDescriptor<HouseholdMember>(predicate: #Predicate { $0.isActive == true })
         XCTAssertEqual(try context.fetch(descriptor).map(\.name), ["Here"])
     }
 
     @MainActor
     func testLikesAndDislikesRoundTrip() throws {
-        let context = try TestContainer.makeContext()
+        let stack = try TestContainer.makeStack()
+        let context = stack.context
         let member = HouseholdMember(name: "Ira", dateOfBirth: D.youngChildDOB, role: .child)
         member.likes = ["paneer", "dosa"]
         member.dislikes = ["bitter gourd"]
@@ -64,7 +68,8 @@ final class HouseholdMemberTests: XCTestCase {
 
     @MainActor
     func testRoleRoundTripsThroughStorage() throws {
-        let context = try TestContainer.makeContext()
+        let stack = try TestContainer.makeStack()
+        let context = stack.context
         context.insert(HouseholdMember(name: "Parent", dateOfBirth: D.adultDOB, role: .adult))
         try context.save()
 

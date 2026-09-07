@@ -12,8 +12,8 @@ final class PersistenceTests: XCTestCase {
 
     @MainActor
     func testContextCanSave() throws {
-        let context = try TestContainer.makeContext()
-        XCTAssertNoThrow(try context.save())
+        let stack = try TestContainer.makeStack()
+        XCTAssertNoThrow(try stack.context.save())
     }
 
     func testSchemaMatchesRegisteredModels() {
