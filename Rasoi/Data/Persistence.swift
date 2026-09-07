@@ -11,6 +11,7 @@ enum Persistence {
     static var models: [any PersistentModel.Type] {
         [
             HouseholdMember.self,
+            DietProfile.self,
         ]
     }
 

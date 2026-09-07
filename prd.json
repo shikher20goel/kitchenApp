@@ -120,7 +120,7 @@
       ],
       "verify": "`bash scripts/verify.sh --unit` green (all tests so far).",
       "gate": "AUTO",
-      "passes": false
+      "passes": true
     },
     {
       "id": "010",
