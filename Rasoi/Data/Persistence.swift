@@ -12,6 +12,7 @@ enum Persistence {
         [
             HouseholdMember.self,
             DietProfile.self,
+            Store.self,
         ]
     }
 

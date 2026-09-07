@@ -20,3 +20,8 @@ TASK 007 done: HouseholdMember model + AgeBand engine + Calendar.rasoi; 18 unit 
 TASK 008 done: DietProfileTests written first (defaults, singleton idempotence, exclusions, appliances).
 TASK 009 done: DietProfile singleton + Appliance vocabulary; 23 unit tests green.
 TASK 010 done: StoreTests written first (6 defaults, idempotent re-seed, sortOrder, preferred flags, affinity).
+NOTE (task 011): plan.md said supermarket/warehouse affinity = "everything else". Implemented as
+  ALL categories instead (they really do stock everything) and made speciality store kinds win
+  first in store assignment; the six defaults ship with only Walmart/Costco/Stop & Shop preferred,
+  so nothing routes to an address-less speciality shop until the household opts in.
+TASK 011 done: Store + StoreKind + IngredientCategory + StoreSeeder (6 idempotent defaults); 29 tests green.
