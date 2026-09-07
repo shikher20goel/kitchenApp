@@ -64,3 +64,4 @@ TASK 036 done: RecipesViewModel (+10 tests: combining filters, alias search, ine
 TASK 037 done: RecipeDraft (validation + allergen/nutrition tags derived from ingredients) + RecipeEditorViewModel (+11 tests), RecipeEditView wired into list and detail.
 TASK 038 done: Scaling engine (+9 tests: kitchen rounding, determinism), CookModeView (paged steps, idle timer off, servings stepper), CookModeUITests green.
 TASK 039 done: KidScoreTests written first (baseline blend, exact blended deltas, 60-day half-life, household mean, resting rule + expiry, determinism).
+TASK 040 done: KidScore engine (60-day half-life, baseline blend n/(n+3), household mean, 30-day resting rule); 18 tests green.

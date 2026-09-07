@@ -462,7 +462,7 @@
       ],
       "verify": "`bash scripts/verify.sh RasoiTests/KidScoreTests` green.",
       "gate": "AUTO",
-      "passes": false
+      "passes": true
     },
     {
       "id": "041",
