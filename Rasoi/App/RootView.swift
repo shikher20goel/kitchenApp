@@ -43,5 +43,11 @@ struct RootView: View {
         UITestSupport.installDemoHouseholdIfRequested(in: context)
         try? context.save()
         isReady = true
+
+        // Reminders are rebuilt from the current plan, list and pantry on every launch, so they
+        // never describe a week that has moved on.
+        if !UITestSupport.isUITesting {
+            Task { await NotificationScheduler(context: context).refresh() }
+        }
     }
 }

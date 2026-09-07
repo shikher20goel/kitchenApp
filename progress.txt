@@ -106,3 +106,4 @@ LESSONS (task 056, SwiftUI presentation — cost several hours, do not relearn):
 TASK 056 done: QuickSnacks engine (+9 tests), TodayViewModel (+8 tests), TodayView (hero dinner, why-this, expiring banner, snack strip, coverage dots), FeedbackView pushed after cooking; TodayUITests green; ContentView now owns the tab view models.
 TASK 057 done: InsightsViewModel (+10 tests: per-child favourites/not-lately in warm words, most cooked, variety, weekly hint), InsightsView, per-day coverage dots and the light-on hint on Plan.
 TASK 058 implemented, awaiting human review (docs/COPY-NUTRITION.md — 10 strings + the MyPlate table and its source; regenerate with scripts/gen-copy-doc.py nutrition).
+TASK 059 done: NotificationScheduler behind a protocol (pure notifications(for:) + snapshot), 12 tests via a fake centre (one of each, quiet window 21:00-07:00, switches, idempotent refresh), NotificationsSettingsView; notification copy added to AppCopy and the 043 review doc.

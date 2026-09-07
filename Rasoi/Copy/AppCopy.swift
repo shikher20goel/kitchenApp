@@ -96,6 +96,35 @@ enum AppCopy {
     Nothing to show yet. Cook a few meals and tell Rasoi how they went, and this fills in.
     """
 
+    // MARK: - Notifications
+
+    static let shoppingReminderTitle = "Shopping tomorrow"
+
+    static func shoppingReminderBody(items: Int, stores: Int) -> String {
+        "Tomorrow's list has \(items) item\(items == 1 ? "" : "s") across \(stores) store\(stores == 1 ? "" : "s")."
+    }
+
+    static func cookReminderTitle(recipe: String) -> String {
+        "Tonight: \(recipe)"
+    }
+
+    static func cookReminderBody(minutes: Int, serves: Int) -> String {
+        "\(minutes) minutes, serves \(serves)."
+    }
+
+    static let expiringReminderTitle = "Worth using today"
+
+    static func expiringReminderBody(item: String, more: Int) -> String {
+        more > 0
+            ? "The \(item.lowercased()) is best used now, and \(more) more thing\(more == 1 ? "" : "s") are close behind."
+            : "The \(item.lowercased()) is best used now."
+    }
+
+    static let notificationsFooter = """
+    Reminders are local to this iPhone and never arrive between 9 at night and 7 in the morning. \
+    Rasoi sends at most one of each a day.
+    """
+
     // MARK: - Data
 
     static let deleteAllDataTitle = "Delete all data"

@@ -678,7 +678,7 @@
       ],
       "verify": "`bash scripts/verify.sh RasoiTests/NotificationSchedulerTests` green.",
       "gate": "AUTO",
-      "passes": false
+      "passes": true
     },
     {
       "id": "060",

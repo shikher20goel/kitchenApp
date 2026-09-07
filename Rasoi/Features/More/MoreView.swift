@@ -22,7 +22,7 @@ struct MoreView: View {
             }
 
             Section("App") {
-                NavigationLink("Notifications") { ComingSoonView(title: "Notifications") }
+                NavigationLink("Notifications") { NotificationsSettingsView(context: context) }
                 NavigationLink("Appearance") { ComingSoonView(title: "Appearance") }
                 NavigationLink("About") { AboutView() }
             }

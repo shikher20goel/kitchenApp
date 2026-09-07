@@ -19,7 +19,7 @@ DOCS = {
     "feedback": {
         "path": "docs/COPY-FEEDBACK.md",
         "title": "Feedback, settings and about copy (task 043 — HUMAN gate)",
-        "sections": ["About", "Feedback (shown after a meal is cooked)", "Data"],
+        "sections": ["About", "Feedback (shown after a meal is cooked)", "Notifications", "Data"],
     },
     "nutrition": {
         "path": "docs/COPY-NUTRITION.md",
@@ -31,6 +31,7 @@ DOCS = {
 SCREENS = {
     "About": "More › About, and the diet settings footer",
     "Feedback (shown after a meal is cooked)": "Today › Cook › How did it go?",
+    "Notifications": "The three local reminders (SPEC §7)",
     "Data": "More › Your data (export, delete all data)",
     "Nutrition and insights": "Plan › week summary, Today, More › Insights",
 }
@@ -41,6 +42,8 @@ RULES = {
     "Feedback (shown after a meal is cooked)": "R3 — never shames a child or a cook. A refused meal "
                                                "is “not today”. No scores, streaks or badges, and "
                                                "nothing here is shown to the children.",
+    "Notifications": "SPEC §7 — one of each a day at most, never in the quiet window, never "
+                     "nagging about a meal that did not happen (R3).",
     "Data": "R6 — deleting is explicit, double-confirmed and honestly described; the copy must not "
             "promise a backup that does not exist.",
     "Nutrition and insights": "R2 — food groups only, never quantities per person, calories, weight "
