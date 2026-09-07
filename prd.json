@@ -21,7 +21,7 @@
       "depends_on": [],
       "verify": "`git branch --show-current` prints autonomous-build; `git status --porcelain` empty; `git log origin/autonomous-build --oneline | head -1` shows the commit.",
       "gate": "AUTO",
-      "passes": false
+      "passes": true
     },
     {
       "id": "001",
@@ -32,7 +32,7 @@
       ],
       "verify": "`xcodegen generate` exits 0 and Rasoi.xcodeproj/project.pbxproj lists targets Rasoi, RasoiTests, RasoiUITests.",
       "gate": "AUTO",
-      "passes": false
+      "passes": true
     },
     {
       "id": "002",
