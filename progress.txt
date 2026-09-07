@@ -8,3 +8,4 @@ TASK 002 done: ContentView 5 tabs + Theme design tokens; generic iOS Simulator b
 TASK 003 done: verify.sh green on iPhone 17 sim, 3 test cases (SmokeTests x2 + LaunchUITests).
 TASK 004 done: configure-signing.sh free/full/none touch only the DEVELOPMENT_TEAM line; verify.sh still green.
 TASK 005 done: Persistence.swift (schema registry, shared + inMemory), TestContainer helper, PersistenceTests green.
+TASK 006 done: AgeBandTests + HouseholdMemberTests written first (red until 007), plus D date fixtures.
