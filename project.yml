@@ -51,9 +51,6 @@ targets:
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
         ENABLE_PREVIEWS: YES
         SWIFT_EMIT_LOC_STRINGS: YES
-        CODE_SIGN_IDENTITY: ""
-        CODE_SIGNING_REQUIRED: NO
-        CODE_SIGNING_ALLOWED: NO
 
   RasoiTests:
     type: bundle.unit-test
@@ -70,9 +67,6 @@ targets:
         GENERATE_INFOPLIST_FILE: YES
         TEST_HOST: "$(BUILT_PRODUCTS_DIR)/Rasoi.app/Rasoi"
         BUNDLE_LOADER: "$(TEST_HOST)"
-        CODE_SIGN_IDENTITY: ""
-        CODE_SIGNING_REQUIRED: NO
-        CODE_SIGNING_ALLOWED: NO
 
   RasoiUITests:
     type: bundle.ui-testing
@@ -88,9 +82,6 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: com.shikhergoel.rasoi.uitests
         GENERATE_INFOPLIST_FILE: YES
         TEST_TARGET_NAME: Rasoi
-        CODE_SIGN_IDENTITY: ""
-        CODE_SIGNING_REQUIRED: NO
-        CODE_SIGNING_ALLOWED: NO
 
 schemes:
   Rasoi:
