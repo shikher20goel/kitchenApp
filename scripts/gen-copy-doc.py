@@ -75,6 +75,17 @@ def parse(source: str):
         single = re.match(r'\s*static let (\w+) = "(.*)"$', line)
         if single:
             yield section, single.group(1), single.group(2)
+            index += 1
+            continue
+        # Copy assembled from data, e.g. `static func lightOnHint(_ group: String) -> String`.
+        built = re.match(r"\s*static func (\w+)\(.*\) -> String \{", line)
+        if built and index + 1 < len(lines):
+            body = lines[index + 1].strip()
+            quoted = re.match(r'"(.*)"$', body)
+            if quoted:
+                yield section, f"{built.group(1)}()", quoted.group(1)
+                index += 2
+                continue
         index += 1
 
 
@@ -122,6 +133,24 @@ def main() -> None:
             "- No copy in this file mentions calories, weight, BMI or dieting (R2).\n"
             "- No copy calls a meal or a child a failure (R3)."
         )
+
+    if which == "nutrition":
+        out.append("\n## The MyPlate table behind the dots\n")
+        out.append(
+            "Daily amounts from the USDA's MyPlate guidance, held in "
+            "`NutritionCoverage.targets(for:)`. **v1 never renders these numbers.** The engine "
+            "uses food groups only, and the UI shows one dot per group per day.\n"
+        )
+        out.append("| Age band | Fruit (cups) | Vegetables (cups) | Grains (oz-eq) | Protein (oz-eq) | Dairy (cups) |")
+        out.append("|---|---|---|---|---|---|")
+        out.append("| Preschool (2–5) | 1–1.5 | 1–1.5 | 3–5 | 2–4 | 2–2.5 |")
+        out.append("| Child (6–8) | 1–1.5 | 1.5–2 | 5–6 | 4–5 | 2.5 |")
+        out.append("| Preteen (9–13) | 1.5–2 | 2–2.5 | 5–6 | 5–5.5 | 3 |")
+        out.append("| Teen (14–18) | 1.5–2 | 2.5–3 | 6–8 | 5–6.5 | 3 |")
+        out.append("| Adult | 1.5–2 | 2.5–3 | 6–8 | 5–6.5 | 3 |")
+        out.append("\nSource: <https://www.myplate.gov/life-stages/kids> and "
+                   "<https://www.myplate.gov/eat-healthy/what-is-myplate> (USDA, MyPlate Plan by "
+                   "age). Rasoi is a planning tool, not nutrition advice.")
 
     (ROOT / spec["path"]).write_text("\n".join(out) + "\n")
     print(f"{spec['path']}: {len(wanted)} strings")
