@@ -62,7 +62,7 @@ struct CookModeView: View {
     }
 
     private var ingredientsPage: some View {
-        ScrollView {
+        ScrollView(.vertical, showsIndicators: false) {
             VStack(alignment: .leading, spacing: Theme.Spacing.l) {
                 Text("What you need")
                     .font(.largeTitle.weight(.semibold))
@@ -93,7 +93,7 @@ struct CookModeView: View {
     }
 
     private func stepPage(number: Int, text: String) -> some View {
-        ScrollView {
+        ScrollView(.vertical, showsIndicators: false) {
             VStack(alignment: .leading, spacing: Theme.Spacing.xl) {
                 Text("Step \(number) of \(recipe.steps.count)")
                     .font(.headline)
@@ -122,6 +122,9 @@ struct CookModeView: View {
             Text(step == 0 ? "Ingredients" : "\(step) / \(recipe.steps.count)")
                 .font(.headline.monospacedDigit())
                 .foregroundStyle(Theme.textSecondary)
+                // Without this the old and new labels cross-fade on top of each other mid-swipe.
+                .contentTransition(.identity)
+                .animation(nil, value: step)
             Spacer()
 
             Button {

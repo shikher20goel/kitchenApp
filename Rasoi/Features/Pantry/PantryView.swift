@@ -269,7 +269,7 @@ struct AddPantryItemSheet: View {
     private func select(_ ingredient: Ingredient) {
         selected = ingredient
         unit = ingredient.defaultUnit
-        quantity = ingredient.defaultUnit == .count ? 1 : 200
+        quantity = ingredient.defaultUnit.typicalQuantity
         Haptics.selection()
     }
 

@@ -196,7 +196,7 @@ struct AddGroceryItemSheet: View {
                     ForEach(model.searchCatalog(query).prefix(8), id: \.persistentModelID) { ingredient in
                         Button {
                             selected = ingredient
-                            quantity = ingredient.defaultUnit == .count ? 1 : 200
+                            quantity = ingredient.defaultUnit.typicalQuantity
                             Haptics.selection()
                         } label: {
                             HStack {

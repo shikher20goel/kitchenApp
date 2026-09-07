@@ -46,6 +46,16 @@ enum MeasurementUnit: String, Codable, CaseIterable, Sendable {
         }
     }
 
+    /// What a household usually buys or adds at once, used to prefill a quantity field. Counted
+    /// things start at one — nobody buys 200 bunches of spinach.
+    var typicalQuantity: Double {
+        switch dimension {
+        case .discrete: return 1
+        case .mass: return 200
+        case .volume: return 500
+        }
+    }
+
     /// Short label for lists ("g", "ml", "×3" is rendered by the view, not here).
     var shortLabel: String {
         switch self {

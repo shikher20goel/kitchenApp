@@ -19,4 +19,18 @@ final class TabModels {
         pantry = PantryViewModel(context: context)
         shop = ShopViewModel(context: context)
     }
+
+    /// Refreshes the tab the household just switched to.
+    ///
+    /// A tab's view stays alive in the background, so `.task` runs only once; without this, the
+    /// Shop tab would still be showing what it read before the week was planned.
+    func reload(_ tab: ContentView.Tab) {
+        switch tab {
+        case .today: today.load()
+        case .plan: plan.load()
+        case .pantry: pantry.load()
+        case .shop: shop.load()
+        case .more: break
+        }
+    }
 }

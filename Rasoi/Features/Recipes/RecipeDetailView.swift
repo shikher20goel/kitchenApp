@@ -19,10 +19,14 @@ struct RecipeDetailView: View {
                 VStack(alignment: .leading, spacing: Theme.Spacing.s) {
                     Text(recipe.title)
                         .font(.title2.weight(.semibold))
-                    HStack(spacing: Theme.Spacing.s) {
-                        chip(recipe.cuisine, symbol: "globe")
-                        chip("\(recipe.totalMinutes) min", symbol: "clock")
-                        chip("serves \(recipe.servings)", symbol: "person.2")
+                    // Horizontal scroll rather than a squeezed row: "American" must never
+                    // hyphenate into "Ameri-can".
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack(spacing: Theme.Spacing.s) {
+                            chip(recipe.cuisine, symbol: "globe")
+                            chip("\(recipe.totalMinutes) min", symbol: "clock")
+                            chip("serves \(recipe.servings)", symbol: "person.2")
+                        }
                     }
                     ForEach(Array(recipe.applianceSet).sorted { $0.rawValue < $1.rawValue }, id: \.self) { appliance in
                         Label(appliance.label, systemImage: appliance.symbolName)
@@ -146,6 +150,8 @@ struct RecipeDetailView: View {
     private func chip(_ text: String, symbol: String) -> some View {
         Label(text, systemImage: symbol)
             .font(.caption)
+            .lineLimit(1)
+            .fixedSize()
             .padding(.horizontal, Theme.Spacing.m)
             .padding(.vertical, Theme.Spacing.xs)
             .background(Theme.surfaceElevated, in: Capsule())

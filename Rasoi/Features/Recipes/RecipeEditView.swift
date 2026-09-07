@@ -145,7 +145,7 @@ struct RecipeEditView: View {
         let trimmed = name.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !trimmed.isEmpty else { return }
         model.draft.ingredients.append(
-            RecipeIngredient(ingredientName: trimmed, quantity: unit == .count ? 1 : 100, unit: unit)
+            RecipeIngredient(ingredientName: trimmed, quantity: unit.typicalQuantity, unit: unit)
         )
         ingredientQuery = ""
         Haptics.tap()

@@ -29,6 +29,9 @@ struct ContentView: View {
                 selection = tab
             }
         }
+        .onChange(of: selection) { _, tab in
+            models?.reload(tab)
+        }
     }
 
     private func tabs(_ models: TabModels) -> some View {
