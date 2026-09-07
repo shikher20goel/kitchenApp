@@ -84,3 +84,4 @@ TASK 048 done: GroceryBuilderTests written first (aggregate, scale, normalise, a
 TASK 049 done: GroceryBuilder (aggregate+scale+normalise, pantry subtraction, staple pack sizes by dimension, speciality-first store assignment, idempotent merge that protects checked and manual lines); 19 tests green.
 TASK 050 done: ShopViewModel (idempotent build/merge, check restocks pantry with shelf life, uncheck reverses, manual adds survive, store→category sections, share text) +11 tests; ShopView + ShopUITests green.
 TASK 051 done: StoresViewModel (+7 tests: reorder persists, preferred toggle, affinity editing, safe removal) with StoresView + StoreEditView.
+TASK 052 done: StoreFinding protocol, MapKitStoreFinder (the only network path, R1), pure StoreSearch helpers (queries, kind inference, dedup, radius, ordering) +11 tests through a fake.
