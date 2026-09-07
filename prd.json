@@ -576,7 +576,7 @@
       ],
       "verify": "`bash scripts/verify.sh RasoiTests/ShopViewModelTests` green; ShopUITests checks one item.",
       "gate": "AUTO",
-      "passes": false
+      "passes": true
     },
     {
       "id": "051",

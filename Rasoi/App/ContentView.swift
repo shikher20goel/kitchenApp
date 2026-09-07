@@ -26,7 +26,7 @@ struct ContentView: View {
                 .tabItem { Label("Pantry", systemImage: "refrigerator") }
                 .tag(Tab.pantry)
 
-            placeholder(title: "Shop", detail: "This week's grocery list, grouped by store.")
+            NavigationStack { ShopView(context: context) }
                 .tabItem { Label("Shop", systemImage: "cart") }
                 .tag(Tab.shop)
 
