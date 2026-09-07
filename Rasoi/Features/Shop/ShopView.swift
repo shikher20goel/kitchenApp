@@ -60,11 +60,19 @@ struct ShopView: View {
             }
 
             if model.isEmpty {
-                ContentUnavailableView(
-                    "Nothing to buy yet",
-                    systemImage: "cart",
-                    description: Text("Plan a week first, then build the list here.")
-                )
+                ContentUnavailableView {
+                    Label("Nothing to buy yet", systemImage: "cart")
+                } description: {
+                    Text("Plan a week first, then build the list here.")
+                } actions: {
+                    Button("Build list from the plan") {
+                        model.buildFromPlan()
+                        Haptics.success()
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .tint(Theme.saffron)
+                    .accessibilityIdentifier("shop.build.empty")
+                }
             }
 
             ForEach(model.sections) { section in

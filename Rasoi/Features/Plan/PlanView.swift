@@ -138,6 +138,17 @@ struct WeekSummaryCard: View {
                 Text("Nothing planned yet. Generate a week and Rasoi will start from your pantry and what the children eat.")
                     .font(.subheadline)
                     .foregroundStyle(Theme.textSecondary)
+                Button {
+                    model.generateWeek()
+                    Haptics.success()
+                } label: {
+                    Label("Generate this week", systemImage: "wand.and.stars")
+                        .font(.headline)
+                        .frame(maxWidth: .infinity, minHeight: Theme.largeTapTarget)
+                }
+                .buttonStyle(.borderedProminent)
+                .tint(Theme.saffron)
+                .accessibilityIdentifier("plan.generate.empty")
             } else {
                 HStack(spacing: Theme.Spacing.l) {
                     stat("\(summary.plannedMeals)", "meals")

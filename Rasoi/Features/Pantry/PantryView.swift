@@ -39,13 +39,23 @@ struct PantryView: View {
 
             Section {
                 if model.items.isEmpty {
-                    ContentUnavailableView(
-                        model.searchText.isEmpty ? "Nothing in the \(model.location.label.lowercased()) yet" : "No match",
-                        systemImage: model.location.symbolName,
-                        description: Text(model.searchText.isEmpty
-                                          ? "Add what you have and Rasoi will plan around it."
-                                          : "Nothing here matches “\(model.searchText)”.")
-                    )
+                    ContentUnavailableView {
+                        Label(model.searchText.isEmpty
+                              ? "Nothing in the \(model.location.label.lowercased()) yet"
+                              : "No match",
+                              systemImage: model.location.symbolName)
+                    } description: {
+                        Text(model.searchText.isEmpty
+                             ? "Add what you have and Rasoi will plan around it."
+                             : "Nothing here matches “\(model.searchText)”.")
+                    } actions: {
+                        if model.searchText.isEmpty {
+                            Button("Add something") { isAdding = true }
+                                .buttonStyle(.borderedProminent)
+                                .tint(Theme.saffron)
+                                .accessibilityIdentifier("pantry.add.empty")
+                        }
+                    }
                 } else {
                     ForEach(model.items) { item in
                         row(model: model, item: item, showLocation: false)

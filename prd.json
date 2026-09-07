@@ -711,7 +711,7 @@
       ],
       "verify": "`bash scripts/verify.sh --build-only` green; AppIcon present.",
       "gate": "AUTO",
-      "passes": false
+      "passes": true
     },
     {
       "id": "063",
