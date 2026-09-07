@@ -285,7 +285,7 @@
       ],
       "verify": "Tests written; may not compile yet.",
       "gate": "AUTO",
-      "passes": false
+      "passes": true
     },
     {
       "id": "025",

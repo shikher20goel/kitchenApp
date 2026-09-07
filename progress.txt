@@ -37,3 +37,4 @@ TASK 020 done: GroceryListTests written first (unique weekStart, item ownership,
 TASK 021 done: GroceryList/GroceryItem with unique weekStart, cascade items, setChecked timestamping; 74 tests green.
 TASK 022 done: AppSettingsTests written first (SPEC defaults, idempotent singleton, master switch).
 TASK 023 done: AppSettings singleton (reminder toggles/times, master switch, appearance); 80 tests green.
+TASK 024 done: SeedLoaderTests written first (counts, vocabulary, vegetarian sweep, allergen flags, meal/appliance coverage, seedID uniqueness).
