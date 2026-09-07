@@ -229,12 +229,15 @@ struct PantryStock: Hashable, Sendable {
     var quantity: Double
     var unit: MeasurementUnit
     var expiresAt: Date?
+    /// Below this, a staple is topped up on the next shop.
+    var lowThreshold: Double?
 
-    init(name: String, quantity: Double, unit: MeasurementUnit, expiresAt: Date?) {
+    init(name: String, quantity: Double, unit: MeasurementUnit, expiresAt: Date?, lowThreshold: Double? = nil) {
         self.name = name
         self.quantity = quantity
         self.unit = unit
         self.expiresAt = expiresAt
+        self.lowThreshold = lowThreshold
     }
 
     init(item: PantryItem) {
@@ -242,7 +245,8 @@ struct PantryStock: Hashable, Sendable {
             name: item.ingredient?.name ?? "",
             quantity: item.quantity,
             unit: item.unit,
-            expiresAt: item.expiresAt
+            expiresAt: item.expiresAt,
+            lowThreshold: item.lowThreshold
         )
     }
 }
@@ -256,6 +260,8 @@ struct PantrySnapshot: Sendable {
     init(items: [PantryStock]) {
         self.items = items
         var merged: [String: PantryStock] = [:]
+        // A row at zero still counts as "known to the household", so it can be topped up, but it
+        // contributes no stock.
         for item in items where item.quantity > 0 {
             let key = Ingredient.fold(item.name)
             if var existing = merged[key] {
@@ -313,5 +319,39 @@ struct PantrySnapshot: Sendable {
             .filter { expiring.contains(Ingredient.fold($0)) }
             .map { stock(for: $0)?.name ?? $0 }
             .sorted()
+    }
+}
+
+// MARK: - Stores
+
+/// A store as the grocery builder sees it.
+struct StoreSnapshot: Hashable, Sendable {
+    /// Stable key — the store's name, which is unique in practice and readable in an export.
+    var id: String
+    var name: String
+    var kind: StoreKind
+    var isPreferred: Bool
+    var sortOrder: Int
+    var affinities: Set<IngredientCategory>
+
+    init(id: String, name: String, kind: StoreKind, isPreferred: Bool, sortOrder: Int,
+         affinities: Set<IngredientCategory>) {
+        self.id = id
+        self.name = name
+        self.kind = kind
+        self.isPreferred = isPreferred
+        self.sortOrder = sortOrder
+        self.affinities = affinities
+    }
+
+    init(store: Store) {
+        self.init(
+            id: store.name,
+            name: store.name,
+            kind: store.kind,
+            isPreferred: store.isPreferred,
+            sortOrder: store.sortOrder,
+            affinities: store.affinities
+        )
     }
 }
