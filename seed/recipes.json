@@ -3178,7 +3178,7 @@
     },
     {
      "ingredientName": "Red chili powder",
-     "quantity": 0,
+     "quantity": 1,
      "unit": "g",
      "isOptional": true,
      "note": ""

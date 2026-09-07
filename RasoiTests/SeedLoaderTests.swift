@@ -70,7 +70,9 @@ final class SeedLoaderTests: XCTestCase {
                 .map { Ingredient.fold($0.name) }
         )
         let usingEgg = recipes.filter { recipe in
-            recipe.ingredients.contains { eggIngredientNames.contains(Ingredient.fold($0.ingredientName)) }
+            recipe.ingredients.contains {
+                !$0.isOptional && eggIngredientNames.contains(Ingredient.fold($0.ingredientName))
+            }
         }
         for recipe in usingEgg {
             XCTAssertTrue(recipe.containsEgg, "\(recipe.seedID) uses egg but is not flagged containsEgg")
@@ -81,7 +83,12 @@ final class SeedLoaderTests: XCTestCase {
     func testAllergenFlagsAgreeWithTheIngredientCatalog() {
         let byName = Dictionary(uniqueKeysWithValues: ingredients.map { (Ingredient.fold($0.name), $0) })
         for recipe in recipes {
-            let used = recipe.ingredients.compactMap { byName[Ingredient.fold($0.ingredientName)] }
+            // Only required ingredients decide a recipe's allergen flags: an optional swirl of
+            // yogurt or a side of naan can simply be left off, and flagging the recipe for it
+            // would hide a perfectly good dish from a household that avoids dairy or gluten.
+            let used = recipe.ingredients
+                .filter { !$0.isOptional }
+                .compactMap { byName[Ingredient.fold($0.ingredientName)] }
             if used.contains(where: \.containsDairy) {
                 XCTAssertTrue(recipe.containsDairy, "\(recipe.seedID) uses dairy but is not flagged")
             }

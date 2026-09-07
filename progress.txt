@@ -38,3 +38,8 @@ TASK 021 done: GroceryList/GroceryItem with unique weekStart, cascade items, set
 TASK 022 done: AppSettingsTests written first (SPEC defaults, idempotent singleton, master switch).
 TASK 023 done: AppSettings singleton (reminder toggles/times, master switch, appearance); 80 tests green.
 TASK 024 done: SeedLoaderTests written first (counts, vocabulary, vegetarian sweep, allergen flags, meal/appliance coverage, seedID uniqueness).
+NOTE (task 025): edited seed/recipes.json — dn-pasta-hidden-veg "Red chili powder" had quantity 0
+  (the only zero-quantity line in the catalog); set to 1 g. Also refined SeedLoaderTests so a
+  recipe's allergen flags are checked against its REQUIRED ingredients only: seven recipes carry
+  an optional yogurt/naan/pita/cheese/peanut garnish and are correctly unflagged.
+TASK 025 done: SeedDTOs/SeedLoader/SeedImporter (idempotent upsert, keeps favourites + user recipes); 99 tests green.
