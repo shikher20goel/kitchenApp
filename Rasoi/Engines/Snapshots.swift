@@ -220,3 +220,98 @@ struct DietRules: Sendable {
         )
     }
 }
+
+// MARK: - Pantry
+
+/// One row of the pantry, flattened for the engines.
+struct PantryStock: Hashable, Sendable {
+    var name: String
+    var quantity: Double
+    var unit: MeasurementUnit
+    var expiresAt: Date?
+
+    init(name: String, quantity: Double, unit: MeasurementUnit, expiresAt: Date?) {
+        self.name = name
+        self.quantity = quantity
+        self.unit = unit
+        self.expiresAt = expiresAt
+    }
+
+    init(item: PantryItem) {
+        self.init(
+            name: item.ingredient?.name ?? "",
+            quantity: item.quantity,
+            unit: item.unit,
+            expiresAt: item.expiresAt
+        )
+    }
+}
+
+/// What the household has in, as the planner and the grocery builder see it.
+struct PantrySnapshot: Sendable {
+    let items: [PantryStock]
+    /// Total per folded ingredient name, in that ingredient's own unit.
+    private let byName: [String: PantryStock]
+
+    init(items: [PantryStock]) {
+        self.items = items
+        var merged: [String: PantryStock] = [:]
+        for item in items where item.quantity > 0 {
+            let key = Ingredient.fold(item.name)
+            if var existing = merged[key] {
+                if let combined = Units.add(Quantity(existing.quantity, existing.unit),
+                                            Quantity(item.quantity, item.unit)) {
+                    existing.quantity = combined.amount
+                }
+                // Keep the soonest expiry: that is the one worth cooking towards.
+                if let incoming = item.expiresAt,
+                   existing.expiresAt.map({ incoming < $0 }) ?? true {
+                    existing.expiresAt = incoming
+                }
+                merged[key] = existing
+            } else {
+                merged[key] = item
+            }
+        }
+        byName = merged
+    }
+
+    init(pantryItems: [PantryItem]) {
+        self.init(items: pantryItems.map(PantryStock.init(item:)))
+    }
+
+    func has(_ ingredientName: String) -> Bool {
+        byName[Ingredient.fold(ingredientName)] != nil
+    }
+
+    func stock(for ingredientName: String) -> PantryStock? {
+        byName[Ingredient.fold(ingredientName)]
+    }
+
+    /// The share of a recipe's required ingredients the household already has, 0…1.
+    func coverage(for recipe: RecipeSummary) -> Double {
+        let required = recipe.requiredIngredients
+        guard !required.isEmpty else { return 1 }
+        let present = required.filter { has($0.ingredientName) }.count
+        return Double(present) / Double(required.count)
+    }
+
+    /// Catalog names that should be cooked soon, as they are stored (for display in a reason).
+    func expiringNames(on date: Date, within days: Int = ShelfLife.useItUpWindowDays) -> [String] {
+        byName.values
+            .filter { ShelfLife.isExpiringSoon($0.expiresAt, on: date, within: days) }
+            .map(\.name)
+            .sorted()
+    }
+
+    /// The expiring ingredients this recipe would use up.
+    func expiringIngredients(for recipe: RecipeSummary, on date: Date,
+                             within days: Int = ShelfLife.useItUpWindowDays) -> [String] {
+        let expiring = Set(expiringNames(on: date, within: days).map(Ingredient.fold))
+        return recipe.requiredIngredients
+            .map(\.ingredientName)
+            .filter { expiring.contains(Ingredient.fold($0)) }
+            .map { stock(for: $0)?.name ?? $0 }
+            .sorted()
+    }
+}

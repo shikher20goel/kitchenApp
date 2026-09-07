@@ -69,3 +69,8 @@ TASK 041 done: FeedbackViewModel (+8 tests: per-member upsert, unanswered = no r
 TASK 042 done: Units (general conversion table, sum by dimension, display) +8 tests; PantryDepletion (required-only, scaled, expiry-first draw, staple floor) +11 tests; wired into the feedback sheet.
 TASK 043 implemented, awaiting human review (docs/COPY-FEEDBACK.md — 16 strings; regenerate with scripts/gen-copy-doc.py feedback).
 TASK 044 done: MealPlannerTests written first: one test per SPEC §5 rule (variety, weekday cap, pantry-first, use-it-up, kid score, quotas, nutrition, breakfast rotation), locking, determinism, real-catalog smoke test.
+NOTE (task 045): SPEC §5 rule 4 says "≤2 new recipes per week", but on a fresh install every
+  recipe is new and SPEC §11 requires a full 7-day plan. Implemented as a tiered relaxation: the
+  cap holds whenever the catalog offers enough known recipes, and gives way rather than leaving a
+  family without dinner. MealPlannerTests covers both directions.
+TASK 045 done: MealPlanner (tiered constraints, pantry-first/use-it-up, kid-score ranking, quotas, nutrition nudges, breakfast rotation, per-slot reasons, deterministic id tie-break); 23 tests green.

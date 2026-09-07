@@ -520,7 +520,7 @@
       ],
       "verify": "`bash scripts/verify.sh RasoiTests/MealPlannerTests` green.",
       "gate": "AUTO",
-      "passes": false
+      "passes": true
     },
     {
       "id": "046",

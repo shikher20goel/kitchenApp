@@ -205,13 +205,22 @@ final class MealPlannerTests: XCTestCase {
         XCTAssertGreaterThanOrEqual(sureThings.count, 2)
     }
 
-    func testAtMostTwoBrandNewRecipesAWeek() {
-        let catalog = (1...10).map { dinner("d\($0)") }
-        let newIDs = Set(catalog.map(\.id))
-        let plan = dinners(MealPlanner.plan(input(recipes: catalog, newRecipeIDs: newIDs)))
+    func testAtMostTwoBrandNewRecipesWhenKnownOnesExist() {
+        let known = (1...6).map { dinner("k\($0)") }
+        let fresh = (1...4).map { dinner("n\($0)", cuisine: "Italian") }
+        let newIDs = Set(fresh.map(\.id))
+        let plan = dinners(MealPlanner.plan(input(recipes: known + fresh, newRecipeIDs: newIDs)))
         let planned = plan.compactMap(\.recipeID)
         XCTAssertLessThanOrEqual(planned.filter(newIDs.contains).count, 2,
                                  "A week of nothing but new dishes is a hard sell.")
+    }
+
+    /// On a fresh install every recipe is new. A family still has to eat, so the two-new cap
+    /// gives way rather than leaving the week half empty.
+    func testAFreshCatalogStillFillsTheWholeWeek() {
+        let catalog = (1...8).map { dinner("d\($0)", cuisine: $0 % 2 == 0 ? "Indian" : "Italian") }
+        let plan = dinners(MealPlanner.plan(input(recipes: catalog, newRecipeIDs: Set(catalog.map(\.id)))))
+        XCTAssertEqual(plan.filter { $0.recipeID != nil }.count, 7)
     }
 
     func testNewRecipesAreStillTriedWhenThereIsRoom() {
