@@ -27,3 +27,4 @@ NOTE (task 011): plan.md said supermarket/warehouse affinity = "everything else"
 TASK 011 done: Store + StoreKind + IngredientCategory + StoreSeeder (6 idempotent defaults); 29 tests green.
 TASK 012 done: IngredientTests written first (category round-trip, unique name, type-ahead incl. aliases).
 TASK 013 done: Ingredient (+MeasurementUnit vocabulary, alias type-ahead, unique name); 36 tests green.
+TASK 014 done: ShelfLifeTests + PantryItemTests written first (freezer x6, expiring-soon boundary, upsert per ingredient+location).
