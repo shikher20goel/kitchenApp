@@ -631,7 +631,7 @@
       ],
       "verify": "`bash scripts/verify.sh RasoiTests/NutritionCoverageTests` green.",
       "gate": "AUTO",
-      "passes": false
+      "passes": true
     },
     {
       "id": "056",

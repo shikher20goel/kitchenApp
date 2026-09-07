@@ -87,3 +87,4 @@ TASK 051 done: StoresViewModel (+7 tests: reorder persists, preferred toggle, af
 TASK 052 done: StoreFinding protocol, MapKitStoreFinder (the only network path, R1), pure StoreSearch helpers (queries, kind inference, dedup, radius, ordering) +11 tests through a fake.
 TASK 053 implemented, awaiting human review (FindStoresSheet + docs/PRIVACY-MAPKIT.md; needs a real 07302 search in the simulator).
 TASK 054 done: NutritionCoverageTests written first (group mapping from categories+tags, per-day coverage, weekly lightest group, MyPlate target table per age band).
+TASK 055 done: NutritionCoverage (MyPlate groups from tags+categories, per-day dots, weekly lightest group, age-band target table kept out of the UI per R2); 12 tests green.
