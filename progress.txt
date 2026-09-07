@@ -113,3 +113,7 @@ TASK 062 done: scripts/make-app-icon.swift renders the 1024px saffron pot-and-le
 TASK 063 done: scripts/privacy-audit.sh checks sources, the store finder's imports, dependencies, entitlements, background modes and otool on the built binary; docs/PRIVACY-AUDIT.md written and clean.
 TASK 064 done: docs/SPEC-AUDIT.md maps every red line, screen, engine rule and acceptance line to code and tests, with six explicit deviations; added the plan long-press context menu and a sub-second planning performance test (379 tests green).
 TASK 065 done: scripts/screenshots.sh + ScreenshotUITests capture 22 screens; docs/REVIEW.md records each with OK or the fix; fixed cook-mode footer overlap, chip hyphenation, unit-blind default quantities, stale tab data on switch, and per-body-evaluation view model rebuilds.
+TASK 066 implemented, awaiting human review (docs/REVIEW.md finalised; device install is human-gated — say the phone is cabled and give the team ID).
+ALL 62 AUTO TASKS PASS. verify.sh green (385 test cases), privacy-audit.sh clean.
+Open HUMAN gates: 028 (seed catalog), 043 (feedback/settings copy), 053 (MapKit privacy),
+058 (nutrition copy), 066 (final review + iPhone install).
