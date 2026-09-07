@@ -19,3 +19,4 @@ LESSON (task 007): SwiftData traps (EXC_BREAKPOINT inside SwiftData, "Restarting
 TASK 007 done: HouseholdMember model + AgeBand engine + Calendar.rasoi; 18 unit tests green.
 TASK 008 done: DietProfileTests written first (defaults, singleton idempotence, exclusions, appliances).
 TASK 009 done: DietProfile singleton + Appliance vocabulary; 23 unit tests green.
+TASK 010 done: StoreTests written first (6 defaults, idempotent re-seed, sortOrder, preferred flags, affinity).
