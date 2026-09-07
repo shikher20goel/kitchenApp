@@ -65,7 +65,7 @@
       ],
       "verify": "`bash scripts/configure-signing.sh free ABCDE12345 && xcodegen generate` exits 0; `git diff project.yml` shows only the team line; then `git checkout project.yml`.",
       "gate": "AUTO",
-      "passes": false
+      "passes": true
     },
     {
       "id": "005",
