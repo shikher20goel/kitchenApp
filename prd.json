@@ -418,7 +418,7 @@
       ],
       "verify": "`bash scripts/verify.sh RasoiTests/RecipesViewModelTests` green.",
       "gate": "AUTO",
-      "passes": false
+      "passes": true
     },
     {
       "id": "037",

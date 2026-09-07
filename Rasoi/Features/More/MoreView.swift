@@ -17,7 +17,7 @@ struct MoreView: View {
             }
 
             Section("Cooking") {
-                NavigationLink("Recipes") { ComingSoonView(title: "Recipes") }
+                NavigationLink("Recipes") { RecipeListView(context: context) }
                 NavigationLink("Insights") { ComingSoonView(title: "Insights") }
             }
 
