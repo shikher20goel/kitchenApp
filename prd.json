@@ -722,7 +722,7 @@
       ],
       "verify": "`bash scripts/privacy-audit.sh` exits 0 and docs/PRIVACY-AUDIT.md exists.",
       "gate": "AUTO",
-      "passes": false
+      "passes": true
     },
     {
       "id": "064",
