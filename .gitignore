@@ -1,0 +1,33 @@
+# ── Household data (never enters git) ──
+data/export-*.json
+data/*-real.*
+
+# ── Xcode / build ──
+DerivedData/
+build/
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+xcuserdata/
+*.xcuserstate
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# ── Swift / SPM ──
+.build/
+.swiftpm/
+
+# ── macOS ──
+.DS_Store
+
+# ── Tooling scratch ──
+.claude/
+scripts/.verify-cache/
+
+# ── Generated Xcode project (XcodeGen owns it; run `xcodegen generate`) ──
+Rasoi.xcodeproj/
+
+# ── Screenshots from the smoke-run ARE kept (docs/screenshots/*.png) ──

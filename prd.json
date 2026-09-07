@@ -1,0 +1,761 @@
+{
+  "project": "Rasoi — family kitchen planner (iOS)",
+  "completion_promise": "PROJECT_COMPLETE",
+  "verify_command": "bash scripts/verify.sh",
+  "spec": "docs/SPEC.md",
+  "forbidden_autonomous_actions": [
+    "any network code other than MapKit/CoreLocation inside Rasoi/Services/StoreFinder.swift (R1)",
+    "adding third-party dependencies, targets, extensions, entitlements",
+    "sending household data off-device; committing real family data (demo data only in screenshots/fixtures)",
+    "deleting user data, feedback history or pantry outside the explicit Delete-all-data flow",
+    "hand-editing the .xcodeproj (XcodeGen only)",
+    "showing calories, weight, or diet-restriction language anywhere (R2)",
+    "pushing to main or merging HUMAN-gated work",
+    "committing secrets or a real Apple team ID"
+  ],
+  "tasks": [
+    {
+      "id": "000",
+      "title": "Init repo on branch autonomous-build: README, .gitignore, docs/, seed/ committed",
+      "milestone": "M0",
+      "depends_on": [],
+      "verify": "`git branch --show-current` prints autonomous-build; `git status --porcelain` empty; `git log origin/autonomous-build --oneline | head -1` shows the commit.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "001",
+      "title": "project.yml → `xcodegen generate` produces Rasoi.xcodeproj with 3 targets",
+      "milestone": "M0",
+      "depends_on": [
+        "000"
+      ],
+      "verify": "`xcodegen generate` exits 0 and Rasoi.xcodeproj/project.pbxproj lists targets Rasoi, RasoiTests, RasoiUITests.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "002",
+      "title": "App skeleton: 5-tab ContentView + Theme tokens",
+      "milestone": "M0",
+      "depends_on": [
+        "001"
+      ],
+      "verify": "`xcodebuild -project Rasoi.xcodeproj -scheme Rasoi -destination 'generic/platform=iOS Simulator' CODE_SIGNING_ALLOWED=NO build` succeeds.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "003",
+      "title": "scripts/verify.sh works end-to-end with one trivial passing test",
+      "milestone": "M0",
+      "depends_on": [
+        "002"
+      ],
+      "verify": "`bash scripts/verify.sh` exits 0 and prints ≥2 passed test cases.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "004",
+      "title": "scripts/configure-signing.sh free|full modes",
+      "milestone": "M0",
+      "depends_on": [
+        "001"
+      ],
+      "verify": "`bash scripts/configure-signing.sh free ABCDE12345 && xcodegen generate` exits 0; `git diff project.yml` shows only the team line; then `git checkout project.yml`.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "005",
+      "title": "SwiftData PersistenceController + in-memory test factory",
+      "milestone": "M0",
+      "depends_on": [
+        "003"
+      ],
+      "verify": "`bash scripts/verify.sh RasoiTests/PersistenceTests` green.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "006",
+      "title": "Tests: HouseholdMember + AgeBand",
+      "milestone": "M1",
+      "depends_on": [
+        "005"
+      ],
+      "verify": "Test file(s) exist and reference the API named in the next task; `bash scripts/verify.sh --build-only` may fail — acceptable ONLY for this task pair.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "007",
+      "title": "Implement: HouseholdMember + AgeBand",
+      "milestone": "M1",
+      "depends_on": [
+        "006"
+      ],
+      "verify": "`bash scripts/verify.sh --unit` green (all tests so far).",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "008",
+      "title": "Tests: DietProfile singleton with SPEC defaults",
+      "milestone": "M1",
+      "depends_on": [
+        "007"
+      ],
+      "verify": "Test file(s) exist and reference the API named in the next task; `bash scripts/verify.sh --build-only` may fail — acceptable ONLY for this task pair.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "009",
+      "title": "Implement: DietProfile singleton with SPEC defaults",
+      "milestone": "M1",
+      "depends_on": [
+        "008"
+      ],
+      "verify": "`bash scripts/verify.sh --unit` green (all tests so far).",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "010",
+      "title": "Tests: Store model + default store seed",
+      "milestone": "M1",
+      "depends_on": [
+        "009"
+      ],
+      "verify": "Test file(s) exist and reference the API named in the next task; `bash scripts/verify.sh --build-only` may fail — acceptable ONLY for this task pair.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "011",
+      "title": "Implement: Store model + default store seed",
+      "milestone": "M1",
+      "depends_on": [
+        "010"
+      ],
+      "verify": "`bash scripts/verify.sh --unit` green (all tests so far).",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "012",
+      "title": "Tests: Ingredient model",
+      "milestone": "M1",
+      "depends_on": [
+        "011"
+      ],
+      "verify": "Test file(s) exist and reference the API named in the next task; `bash scripts/verify.sh --build-only` may fail — acceptable ONLY for this task pair.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "013",
+      "title": "Implement: Ingredient model",
+      "milestone": "M1",
+      "depends_on": [
+        "012"
+      ],
+      "verify": "`bash scripts/verify.sh --unit` green (all tests so far).",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "014",
+      "title": "Tests: PantryItem model + ShelfLife engine",
+      "milestone": "M1",
+      "depends_on": [
+        "013"
+      ],
+      "verify": "Test file(s) exist and reference the API named in the next task; `bash scripts/verify.sh --build-only` may fail — acceptable ONLY for this task pair.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "015",
+      "title": "Implement: PantryItem model + ShelfLife engine",
+      "milestone": "M1",
+      "depends_on": [
+        "014"
+      ],
+      "verify": "`bash scripts/verify.sh --unit` green (all tests so far).",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "016",
+      "title": "Tests: Recipe + RecipeIngredient models",
+      "milestone": "M1",
+      "depends_on": [
+        "015"
+      ],
+      "verify": "Test file(s) exist and reference the API named in the next task; `bash scripts/verify.sh --build-only` may fail — acceptable ONLY for this task pair.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "017",
+      "title": "Implement: Recipe + RecipeIngredient models",
+      "milestone": "M1",
+      "depends_on": [
+        "016"
+      ],
+      "verify": "`bash scripts/verify.sh --unit` green (all tests so far).",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "018",
+      "title": "Tests: MealPlan, MealSlot, MealFeedback models",
+      "milestone": "M1",
+      "depends_on": [
+        "017"
+      ],
+      "verify": "Test file(s) exist and reference the API named in the next task; `bash scripts/verify.sh --build-only` may fail — acceptable ONLY for this task pair.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "019",
+      "title": "Implement: MealPlan, MealSlot, MealFeedback models",
+      "milestone": "M1",
+      "depends_on": [
+        "018"
+      ],
+      "verify": "`bash scripts/verify.sh --unit` green (all tests so far).",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "020",
+      "title": "Tests: GroceryList + GroceryItem models",
+      "milestone": "M1",
+      "depends_on": [
+        "019"
+      ],
+      "verify": "Test file(s) exist and reference the API named in the next task; `bash scripts/verify.sh --build-only` may fail — acceptable ONLY for this task pair.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "021",
+      "title": "Implement: GroceryList + GroceryItem models",
+      "milestone": "M1",
+      "depends_on": [
+        "020"
+      ],
+      "verify": "`bash scripts/verify.sh --unit` green (all tests so far).",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "022",
+      "title": "Tests: AppSettings singleton",
+      "milestone": "M1",
+      "depends_on": [
+        "021"
+      ],
+      "verify": "Test file(s) exist and reference the API named in the next task; `bash scripts/verify.sh --build-only` may fail — acceptable ONLY for this task pair.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "023",
+      "title": "Implement: AppSettings singleton",
+      "milestone": "M1",
+      "depends_on": [
+        "022"
+      ],
+      "verify": "`bash scripts/verify.sh --unit` green (all tests so far).",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "024",
+      "title": "Tests: SeedLoader decodes seed/*.json and validates cross-references",
+      "milestone": "M2",
+      "depends_on": [
+        "023"
+      ],
+      "verify": "Tests written; may not compile yet.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "025",
+      "title": "Implement: SeedLoader (Codable DTOs) + SeedImporter idempotent upsert",
+      "milestone": "M2",
+      "depends_on": [
+        "024"
+      ],
+      "verify": "`bash scripts/verify.sh RasoiTests/SeedLoaderTests RasoiTests/SeedImporterTests` green.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "026",
+      "title": "Tests: DietFilter engine",
+      "milestone": "M2",
+      "depends_on": [
+        "025"
+      ],
+      "verify": "Tests written.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "027",
+      "title": "Implement: DietFilter engine",
+      "milestone": "M2",
+      "depends_on": [
+        "026"
+      ],
+      "verify": "`bash scripts/verify.sh RasoiTests/DietFilterTests` green.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "028",
+      "title": "HUMAN: review seed recipes and ingredient catalog",
+      "milestone": "M2",
+      "depends_on": [
+        "027"
+      ],
+      "verify": "FLAG FOR HUMAN REVIEW — Shikher approves docs/SEED-RECIPES.md.",
+      "gate": "HUMAN",
+      "passes": false
+    },
+    {
+      "id": "029",
+      "title": "Family screen: list, add/edit member (name, DOB, role, likes/dislikes, avatar)",
+      "milestone": "M3",
+      "depends_on": [
+        "027"
+      ],
+      "verify": "`bash scripts/verify.sh RasoiTests/FamilyViewModelTests` green; app builds.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "030",
+      "title": "Diet & Kitchen settings screen",
+      "milestone": "M3",
+      "depends_on": [
+        "029"
+      ],
+      "verify": "`bash scripts/verify.sh RasoiTests/DietSettingsViewModelTests` green.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "031",
+      "title": "Onboarding flow (first launch) + hasCompletedOnboarding gate",
+      "milestone": "M3",
+      "depends_on": [
+        "030"
+      ],
+      "verify": "`bash scripts/verify.sh RasoiUITests/OnboardingUITests` green.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "032",
+      "title": "More tab: menu (Family, Diet & Kitchen, Stores, Recipes, Insights, Notifications, Appearance, About, Export, Delete all data)",
+      "milestone": "M3",
+      "depends_on": [
+        "031"
+      ],
+      "verify": "`bash scripts/verify.sh --unit` green; app builds.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "033",
+      "title": "Tests: PantryViewModel (search-add with aliases, quantity, locations, expiring sort, mark used / ran out)",
+      "milestone": "M4",
+      "depends_on": [
+        "032"
+      ],
+      "verify": "Tests written.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "034",
+      "title": "Implement: PantryViewModel",
+      "milestone": "M4",
+      "depends_on": [
+        "033"
+      ],
+      "verify": "`bash scripts/verify.sh RasoiTests/PantryViewModelTests` green.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "035",
+      "title": "Pantry screen UI",
+      "milestone": "M4",
+      "depends_on": [
+        "034"
+      ],
+      "verify": "`bash scripts/verify.sh RasoiUITests/PantryUITests` green.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "036",
+      "title": "Recipes browser: list, filters (meal, cuisine, appliance, quick, kid favourites), search, detail",
+      "milestone": "M5",
+      "depends_on": [
+        "027",
+        "032"
+      ],
+      "verify": "`bash scripts/verify.sh RasoiTests/RecipesViewModelTests` green.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "037",
+      "title": "Recipe editor: add/edit user recipes",
+      "milestone": "M5",
+      "depends_on": [
+        "036"
+      ],
+      "verify": "`bash scripts/verify.sh RasoiTests/RecipeEditorTests` green.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "038",
+      "title": "Cook mode: one step per screen, large type, keep-awake, servings scaler",
+      "milestone": "M5",
+      "depends_on": [
+        "037"
+      ],
+      "verify": "`bash scripts/verify.sh RasoiTests/ScalingTests` green; CookMode reachable from RecipeDetail in a UI test.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "039",
+      "title": "Tests: KidScore engine",
+      "milestone": "M6",
+      "depends_on": [
+        "023"
+      ],
+      "verify": "Tests written.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "040",
+      "title": "Implement: KidScore engine",
+      "milestone": "M6",
+      "depends_on": [
+        "039"
+      ],
+      "verify": "`bash scripts/verify.sh RasoiTests/KidScoreTests` green.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "041",
+      "title": "Feedback sheet after cooking (per member: Ate it all / Ate some / Not today + note)",
+      "milestone": "M6",
+      "depends_on": [
+        "040",
+        "038"
+      ],
+      "verify": "`bash scripts/verify.sh RasoiTests/FeedbackViewModelTests` green.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "042",
+      "title": "PantryDepletion engine + tests (cooked slot decrements pantry)",
+      "milestone": "M6",
+      "depends_on": [
+        "041",
+        "035"
+      ],
+      "verify": "`bash scripts/verify.sh RasoiTests/UnitsTests RasoiTests/PantryDepletionTests` green.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "043",
+      "title": "HUMAN: review feedback + about/settings copy",
+      "milestone": "M6",
+      "depends_on": [
+        "042"
+      ],
+      "verify": "FLAG FOR HUMAN REVIEW — Shikher approves docs/COPY-FEEDBACK.md.",
+      "gate": "HUMAN",
+      "passes": false
+    },
+    {
+      "id": "044",
+      "title": "Tests: MealPlanner rules (variety, weekday time cap, pantry-first, use-it-up, kid score ranking, sure-thing/new quotas, nutrition balance, breakfast rotation, determinism)",
+      "milestone": "M7",
+      "depends_on": [
+        "042",
+        "027"
+      ],
+      "verify": "Tests written.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "045",
+      "title": "Implement: MealPlanner engine",
+      "milestone": "M7",
+      "depends_on": [
+        "044"
+      ],
+      "verify": "`bash scripts/verify.sh RasoiTests/MealPlannerTests` green.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "046",
+      "title": "PlanViewModel: generate/regenerate week, swap, lock, skip, eating out, persist slots",
+      "milestone": "M7",
+      "depends_on": [
+        "045"
+      ],
+      "verify": "`bash scripts/verify.sh RasoiTests/PlanViewModelTests` green.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "047",
+      "title": "Plan screen UI: 7×4 grid, slot sheet, why-this, lock, week summary",
+      "milestone": "M7",
+      "depends_on": [
+        "046"
+      ],
+      "verify": "`bash scripts/verify.sh RasoiUITests/PlanUITests` green.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "048",
+      "title": "Tests: GroceryBuilder (aggregate, scale, normalise, subtract pantry, staples, store assignment, idempotent merge)",
+      "milestone": "M8",
+      "depends_on": [
+        "047"
+      ],
+      "verify": "Tests written.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "049",
+      "title": "Implement: GroceryBuilder engine",
+      "milestone": "M8",
+      "depends_on": [
+        "048"
+      ],
+      "verify": "`bash scripts/verify.sh RasoiTests/GroceryBuilderTests` green.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "050",
+      "title": "ShopViewModel + Shop screen (by store → category, check-off restocks pantry, why?, manual add, share text)",
+      "milestone": "M8",
+      "depends_on": [
+        "049",
+        "035"
+      ],
+      "verify": "`bash scripts/verify.sh RasoiTests/ShopViewModelTests` green; ShopUITests checks one item.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "051",
+      "title": "Stores screen: list/reorder/edit, category affinity editor",
+      "milestone": "M8",
+      "depends_on": [
+        "032"
+      ],
+      "verify": "`bash scripts/verify.sh RasoiTests/StoresViewModelTests` green.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "052",
+      "title": "StoreFinder protocol + MapKit implementation + fake for tests",
+      "milestone": "M8",
+      "depends_on": [
+        "051"
+      ],
+      "verify": "`bash scripts/verify.sh RasoiTests/StoreFinderTests` green.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "053",
+      "title": "Find nearby UI + HUMAN privacy check of the MapKit path",
+      "milestone": "M8",
+      "depends_on": [
+        "052"
+      ],
+      "verify": "FLAG FOR HUMAN REVIEW — Shikher approves docs/PRIVACY-MAPKIT.md after seeing real results for 07302 in the simulator.",
+      "gate": "HUMAN",
+      "passes": false
+    },
+    {
+      "id": "054",
+      "title": "Tests: NutritionCoverage engine (MyPlate group hits per child per day, weekly 'light on X')",
+      "milestone": "M9",
+      "depends_on": [
+        "047"
+      ],
+      "verify": "Tests written.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "055",
+      "title": "Implement: NutritionCoverage engine",
+      "milestone": "M9",
+      "depends_on": [
+        "054"
+      ],
+      "verify": "`bash scripts/verify.sh RasoiTests/NutritionCoverageTests` green.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "056",
+      "title": "Quick-snack + expiring-soon engines and Today screen",
+      "milestone": "M9",
+      "depends_on": [
+        "055",
+        "035",
+        "042"
+      ],
+      "verify": "`bash scripts/verify.sh RasoiTests/QuickSnacksTests RasoiTests/TodayViewModelTests RasoiUITests/TodayUITests` green.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "057",
+      "title": "Nutrition dots on Plan + week summary; Insights screen",
+      "milestone": "M9",
+      "depends_on": [
+        "056"
+      ],
+      "verify": "`bash scripts/verify.sh RasoiTests/InsightsViewModelTests` green.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "058",
+      "title": "HUMAN: review nutrition & insights copy",
+      "milestone": "M9",
+      "depends_on": [
+        "057"
+      ],
+      "verify": "FLAG FOR HUMAN REVIEW — Shikher approves docs/COPY-NUTRITION.md.",
+      "gate": "HUMAN",
+      "passes": false
+    },
+    {
+      "id": "059",
+      "title": "NotificationScheduler (shopping-day, cook-tonight, expiring-soon) + tests with injected center",
+      "milestone": "M10",
+      "depends_on": [
+        "057",
+        "052"
+      ],
+      "verify": "`bash scripts/verify.sh RasoiTests/NotificationSchedulerTests` green.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "060",
+      "title": "Export (JSON share sheet) + Appearance setting",
+      "milestone": "M10",
+      "depends_on": [
+        "059"
+      ],
+      "verify": "`bash scripts/verify.sh RasoiTests/ExporterTests` green.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "061",
+      "title": "Accessibility + Dynamic Type pass",
+      "milestone": "M10",
+      "depends_on": [
+        "060"
+      ],
+      "verify": "`bash scripts/verify.sh RasoiUITests/AccessibilityUITests` green.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "062",
+      "title": "App icon (generated SVG→PNG script) + launch polish + empty states",
+      "milestone": "M10",
+      "depends_on": [
+        "061"
+      ],
+      "verify": "`bash scripts/verify.sh --build-only` green; AppIcon present.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "063",
+      "title": "Privacy & network audit script",
+      "milestone": "M11",
+      "depends_on": [
+        "062"
+      ],
+      "verify": "`bash scripts/privacy-audit.sh` exits 0 and docs/PRIVACY-AUDIT.md exists.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "064",
+      "title": "Full SPEC audit: every §4 screen, §5 rule and §11 acceptance line mapped to code + test",
+      "milestone": "M11",
+      "depends_on": [
+        "063"
+      ],
+      "verify": "`bash scripts/verify.sh` green and docs/SPEC-AUDIT.md has no 'MISSING' rows.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "065",
+      "title": "Simulator smoke-run + screenshots of every screen",
+      "milestone": "M11",
+      "depends_on": [
+        "064"
+      ],
+      "verify": "docs/screenshots/ contains ≥13 PNGs and docs/REVIEW.md lists each with 'OK' or the fix made.",
+      "gate": "AUTO",
+      "passes": false
+    },
+    {
+      "id": "066",
+      "title": "HUMAN: final review + free-team install to iPhone",
+      "milestone": "M11",
+      "depends_on": [
+        "065"
+      ],
+      "verify": "FLAG FOR HUMAN REVIEW — Rasoi launches on the iPhone and Shikher approves docs/REVIEW.md.",
+      "gate": "HUMAN",
+      "passes": false
+    }
+  ]
+}

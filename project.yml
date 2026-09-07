@@ -1,0 +1,115 @@
+name: Rasoi
+options:
+  bundleIdPrefix: com.shikhergoel
+  deploymentTarget:
+    iOS: "26.0"
+  createIntermediateGroups: true
+  generateEmptyDirectories: false
+  xcodeVersion: "2600"
+
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    IPHONEOS_DEPLOYMENT_TARGET: "26.0"
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    SWIFT_TREAT_WARNINGS_AS_ERRORS: NO
+    GCC_TREAT_WARNINGS_AS_ERRORS: NO
+    ALWAYS_SEARCH_USER_PATHS: NO
+    CLANG_ENABLE_MODULES: YES
+    ENABLE_TESTING_SEARCH_PATHS: YES
+    DEVELOPMENT_TEAM: ""
+    CODE_SIGN_STYLE: Automatic
+
+targets:
+  Rasoi:
+    type: application
+    platform: iOS
+    sources:
+      - path: Rasoi
+        excludes:
+          - "**/.DS_Store"
+      # Seed catalog: bundled so SeedLoader (app) and SeedLoaderTests (via TEST_HOST) can read it.
+      - path: seed/ingredients.json
+        buildPhase: resources
+      - path: seed/recipes.json
+        buildPhase: resources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.shikhergoel.rasoi
+        PRODUCT_NAME: Rasoi
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: Rasoi
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
+        INFOPLIST_KEY_UIUserInterfaceStyle: Automatic
+        INFOPLIST_KEY_NSLocationWhenInUseUsageDescription: "Rasoi can use your location only to find grocery stores near you when you tap Find nearby. Typing a zip code works without it. Nothing is stored or shared."
+        TARGETED_DEVICE_FAMILY: "1"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        ENABLE_PREVIEWS: YES
+        SWIFT_EMIT_LOC_STRINGS: YES
+        CODE_SIGN_IDENTITY: ""
+        CODE_SIGNING_REQUIRED: NO
+        CODE_SIGNING_ALLOWED: NO
+
+  RasoiTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: RasoiTests
+        excludes:
+          - "**/.DS_Store"
+    dependencies:
+      - target: Rasoi
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.shikhergoel.rasoi.tests
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/Rasoi.app/Rasoi"
+        BUNDLE_LOADER: "$(TEST_HOST)"
+        CODE_SIGN_IDENTITY: ""
+        CODE_SIGNING_REQUIRED: NO
+        CODE_SIGNING_ALLOWED: NO
+
+  RasoiUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: RasoiUITests
+        excludes:
+          - "**/.DS_Store"
+    dependencies:
+      - target: Rasoi
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.shikhergoel.rasoi.uitests
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_TARGET_NAME: Rasoi
+        CODE_SIGN_IDENTITY: ""
+        CODE_SIGNING_REQUIRED: NO
+        CODE_SIGNING_ALLOWED: NO
+
+schemes:
+  Rasoi:
+    build:
+      targets:
+        Rasoi: all
+        RasoiTests: [test]
+        RasoiUITests: [test]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      gatherCoverageData: true
+      targets:
+        - RasoiTests
+        - RasoiUITests
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release

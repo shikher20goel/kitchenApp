@@ -1,0 +1,4 @@
+Session start. No tasks complete yet. Kit generated 2026-09-07 by the orchestrator (SPEC, plan, prd, seed data).
+# Append one line per task below, e.g.:
+# TASK 000 done: repo initialised on autonomous-build, kit committed.
+# TASK 028 implemented, awaiting human review (seed recipes).

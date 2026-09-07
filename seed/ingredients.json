@@ -1,0 +1,3564 @@
+{
+ "version": 1,
+ "ingredients": [
+  {
+   "name": "Apple",
+   "aliases": [
+    "apples"
+   ],
+   "category": "fruit",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 21,
+   "isStaple": true,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "fruit",
+    "vitaminC",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": true
+  },
+  {
+   "name": "Banana",
+   "aliases": [
+    "bananas"
+   ],
+   "category": "fruit",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 6,
+   "isStaple": true,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "fruit",
+    "vitaminC",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": true
+  },
+  {
+   "name": "Orange",
+   "aliases": [
+    "oranges",
+    "clementine"
+   ],
+   "category": "fruit",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 14,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "fruit",
+    "vitaminC",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": true
+  },
+  {
+   "name": "Grapes",
+   "aliases": [],
+   "category": "fruit",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 7,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "fruit",
+    "vitaminC",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": true
+  },
+  {
+   "name": "Strawberries",
+   "aliases": [
+    "strawberry"
+   ],
+   "category": "fruit",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 4,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "fruit",
+    "vitaminC",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": true
+  },
+  {
+   "name": "Blueberries",
+   "aliases": [
+    "blueberry"
+   ],
+   "category": "fruit",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 7,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "fruit",
+    "vitaminC",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": true
+  },
+  {
+   "name": "Mango",
+   "aliases": [
+    "mangoes"
+   ],
+   "category": "fruit",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 6,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "fruit",
+    "vitaminC",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": true
+  },
+  {
+   "name": "Watermelon",
+   "aliases": [],
+   "category": "fruit",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 5,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "fruit",
+    "vitaminC",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": true
+  },
+  {
+   "name": "Pear",
+   "aliases": [
+    "pears"
+   ],
+   "category": "fruit",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 10,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "fruit",
+    "vitaminC",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": true
+  },
+  {
+   "name": "Kiwi",
+   "aliases": [],
+   "category": "fruit",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 10,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "fruit",
+    "vitaminC",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": true
+  },
+  {
+   "name": "Pomegranate",
+   "aliases": [
+    "anar"
+   ],
+   "category": "fruit",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 21,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "fruit",
+    "vitaminC",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": true
+  },
+  {
+   "name": "Papaya",
+   "aliases": [],
+   "category": "fruit",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 5,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "fruit",
+    "vitaminC",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": true
+  },
+  {
+   "name": "Avocado",
+   "aliases": [
+    "avocados"
+   ],
+   "category": "fruit",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 5,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "fruit",
+    "vitaminC",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": true
+  },
+  {
+   "name": "Lemon",
+   "aliases": [
+    "lemons",
+    "nimbu"
+   ],
+   "category": "fruit",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 21,
+   "isStaple": true,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "fruit",
+    "vitaminC",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": true
+  },
+  {
+   "name": "Lime",
+   "aliases": [
+    "limes"
+   ],
+   "category": "fruit",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 21,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "fruit",
+    "vitaminC",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": true
+  },
+  {
+   "name": "Dates",
+   "aliases": [
+    "khajur"
+   ],
+   "category": "fruit",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 180,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "fruit",
+    "vitaminC",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": true
+  },
+  {
+   "name": "Raisins",
+   "aliases": [
+    "kishmish"
+   ],
+   "category": "fruit",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 180,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "fruit",
+    "vitaminC",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": true
+  },
+  {
+   "name": "Frozen mixed berries",
+   "aliases": [
+    "frozen berries"
+   ],
+   "category": "fruit",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 180,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "fruit",
+    "vitaminC",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": true
+  },
+  {
+   "name": "Potato",
+   "aliases": [
+    "potatoes",
+    "aloo"
+   ],
+   "category": "vegetable",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 21,
+   "isStaple": true,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "vegetable",
+    "fibre",
+    "vitaminC"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Onion",
+   "aliases": [
+    "onions",
+    "pyaz"
+   ],
+   "category": "vegetable",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 21,
+   "isStaple": true,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "vegetable",
+    "fibre",
+    "vitaminC"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Tomato",
+   "aliases": [
+    "tomatoes",
+    "tamatar"
+   ],
+   "category": "vegetable",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 7,
+   "isStaple": true,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "vegetable",
+    "fibre",
+    "vitaminC"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Carrot",
+   "aliases": [
+    "carrots",
+    "gajar"
+   ],
+   "category": "vegetable",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 21,
+   "isStaple": true,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "vegetable",
+    "fibre",
+    "vitaminA"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": true
+  },
+  {
+   "name": "Cucumber",
+   "aliases": [
+    "cucumbers",
+    "kheera"
+   ],
+   "category": "vegetable",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 7,
+   "isStaple": true,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "vegetable",
+    "fibre",
+    "vitaminC"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": true
+  },
+  {
+   "name": "Bell pepper",
+   "aliases": [
+    "capsicum",
+    "shimla mirch",
+    "peppers"
+   ],
+   "category": "vegetable",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 10,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "vegetable",
+    "fibre",
+    "vitaminC"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": true
+  },
+  {
+   "name": "Cauliflower",
+   "aliases": [
+    "gobi",
+    "phool gobi"
+   ],
+   "category": "vegetable",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 10,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "vegetable",
+    "fibre",
+    "vitaminC"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Broccoli",
+   "aliases": [],
+   "category": "vegetable",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 7,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "vegetable",
+    "fibre",
+    "vitaminC"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Green beans",
+   "aliases": [
+    "beans",
+    "french beans"
+   ],
+   "category": "vegetable",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 7,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "vegetable",
+    "fibre",
+    "vitaminC"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Peas",
+   "aliases": [
+    "green peas",
+    "matar"
+   ],
+   "category": "vegetable",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 5,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "vegetable",
+    "fibre",
+    "vitaminC"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Sweet potato",
+   "aliases": [
+    "shakarkandi"
+   ],
+   "category": "vegetable",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 21,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "vegetable",
+    "fibre",
+    "vitaminA"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Zucchini",
+   "aliases": [
+    "courgette"
+   ],
+   "category": "vegetable",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 7,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "vegetable",
+    "fibre",
+    "vitaminC"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Corn",
+   "aliases": [
+    "sweet corn",
+    "corn on the cob"
+   ],
+   "category": "vegetable",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 5,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "vegetable",
+    "fibre",
+    "vitaminC"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Cabbage",
+   "aliases": [
+    "patta gobi"
+   ],
+   "category": "vegetable",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 14,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "vegetable",
+    "fibre",
+    "vitaminC"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Bottle gourd",
+   "aliases": [
+    "lauki",
+    "dudhi",
+    "ghia"
+   ],
+   "category": "vegetable",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 10,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "vegetable",
+    "fibre",
+    "vitaminC"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Okra",
+   "aliases": [
+    "bhindi",
+    "lady finger"
+   ],
+   "category": "vegetable",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 5,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "vegetable",
+    "fibre",
+    "vitaminC"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Eggplant",
+   "aliases": [
+    "baingan",
+    "brinjal",
+    "aubergine"
+   ],
+   "category": "vegetable",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 7,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "vegetable",
+    "fibre",
+    "vitaminC"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Pumpkin",
+   "aliases": [
+    "kaddu",
+    "butternut squash"
+   ],
+   "category": "vegetable",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 21,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "vegetable",
+    "fibre",
+    "vitaminA"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Mushrooms",
+   "aliases": [
+    "mushroom"
+   ],
+   "category": "vegetable",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 5,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "vegetable",
+    "fibre",
+    "vitaminC"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Beetroot",
+   "aliases": [
+    "beet",
+    "beets",
+    "chukandar"
+   ],
+   "category": "vegetable",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 21,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "vegetable",
+    "fibre",
+    "vitaminC"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Green chili",
+   "aliases": [
+    "hari mirch",
+    "chillies"
+   ],
+   "category": "vegetable",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 10,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "vegetable",
+    "fibre",
+    "vitaminC"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Ginger",
+   "aliases": [
+    "adrak"
+   ],
+   "category": "vegetable",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 21,
+   "isStaple": true,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "vegetable",
+    "fibre",
+    "vitaminC"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Garlic",
+   "aliases": [
+    "lehsun"
+   ],
+   "category": "vegetable",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 30,
+   "isStaple": true,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "vegetable",
+    "fibre",
+    "vitaminC"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Celery",
+   "aliases": [],
+   "category": "vegetable",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 10,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "vegetable",
+    "fibre",
+    "vitaminC"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Radish",
+   "aliases": [
+    "mooli"
+   ],
+   "category": "vegetable",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 10,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "vegetable",
+    "fibre",
+    "vitaminC"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Spinach",
+   "aliases": [
+    "palak",
+    "baby spinach"
+   ],
+   "category": "leafyGreen",
+   "defaultUnit": "bunch",
+   "typicalShelfLifeDays": 4,
+   "isStaple": true,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "vegetable",
+    "iron",
+    "vitaminA",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Methi leaves",
+   "aliases": [
+    "fenugreek leaves",
+    "methi"
+   ],
+   "category": "leafyGreen",
+   "defaultUnit": "bunch",
+   "typicalShelfLifeDays": 4,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "vegetable",
+    "iron",
+    "vitaminA",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Cilantro",
+   "aliases": [
+    "coriander leaves",
+    "dhania",
+    "coriander"
+   ],
+   "category": "leafyGreen",
+   "defaultUnit": "bunch",
+   "typicalShelfLifeDays": 4,
+   "isStaple": true,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "vegetable",
+    "iron",
+    "vitaminA",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Mint",
+   "aliases": [
+    "pudina"
+   ],
+   "category": "leafyGreen",
+   "defaultUnit": "bunch",
+   "typicalShelfLifeDays": 4,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "vegetable",
+    "iron",
+    "vitaminA",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Lettuce",
+   "aliases": [
+    "romaine",
+    "salad leaves"
+   ],
+   "category": "leafyGreen",
+   "defaultUnit": "bunch",
+   "typicalShelfLifeDays": 4,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "vegetable",
+    "iron",
+    "vitaminA",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Kale",
+   "aliases": [],
+   "category": "leafyGreen",
+   "defaultUnit": "bunch",
+   "typicalShelfLifeDays": 4,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "vegetable",
+    "iron",
+    "vitaminA",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Curry leaves",
+   "aliases": [
+    "kadi patta"
+   ],
+   "category": "leafyGreen",
+   "defaultUnit": "bunch",
+   "typicalShelfLifeDays": 4,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "vegetable",
+    "iron",
+    "vitaminA",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Milk",
+   "aliases": [
+    "whole milk",
+    "doodh"
+   ],
+   "category": "dairy",
+   "defaultUnit": "ml",
+   "typicalShelfLifeDays": 7,
+   "isStaple": true,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "calcium",
+    "protein"
+   ],
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Plain yogurt",
+   "aliases": [
+    "dahi",
+    "curd",
+    "yogurt"
+   ],
+   "category": "dairy",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 14,
+   "isStaple": true,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "calcium",
+    "protein"
+   ],
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": true
+  },
+  {
+   "name": "Greek yogurt",
+   "aliases": [],
+   "category": "dairy",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 14,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "calcium",
+    "protein"
+   ],
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": true
+  },
+  {
+   "name": "Paneer",
+   "aliases": [
+    "cottage cheese"
+   ],
+   "category": "dairy",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 7,
+   "isStaple": true,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "protein",
+    "calcium"
+   ],
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Cheddar cheese",
+   "aliases": [
+    "cheese",
+    "shredded cheese"
+   ],
+   "category": "dairy",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 21,
+   "isStaple": true,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "calcium",
+    "protein"
+   ],
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": true
+  },
+  {
+   "name": "Mozzarella",
+   "aliases": [
+    "mozzarella cheese"
+   ],
+   "category": "dairy",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 14,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "calcium",
+    "protein"
+   ],
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Parmesan",
+   "aliases": [],
+   "category": "dairy",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 30,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "calcium"
+   ],
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Butter",
+   "aliases": [
+    "makhan"
+   ],
+   "category": "dairy",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 60,
+   "isStaple": true,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "healthyFat"
+   ],
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Ghee",
+   "aliases": [],
+   "category": "dairy",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 180,
+   "isStaple": true,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "healthyFat"
+   ],
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Cream cheese",
+   "aliases": [],
+   "category": "dairy",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 21,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "calcium"
+   ],
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Sour cream",
+   "aliases": [],
+   "category": "dairy",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 14,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "calcium"
+   ],
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Ricotta",
+   "aliases": [],
+   "category": "dairy",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 7,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "protein",
+    "calcium"
+   ],
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Eggs",
+   "aliases": [
+    "egg"
+   ],
+   "category": "egg",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 21,
+   "isStaple": true,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "protein"
+   ],
+   "containsEgg": true,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Firm tofu",
+   "aliases": [
+    "tofu"
+   ],
+   "category": "legume",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 10,
+   "isStaple": false,
+   "defaultStoreKind": "eastAsian",
+   "nutritionTags": [
+    "protein",
+    "calcium",
+    "iron"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Edamame",
+   "aliases": [
+    "frozen edamame"
+   ],
+   "category": "legume",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 180,
+   "isStaple": false,
+   "defaultStoreKind": "eastAsian",
+   "nutritionTags": [
+    "protein",
+    "fibre",
+    "iron"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": true
+  },
+  {
+   "name": "Toor dal",
+   "aliases": [
+    "arhar dal",
+    "split pigeon peas",
+    "tuvar dal"
+   ],
+   "category": "legume",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": true,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [
+    "protein",
+    "iron",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Moong dal",
+   "aliases": [
+    "yellow moong dal",
+    "split mung"
+   ],
+   "category": "legume",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": true,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [
+    "protein",
+    "iron",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Whole green moong",
+   "aliases": [
+    "green moong",
+    "mung beans",
+    "sabut moong"
+   ],
+   "category": "legume",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [
+    "protein",
+    "iron",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Masoor dal",
+   "aliases": [
+    "red lentils",
+    "malka masoor"
+   ],
+   "category": "legume",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [
+    "protein",
+    "iron",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Chana dal",
+   "aliases": [
+    "split chickpeas"
+   ],
+   "category": "legume",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [
+    "protein",
+    "iron",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Urad dal",
+   "aliases": [
+    "black gram",
+    "white urad"
+   ],
+   "category": "legume",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [
+    "protein",
+    "iron",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Rajma",
+   "aliases": [
+    "kidney beans",
+    "red kidney beans"
+   ],
+   "category": "legume",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [
+    "protein",
+    "iron",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Chickpeas",
+   "aliases": [
+    "chole",
+    "kabuli chana",
+    "garbanzo"
+   ],
+   "category": "legume",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": true,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "protein",
+    "iron",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Kala chana",
+   "aliases": [
+    "black chickpeas"
+   ],
+   "category": "legume",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [
+    "protein",
+    "iron",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Black beans",
+   "aliases": [],
+   "category": "legume",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "protein",
+    "iron",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Pinto beans",
+   "aliases": [],
+   "category": "legume",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "protein",
+    "iron",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Roasted chana",
+   "aliases": [
+    "bhuna chana"
+   ],
+   "category": "legume",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [
+    "protein",
+    "iron",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": true
+  },
+  {
+   "name": "Hummus",
+   "aliases": [],
+   "category": "legume",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 7,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "protein",
+    "iron",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": true
+  },
+  {
+   "name": "Sprouted moong",
+   "aliases": [
+    "sprouts"
+   ],
+   "category": "legume",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 7,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "protein",
+    "iron",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Basmati rice",
+   "aliases": [
+    "rice",
+    "chawal"
+   ],
+   "category": "grain",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": true,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [
+    "grain"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Brown rice",
+   "aliases": [],
+   "category": "grain",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "grain",
+    "wholeGrain",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Poha",
+   "aliases": [
+    "flattened rice",
+    "beaten rice"
+   ],
+   "category": "grain",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [
+    "grain",
+    "iron"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Sooji",
+   "aliases": [
+    "rava",
+    "semolina"
+   ],
+   "category": "grain",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [
+    "grain"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": true,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Rolled oats",
+   "aliases": [
+    "oats",
+    "oatmeal"
+   ],
+   "category": "grain",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": true,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "grain",
+    "wholeGrain",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Quinoa",
+   "aliases": [],
+   "category": "grain",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "grain",
+    "wholeGrain",
+    "protein"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Daliya",
+   "aliases": [
+    "broken wheat",
+    "bulgur",
+    "cracked wheat"
+   ],
+   "category": "grain",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [
+    "grain",
+    "wholeGrain",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": true,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Pasta",
+   "aliases": [
+    "penne",
+    "spaghetti",
+    "macaroni"
+   ],
+   "category": "grain",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": true,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "grain"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": true,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Whole wheat pasta",
+   "aliases": [],
+   "category": "grain",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "grain",
+    "wholeGrain",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": true,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Idli rice",
+   "aliases": [],
+   "category": "grain",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [
+    "grain"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Vermicelli",
+   "aliases": [
+    "semiya",
+    "seviyan"
+   ],
+   "category": "grain",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [
+    "grain"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": true,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Sabudana",
+   "aliases": [
+    "tapioca pearls"
+   ],
+   "category": "grain",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [
+    "grain"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Millet",
+   "aliases": [
+    "bajra",
+    "ragi",
+    "foxtail millet"
+   ],
+   "category": "grain",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [
+    "grain",
+    "wholeGrain",
+    "iron"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Couscous",
+   "aliases": [],
+   "category": "grain",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "grain"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": true,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Rice noodles",
+   "aliases": [],
+   "category": "grain",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "eastAsian",
+   "nutritionTags": [
+    "grain"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Cornflakes",
+   "aliases": [],
+   "category": "grain",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "grain"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": true,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Atta",
+   "aliases": [
+    "whole wheat flour",
+    "chapati flour"
+   ],
+   "category": "flourBread",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 180,
+   "isStaple": true,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [
+    "grain"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": true,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Besan",
+   "aliases": [
+    "gram flour",
+    "chickpea flour"
+   ],
+   "category": "flourBread",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 180,
+   "isStaple": false,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [
+    "grain"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "All-purpose flour",
+   "aliases": [
+    "maida",
+    "flour"
+   ],
+   "category": "flourBread",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 180,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "grain"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": true,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Whole wheat bread",
+   "aliases": [
+    "bread",
+    "sandwich bread"
+   ],
+   "category": "flourBread",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 7,
+   "isStaple": true,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "grain",
+    "wholeGrain"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": true,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Whole wheat tortillas",
+   "aliases": [
+    "tortillas",
+    "wraps"
+   ],
+   "category": "flourBread",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 7,
+   "isStaple": false,
+   "defaultStoreKind": "hispanic",
+   "nutritionTags": [
+    "grain",
+    "wholeGrain"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": true,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Corn tortillas",
+   "aliases": [],
+   "category": "flourBread",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 7,
+   "isStaple": false,
+   "defaultStoreKind": "hispanic",
+   "nutritionTags": [
+    "grain"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Pita bread",
+   "aliases": [],
+   "category": "flourBread",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 7,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "grain"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": true,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Pizza dough",
+   "aliases": [],
+   "category": "flourBread",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 7,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "grain"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": true,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Bread crumbs",
+   "aliases": [
+    "panko"
+   ],
+   "category": "flourBread",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 180,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "grain"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": true,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Rice flour",
+   "aliases": [],
+   "category": "flourBread",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 180,
+   "isStaple": false,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [
+    "grain"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Ragi flour",
+   "aliases": [
+    "finger millet flour",
+    "nachni"
+   ],
+   "category": "flourBread",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 180,
+   "isStaple": false,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [
+    "grain",
+    "wholeGrain"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Pav buns",
+   "aliases": [
+    "dinner rolls",
+    "burger buns"
+   ],
+   "category": "flourBread",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 7,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "grain"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": true,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Naan",
+   "aliases": [],
+   "category": "flourBread",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 7,
+   "isStaple": false,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [
+    "grain"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": true,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Baking powder",
+   "aliases": [],
+   "category": "flourBread",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 180,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "grain"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Baking soda",
+   "aliases": [],
+   "category": "flourBread",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 180,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "grain"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Almonds",
+   "aliases": [
+    "badam"
+   ],
+   "category": "nutSeed",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 180,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "protein",
+    "healthyFat"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": true,
+   "containsGluten": false,
+   "isQuickHealthySnack": true
+  },
+  {
+   "name": "Cashews",
+   "aliases": [
+    "kaju"
+   ],
+   "category": "nutSeed",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 180,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "healthyFat"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": true,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Peanuts",
+   "aliases": [
+    "moongphali",
+    "groundnut"
+   ],
+   "category": "nutSeed",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 180,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "protein",
+    "healthyFat"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": true,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Peanut butter",
+   "aliases": [],
+   "category": "nutSeed",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 180,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "protein",
+    "healthyFat"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": true,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Almond butter",
+   "aliases": [],
+   "category": "nutSeed",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 180,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "protein",
+    "healthyFat"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": true,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Walnuts",
+   "aliases": [
+    "akhrot"
+   ],
+   "category": "nutSeed",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 180,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "healthyFat"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": true,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Chia seeds",
+   "aliases": [],
+   "category": "nutSeed",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 180,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "fibre",
+    "healthyFat",
+    "calcium"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Flax seeds",
+   "aliases": [
+    "alsi"
+   ],
+   "category": "nutSeed",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 180,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "fibre",
+    "healthyFat"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Sesame seeds",
+   "aliases": [
+    "til"
+   ],
+   "category": "nutSeed",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 180,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "calcium",
+    "iron"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Pumpkin seeds",
+   "aliases": [],
+   "category": "nutSeed",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 180,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "iron",
+    "protein"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Sunflower seeds",
+   "aliases": [],
+   "category": "nutSeed",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 180,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "healthyFat"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Makhana",
+   "aliases": [
+    "fox nuts",
+    "lotus seeds"
+   ],
+   "category": "nutSeed",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 180,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "protein"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": true
+  },
+  {
+   "name": "Shredded coconut",
+   "aliases": [
+    "desiccated coconut",
+    "coconut"
+   ],
+   "category": "nutSeed",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 180,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "healthyFat"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Turmeric",
+   "aliases": [
+    "haldi"
+   ],
+   "category": "spice",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": true,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Cumin seeds",
+   "aliases": [
+    "jeera"
+   ],
+   "category": "spice",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": true,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Ground cumin",
+   "aliases": [],
+   "category": "spice",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Coriander powder",
+   "aliases": [
+    "dhania powder"
+   ],
+   "category": "spice",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Garam masala",
+   "aliases": [],
+   "category": "spice",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": true,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Red chili powder",
+   "aliases": [
+    "lal mirch",
+    "cayenne",
+    "paprika"
+   ],
+   "category": "spice",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Mustard seeds",
+   "aliases": [
+    "rai",
+    "sarson"
+   ],
+   "category": "spice",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Asafoetida",
+   "aliases": [
+    "hing"
+   ],
+   "category": "spice",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Salt",
+   "aliases": [
+    "namak"
+   ],
+   "category": "spice",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": true,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Black pepper",
+   "aliases": [
+    "kali mirch"
+   ],
+   "category": "spice",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Cinnamon",
+   "aliases": [
+    "dalchini"
+   ],
+   "category": "spice",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Cardamom",
+   "aliases": [
+    "elaichi"
+   ],
+   "category": "spice",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Chaat masala",
+   "aliases": [],
+   "category": "spice",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Amchur",
+   "aliases": [
+    "dry mango powder"
+   ],
+   "category": "spice",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Kasuri methi",
+   "aliases": [
+    "dried fenugreek"
+   ],
+   "category": "spice",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Pav bhaji masala",
+   "aliases": [],
+   "category": "spice",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Sambar powder",
+   "aliases": [],
+   "category": "spice",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Italian seasoning",
+   "aliases": [
+    "oregano",
+    "dried oregano"
+   ],
+   "category": "spice",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Taco seasoning",
+   "aliases": [],
+   "category": "spice",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Curry powder",
+   "aliases": [],
+   "category": "spice",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Cumin-coriander (dhana jeera)",
+   "aliases": [
+    "dhana jeera"
+   ],
+   "category": "spice",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Vanilla extract",
+   "aliases": [],
+   "category": "spice",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Cocoa powder",
+   "aliases": [],
+   "category": "spice",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Nutmeg",
+   "aliases": [
+    "jaiphal"
+   ],
+   "category": "spice",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Olive oil",
+   "aliases": [
+    "extra virgin olive oil"
+   ],
+   "category": "oilCondiment",
+   "defaultUnit": "ml",
+   "typicalShelfLifeDays": 365,
+   "isStaple": true,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "healthyFat"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Vegetable oil",
+   "aliases": [
+    "sunflower oil",
+    "canola oil",
+    "cooking oil"
+   ],
+   "category": "oilCondiment",
+   "defaultUnit": "ml",
+   "typicalShelfLifeDays": 365,
+   "isStaple": true,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Coconut oil",
+   "aliases": [],
+   "category": "oilCondiment",
+   "defaultUnit": "ml",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Soy sauce",
+   "aliases": [],
+   "category": "oilCondiment",
+   "defaultUnit": "ml",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": true,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Tomato puree",
+   "aliases": [
+    "tomato sauce",
+    "passata"
+   ],
+   "category": "oilCondiment",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Tomato ketchup",
+   "aliases": [
+    "ketchup"
+   ],
+   "category": "oilCondiment",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Tamarind paste",
+   "aliases": [
+    "imli"
+   ],
+   "category": "oilCondiment",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Honey",
+   "aliases": [
+    "shahad"
+   ],
+   "category": "oilCondiment",
+   "defaultUnit": "ml",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Maple syrup",
+   "aliases": [],
+   "category": "oilCondiment",
+   "defaultUnit": "ml",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Jaggery",
+   "aliases": [
+    "gur"
+   ],
+   "category": "oilCondiment",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "iron"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Sugar",
+   "aliases": [
+    "cheeni"
+   ],
+   "category": "oilCondiment",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Vinegar",
+   "aliases": [
+    "rice vinegar",
+    "white vinegar"
+   ],
+   "category": "oilCondiment",
+   "defaultUnit": "ml",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Salsa",
+   "aliases": [],
+   "category": "oilCondiment",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "vegetable"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Marinara sauce",
+   "aliases": [
+    "pasta sauce"
+   ],
+   "category": "oilCondiment",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "vegetable"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Coconut milk",
+   "aliases": [],
+   "category": "oilCondiment",
+   "defaultUnit": "ml",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "healthyFat"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Vegetable stock",
+   "aliases": [
+    "veg broth",
+    "bouillon"
+   ],
+   "category": "oilCondiment",
+   "defaultUnit": "ml",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Mayonnaise",
+   "aliases": [
+    "mayo"
+   ],
+   "category": "oilCondiment",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [],
+   "containsEgg": true,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Sriracha",
+   "aliases": [
+    "hot sauce"
+   ],
+   "category": "oilCondiment",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Sesame oil",
+   "aliases": [],
+   "category": "oilCondiment",
+   "defaultUnit": "ml",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "healthyFat"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Pickle",
+   "aliases": [
+    "achar"
+   ],
+   "category": "oilCondiment",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Cornstarch",
+   "aliases": [
+    "corn flour"
+   ],
+   "category": "oilCondiment",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Frozen peas",
+   "aliases": [],
+   "category": "frozen",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 180,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "vegetable",
+    "protein",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Frozen mixed vegetables",
+   "aliases": [
+    "frozen veg"
+   ],
+   "category": "frozen",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 180,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "vegetable"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Frozen corn",
+   "aliases": [],
+   "category": "frozen",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 180,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "vegetable"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Frozen spinach",
+   "aliases": [],
+   "category": "frozen",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 180,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "vegetable",
+    "iron"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Frozen paratha",
+   "aliases": [],
+   "category": "frozen",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 180,
+   "isStaple": false,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [
+    "grain"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": true,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Frozen mango chunks",
+   "aliases": [],
+   "category": "frozen",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 180,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "fruit",
+    "vitaminC"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Whole grain crackers",
+   "aliases": [
+    "crackers"
+   ],
+   "category": "snack",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 180,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "grain",
+    "wholeGrain"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": true,
+   "isQuickHealthySnack": true
+  },
+  {
+   "name": "Rice cakes",
+   "aliases": [],
+   "category": "snack",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 180,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "grain"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": true
+  },
+  {
+   "name": "Popcorn kernels",
+   "aliases": [],
+   "category": "snack",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 180,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "grain",
+    "wholeGrain",
+    "fibre"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": true
+  },
+  {
+   "name": "Granola",
+   "aliases": [],
+   "category": "snack",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 180,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "grain",
+    "wholeGrain"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": true,
+   "containsGluten": true,
+   "isQuickHealthySnack": true
+  },
+  {
+   "name": "Dark chocolate chips",
+   "aliases": [
+    "chocolate chips"
+   ],
+   "category": "snack",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 180,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Khakhra",
+   "aliases": [],
+   "category": "snack",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 180,
+   "isStaple": false,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [
+    "grain",
+    "wholeGrain"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": true,
+   "isQuickHealthySnack": true
+  },
+  {
+   "name": "Cheese sticks",
+   "aliases": [
+    "string cheese"
+   ],
+   "category": "snack",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 180,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "calcium",
+    "protein"
+   ],
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": true
+  },
+  {
+   "name": "Orange juice",
+   "aliases": [],
+   "category": "beverage",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 180,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "vitaminC"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Coconut water",
+   "aliases": [],
+   "category": "beverage",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 180,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": true
+  },
+  {
+   "name": "Almond milk",
+   "aliases": [],
+   "category": "beverage",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 180,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "calcium"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": true,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Oat milk",
+   "aliases": [],
+   "category": "beverage",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 180,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "calcium"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": true,
+   "isQuickHealthySnack": false
+  }
+ ]
+}

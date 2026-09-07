@@ -1,0 +1,5172 @@
+{
+ "version": 1,
+ "recipes": [
+  {
+   "seedID": "bf-oats-banana",
+   "title": "Banana Peanut-Butter Oatmeal",
+   "cuisine": "American",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "appliances": [
+    "stovetop"
+   ],
+   "prepMinutes": 3,
+   "cookMinutes": 7,
+   "servings": 4,
+   "minAgeYears": 2,
+   "ingredients": [
+    {
+     "ingredientName": "Rolled oats",
+     "quantity": 160,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Milk",
+     "quantity": 600,
+     "unit": "ml",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Banana",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Peanut butter",
+     "quantity": 30,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cinnamon",
+     "quantity": 1,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Honey",
+     "quantity": 10,
+     "unit": "g",
+     "isOptional": true,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Bring milk to a simmer, stir in oats.",
+    "Cook 5–6 min, stirring, until creamy.",
+    "Mash one banana into the pot; slice the other on top.",
+    "Swirl in peanut butter and cinnamon; drizzle honey for the kids."
+   ],
+   "nutritionTags": [
+    "calcium",
+    "fruit",
+    "protein",
+    "wholeGrain"
+   ],
+   "isQuick": true,
+   "kidBaseline": 5,
+   "kidFriendlyNote": "Serve slightly cooled; let kids add their own banana slices.",
+   "lunchboxOK": false,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": true,
+   "containsGluten": false
+  },
+  {
+   "seedID": "bf-poha",
+   "title": "Vegetable Poha",
+   "cuisine": "Indian",
+   "mealTypes": [
+    "breakfast",
+    "snack"
+   ],
+   "appliances": [
+    "stovetop"
+   ],
+   "prepMinutes": 10,
+   "cookMinutes": 10,
+   "servings": 4,
+   "minAgeYears": 2,
+   "ingredients": [
+    {
+     "ingredientName": "Poha",
+     "quantity": 200,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Onion",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Potato",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Peas",
+     "quantity": 80,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Peanuts",
+     "quantity": 30,
+     "unit": "g",
+     "isOptional": true,
+     "note": ""
+    },
+    {
+     "ingredientName": "Mustard seeds",
+     "quantity": 3,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Turmeric",
+     "quantity": 2,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Curry leaves",
+     "quantity": 1,
+     "unit": "bunch",
+     "isOptional": true,
+     "note": ""
+    },
+    {
+     "ingredientName": "Vegetable oil",
+     "quantity": 15,
+     "unit": "ml",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Lemon",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 3,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cilantro",
+     "quantity": 1,
+     "unit": "bunch",
+     "isOptional": true,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Rinse poha in a sieve until soft; drain.",
+    "Heat oil; pop mustard seeds, add curry leaves, onion; fry 2 min.",
+    "Add diced potato + peas, turmeric, salt; cover 5 min until soft.",
+    "Fold in poha, warm 2 min, squeeze lemon, top with cilantro."
+   ],
+   "nutritionTags": [
+    "grain",
+    "iron",
+    "vegetable"
+   ],
+   "isQuick": false,
+   "kidBaseline": 4,
+   "kidFriendlyNote": "Skip green chili; peanuts on the side for the 4-year-old.",
+   "lunchboxOK": false,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false
+  },
+  {
+   "seedID": "bf-besan-chilla",
+   "title": "Besan Chilla (Savory Chickpea Pancakes)",
+   "cuisine": "Indian",
+   "mealTypes": [
+    "breakfast",
+    "lunch"
+   ],
+   "appliances": [
+    "stovetop"
+   ],
+   "prepMinutes": 5,
+   "cookMinutes": 15,
+   "servings": 4,
+   "minAgeYears": 2,
+   "ingredients": [
+    {
+     "ingredientName": "Besan",
+     "quantity": 200,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Onion",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Tomato",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cilantro",
+     "quantity": 1,
+     "unit": "bunch",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Turmeric",
+     "quantity": 1,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 3,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Vegetable oil",
+     "quantity": 15,
+     "unit": "ml",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Plain yogurt",
+     "quantity": 150,
+     "unit": "g",
+     "isOptional": true,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Whisk besan with 300 ml water, turmeric, salt to a pancake batter.",
+    "Stir in finely chopped onion, tomato, cilantro.",
+    "Ladle onto a hot oiled pan; cook 2 min each side.",
+    "Serve with yogurt for dipping."
+   ],
+   "nutritionTags": [
+    "fibre",
+    "protein",
+    "vegetable"
+   ],
+   "isQuick": false,
+   "kidBaseline": 4,
+   "kidFriendlyNote": "Make small 'mini pancakes' and let kids dip in yogurt or ketchup.",
+   "lunchboxOK": true,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false
+  },
+  {
+   "seedID": "bf-veg-upma",
+   "title": "Vegetable Sooji Upma",
+   "cuisine": "Indian",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "appliances": [
+    "stovetop"
+   ],
+   "prepMinutes": 5,
+   "cookMinutes": 15,
+   "servings": 4,
+   "minAgeYears": 2,
+   "ingredients": [
+    {
+     "ingredientName": "Sooji",
+     "quantity": 200,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Onion",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Carrot",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Peas",
+     "quantity": 80,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Mustard seeds",
+     "quantity": 3,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Ghee",
+     "quantity": 15,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 3,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Ginger",
+     "quantity": 5,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Curry leaves",
+     "quantity": 1,
+     "unit": "bunch",
+     "isOptional": true,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Dry-roast sooji 4 min until fragrant; set aside.",
+    "Heat ghee; pop mustard seeds, add ginger, onion, curry leaves.",
+    "Add carrot, peas and 600 ml water; salt; boil.",
+    "Stream in sooji while stirring; cover 3 min off heat."
+   ],
+   "nutritionTags": [
+    "grain",
+    "vegetable"
+   ],
+   "isQuick": false,
+   "kidBaseline": 3,
+   "kidFriendlyNote": "Add a spoon of ghee and a squeeze of lemon; kids like it shaped into balls.",
+   "lunchboxOK": false,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": true
+  },
+  {
+   "seedID": "bf-idli",
+   "title": "Instant Pot Idli with Coconut Chutney",
+   "cuisine": "Indian",
+   "mealTypes": [
+    "breakfast",
+    "snack"
+   ],
+   "appliances": [
+    "instantPot",
+    "vitamix"
+   ],
+   "prepMinutes": 10,
+   "cookMinutes": 20,
+   "servings": 4,
+   "minAgeYears": 1,
+   "ingredients": [
+    {
+     "ingredientName": "Idli rice",
+     "quantity": 300,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Urad dal",
+     "quantity": 100,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 4,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Shredded coconut",
+     "quantity": 60,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Roasted chana",
+     "quantity": 20,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Ginger",
+     "quantity": 5,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "(Batter: soak rice + dal 6 h, grind in Vitamix, ferment overnight in Instant Pot on Yogurt mode 8 h.)",
+    "Grease idli molds, fill, steam 12 min in Instant Pot (vent open).",
+    "Blend coconut, roasted chana, ginger, salt and 100 ml water in Vitamix for chutney.",
+    "Serve warm with chutney."
+   ],
+   "nutritionTags": [
+    "grain",
+    "protein"
+   ],
+   "isQuick": false,
+   "kidBaseline": 5,
+   "kidFriendlyNote": "Soft, mild, hand-held — a reliable favourite; keep chutney mild.",
+   "lunchboxOK": true,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false
+  },
+  {
+   "seedID": "bf-egg-veg-scramble",
+   "title": "Cheesy Veggie Egg Scramble",
+   "cuisine": "American",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "appliances": [
+    "stovetop"
+   ],
+   "prepMinutes": 5,
+   "cookMinutes": 8,
+   "servings": 4,
+   "minAgeYears": 1,
+   "ingredients": [
+    {
+     "ingredientName": "Eggs",
+     "quantity": 6,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Bell pepper",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Spinach",
+     "quantity": 1,
+     "unit": "bunch",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cheddar cheese",
+     "quantity": 60,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Butter",
+     "quantity": 10,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 2,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Whole wheat bread",
+     "quantity": 4,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Melt butter; soften diced pepper 2 min; wilt spinach 1 min.",
+    "Pour in whisked eggs with a pinch of salt; stir gently over low heat.",
+    "Fold in cheese when just set.",
+    "Serve on toasted bread."
+   ],
+   "nutritionTags": [
+    "calcium",
+    "iron",
+    "protein",
+    "vegetable"
+   ],
+   "isQuick": true,
+   "kidBaseline": 4,
+   "kidFriendlyNote": "Chop veg small; kids can pick 'their' toppings.",
+   "lunchboxOK": false,
+   "source": "seed",
+   "containsEgg": true,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": true
+  },
+  {
+   "seedID": "bf-moong-chilla",
+   "title": "Moong Dal Chilla with Paneer Filling",
+   "cuisine": "Indian",
+   "mealTypes": [
+    "breakfast",
+    "lunch"
+   ],
+   "appliances": [
+    "vitamix",
+    "stovetop"
+   ],
+   "prepMinutes": 10,
+   "cookMinutes": 15,
+   "servings": 4,
+   "minAgeYears": 2,
+   "ingredients": [
+    {
+     "ingredientName": "Moong dal",
+     "quantity": 200,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Paneer",
+     "quantity": 100,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Ginger",
+     "quantity": 5,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cumin seeds",
+     "quantity": 2,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 3,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Vegetable oil",
+     "quantity": 15,
+     "unit": "ml",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cilantro",
+     "quantity": 1,
+     "unit": "bunch",
+     "isOptional": true,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "(Soak moong dal 3 h.) Blend with ginger, cumin, salt and water in Vitamix to a thin batter.",
+    "Spread on a hot oiled pan, cook 2 min per side.",
+    "Crumble paneer with cilantro; spoon inside and fold."
+   ],
+   "nutritionTags": [
+    "iron",
+    "protein"
+   ],
+   "isQuick": false,
+   "kidBaseline": 4,
+   "kidFriendlyNote": "High-protein 'dosa' the kids can roll and eat by hand.",
+   "lunchboxOK": true,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": false
+  },
+  {
+   "seedID": "bf-overnight-chia-oats",
+   "title": "Overnight Berry Chia Oats",
+   "cuisine": "American",
+   "mealTypes": [
+    "breakfast",
+    "snack"
+   ],
+   "appliances": [],
+   "prepMinutes": 5,
+   "cookMinutes": 0,
+   "servings": 4,
+   "minAgeYears": 2,
+   "ingredients": [
+    {
+     "ingredientName": "Rolled oats",
+     "quantity": 160,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Chia seeds",
+     "quantity": 20,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Milk",
+     "quantity": 500,
+     "unit": "ml",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Plain yogurt",
+     "quantity": 150,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Frozen mixed berries",
+     "quantity": 150,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Honey",
+     "quantity": 15,
+     "unit": "g",
+     "isOptional": true,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Mix oats, chia, milk, yogurt in jars.",
+    "Top with berries; refrigerate overnight.",
+    "Stir and eat cold or warmed 1 min."
+   ],
+   "nutritionTags": [
+    "calcium",
+    "fibre",
+    "fruit",
+    "wholeGrain"
+   ],
+   "isQuick": true,
+   "kidBaseline": 4,
+   "kidFriendlyNote": "Let each kid build their own jar the night before.",
+   "lunchboxOK": true,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": false
+  },
+  {
+   "seedID": "bf-ragi-pancakes",
+   "title": "Ragi Banana Pancakes",
+   "cuisine": "Indian",
+   "mealTypes": [
+    "breakfast",
+    "snack"
+   ],
+   "appliances": [
+    "stovetop"
+   ],
+   "prepMinutes": 5,
+   "cookMinutes": 12,
+   "servings": 4,
+   "minAgeYears": 1,
+   "ingredients": [
+    {
+     "ingredientName": "Ragi flour",
+     "quantity": 120,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Atta",
+     "quantity": 60,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Banana",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Milk",
+     "quantity": 250,
+     "unit": "ml",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Baking powder",
+     "quantity": 4,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Jaggery",
+     "quantity": 20,
+     "unit": "g",
+     "isOptional": true,
+     "note": ""
+    },
+    {
+     "ingredientName": "Ghee",
+     "quantity": 15,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Mash bananas; whisk with milk and jaggery.",
+    "Stir in flours and baking powder to a thick batter.",
+    "Cook small pancakes in ghee 2 min per side."
+   ],
+   "nutritionTags": [
+    "calcium",
+    "fruit",
+    "iron",
+    "wholeGrain"
+   ],
+   "isQuick": false,
+   "kidBaseline": 5,
+   "kidFriendlyNote": "Naturally sweet; add a few chocolate chips on the 9-year-old's.",
+   "lunchboxOK": true,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": true
+  },
+  {
+   "seedID": "bf-avocado-toast-egg",
+   "title": "Avocado Toast with Boiled Egg",
+   "cuisine": "American",
+   "mealTypes": [
+    "breakfast",
+    "snack"
+   ],
+   "appliances": [
+    "stovetop"
+   ],
+   "prepMinutes": 5,
+   "cookMinutes": 10,
+   "servings": 4,
+   "minAgeYears": 2,
+   "ingredients": [
+    {
+     "ingredientName": "Whole wheat bread",
+     "quantity": 4,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Avocado",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Eggs",
+     "quantity": 4,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Lemon",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 2,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Tomato",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": true,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Boil eggs 9 min; cool and slice.",
+    "Mash avocado with lemon and salt.",
+    "Toast bread; spread avocado; top with egg and tomato."
+   ],
+   "nutritionTags": [
+    "healthyFat",
+    "protein",
+    "wholeGrain"
+   ],
+   "isQuick": true,
+   "kidBaseline": 3,
+   "kidFriendlyNote": "Cut into 'soldiers' for the little one.",
+   "lunchboxOK": false,
+   "source": "seed",
+   "containsEgg": true,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": true
+  },
+  {
+   "seedID": "bf-veg-vermicelli-upma",
+   "title": "Vermicelli Upma with Vegetables",
+   "cuisine": "Indian",
+   "mealTypes": [
+    "breakfast",
+    "lunch"
+   ],
+   "appliances": [
+    "stovetop"
+   ],
+   "prepMinutes": 5,
+   "cookMinutes": 12,
+   "servings": 4,
+   "minAgeYears": 2,
+   "ingredients": [
+    {
+     "ingredientName": "Vermicelli",
+     "quantity": 200,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Carrot",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Peas",
+     "quantity": 80,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Onion",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Mustard seeds",
+     "quantity": 3,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Vegetable oil",
+     "quantity": 15,
+     "unit": "ml",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 3,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Lemon",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Roast vermicelli dry 3 min; set aside.",
+    "Temper mustard seeds in oil; sauté onion, carrot, peas.",
+    "Add 400 ml water + salt; boil; add vermicelli; cover 4 min.",
+    "Finish with lemon."
+   ],
+   "nutritionTags": [
+    "grain",
+    "vegetable"
+   ],
+   "isQuick": false,
+   "kidBaseline": 4,
+   "kidFriendlyNote": "Noodle-shaped breakfast — kids eat it with a fork happily.",
+   "lunchboxOK": true,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": true
+  },
+  {
+   "seedID": "bf-masala-oats",
+   "title": "Savory Masala Oats",
+   "cuisine": "Indian",
+   "mealTypes": [
+    "breakfast"
+   ],
+   "appliances": [
+    "stovetop"
+   ],
+   "prepMinutes": 5,
+   "cookMinutes": 10,
+   "servings": 4,
+   "minAgeYears": 2,
+   "ingredients": [
+    {
+     "ingredientName": "Rolled oats",
+     "quantity": 160,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Onion",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Tomato",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Peas",
+     "quantity": 60,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Turmeric",
+     "quantity": 1,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cumin seeds",
+     "quantity": 2,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Vegetable oil",
+     "quantity": 10,
+     "unit": "ml",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 3,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Sizzle cumin in oil; sauté onion, tomato, peas 3 min.",
+    "Add oats + 500 ml water, turmeric, salt; simmer 5 min."
+   ],
+   "nutritionTags": [
+    "fibre",
+    "vegetable",
+    "wholeGrain"
+   ],
+   "isQuick": true,
+   "kidBaseline": 3,
+   "kidFriendlyNote": "Top with a spoon of yogurt to cool it and soften flavours.",
+   "lunchboxOK": false,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false
+  },
+  {
+   "seedID": "dn-ip-khichdi",
+   "title": "Instant Pot Vegetable Khichdi",
+   "cuisine": "Indian",
+   "mealTypes": [
+    "lunch",
+    "dinner"
+   ],
+   "appliances": [
+    "instantPot"
+   ],
+   "prepMinutes": 10,
+   "cookMinutes": 25,
+   "servings": 4,
+   "minAgeYears": 1,
+   "ingredients": [
+    {
+     "ingredientName": "Basmati rice",
+     "quantity": 200,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Moong dal",
+     "quantity": 150,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Carrot",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Peas",
+     "quantity": 80,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Potato",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Ghee",
+     "quantity": 20,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cumin seeds",
+     "quantity": 3,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Turmeric",
+     "quantity": 2,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 4,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Plain yogurt",
+     "quantity": 150,
+     "unit": "g",
+     "isOptional": true,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Rinse rice + dal.",
+    "Sauté mode: ghee, cumin, then veg 2 min.",
+    "Add rice, dal, turmeric, salt, 1.2 l water.",
+    "Pressure cook 8 min, natural release 10 min. Serve with yogurt."
+   ],
+   "nutritionTags": [
+    "grain",
+    "iron",
+    "protein",
+    "vegetable"
+   ],
+   "isQuick": false,
+   "kidBaseline": 5,
+   "kidFriendlyNote": "Soft, one-pot comfort food; add extra ghee on top for the kids.",
+   "lunchboxOK": true,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": false
+  },
+  {
+   "seedID": "dn-ip-dal-fry",
+   "title": "Instant Pot Toor Dal Fry with Rice",
+   "cuisine": "Indian",
+   "mealTypes": [
+    "lunch",
+    "dinner"
+   ],
+   "appliances": [
+    "instantPot"
+   ],
+   "prepMinutes": 10,
+   "cookMinutes": 25,
+   "servings": 4,
+   "minAgeYears": 1,
+   "ingredients": [
+    {
+     "ingredientName": "Toor dal",
+     "quantity": 250,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Basmati rice",
+     "quantity": 300,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Onion",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Tomato",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Garlic",
+     "quantity": 3,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Ginger",
+     "quantity": 5,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cumin seeds",
+     "quantity": 3,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Turmeric",
+     "quantity": 2,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Ghee",
+     "quantity": 20,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 4,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cilantro",
+     "quantity": 1,
+     "unit": "bunch",
+     "isOptional": true,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Sauté ghee, cumin, onion, ginger-garlic 3 min; add tomato 2 min.",
+    "Add rinsed dal, turmeric, salt, 900 ml water; pot-in-pot rice with 1:1.5 water on a trivet.",
+    "Pressure cook 10 min, natural release.",
+    "Whisk dal, top with cilantro."
+   ],
+   "nutritionTags": [
+    "fibre",
+    "grain",
+    "iron",
+    "protein"
+   ],
+   "isQuick": false,
+   "kidBaseline": 5,
+   "kidFriendlyNote": "The classic — mild, yellow, spoonable. Mix with rice and a little ghee.",
+   "lunchboxOK": true,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": false
+  },
+  {
+   "seedID": "dn-ip-rajma",
+   "title": "Instant Pot Rajma Chawal",
+   "cuisine": "Indian",
+   "mealTypes": [
+    "lunch",
+    "dinner"
+   ],
+   "appliances": [
+    "instantPot"
+   ],
+   "prepMinutes": 10,
+   "cookMinutes": 45,
+   "servings": 4,
+   "minAgeYears": 2,
+   "ingredients": [
+    {
+     "ingredientName": "Rajma",
+     "quantity": 250,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Basmati rice",
+     "quantity": 300,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Onion",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Tomato",
+     "quantity": 3,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Ginger",
+     "quantity": 10,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Garlic",
+     "quantity": 4,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cumin seeds",
+     "quantity": 3,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Coriander powder",
+     "quantity": 5,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Garam masala",
+     "quantity": 3,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Turmeric",
+     "quantity": 2,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Vegetable oil",
+     "quantity": 20,
+     "unit": "ml",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 4,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "(Soak rajma 8 h or use quick-soak.)",
+    "Sauté onion, ginger, garlic in oil 5 min; add tomato + spices 3 min.",
+    "Add rajma + 750 ml water; pressure cook 30 min, natural release.",
+    "Mash a few beans to thicken; serve over rice."
+   ],
+   "nutritionTags": [
+    "fibre",
+    "grain",
+    "iron",
+    "protein"
+   ],
+   "isQuick": false,
+   "kidBaseline": 5,
+   "kidFriendlyNote": "Kids' top request; keep chili out, add a squeeze of lemon.",
+   "lunchboxOK": true,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false
+  },
+  {
+   "seedID": "dn-ip-chole",
+   "title": "Instant Pot Chole (Mild Chickpea Curry)",
+   "cuisine": "Indian",
+   "mealTypes": [
+    "lunch",
+    "dinner"
+   ],
+   "appliances": [
+    "instantPot"
+   ],
+   "prepMinutes": 10,
+   "cookMinutes": 40,
+   "servings": 4,
+   "minAgeYears": 2,
+   "ingredients": [
+    {
+     "ingredientName": "Chickpeas",
+     "quantity": 250,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Onion",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Tomato",
+     "quantity": 3,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Ginger",
+     "quantity": 10,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Garlic",
+     "quantity": 3,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cumin seeds",
+     "quantity": 3,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Coriander powder",
+     "quantity": 5,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Garam masala",
+     "quantity": 3,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Amchur",
+     "quantity": 3,
+     "unit": "g",
+     "isOptional": true,
+     "note": ""
+    },
+    {
+     "ingredientName": "Vegetable oil",
+     "quantity": 20,
+     "unit": "ml",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 4,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Basmati rice",
+     "quantity": 300,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Soak chickpeas 8 h.",
+    "Sauté aromatics + spices; add tomato until jammy.",
+    "Add chickpeas + 700 ml water; pressure cook 35 min, natural release.",
+    "Serve with rice or whole wheat tortillas."
+   ],
+   "nutritionTags": [
+    "fibre",
+    "iron",
+    "protein"
+   ],
+   "isQuick": false,
+   "kidBaseline": 4,
+   "kidFriendlyNote": "Serve with a yogurt swirl and cucumber slices.",
+   "lunchboxOK": true,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false
+  },
+  {
+   "seedID": "dn-palak-paneer",
+   "title": "Palak Paneer (Vitamix-smooth)",
+   "cuisine": "Indian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "appliances": [
+    "vitamix",
+    "stovetop"
+   ],
+   "prepMinutes": 10,
+   "cookMinutes": 20,
+   "servings": 4,
+   "minAgeYears": 2,
+   "ingredients": [
+    {
+     "ingredientName": "Spinach",
+     "quantity": 3,
+     "unit": "bunch",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Paneer",
+     "quantity": 250,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Onion",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Tomato",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Garlic",
+     "quantity": 3,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Ginger",
+     "quantity": 5,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cumin seeds",
+     "quantity": 3,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Garam masala",
+     "quantity": 2,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Butter",
+     "quantity": 15,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 4,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Milk",
+     "quantity": 50,
+     "unit": "ml",
+     "isOptional": true,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Blanch spinach 2 min; blend smooth in Vitamix.",
+    "Sauté cumin, onion, ginger-garlic, tomato in butter.",
+    "Add spinach purée, salt, garam masala; simmer 5 min.",
+    "Fold in paneer cubes; splash of milk for creaminess."
+   ],
+   "nutritionTags": [
+    "calcium",
+    "iron",
+    "protein",
+    "vegetable"
+   ],
+   "isQuick": false,
+   "kidBaseline": 4,
+   "kidFriendlyNote": "Green sauce hides the spinach; kids dunk roti or rice into it.",
+   "lunchboxOK": false,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": false
+  },
+  {
+   "seedID": "dn-matar-paneer",
+   "title": "Matar Paneer",
+   "cuisine": "Indian",
+   "mealTypes": [
+    "lunch",
+    "dinner"
+   ],
+   "appliances": [
+    "stovetop",
+    "instantPot"
+   ],
+   "prepMinutes": 10,
+   "cookMinutes": 20,
+   "servings": 4,
+   "minAgeYears": 2,
+   "ingredients": [
+    {
+     "ingredientName": "Paneer",
+     "quantity": 250,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Peas",
+     "quantity": 200,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Onion",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Tomato",
+     "quantity": 3,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Ginger",
+     "quantity": 5,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Garlic",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cumin seeds",
+     "quantity": 3,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Coriander powder",
+     "quantity": 4,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Turmeric",
+     "quantity": 2,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Garam masala",
+     "quantity": 2,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Vegetable oil",
+     "quantity": 15,
+     "unit": "ml",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 4,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Kasuri methi",
+     "quantity": 1,
+     "unit": "g",
+     "isOptional": true,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Blend onion, tomato, ginger, garlic to a purée.",
+    "Fry cumin, add purée + spices; cook 8 min until oil separates.",
+    "Add peas, 200 ml water; simmer 5 min; add paneer 3 min."
+   ],
+   "nutritionTags": [
+    "calcium",
+    "protein",
+    "vegetable"
+   ],
+   "isQuick": false,
+   "kidBaseline": 5,
+   "kidFriendlyNote": "Sweet peas + soft paneer = kid gold. Serve with roti or rice.",
+   "lunchboxOK": true,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": false
+  },
+  {
+   "seedID": "dn-aloo-gobi",
+   "title": "Aloo Gobi (Potato & Cauliflower Stir-Fry)",
+   "cuisine": "Indian",
+   "mealTypes": [
+    "lunch",
+    "dinner"
+   ],
+   "appliances": [
+    "stovetop"
+   ],
+   "prepMinutes": 10,
+   "cookMinutes": 20,
+   "servings": 4,
+   "minAgeYears": 2,
+   "ingredients": [
+    {
+     "ingredientName": "Potato",
+     "quantity": 3,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cauliflower",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Onion",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Ginger",
+     "quantity": 5,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cumin seeds",
+     "quantity": 3,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Turmeric",
+     "quantity": 2,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Coriander powder",
+     "quantity": 4,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Vegetable oil",
+     "quantity": 20,
+     "unit": "ml",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 4,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Atta",
+     "quantity": 300,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Fry cumin; add onion, ginger 2 min.",
+    "Add potato, cauliflower, spices, salt; cover on low 15 min, stirring twice.",
+    "Make rotis from atta while it cooks."
+   ],
+   "nutritionTags": [
+    "fibre",
+    "grain",
+    "vegetable",
+    "wholeGrain"
+   ],
+   "isQuick": false,
+   "kidBaseline": 4,
+   "kidFriendlyNote": "Roll it into a roti wrap for the 4-year-old.",
+   "lunchboxOK": true,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": true
+  },
+  {
+   "seedID": "dn-dal-palak",
+   "title": "Instant Pot Dal Palak (Spinach Lentils)",
+   "cuisine": "Indian",
+   "mealTypes": [
+    "lunch",
+    "dinner"
+   ],
+   "appliances": [
+    "instantPot"
+   ],
+   "prepMinutes": 10,
+   "cookMinutes": 20,
+   "servings": 4,
+   "minAgeYears": 1,
+   "ingredients": [
+    {
+     "ingredientName": "Moong dal",
+     "quantity": 150,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Masoor dal",
+     "quantity": 100,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Spinach",
+     "quantity": 2,
+     "unit": "bunch",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Tomato",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Garlic",
+     "quantity": 3,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cumin seeds",
+     "quantity": 3,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Turmeric",
+     "quantity": 2,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Ghee",
+     "quantity": 15,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 4,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Basmati rice",
+     "quantity": 300,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Sauté cumin, garlic, tomato in ghee 3 min.",
+    "Add dals, turmeric, salt, 800 ml water; pressure cook 8 min.",
+    "Stir in chopped spinach on Sauté 2 min. Serve with rice."
+   ],
+   "nutritionTags": [
+    "grain",
+    "iron",
+    "protein",
+    "vegetable"
+   ],
+   "isQuick": false,
+   "kidBaseline": 4,
+   "kidFriendlyNote": "Blend half with an immersion blender if kids dislike leaf bits.",
+   "lunchboxOK": true,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": false
+  },
+  {
+   "seedID": "dn-veg-pulao",
+   "title": "Instant Pot Vegetable Pulao + Raita",
+   "cuisine": "Indian",
+   "mealTypes": [
+    "lunch",
+    "dinner"
+   ],
+   "appliances": [
+    "instantPot"
+   ],
+   "prepMinutes": 10,
+   "cookMinutes": 20,
+   "servings": 4,
+   "minAgeYears": 2,
+   "ingredients": [
+    {
+     "ingredientName": "Basmati rice",
+     "quantity": 300,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Frozen mixed vegetables",
+     "quantity": 250,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Onion",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cumin seeds",
+     "quantity": 3,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cinnamon",
+     "quantity": 1,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cardamom",
+     "quantity": 1,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Ghee",
+     "quantity": 20,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 4,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Plain yogurt",
+     "quantity": 250,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cucumber",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Sauté ghee, cumin, whole spices, onion 3 min.",
+    "Add veg, rinsed rice, salt, 450 ml water; pressure cook 5 min, natural release 5 min.",
+    "Grate cucumber into yogurt with salt for raita."
+   ],
+   "nutritionTags": [
+    "calcium",
+    "grain",
+    "vegetable"
+   ],
+   "isQuick": false,
+   "kidBaseline": 5,
+   "kidFriendlyNote": "Fragrant and mild; serve with raita and papad.",
+   "lunchboxOK": true,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": false
+  },
+  {
+   "seedID": "dn-pav-bhaji",
+   "title": "Pav Bhaji (Vegetable Mash with Buns)",
+   "cuisine": "Indian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "appliances": [
+    "instantPot",
+    "stovetop"
+   ],
+   "prepMinutes": 15,
+   "cookMinutes": 25,
+   "servings": 4,
+   "minAgeYears": 2,
+   "ingredients": [
+    {
+     "ingredientName": "Potato",
+     "quantity": 3,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cauliflower",
+     "quantity": 0.5,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Peas",
+     "quantity": 100,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Carrot",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Onion",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Tomato",
+     "quantity": 3,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Bell pepper",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Pav bhaji masala",
+     "quantity": 10,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Butter",
+     "quantity": 40,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 4,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Lemon",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Pav buns",
+     "quantity": 8,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Pressure cook potato, cauliflower, peas, carrot 5 min; mash.",
+    "Fry onion, pepper, tomato in butter; add masala; add mash + water; simmer 10 min.",
+    "Toast buns in butter; serve with lemon and onion."
+   ],
+   "nutritionTags": [
+    "fibre",
+    "grain",
+    "vegetable"
+   ],
+   "isQuick": false,
+   "kidBaseline": 5,
+   "kidFriendlyNote": "Kids love the buttery buns; go light on masala for their portion.",
+   "lunchboxOK": false,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": true
+  },
+  {
+   "seedID": "dn-veg-sambar-rice",
+   "title": "Instant Pot Sambar with Rice",
+   "cuisine": "Indian",
+   "mealTypes": [
+    "lunch",
+    "dinner"
+   ],
+   "appliances": [
+    "instantPot"
+   ],
+   "prepMinutes": 10,
+   "cookMinutes": 25,
+   "servings": 4,
+   "minAgeYears": 2,
+   "ingredients": [
+    {
+     "ingredientName": "Toor dal",
+     "quantity": 200,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Carrot",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Green beans",
+     "quantity": 100,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Pumpkin",
+     "quantity": 200,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Onion",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Tomato",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Sambar powder",
+     "quantity": 10,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Tamarind paste",
+     "quantity": 10,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Mustard seeds",
+     "quantity": 3,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Curry leaves",
+     "quantity": 1,
+     "unit": "bunch",
+     "isOptional": true,
+     "note": ""
+    },
+    {
+     "ingredientName": "Vegetable oil",
+     "quantity": 15,
+     "unit": "ml",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 4,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Basmati rice",
+     "quantity": 300,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Temper mustard seeds, curry leaves in oil; add onion, tomato.",
+    "Add dal, veg, sambar powder, tamarind, salt, 1 l water; pressure cook 10 min.",
+    "Whisk; serve with rice (pot-in-pot)."
+   ],
+   "nutritionTags": [
+    "fibre",
+    "grain",
+    "protein",
+    "vegetable"
+   ],
+   "isQuick": false,
+   "kidBaseline": 3,
+   "kidFriendlyNote": "Serve mild and a little sweet (add a pinch of jaggery) for the kids.",
+   "lunchboxOK": false,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false
+  },
+  {
+   "seedID": "dn-paneer-frankie",
+   "title": "Paneer Frankie Wraps",
+   "cuisine": "Indian",
+   "mealTypes": [
+    "lunch",
+    "dinner"
+   ],
+   "appliances": [
+    "stovetop"
+   ],
+   "prepMinutes": 10,
+   "cookMinutes": 15,
+   "servings": 4,
+   "minAgeYears": 2,
+   "ingredients": [
+    {
+     "ingredientName": "Paneer",
+     "quantity": 250,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Whole wheat tortillas",
+     "quantity": 4,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Onion",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Bell pepper",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Chaat masala",
+     "quantity": 3,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Turmeric",
+     "quantity": 1,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Vegetable oil",
+     "quantity": 15,
+     "unit": "ml",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 3,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Plain yogurt",
+     "quantity": 100,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cucumber",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Stir-fry paneer strips, onion, pepper with turmeric, chaat masala, salt 5 min.",
+    "Warm tortillas; spread yogurt; fill; roll tight and wrap in foil."
+   ],
+   "nutritionTags": [
+    "calcium",
+    "protein",
+    "vegetable",
+    "wholeGrain"
+   ],
+   "isQuick": false,
+   "kidBaseline": 5,
+   "kidFriendlyNote": "Roll-ups are a lunchbox winner; cut in half for small hands.",
+   "lunchboxOK": true,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": true
+  },
+  {
+   "seedID": "dn-ip-veg-biryani",
+   "title": "Instant Pot Vegetable Biryani (Mild)",
+   "cuisine": "Indian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "appliances": [
+    "instantPot"
+   ],
+   "prepMinutes": 15,
+   "cookMinutes": 25,
+   "servings": 4,
+   "minAgeYears": 3,
+   "ingredients": [
+    {
+     "ingredientName": "Basmati rice",
+     "quantity": 300,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cauliflower",
+     "quantity": 0.5,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Carrot",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Peas",
+     "quantity": 100,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Potato",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Onion",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Plain yogurt",
+     "quantity": 100,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Ginger",
+     "quantity": 10,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Garlic",
+     "quantity": 3,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Garam masala",
+     "quantity": 3,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Turmeric",
+     "quantity": 2,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Mint",
+     "quantity": 1,
+     "unit": "bunch",
+     "isOptional": true,
+     "note": ""
+    },
+    {
+     "ingredientName": "Ghee",
+     "quantity": 25,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 4,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Sauté onions in ghee until golden; add ginger-garlic, yogurt, spices.",
+    "Add veg, soaked rice, 400 ml water, mint; pressure cook 5 min, natural release 5 min.",
+    "Fluff and serve with raita."
+   ],
+   "nutritionTags": [
+    "calcium",
+    "grain",
+    "vegetable"
+   ],
+   "isQuick": false,
+   "kidBaseline": 4,
+   "kidFriendlyNote": "Pick out whole spices before serving the kids.",
+   "lunchboxOK": false,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": false
+  },
+  {
+   "seedID": "dn-kadhi-chawal",
+   "title": "Instant Pot Kadhi with Rice",
+   "cuisine": "Indian",
+   "mealTypes": [
+    "lunch",
+    "dinner"
+   ],
+   "appliances": [
+    "instantPot"
+   ],
+   "prepMinutes": 10,
+   "cookMinutes": 20,
+   "servings": 4,
+   "minAgeYears": 2,
+   "ingredients": [
+    {
+     "ingredientName": "Plain yogurt",
+     "quantity": 400,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Besan",
+     "quantity": 60,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Turmeric",
+     "quantity": 2,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cumin seeds",
+     "quantity": 3,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Mustard seeds",
+     "quantity": 2,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Ginger",
+     "quantity": 5,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Curry leaves",
+     "quantity": 1,
+     "unit": "bunch",
+     "isOptional": true,
+     "note": ""
+    },
+    {
+     "ingredientName": "Ghee",
+     "quantity": 15,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 4,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Basmati rice",
+     "quantity": 300,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Whisk yogurt, besan, turmeric, salt with 700 ml water.",
+    "Temper cumin, mustard, ginger, curry leaves in ghee; add mixture.",
+    "Pressure cook 5 min; whisk. Serve with rice."
+   ],
+   "nutritionTags": [
+    "calcium",
+    "grain",
+    "protein"
+   ],
+   "isQuick": false,
+   "kidBaseline": 4,
+   "kidFriendlyNote": "Tangy-creamy; kids mix it into rice like a soup.",
+   "lunchboxOK": false,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": false
+  },
+  {
+   "seedID": "dn-methi-thepla",
+   "title": "Methi Thepla with Yogurt",
+   "cuisine": "Indian",
+   "mealTypes": [
+    "lunch",
+    "snack"
+   ],
+   "appliances": [
+    "stovetop"
+   ],
+   "prepMinutes": 15,
+   "cookMinutes": 20,
+   "servings": 4,
+   "minAgeYears": 2,
+   "ingredients": [
+    {
+     "ingredientName": "Atta",
+     "quantity": 300,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Methi leaves",
+     "quantity": 1,
+     "unit": "bunch",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Besan",
+     "quantity": 30,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Turmeric",
+     "quantity": 2,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Plain yogurt",
+     "quantity": 200,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Vegetable oil",
+     "quantity": 20,
+     "unit": "ml",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 3,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Sesame seeds",
+     "quantity": 5,
+     "unit": "g",
+     "isOptional": true,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Knead atta, besan, chopped methi, turmeric, salt, 50 g yogurt and water into a soft dough.",
+    "Roll thin; cook on a hot pan with a little oil, 1 min per side.",
+    "Serve with yogurt."
+   ],
+   "nutritionTags": [
+    "calcium",
+    "iron",
+    "wholeGrain"
+   ],
+   "isQuick": false,
+   "kidBaseline": 4,
+   "kidFriendlyNote": "Roll small ones; great cold in a lunchbox.",
+   "lunchboxOK": true,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": true
+  },
+  {
+   "seedID": "dn-veg-quesadilla",
+   "title": "Black Bean & Cheese Quesadillas",
+   "cuisine": "Mexican",
+   "mealTypes": [
+    "lunch",
+    "dinner"
+   ],
+   "appliances": [
+    "stovetop"
+   ],
+   "prepMinutes": 10,
+   "cookMinutes": 10,
+   "servings": 4,
+   "minAgeYears": 1,
+   "ingredients": [
+    {
+     "ingredientName": "Whole wheat tortillas",
+     "quantity": 4,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Black beans",
+     "quantity": 250,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cheddar cheese",
+     "quantity": 120,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Corn",
+     "quantity": 100,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Bell pepper",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Taco seasoning",
+     "quantity": 5,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salsa",
+     "quantity": 100,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Plain yogurt",
+     "quantity": 100,
+     "unit": "g",
+     "isOptional": true,
+     "note": ""
+    },
+    {
+     "ingredientName": "Avocado",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": true,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Mash beans with taco seasoning; mix with corn and diced pepper.",
+    "Spread on half a tortilla, add cheese, fold.",
+    "Toast in a dry pan 3 min per side until crisp; cut into wedges.",
+    "Serve with salsa, yogurt, avocado."
+   ],
+   "nutritionTags": [
+    "calcium",
+    "fibre",
+    "protein",
+    "vegetable",
+    "wholeGrain"
+   ],
+   "isQuick": false,
+   "kidBaseline": 5,
+   "kidFriendlyNote": "Triangles for dipping — reliably eaten by both kids.",
+   "lunchboxOK": true,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": true
+  },
+  {
+   "seedID": "dn-veg-tacos",
+   "title": "Build-Your-Own Veggie Tacos",
+   "cuisine": "Mexican",
+   "mealTypes": [
+    "dinner"
+   ],
+   "appliances": [
+    "stovetop"
+   ],
+   "prepMinutes": 15,
+   "cookMinutes": 15,
+   "servings": 4,
+   "minAgeYears": 2,
+   "ingredients": [
+    {
+     "ingredientName": "Corn tortillas",
+     "quantity": 8,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Pinto beans",
+     "quantity": 250,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Sweet potato",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Corn",
+     "quantity": 100,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Lettuce",
+     "quantity": 1,
+     "unit": "bunch",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Tomato",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cheddar cheese",
+     "quantity": 80,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Taco seasoning",
+     "quantity": 5,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Olive oil",
+     "quantity": 15,
+     "unit": "ml",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Lime",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Sour cream",
+     "quantity": 100,
+     "unit": "g",
+     "isOptional": true,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Roast diced sweet potato with oil + seasoning 15 min (oven or air fryer).",
+    "Warm beans and corn.",
+    "Set out warm tortillas and bowls of everything; everyone builds their own."
+   ],
+   "nutritionTags": [
+    "fibre",
+    "protein",
+    "vegetable",
+    "vitaminA"
+   ],
+   "isQuick": false,
+   "kidBaseline": 5,
+   "kidFriendlyNote": "Choice = buy-in. Let kids assemble; keep toppings mild.",
+   "lunchboxOK": false,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": false
+  },
+  {
+   "seedID": "dn-burrito-bowl",
+   "title": "Burrito Bowls with Cilantro-Lime Rice",
+   "cuisine": "Mexican",
+   "mealTypes": [
+    "lunch",
+    "dinner"
+   ],
+   "appliances": [
+    "instantPot"
+   ],
+   "prepMinutes": 10,
+   "cookMinutes": 20,
+   "servings": 4,
+   "minAgeYears": 2,
+   "ingredients": [
+    {
+     "ingredientName": "Brown rice",
+     "quantity": 300,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Black beans",
+     "quantity": 250,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Corn",
+     "quantity": 150,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Tomato",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Avocado",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cheddar cheese",
+     "quantity": 80,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cilantro",
+     "quantity": 1,
+     "unit": "bunch",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Lime",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salsa",
+     "quantity": 100,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 3,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Pressure cook brown rice (1:1.25 water) 22 min.",
+    "Stir lime, cilantro, salt into rice.",
+    "Layer rice, beans, corn, tomato, avocado, cheese, salsa."
+   ],
+   "nutritionTags": [
+    "fibre",
+    "healthyFat",
+    "protein",
+    "wholeGrain"
+   ],
+   "isQuick": false,
+   "kidBaseline": 4,
+   "kidFriendlyNote": "Serve components separately for the 4-year-old.",
+   "lunchboxOK": true,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": false
+  },
+  {
+   "seedID": "dn-pasta-hidden-veg",
+   "title": "Pasta with Hidden-Veggie Tomato Sauce",
+   "cuisine": "Italian",
+   "mealTypes": [
+    "lunch",
+    "dinner"
+   ],
+   "appliances": [
+    "vitamix",
+    "stovetop"
+   ],
+   "prepMinutes": 10,
+   "cookMinutes": 20,
+   "servings": 4,
+   "minAgeYears": 1,
+   "ingredients": [
+    {
+     "ingredientName": "Whole wheat pasta",
+     "quantity": 350,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Marinara sauce",
+     "quantity": 400,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Carrot",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Zucchini",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Red chili powder",
+     "quantity": 0,
+     "unit": "g",
+     "isOptional": true,
+     "note": ""
+    },
+    {
+     "ingredientName": "Garlic",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Olive oil",
+     "quantity": 15,
+     "unit": "ml",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Parmesan",
+     "quantity": 40,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Italian seasoning",
+     "quantity": 2,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 3,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Steam carrot + zucchini 8 min; blend with marinara in Vitamix until smooth.",
+    "Sauté garlic in oil; add sauce, seasoning; simmer 5 min.",
+    "Toss with cooked pasta; top with parmesan."
+   ],
+   "nutritionTags": [
+    "vegetable",
+    "vitaminA",
+    "wholeGrain"
+   ],
+   "isQuick": false,
+   "kidBaseline": 5,
+   "kidFriendlyNote": "Sauce is smooth and orange-red; kids never spot the vegetables.",
+   "lunchboxOK": true,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": true
+  },
+  {
+   "seedID": "dn-mac-cheese-cauli",
+   "title": "Cauliflower Mac & Cheese",
+   "cuisine": "American",
+   "mealTypes": [
+    "dinner"
+   ],
+   "appliances": [
+    "vitamix",
+    "stovetop"
+   ],
+   "prepMinutes": 10,
+   "cookMinutes": 20,
+   "servings": 4,
+   "minAgeYears": 1,
+   "ingredients": [
+    {
+     "ingredientName": "Pasta",
+     "quantity": 350,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cauliflower",
+     "quantity": 0.5,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Milk",
+     "quantity": 300,
+     "unit": "ml",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cheddar cheese",
+     "quantity": 150,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Butter",
+     "quantity": 20,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "All-purpose flour",
+     "quantity": 20,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 3,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Peas",
+     "quantity": 100,
+     "unit": "g",
+     "isOptional": true,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Boil pasta; steam cauliflower florets until soft.",
+    "Blend cauliflower with milk in Vitamix.",
+    "Make roux with butter + flour; whisk in cauliflower-milk; melt in cheese.",
+    "Toss with pasta and peas."
+   ],
+   "nutritionTags": [
+    "calcium",
+    "protein",
+    "vegetable"
+   ],
+   "isQuick": false,
+   "kidBaseline": 5,
+   "kidFriendlyNote": "The 4-year-old's favourite; half the sauce is cauliflower.",
+   "lunchboxOK": false,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": true
+  },
+  {
+   "seedID": "dn-veg-pizza",
+   "title": "Homemade Veggie Pizza",
+   "cuisine": "Italian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "appliances": [
+    "oven"
+   ],
+   "prepMinutes": 15,
+   "cookMinutes": 15,
+   "servings": 4,
+   "minAgeYears": 2,
+   "ingredients": [
+    {
+     "ingredientName": "Pizza dough",
+     "quantity": 500,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Marinara sauce",
+     "quantity": 200,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Mozzarella",
+     "quantity": 200,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Bell pepper",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Corn",
+     "quantity": 80,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Mushrooms",
+     "quantity": 100,
+     "unit": "g",
+     "isOptional": true,
+     "note": ""
+    },
+    {
+     "ingredientName": "Spinach",
+     "quantity": 1,
+     "unit": "bunch",
+     "isOptional": true,
+     "note": ""
+    },
+    {
+     "ingredientName": "Olive oil",
+     "quantity": 10,
+     "unit": "ml",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Italian seasoning",
+     "quantity": 2,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Preheat oven to 245 °C.",
+    "Stretch dough; spread sauce; kids add cheese and toppings.",
+    "Bake 12–14 min until bubbling."
+   ],
+   "nutritionTags": [
+    "calcium",
+    "grain",
+    "vegetable"
+   ],
+   "isQuick": false,
+   "kidBaseline": 5,
+   "kidFriendlyNote": "Friday pizza night; each kid decorates their own half.",
+   "lunchboxOK": false,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": true
+  },
+  {
+   "seedID": "dn-veg-fried-rice",
+   "title": "Vegetable Egg Fried Rice",
+   "cuisine": "Chinese-style",
+   "mealTypes": [
+    "lunch",
+    "dinner"
+   ],
+   "appliances": [
+    "stovetop"
+   ],
+   "prepMinutes": 10,
+   "cookMinutes": 12,
+   "servings": 4,
+   "minAgeYears": 2,
+   "ingredients": [
+    {
+     "ingredientName": "Basmati rice",
+     "quantity": 300,
+     "unit": "g",
+     "isOptional": false,
+     "note": "cooked and cooled"
+    },
+    {
+     "ingredientName": "Eggs",
+     "quantity": 3,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Frozen mixed vegetables",
+     "quantity": 250,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Garlic",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Soy sauce",
+     "quantity": 20,
+     "unit": "ml",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Sesame oil",
+     "quantity": 5,
+     "unit": "ml",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Vegetable oil",
+     "quantity": 15,
+     "unit": "ml",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 2,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Scramble eggs in a hot wok; set aside.",
+    "Stir-fry garlic, veg 3 min; add rice, soy sauce; toss 3 min.",
+    "Return eggs; finish with sesame oil."
+   ],
+   "nutritionTags": [
+    "grain",
+    "protein",
+    "vegetable"
+   ],
+   "isQuick": false,
+   "kidBaseline": 5,
+   "kidFriendlyNote": "Great use of leftover rice; skip egg for an egg-free version (add tofu).",
+   "lunchboxOK": true,
+   "source": "seed",
+   "containsEgg": true,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": true
+  },
+  {
+   "seedID": "dn-tofu-stirfry-noodles",
+   "title": "Tofu & Broccoli Noodle Stir-Fry",
+   "cuisine": "Chinese-style",
+   "mealTypes": [
+    "dinner"
+   ],
+   "appliances": [
+    "stovetop"
+   ],
+   "prepMinutes": 10,
+   "cookMinutes": 15,
+   "servings": 4,
+   "minAgeYears": 2,
+   "ingredients": [
+    {
+     "ingredientName": "Rice noodles",
+     "quantity": 250,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Firm tofu",
+     "quantity": 400,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Broccoli",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Carrot",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Garlic",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Ginger",
+     "quantity": 5,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Soy sauce",
+     "quantity": 30,
+     "unit": "ml",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Honey",
+     "quantity": 10,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cornstarch",
+     "quantity": 10,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Vegetable oil",
+     "quantity": 20,
+     "unit": "ml",
+     "isOptional": false,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Toss pressed tofu cubes in cornstarch; pan-fry until golden.",
+    "Stir-fry broccoli, carrot, garlic, ginger 4 min.",
+    "Add soaked noodles, soy-honey sauce, tofu; toss 2 min."
+   ],
+   "nutritionTags": [
+    "calcium",
+    "iron",
+    "protein",
+    "vegetable"
+   ],
+   "isQuick": false,
+   "kidBaseline": 4,
+   "kidFriendlyNote": "Crispy tofu cubes eaten as finger food; cut broccoli into 'little trees'.",
+   "lunchboxOK": false,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": true
+  },
+  {
+   "seedID": "dn-lentil-soup-bread",
+   "title": "Instant Pot Red Lentil Soup with Garlic Bread",
+   "cuisine": "Mediterranean",
+   "mealTypes": [
+    "lunch",
+    "dinner"
+   ],
+   "appliances": [
+    "instantPot",
+    "oven"
+   ],
+   "prepMinutes": 10,
+   "cookMinutes": 20,
+   "servings": 4,
+   "minAgeYears": 1,
+   "ingredients": [
+    {
+     "ingredientName": "Masoor dal",
+     "quantity": 250,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Carrot",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Celery",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Onion",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Garlic",
+     "quantity": 3,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Ground cumin",
+     "quantity": 3,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Vegetable stock",
+     "quantity": 1000,
+     "unit": "ml",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Olive oil",
+     "quantity": 20,
+     "unit": "ml",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Lemon",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Whole wheat bread",
+     "quantity": 4,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Butter",
+     "quantity": 20,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 3,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Sauté onion, carrot, celery, garlic in oil 4 min.",
+    "Add lentils, cumin, stock; pressure cook 8 min.",
+    "Blend partly for creaminess; lemon to taste.",
+    "Butter + garlic on bread; toast."
+   ],
+   "nutritionTags": [
+    "fibre",
+    "iron",
+    "protein",
+    "vegetable"
+   ],
+   "isQuick": false,
+   "kidBaseline": 4,
+   "kidFriendlyNote": "Smooth soup + bread for dunking; sneaks in celery and carrot.",
+   "lunchboxOK": true,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": true
+  },
+  {
+   "seedID": "dn-veg-chow-mein",
+   "title": "Veggie Hakka Noodles",
+   "cuisine": "Chinese-style",
+   "mealTypes": [
+    "lunch",
+    "dinner"
+   ],
+   "appliances": [
+    "stovetop"
+   ],
+   "prepMinutes": 10,
+   "cookMinutes": 15,
+   "servings": 4,
+   "minAgeYears": 2,
+   "ingredients": [
+    {
+     "ingredientName": "Whole wheat pasta",
+     "quantity": 300,
+     "unit": "g",
+     "isOptional": false,
+     "note": "or hakka noodles"
+    },
+    {
+     "ingredientName": "Cabbage",
+     "quantity": 0.25,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Carrot",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Bell pepper",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Garlic",
+     "quantity": 3,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Soy sauce",
+     "quantity": 25,
+     "unit": "ml",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Vinegar",
+     "quantity": 10,
+     "unit": "ml",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Vegetable oil",
+     "quantity": 20,
+     "unit": "ml",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Black pepper",
+     "quantity": 1,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 2,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Boil noodles; drain and toss in a little oil.",
+    "Stir-fry garlic and julienned veg on high 3 min.",
+    "Add noodles, soy, vinegar, pepper; toss 2 min."
+   ],
+   "nutritionTags": [
+    "grain",
+    "vegetable"
+   ],
+   "isQuick": false,
+   "kidBaseline": 5,
+   "kidFriendlyNote": "Noodles + crunchy veg; keep the sauce mild.",
+   "lunchboxOK": true,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": true
+  },
+  {
+   "seedID": "dn-sheet-pan-veg-paneer",
+   "title": "Sheet-Pan Paneer Tikka & Veggies",
+   "cuisine": "Indian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "appliances": [
+    "oven",
+    "airFryer"
+   ],
+   "prepMinutes": 15,
+   "cookMinutes": 20,
+   "servings": 4,
+   "minAgeYears": 2,
+   "ingredients": [
+    {
+     "ingredientName": "Paneer",
+     "quantity": 300,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Bell pepper",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Onion",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Broccoli",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Plain yogurt",
+     "quantity": 150,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Turmeric",
+     "quantity": 2,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Coriander powder",
+     "quantity": 4,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Garam masala",
+     "quantity": 2,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Lemon",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Vegetable oil",
+     "quantity": 15,
+     "unit": "ml",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 3,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Naan",
+     "quantity": 4,
+     "unit": "count",
+     "isOptional": true,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Marinate paneer + veg in yogurt, spices, lemon, oil, salt 15 min.",
+    "Roast at 220 °C for 18–20 min (or air fry 12 min at 200 °C).",
+    "Serve with naan."
+   ],
+   "nutritionTags": [
+    "calcium",
+    "protein",
+    "vegetable"
+   ],
+   "isQuick": false,
+   "kidBaseline": 4,
+   "kidFriendlyNote": "Skewer-free 'tikka' cubes; kids eat with fingers.",
+   "lunchboxOK": false,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": false
+  },
+  {
+   "seedID": "dn-dahi-aloo",
+   "title": "Dahi Aloo (Potatoes in Yogurt Gravy)",
+   "cuisine": "Indian",
+   "mealTypes": [
+    "lunch",
+    "dinner"
+   ],
+   "appliances": [
+    "stovetop"
+   ],
+   "prepMinutes": 10,
+   "cookMinutes": 15,
+   "servings": 4,
+   "minAgeYears": 1,
+   "ingredients": [
+    {
+     "ingredientName": "Potato",
+     "quantity": 4,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Plain yogurt",
+     "quantity": 250,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cumin seeds",
+     "quantity": 3,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Turmeric",
+     "quantity": 2,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Coriander powder",
+     "quantity": 4,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Ginger",
+     "quantity": 5,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Ghee",
+     "quantity": 15,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 3,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Atta",
+     "quantity": 300,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Boil and cube potatoes.",
+    "Temper cumin, ginger in ghee; add spices, whisked yogurt on low; stir 3 min.",
+    "Add potatoes, 150 ml water; simmer 5 min. Serve with rotis."
+   ],
+   "nutritionTags": [
+    "calcium",
+    "grain",
+    "protein",
+    "wholeGrain"
+   ],
+   "isQuick": false,
+   "kidBaseline": 4,
+   "kidFriendlyNote": "Mild, soft, tangy — easy for the 4-year-old.",
+   "lunchboxOK": false,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": true
+  },
+  {
+   "seedID": "dn-quinoa-veg-pulao",
+   "title": "Instant Pot Quinoa Vegetable Pulao",
+   "cuisine": "Indian",
+   "mealTypes": [
+    "lunch",
+    "dinner"
+   ],
+   "appliances": [
+    "instantPot"
+   ],
+   "prepMinutes": 10,
+   "cookMinutes": 15,
+   "servings": 4,
+   "minAgeYears": 2,
+   "ingredients": [
+    {
+     "ingredientName": "Quinoa",
+     "quantity": 300,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Frozen mixed vegetables",
+     "quantity": 250,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Onion",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cumin seeds",
+     "quantity": 3,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Turmeric",
+     "quantity": 1,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Ghee",
+     "quantity": 15,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 4,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Lemon",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Plain yogurt",
+     "quantity": 200,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Sauté cumin, onion in ghee; add veg 2 min.",
+    "Add rinsed quinoa, turmeric, salt, 450 ml water; pressure cook 1 min, natural release 10 min.",
+    "Fluff with lemon; serve with yogurt."
+   ],
+   "nutritionTags": [
+    "protein",
+    "vegetable",
+    "wholeGrain"
+   ],
+   "isQuick": false,
+   "kidBaseline": 3,
+   "kidFriendlyNote": "Looks like rice; a little ghee helps acceptance.",
+   "lunchboxOK": true,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": false
+  },
+  {
+   "seedID": "dn-veggie-burgers",
+   "title": "Sweet Potato & Black Bean Burgers",
+   "cuisine": "American",
+   "mealTypes": [
+    "dinner"
+   ],
+   "appliances": [
+    "oven"
+   ],
+   "prepMinutes": 15,
+   "cookMinutes": 20,
+   "servings": 4,
+   "minAgeYears": 2,
+   "ingredients": [
+    {
+     "ingredientName": "Sweet potato",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Black beans",
+     "quantity": 250,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Rolled oats",
+     "quantity": 80,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Onion",
+     "quantity": 0.5,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Ground cumin",
+     "quantity": 3,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 3,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Pav buns",
+     "quantity": 4,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Lettuce",
+     "quantity": 1,
+     "unit": "bunch",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Tomato",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cheddar cheese",
+     "quantity": 60,
+     "unit": "g",
+     "isOptional": true,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Microwave sweet potato until soft; mash with beans, oats, onion, cumin, salt.",
+    "Shape patties; bake 200 °C 20 min, flipping once.",
+    "Serve in buns with lettuce, tomato, cheese."
+   ],
+   "nutritionTags": [
+    "fibre",
+    "protein",
+    "vitaminA",
+    "wholeGrain"
+   ],
+   "isQuick": false,
+   "kidBaseline": 4,
+   "kidFriendlyNote": "Burger night — kids can hold it; make mini sliders.",
+   "lunchboxOK": false,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": true
+  },
+  {
+   "seedID": "dn-egg-curry",
+   "title": "Instant Pot Egg Curry with Rice",
+   "cuisine": "Indian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "appliances": [
+    "instantPot"
+   ],
+   "prepMinutes": 10,
+   "cookMinutes": 20,
+   "servings": 4,
+   "minAgeYears": 3,
+   "ingredients": [
+    {
+     "ingredientName": "Eggs",
+     "quantity": 6,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Onion",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Tomato",
+     "quantity": 3,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Ginger",
+     "quantity": 5,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Garlic",
+     "quantity": 3,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Coriander powder",
+     "quantity": 5,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Turmeric",
+     "quantity": 2,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Garam masala",
+     "quantity": 2,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Vegetable oil",
+     "quantity": 20,
+     "unit": "ml",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 4,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Basmati rice",
+     "quantity": 300,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Pressure cook eggs 5 min; peel.",
+    "Sauté onion, ginger-garlic, tomato, spices 8 min; add 300 ml water; simmer 5 min.",
+    "Add halved eggs; serve with rice."
+   ],
+   "nutritionTags": [
+    "grain",
+    "protein"
+   ],
+   "isQuick": false,
+   "kidBaseline": 3,
+   "kidFriendlyNote": "Serve eggs halved with gravy on the side for the little one.",
+   "lunchboxOK": false,
+   "source": "seed",
+   "containsEgg": true,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false
+  },
+  {
+   "seedID": "dn-veg-korma",
+   "title": "Mild Vegetable Korma",
+   "cuisine": "Indian",
+   "mealTypes": [
+    "dinner"
+   ],
+   "appliances": [
+    "stovetop",
+    "vitamix"
+   ],
+   "prepMinutes": 15,
+   "cookMinutes": 25,
+   "servings": 4,
+   "minAgeYears": 2,
+   "ingredients": [
+    {
+     "ingredientName": "Cauliflower",
+     "quantity": 0.5,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Carrot",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Green beans",
+     "quantity": 100,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Peas",
+     "quantity": 100,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Potato",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Onion",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cashews",
+     "quantity": 40,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Coconut milk",
+     "quantity": 200,
+     "unit": "ml",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Ginger",
+     "quantity": 5,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Garlic",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Coriander powder",
+     "quantity": 4,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Garam masala",
+     "quantity": 2,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Vegetable oil",
+     "quantity": 15,
+     "unit": "ml",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 4,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Naan",
+     "quantity": 4,
+     "unit": "count",
+     "isOptional": true,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Blend cashews, onion, ginger, garlic with 100 ml water in Vitamix.",
+    "Fry paste in oil 5 min; add spices, coconut milk, veg, salt, 200 ml water.",
+    "Simmer covered 15 min. Serve with naan or rice."
+   ],
+   "nutritionTags": [
+    "fibre",
+    "healthyFat",
+    "vegetable"
+   ],
+   "isQuick": false,
+   "kidBaseline": 4,
+   "kidFriendlyNote": "Creamy and sweet; a good 'introduce a vegetable' dish.",
+   "lunchboxOK": false,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": true,
+   "containsGluten": false
+  },
+  {
+   "seedID": "sn-spinach-smoothie",
+   "title": "Green Monster Smoothie",
+   "cuisine": "American",
+   "mealTypes": [
+    "snack",
+    "breakfast"
+   ],
+   "appliances": [
+    "vitamix"
+   ],
+   "prepMinutes": 5,
+   "cookMinutes": 0,
+   "servings": 2,
+   "minAgeYears": 1,
+   "ingredients": [
+    {
+     "ingredientName": "Spinach",
+     "quantity": 1,
+     "unit": "bunch",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Banana",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Frozen mango chunks",
+     "quantity": 150,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Plain yogurt",
+     "quantity": 150,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Milk",
+     "quantity": 200,
+     "unit": "ml",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Chia seeds",
+     "quantity": 10,
+     "unit": "g",
+     "isOptional": true,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Add everything to Vitamix, liquids first.",
+    "Blend on high 45 s until silky."
+   ],
+   "nutritionTags": [
+    "calcium",
+    "fruit",
+    "iron",
+    "vegetable"
+   ],
+   "isQuick": true,
+   "kidBaseline": 5,
+   "kidFriendlyNote": "Bright green and sweet — call it 'monster juice'; spinach is undetectable.",
+   "lunchboxOK": false,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": false
+  },
+  {
+   "seedID": "sn-berry-smoothie",
+   "title": "Berry Oat Smoothie",
+   "cuisine": "American",
+   "mealTypes": [
+    "snack",
+    "breakfast"
+   ],
+   "appliances": [
+    "vitamix"
+   ],
+   "prepMinutes": 5,
+   "cookMinutes": 0,
+   "servings": 2,
+   "minAgeYears": 1,
+   "ingredients": [
+    {
+     "ingredientName": "Frozen mixed berries",
+     "quantity": 150,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Banana",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Rolled oats",
+     "quantity": 30,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Greek yogurt",
+     "quantity": 150,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Milk",
+     "quantity": 200,
+     "unit": "ml",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Honey",
+     "quantity": 10,
+     "unit": "g",
+     "isOptional": true,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Blend everything 45 s on high."
+   ],
+   "nutritionTags": [
+    "calcium",
+    "fruit",
+    "protein",
+    "wholeGrain"
+   ],
+   "isQuick": true,
+   "kidBaseline": 5,
+   "kidFriendlyNote": "Purple = popular. Freeze extra into popsicles.",
+   "lunchboxOK": false,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": false
+  },
+  {
+   "seedID": "sn-mango-lassi",
+   "title": "Mango Lassi",
+   "cuisine": "Indian",
+   "mealTypes": [
+    "snack"
+   ],
+   "appliances": [
+    "vitamix"
+   ],
+   "prepMinutes": 5,
+   "cookMinutes": 0,
+   "servings": 2,
+   "minAgeYears": 1,
+   "ingredients": [
+    {
+     "ingredientName": "Mango",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Plain yogurt",
+     "quantity": 250,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Milk",
+     "quantity": 100,
+     "unit": "ml",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cardamom",
+     "quantity": 0.5,
+     "unit": "g",
+     "isOptional": true,
+     "note": ""
+    },
+    {
+     "ingredientName": "Honey",
+     "quantity": 10,
+     "unit": "g",
+     "isOptional": true,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Blend mango, yogurt, milk, cardamom until smooth."
+   ],
+   "nutritionTags": [
+    "calcium",
+    "fruit",
+    "protein"
+   ],
+   "isQuick": true,
+   "kidBaseline": 5,
+   "kidFriendlyNote": "Use frozen mango chunks off-season.",
+   "lunchboxOK": false,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": false
+  },
+  {
+   "seedID": "sn-carrot-beet-smoothie",
+   "title": "Carrot Beet Orange Smoothie",
+   "cuisine": "American",
+   "mealTypes": [
+    "snack"
+   ],
+   "appliances": [
+    "vitamix"
+   ],
+   "prepMinutes": 5,
+   "cookMinutes": 0,
+   "servings": 2,
+   "minAgeYears": 2,
+   "ingredients": [
+    {
+     "ingredientName": "Carrot",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Beetroot",
+     "quantity": 0.5,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Orange",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Apple",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Ginger",
+     "quantity": 2,
+     "unit": "g",
+     "isOptional": true,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Blend with 200 ml water on high 60 s (Vitamix handles raw carrot and beet)."
+   ],
+   "nutritionTags": [
+    "fruit",
+    "vegetable",
+    "vitaminA",
+    "vitaminC"
+   ],
+   "isQuick": true,
+   "kidBaseline": 3,
+   "kidFriendlyNote": "Hot-pink colour sells it; add more orange if too earthy.",
+   "lunchboxOK": false,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false
+  },
+  {
+   "seedID": "sn-roasted-makhana",
+   "title": "Ghee-Roasted Makhana",
+   "cuisine": "Indian",
+   "mealTypes": [
+    "snack"
+   ],
+   "appliances": [
+    "stovetop"
+   ],
+   "prepMinutes": 2,
+   "cookMinutes": 8,
+   "servings": 4,
+   "minAgeYears": 2,
+   "ingredients": [
+    {
+     "ingredientName": "Makhana",
+     "quantity": 100,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Ghee",
+     "quantity": 15,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 2,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Turmeric",
+     "quantity": 1,
+     "unit": "g",
+     "isOptional": true,
+     "note": ""
+    },
+    {
+     "ingredientName": "Black pepper",
+     "quantity": 1,
+     "unit": "g",
+     "isOptional": true,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Roast makhana in ghee on low 6–8 min until crisp.",
+    "Toss with salt and turmeric."
+   ],
+   "nutritionTags": [
+    "protein"
+   ],
+   "isQuick": true,
+   "kidBaseline": 4,
+   "kidFriendlyNote": "Crunchy like popcorn; stores a week in a jar.",
+   "lunchboxOK": true,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": true,
+   "containsNuts": false,
+   "containsGluten": false
+  },
+  {
+   "seedID": "sn-fruit-chaat",
+   "title": "Rainbow Fruit Chaat",
+   "cuisine": "Indian",
+   "mealTypes": [
+    "snack"
+   ],
+   "appliances": [],
+   "prepMinutes": 10,
+   "cookMinutes": 0,
+   "servings": 4,
+   "minAgeYears": 1,
+   "ingredients": [
+    {
+     "ingredientName": "Apple",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Banana",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Orange",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Grapes",
+     "quantity": 100,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Pomegranate",
+     "quantity": 0.5,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Chaat masala",
+     "quantity": 1,
+     "unit": "g",
+     "isOptional": true,
+     "note": ""
+    },
+    {
+     "ingredientName": "Lemon",
+     "quantity": 0.5,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Chop fruit into bite-size pieces.",
+    "Toss with lemon; chaat masala for the grown-ups' portion."
+   ],
+   "nutritionTags": [
+    "fibre",
+    "fruit",
+    "vitaminC"
+   ],
+   "isQuick": true,
+   "kidBaseline": 5,
+   "kidFriendlyNote": "Toothpick 'kebabs' make it a game.",
+   "lunchboxOK": true,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false
+  },
+  {
+   "seedID": "sn-veg-sticks-hummus",
+   "title": "Veggie Sticks with Hummus",
+   "cuisine": "Mediterranean",
+   "mealTypes": [
+    "snack",
+    "lunch"
+   ],
+   "appliances": [
+    "vitamix"
+   ],
+   "prepMinutes": 10,
+   "cookMinutes": 0,
+   "servings": 4,
+   "minAgeYears": 1,
+   "ingredients": [
+    {
+     "ingredientName": "Chickpeas",
+     "quantity": 250,
+     "unit": "g",
+     "isOptional": false,
+     "note": "canned or cooked"
+    },
+    {
+     "ingredientName": "Sesame seeds",
+     "quantity": 20,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Lemon",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Garlic",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Olive oil",
+     "quantity": 30,
+     "unit": "ml",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 2,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Carrot",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cucumber",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Bell pepper",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Pita bread",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": true,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Blend chickpeas, sesame, lemon, garlic, oil, salt + 50 ml water in Vitamix until creamy.",
+    "Cut veg into sticks; serve with hummus and pita triangles."
+   ],
+   "nutritionTags": [
+    "fibre",
+    "healthyFat",
+    "protein",
+    "vegetable"
+   ],
+   "isQuick": true,
+   "kidBaseline": 4,
+   "kidFriendlyNote": "Dipping is the hook; start with cucumber and carrot.",
+   "lunchboxOK": true,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false
+  },
+  {
+   "seedID": "sn-oat-banana-cookies",
+   "title": "3-Ingredient Oat Banana Cookies",
+   "cuisine": "American",
+   "mealTypes": [
+    "snack"
+   ],
+   "appliances": [
+    "oven"
+   ],
+   "prepMinutes": 5,
+   "cookMinutes": 15,
+   "servings": 4,
+   "minAgeYears": 1,
+   "ingredients": [
+    {
+     "ingredientName": "Banana",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Rolled oats",
+     "quantity": 150,
+     "unit": "g",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Dark chocolate chips",
+     "quantity": 30,
+     "unit": "g",
+     "isOptional": true,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cinnamon",
+     "quantity": 1,
+     "unit": "g",
+     "isOptional": true,
+     "note": ""
+    },
+    {
+     "ingredientName": "Raisins",
+     "quantity": 30,
+     "unit": "g",
+     "isOptional": true,
+     "note": ""
+    }
+   ],
+   "steps": [
+    "Mash bananas; stir in oats, chocolate chips or raisins.",
+    "Drop spoonfuls on a tray; bake 180 °C 12–15 min."
+   ],
+   "nutritionTags": [
+    "fibre",
+    "fruit",
+    "wholeGrain"
+   ],
+   "isQuick": false,
+   "kidBaseline": 5,
+   "kidFriendlyNote": "Kids can mix and scoop; no added sugar.",
+   "lunchboxOK": true,
+   "source": "seed",
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false
+  }
+ ]
+}
