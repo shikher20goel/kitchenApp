@@ -101,21 +101,21 @@ final class PantryViewModelTests: XCTestCase {
     @MainActor
     func testRanOutRemovesANonStapleButKeepsAStapleAtZero() throws {
         let harness = try makeHarness()
-        let spinach = try ingredient("Spinach", in: harness)
+        let broccoli = try ingredient("Broccoli", in: harness)
         let rice = try ingredient("Basmati rice", in: harness)
-        XCTAssertFalse(spinach.isStaple)
+        XCTAssertFalse(broccoli.isStaple, "Broccoli is bought when a recipe needs it.")
         XCTAssertTrue(rice.isStaple, "Rice is a weekly staple in the catalog.")
 
-        harness.model.add(spinach, quantity: 200, unit: .gram, location: .fridge)
+        harness.model.add(broccoli, quantity: 300, unit: .gram, location: .fridge)
         harness.model.add(rice, quantity: 1000, unit: .gram, location: .fridge)
 
-        let spinachItem = try XCTUnwrap(harness.model.items.first { $0.ingredient?.name == "Spinach" })
+        let broccoliItem = try XCTUnwrap(harness.model.items.first { $0.ingredient?.name == "Broccoli" })
         let riceItem = try XCTUnwrap(harness.model.items.first { $0.ingredient?.name == "Basmati rice" })
 
-        harness.model.ranOut(spinachItem)
+        harness.model.ranOut(broccoliItem)
         harness.model.ranOut(riceItem)
 
-        XCTAssertNil(harness.model.items.first { $0.ingredient?.name == "Spinach" },
+        XCTAssertNil(harness.model.items.first { $0.ingredient?.name == "Broccoli" },
                      "Something that is gone leaves the pantry.")
         let staple = try XCTUnwrap(harness.model.items.first { $0.ingredient?.name == "Basmati rice" })
         XCTAssertEqual(staple.quantity, 0, "A staple stays visible at zero so the list tops it up.")
