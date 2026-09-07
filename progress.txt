@@ -57,3 +57,4 @@ LESSON (task 030): same container-lifetime trap as task 007, now via a test help
 TASK 030 done: DietSettingsViewModel (+12 tests: zip validation, alias-canonical exclusions, appliance/cuisine toggles, clamps), DietSettingsView, AppCopy started.
 TASK 031 done: RootView bootstrap (singletons, store seed, catalog import), 4-page OnboardingFlow, UITestSupport launch flags, OnboardingUITests green.
 TASK 032 done: MoreView (grouped list, placeholders for later screens), AboutView with verbatim R1/R2 notes, DataManager.deleteEverything double-confirmed (+2 tests).
+TASK 033 done: PantryViewModelTests written first (alias search, expiry from shelf life, increment, ran-out staple rule, sorts, filters).
