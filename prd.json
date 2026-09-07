@@ -440,7 +440,7 @@
       ],
       "verify": "`bash scripts/verify.sh RasoiTests/ScalingTests` green; CookMode reachable from RecipeDetail in a UI test.",
       "gate": "AUTO",
-      "passes": false
+      "passes": true
     },
     {
       "id": "039",

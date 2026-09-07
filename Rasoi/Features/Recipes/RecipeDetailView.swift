@@ -9,6 +9,7 @@ struct RecipeDetailView: View {
 
     @Environment(\.modelContext) private var context
     @State private var isEditing = false
+    @State private var isCooking = false
 
     private var pantryNames: Set<String> { model.pantryCoverage(for: recipe) }
 
@@ -35,6 +36,17 @@ struct RecipeDetailView: View {
                     }
                 }
                 .padding(.vertical, Theme.Spacing.xs)
+
+                Button {
+                    isCooking = true
+                } label: {
+                    Label("Cook this", systemImage: "flame")
+                        .font(.headline)
+                        .frame(maxWidth: .infinity, minHeight: Theme.largeTapTarget)
+                }
+                .buttonStyle(.borderedProminent)
+                .tint(Theme.saffron)
+                .accessibilityIdentifier("recipe.cook")
             }
 
             Section("Ingredients") {
@@ -96,6 +108,9 @@ struct RecipeDetailView: View {
         .navigationBarTitleDisplayMode(.inline)
         .sheet(isPresented: $isEditing, onDismiss: { model.load() }) {
             RecipeEditView(context: context, recipe: recipe)
+        }
+        .fullScreenCover(isPresented: $isCooking) {
+            CookModeView(recipe: recipe)
         }
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
