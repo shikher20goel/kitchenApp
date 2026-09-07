@@ -7,3 +7,4 @@ TASK 001 done: RasoiApp.swift + Assets.xcassets added; xcodegen generates 3 targ
 TASK 002 done: ContentView 5 tabs + Theme design tokens; generic iOS Simulator build green.
 TASK 003 done: verify.sh green on iPhone 17 sim, 3 test cases (SmokeTests x2 + LaunchUITests).
 TASK 004 done: configure-signing.sh free/full/none touch only the DEVELOPMENT_TEAM line; verify.sh still green.
+TASK 005 done: Persistence.swift (schema registry, shared + inMemory), TestContainer helper, PersistenceTests green.

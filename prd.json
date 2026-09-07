@@ -76,7 +76,7 @@
       ],
       "verify": "`bash scripts/verify.sh RasoiTests/PersistenceTests` green.",
       "gate": "AUTO",
-      "passes": false
+      "passes": true
     },
     {
       "id": "006",
