@@ -245,3 +245,48 @@ final class PlanViewModelTests: XCTestCase {
                       "…and it should say so, got \(slot.reasons)")
     }
 }
+
+/// SPEC §11: a full week has to appear in well under a second, from the real catalog.
+final class MealPlannerPerformanceTests: XCTestCase {
+    @MainActor
+    func testGeneratingAWeekFromTheRealCatalogIsFast() throws {
+        let stack = try TestContainer.makeStack()
+        let context = stack.context
+        try SeedImporter.reimport(in: context)
+        context.insert(HouseholdMember(name: "Shikher", dateOfBirth: D.adultDOB, role: .adult, sortOrder: 0))
+        context.insert(HouseholdMember(name: "Aarav", dateOfBirth: D.olderChildDOB, role: .child, sortOrder: 1))
+        context.insert(HouseholdMember(name: "Ira", dateOfBirth: D.youngChildDOB, role: .child, sortOrder: 2))
+        try context.save()
+
+        let monday = D.date(2026, 9, 7)
+        let model = PlanViewModel(context: context, weekContaining: monday, now: { monday })
+
+        // Warm the caches the way opening the tab does, then time the generation itself.
+        model.load()
+        let started = Date()
+        model.generateWeek()
+        let elapsed = Date().timeIntervalSince(started)
+
+        XCTAssertLessThan(elapsed, 1.0, "A week took \(elapsed)s to plan; SPEC §11 allows one second.")
+        XCTAssertEqual(model.slots.count, 28)
+        XCTAssertTrue(model.slots.filter { $0.mealType == .dinner }.allSatisfy { $0.recipe != nil })
+    }
+
+    @MainActor
+    func testEverySlotCanExplainItself() throws {
+        let stack = try TestContainer.makeStack()
+        let context = stack.context
+        try SeedImporter.reimport(in: context)
+        context.insert(HouseholdMember(name: "Ira", dateOfBirth: D.youngChildDOB, role: .child))
+        try context.save()
+
+        let monday = D.date(2026, 9, 7)
+        let model = PlanViewModel(context: context, weekContaining: monday, now: { monday })
+        model.generateWeek()
+
+        for slot in model.slots where slot.recipe != nil {
+            XCTAssertFalse(slot.reasons.isEmpty,
+                           "\(slot.mealType.label) on \(slot.date) has no reason (SPEC R5)")
+        }
+    }
+}

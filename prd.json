@@ -733,7 +733,7 @@
       ],
       "verify": "`bash scripts/verify.sh` green and docs/SPEC-AUDIT.md has no 'MISSING' rows.",
       "gate": "AUTO",
-      "passes": false
+      "passes": true
     },
     {
       "id": "065",

@@ -116,6 +116,27 @@ struct PlanView: View {
         .buttonStyle(.plain)
         .listRowBackground(isOpen ? Theme.saffron.opacity(0.10) : nil)
         .accessibilityIdentifier("plan.slot.\(dayIndex).\(mealType.rawValue)")
+        // Long press for the three things you do to a meal without opening it (SPEC §4.2).
+        .contextMenu {
+            if let slot {
+                Button {
+                    model.toggleLock(slot)
+                } label: {
+                    Label(slot.lockedByUser ? "Let Rasoi change this" : "Keep this one",
+                          systemImage: slot.lockedByUser ? "lock.open" : "lock")
+                }
+                Button {
+                    model.setStatus(.skipped, for: slot)
+                } label: {
+                    Label("Skipping this one", systemImage: "arrow.uturn.right")
+                }
+                Button {
+                    model.setStatus(.eatingOut, for: slot)
+                } label: {
+                    Label("Eating out", systemImage: "fork.knife")
+                }
+            }
+        }
     }
 
     private func dayTitle(_ day: Date) -> String {
