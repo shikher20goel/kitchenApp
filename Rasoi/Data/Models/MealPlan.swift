@@ -193,9 +193,9 @@ enum MealReaction: String, Codable, CaseIterable, Sendable {
 
     var label: String {
         switch self {
-        case .ateAll: return "Ate it all"
-        case .ateSome: return "Ate some"
-        case .notToday: return "Not today"
+        case .ateAll: return AppCopy.reactionAteAll
+        case .ateSome: return AppCopy.reactionAteSome
+        case .notToday: return AppCopy.reactionNotToday
         }
     }
 

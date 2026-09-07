@@ -67,3 +67,4 @@ TASK 039 done: KidScoreTests written first (baseline blend, exact blended deltas
 TASK 040 done: KidScore engine (60-day half-life, baseline blend n/(n+3), household mean, 30-day resting rule); 18 tests green.
 TASK 041 done: FeedbackViewModel (+8 tests: per-member upsert, unanswered = no row, cooked once, depletion hook protocol), FeedbackSheet with warm R3 copy in AppCopy.
 TASK 042 done: Units (general conversion table, sum by dimension, display) +8 tests; PantryDepletion (required-only, scaled, expiry-first draw, staple floor) +11 tests; wired into the feedback sheet.
+TASK 043 implemented, awaiting human review (docs/COPY-FEEDBACK.md — 16 strings; regenerate with scripts/gen-copy-doc.py feedback).

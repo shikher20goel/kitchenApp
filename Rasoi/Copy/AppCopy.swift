@@ -36,6 +36,12 @@ enum AppCopy {
 
     static let feedbackTitle = "How did it go?"
 
+    /// The three buttons, in order. `MealReaction.label` reads these, so the wording a child could
+    /// see exists in exactly one place (R3).
+    static let reactionAteAll = "Ate it all"
+    static let reactionAteSome = "Ate some"
+    static let reactionNotToday = "Not today"
+
     static let feedbackPrompt = """
     Tap what happened for each person. Skip anyone you did not get to ask — Rasoi only learns \
     from what you tell it.
