@@ -4,16 +4,37 @@ import SwiftUI
 /// The Shop tab (SPEC §4.4): the week's list, grouped by store then by aisle. Ticking an item is
 /// what puts it in the pantry.
 struct ShopView: View {
-    @State private var model: ShopViewModel
+    /// Built once by `ContentView` and handed in. Building it here instead would rebuild it
+    /// every time the tab bar's body ran, which is far more often than a tab is opened.
+    let model: ShopViewModel
     @State private var isAdding = false
     @State private var whyItem: GroceryItem?
+    @State private var isShowingWhy = false
     @State private var isSharing = false
 
-    init(context: ModelContext) {
-        _model = State(initialValue: ShopViewModel(context: context))
+    var body: some View {
+        content(model)
+        // Sheets belong on the stable outer body, not inside the lazily built content.
+        .sheet(isPresented: $isAdding) {
+                AddGroceryItemSheet(model: model)
+        }
+        .sheet(isPresented: $isShowingWhy) {
+            if let whyItem {
+                WhySheet(item: whyItem)
+            }
+        }
+        .sheet(isPresented: $isSharing) {
+                ShareLink(item: model.shareText()) {
+                    Label("Share the list", systemImage: "square.and.arrow.up")
+                        .frame(maxWidth: .infinity, minHeight: Theme.largeTapTarget)
+                }
+                .padding(Theme.Spacing.xl)
+                .presentationDetents([.height(160)])
+        }
     }
 
-    var body: some View {
+    @ViewBuilder
+    private func content(_ model: ShopViewModel) -> some View {
         List {
             Section {
                 Button {
@@ -50,7 +71,7 @@ struct ShopView: View {
                 Section {
                     ForEach(section.categories) { category in
                         ForEach(category.items, id: \.persistentModelID) { item in
-                            row(item)
+                            row(model: model, item: item)
                         }
                     }
                 } header: {
@@ -71,20 +92,10 @@ struct ShopView: View {
                     .accessibilityLabel("Share the list")
             }
         }
-        .sheet(isPresented: $isAdding) { AddGroceryItemSheet(model: model) }
-        .sheet(item: $whyItem) { item in WhySheet(item: item) }
-        .sheet(isPresented: $isSharing) {
-            ShareLink(item: model.shareText()) {
-                Label("Share the list", systemImage: "square.and.arrow.up")
-                    .frame(maxWidth: .infinity, minHeight: Theme.largeTapTarget)
-            }
-            .padding(Theme.Spacing.xl)
-            .presentationDetents([.height(160)])
-        }
-        .onAppear { model.load() }
+        .task { model.load() }
     }
 
-    private func row(_ item: GroceryItem) -> some View {
+    private func row(model: ShopViewModel, item: GroceryItem) -> some View {
         HStack(spacing: Theme.Spacing.m) {
             Button {
                 model.setChecked(!item.isChecked, for: item)
@@ -117,11 +128,12 @@ struct ShopView: View {
             Spacer()
 
             if !item.neededFor.isEmpty {
-                Button { whyItem = item } label: {
+                Button { whyItem = item; isShowingWhy = true } label: {
                     Image(systemName: "questionmark.circle")
                         .foregroundStyle(Theme.textSecondary)
                 }
                 .buttonStyle(.plain)
+                .disabled(isShowingWhy)
                 .accessibilityLabel("Why is \(item.ingredient?.name ?? "this") on the list?")
             }
         }

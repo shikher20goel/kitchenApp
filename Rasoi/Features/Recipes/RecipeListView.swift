@@ -74,7 +74,7 @@ struct RecipeListView: View {
         .sheet(isPresented: $isAddingRecipe, onDismiss: { model.load() }) {
             RecipeEditView(context: context)
         }
-        .onAppear { model.load() }
+        .task { model.load() }
     }
 
     private var filterRow: some View {

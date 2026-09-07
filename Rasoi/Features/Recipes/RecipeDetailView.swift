@@ -46,6 +46,7 @@ struct RecipeDetailView: View {
                 }
                 .buttonStyle(.borderedProminent)
                 .tint(Theme.saffron)
+                .disabled(isCooking)
                 .accessibilityIdentifier("recipe.cook")
             }
 

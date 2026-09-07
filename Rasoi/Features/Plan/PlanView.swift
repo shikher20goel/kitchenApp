@@ -4,14 +4,20 @@ import SwiftUI
 /// The week (SPEC §4.2): seven day sections, four meals each, with a summary at the top.
 /// Vertical days keep every tap in reach of one thumb.
 struct PlanView: View {
-    @State private var model: PlanViewModel
+    /// Built once by `ContentView` and handed in. Building it here instead would rebuild it
+    /// every time the tab bar's body ran, which is far more often than a tab is opened.
+    let model: PlanViewModel
     @State private var editingSlot: MealSlot?
 
-    init(context: ModelContext) {
-        _model = State(initialValue: PlanViewModel(context: context))
+    var body: some View {
+        content(model)
+        .sheet(item: $editingSlot) { slot in
+            SlotSheet(slot: slot, model: model)
+        }
     }
 
-    var body: some View {
+    @ViewBuilder
+    private func content(_ model: PlanViewModel) -> some View {
         List {
             Section {
                 WeekSummaryCard(model: model)
@@ -19,26 +25,12 @@ struct PlanView: View {
                                               bottom: Theme.Spacing.s, trailing: Theme.Spacing.l))
                     .listRowBackground(Color.clear)
 
-                Button {
-                    model.generateWeek()
-                    Haptics.success()
-                } label: {
-                    Label(model.hasPlan ? "Regenerate week" : "Generate week", systemImage: "wand.and.stars")
-                        .font(.headline)
-                        .frame(maxWidth: .infinity, minHeight: Theme.largeTapTarget)
-                }
-                .buttonStyle(.borderedProminent)
-                .tint(Theme.saffron)
-                .accessibilityIdentifier("plan.generate")
-                .listRowInsets(EdgeInsets(top: Theme.Spacing.xs, leading: Theme.Spacing.l,
-                                          bottom: Theme.Spacing.m, trailing: Theme.Spacing.l))
-                .listRowBackground(Color.clear)
             }
 
-            ForEach(model.days, id: \.self) { day in
+            ForEach(Array(model.days.enumerated()), id: \.element) { index, day in
                 Section {
                     ForEach(MealType.allCases.sorted { $0.sortOrder < $1.sortOrder }, id: \.self) { mealType in
-                        slotRow(day: day, mealType: mealType)
+                        slotRow(model: model, day: day, mealType: mealType, dayIndex: index)
                     }
                 } header: {
                     Text(dayTitle(day))
@@ -63,17 +55,27 @@ struct PlanView: View {
                 }
                 .accessibilityLabel("Next week")
             }
+            ToolbarItem(placement: .topBarTrailing) {
+                Button {
+                    model.generateWeek()
+                    Haptics.success()
+                } label: {
+                    Label(model.hasPlan ? "Regenerate week" : "Generate week", systemImage: "wand.and.stars")
+                }
+                .accessibilityIdentifier("plan.generate")
+                .accessibilityLabel(model.hasPlan ? "Regenerate week" : "Generate week")
+            }
         }
-        .sheet(item: $editingSlot) { slot in
-            SlotSheet(slot: slot, model: model)
-        }
-        .onAppear { model.load() }
+        .task { model.load() }
     }
 
-    private func slotRow(day: Date, mealType: MealType) -> some View {
+    private func slotRow(model: PlanViewModel, day: Date, mealType: MealType, dayIndex: Int) -> some View {
         let slot = model.slot(on: day, mealType: mealType)
+        // Reading the open slot here both tints the row and, just as importantly, makes the body
+        // depend on it — a presentation driven by state nothing in the body reads does not stick.
+        let isOpen = slot != nil && slot === editingSlot
         return Button {
-            if let slot { editingSlot = slot }
+            editingSlot = slot
         } label: {
             HStack(alignment: .top, spacing: Theme.Spacing.m) {
                 Image(systemName: mealType.symbolName)
@@ -106,16 +108,14 @@ struct PlanView: View {
             .padding(.vertical, 2)
         }
         .buttonStyle(.plain)
-        .accessibilityIdentifier("plan.\(shortDay(day)).\(mealType.rawValue)")
+        .listRowBackground(isOpen ? Theme.saffron.opacity(0.10) : nil)
+        .accessibilityIdentifier("plan.slot.\(dayIndex).\(mealType.rawValue)")
     }
 
     private func dayTitle(_ day: Date) -> String {
         day.formatted(.dateTime.weekday(.wide).day().month(.abbreviated))
     }
 
-    private func shortDay(_ day: Date) -> String {
-        day.formatted(.dateTime.weekday(.abbreviated)).lowercased()
-    }
 }
 
 /// What kind of week this is: how much is planned, how many are sure things, how many are new.

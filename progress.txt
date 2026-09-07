@@ -88,3 +88,19 @@ TASK 052 done: StoreFinding protocol, MapKitStoreFinder (the only network path, 
 TASK 053 implemented, awaiting human review (FindStoresSheet + docs/PRIVACY-MAPKIT.md; needs a real 07302 search in the simulator).
 TASK 054 done: NutritionCoverageTests written first (group mapping from categories+tags, per-day coverage, weekly lightest group, MyPlate target table per age band).
 TASK 055 done: NutritionCoverage (MyPlate groups from tags+categories, per-day dots, weekly lightest group, age-band target table kept out of the UI per R2); 12 tests green.
+LESSONS (task 056, SwiftUI presentation — cost several hours, do not relearn):
+  1. A view can own only ONE presentation of a kind. Two `.sheet`s (or two `.fullScreenCover`s)
+     on the same view: the second never opens. Use one modifier with an Identifiable enum, or
+     push instead.
+  2. A presentation requested while another is dismissing is dropped — cook mode -> feedback had
+     to become cook-mode cover, then a NavigationLink push (FeedbackView, not a sheet).
+  3. `sheet`/`fullScreenCover` driven by state that nothing in `body` reads may not present at
+     all. PlanView tints the open row (`slot === editingSlot`), which both looks right and gives
+     the body the dependency it needs.
+  4. A `.bottomBar` toolbar item inside a TabView sits on the tab bar (task 047), and a primary
+     action inside a scrollable List can start off-screen: put it in the navigation bar.
+  5. UI tests: never build view models in a parent's body (ContentView now owns TabModels);
+     `waitForExistence` is not enough — RasoiUITests/Support/UITestHelpers.swift adds
+     waitUntilHittable/waitAndTap/scrollUntilHittable, and `-uiTestingTab <name>` opens the app
+     straight onto a tab instead of driving the tab bar.
+TASK 056 done: QuickSnacks engine (+9 tests), TodayViewModel (+8 tests), TodayView (hero dinner, why-this, expiring banner, snack strip, coverage dots), FeedbackView pushed after cooking; TodayUITests green; ContentView now owns the tab view models.

@@ -6,6 +6,7 @@ import SwiftUI
 struct FamilyListView: View {
     @State private var model: FamilyViewModel
     @State private var editing: HouseholdMember?
+    @State private var isEditing = false
     @State private var isAdding = false
 
     init(context: ModelContext) {
@@ -23,8 +24,9 @@ struct FamilyListView: View {
                     )
                 } else {
                     ForEach(model.activeMembers) { member in
-                        Button { editing = member } label: { row(member) }
+                        Button { editing = member; isEditing = true } label: { row(member) }
                             .buttonStyle(.plain)
+                            .listRowBackground(member === editing ? Theme.saffron.opacity(0.10) : nil)
                     }
                     .onMove { model.move(fromOffsets: $0, toOffset: $1) }
                 }
@@ -35,8 +37,9 @@ struct FamilyListView: View {
             if !model.inactiveMembers.isEmpty {
                 Section {
                     ForEach(model.inactiveMembers) { member in
-                        Button { editing = member } label: { row(member) }
+                        Button { editing = member; isEditing = true } label: { row(member) }
                             .buttonStyle(.plain)
+                            .listRowBackground(member === editing ? Theme.saffron.opacity(0.10) : nil)
                     }
                 } header: {
                     Text("Not at the table")
@@ -58,10 +61,12 @@ struct FamilyListView: View {
         .sheet(isPresented: $isAdding) {
             MemberEditView(model: model, member: nil)
         }
-        .sheet(item: $editing) { member in
-            MemberEditView(model: model, member: member)
+        .sheet(isPresented: $isEditing) {
+            if let editing {
+                MemberEditView(model: model, member: editing)
+            }
         }
-        .onAppear { model.load() }
+        .task { model.load() }
     }
 
     private func row(_ member: HouseholdMember) -> some View {

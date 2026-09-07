@@ -101,6 +101,18 @@ run_xcodebuild() {
   if "$@" >"$LOG" 2>&1; then
     return 0
   fi
+
+  # Xcode's build database occasionally corrupts itself ("disk I/O error", "internal
+  # inconsistency error"), usually after a run was interrupted. That is not a failure of the
+  # code, so wipe the derived data and try once more before reporting anything.
+  if grep -qE "accessing build database|internal inconsistency error" "$LOG"; then
+    echo "  build database corrupt — clearing $DERIVED and retrying once"
+    rm -rf "$DERIVED"
+    if "$@" >"$LOG" 2>&1; then
+      return 0
+    fi
+  fi
+
   echo
   grep -E "(error:|failed|Failing tests:|\*\* [A-Z ]+ FAILED)" -A2 "$LOG" | tail -60 || true
   fail "$action_desc failed — full log: $LOG"

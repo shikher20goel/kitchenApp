@@ -6,6 +6,7 @@ struct StoresView: View {
     @State private var model: StoresViewModel
     @Environment(\.modelContext) private var context
     @State private var editing: Store?
+    @State private var isEditing = false
     @State private var isAdding = false
     @State private var isFinding = false
 
@@ -17,8 +18,9 @@ struct StoresView: View {
         List {
             Section {
                 ForEach(model.stores) { store in
-                    Button { editing = store } label: { row(store) }
+                    Button { editing = store; isEditing = true } label: { row(store) }
                         .buttonStyle(.plain)
+                        .listRowBackground(store === editing ? Theme.saffron.opacity(0.10) : nil)
                 }
                 .onMove { model.move(fromOffsets: $0, toOffset: $1) }
                 .onDelete { offsets in
@@ -44,11 +46,15 @@ struct StoresView: View {
             ToolbarItem(placement: .topBarLeading) { EditButton() }
         }
         .sheet(isPresented: $isAdding) { StoreEditView(model: model, store: nil) }
-        .sheet(item: $editing) { store in StoreEditView(model: model, store: store) }
+        .sheet(isPresented: $isEditing) {
+            if let editing {
+                StoreEditView(model: model, store: editing)
+            }
+        }
         .sheet(isPresented: $isFinding) {
             FindStoresSheet(model: model, zipCode: DietProfile.current(in: context).zipCode)
         }
-        .onAppear { model.load() }
+        .task { model.load() }
     }
 
     private func row(_ store: Store) -> some View {

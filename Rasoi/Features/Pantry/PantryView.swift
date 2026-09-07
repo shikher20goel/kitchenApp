@@ -3,20 +3,34 @@ import SwiftUI
 
 /// The Pantry tab (SPEC §4.3): what is in the fridge, the pantry and the freezer.
 struct PantryView: View {
-    @State private var model: PantryViewModel
+    /// Built once by `ContentView` and handed in. Building it here instead would rebuild it
+    /// every time the tab bar's body ran, which is far more often than a tab is opened.
+    let model: PantryViewModel
     @State private var isAdding = false
     @State private var usingItem: PantryItem?
-
-    init(context: ModelContext) {
-        _model = State(initialValue: PantryViewModel(context: context))
-    }
+    @State private var isMarkingUsed = false
 
     var body: some View {
+        content(model)
+        // Sheets belong on the stable outer body, not inside the lazily built content.
+        .sheet(isPresented: $isAdding) {
+                AddPantryItemSheet(model: model)
+        }
+        .sheet(isPresented: $isMarkingUsed) {
+            if let usingItem {
+                MarkUsedSheet(model: model, item: usingItem)
+            }
+        }
+    }
+
+    @ViewBuilder
+    private func content(_ model: PantryViewModel) -> some View {
+        @Bindable var model = model
         List {
             if !model.expiringSoon().isEmpty {
                 Section {
                     ForEach(model.expiringSoon()) { item in
-                        row(item, showLocation: true)
+                        row(model: model, item: item, showLocation: true)
                     }
                 } header: {
                     Label("Use these first", systemImage: "clock")
@@ -34,7 +48,7 @@ struct PantryView: View {
                     )
                 } else {
                     ForEach(model.items) { item in
-                        row(item, showLocation: false)
+                        row(model: model, item: item, showLocation: false)
                             .swipeActions(edge: .trailing) {
                                 Button(role: .destructive) {
                                     model.ranOut(item)
@@ -44,10 +58,12 @@ struct PantryView: View {
                                 }
                                 Button {
                                     usingItem = item
+                                    isMarkingUsed = true
                                 } label: {
                                     Label("Mark used", systemImage: "minus.circle")
                                 }
                                 .tint(Theme.sage)
+                                .disabled(isMarkingUsed)
                             }
                     }
                 }
@@ -88,16 +104,10 @@ struct PantryView: View {
                 .accessibilityLabel("Sort and more")
             }
         }
-        .sheet(isPresented: $isAdding) {
-            AddPantryItemSheet(model: model)
-        }
-        .sheet(item: $usingItem) { item in
-            MarkUsedSheet(model: model, item: item)
-        }
-        .onAppear { model.load() }
+        .task { model.load() }
     }
 
-    private func row(_ item: PantryItem, showLocation: Bool) -> some View {
+    private func row(model: PantryViewModel, item: PantryItem, showLocation: Bool) -> some View {
         HStack(spacing: Theme.Spacing.m) {
             Image(systemName: item.ingredient?.category.symbolName ?? "shippingbox")
                 .foregroundStyle(Theme.sage)

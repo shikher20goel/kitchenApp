@@ -49,8 +49,8 @@ struct CookModeView: View {
                 }
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Done") {
-                        onFinish?(servings)
                         Haptics.success()
+                        onFinish?(servings)
                         dismiss()
                     }
                     .accessibilityIdentifier("cook.done")

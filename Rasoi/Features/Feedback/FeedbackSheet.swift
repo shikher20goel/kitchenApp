@@ -3,7 +3,10 @@ import SwiftUI
 
 /// After cooking: three big buttons per person (SPEC §4.1). No scores, no streaks, nothing a
 /// child could read as a mark against them (R3).
-struct FeedbackSheet: View {
+///
+/// This is a plain screen rather than a sheet: it is pushed from Today, so it works whether or not
+/// something else was just presented.
+struct FeedbackView: View {
     @Environment(\.dismiss) private var dismiss
     @State private var model: FeedbackViewModel
 
@@ -12,7 +15,7 @@ struct FeedbackSheet: View {
     }
 
     var body: some View {
-        NavigationStack {
+        Group {
             List {
                 Section {
                     Text(AppCopy.feedbackPrompt)
@@ -50,9 +53,6 @@ struct FeedbackSheet: View {
             .navigationTitle(AppCopy.feedbackTitle)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                ToolbarItem(placement: .cancellationAction) {
-                    Button("Not now") { dismiss() }
-                }
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Save") {
                         model.save()

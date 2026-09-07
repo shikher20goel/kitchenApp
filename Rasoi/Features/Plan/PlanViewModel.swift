@@ -16,6 +16,11 @@ final class PlanViewModel {
     private(set) var weekStart: Date
     private(set) var slots: [MealSlot] = []
     private(set) var recipesByPlannerID: [String: Recipe] = [:]
+    /// Recomputed on `load()`. Never computed inside a view body: it reads the whole store, and
+    /// SwiftUI evaluates a body far more often than the data changes.
+    private(set) var summary = Summary(plannedMeals: 0, sureThings: 0, newRecipes: 0, totalSlots: 0)
+    private var cachedFeedback: [FeedbackEntry] = []
+    private var cachedNewRecipeIDs: Set<String> = []
 
     init(context: ModelContext, weekContaining date: Date? = nil, now: @escaping () -> Date = { .now }) {
         self.context = context
@@ -38,6 +43,9 @@ final class PlanViewModel {
             byID[RecipeSummary(recipe: recipe).id] = recipe
         }
         recipesByPlannerID = byID
+        cachedFeedback = fetchFeedbackEntries()
+        cachedNewRecipeIDs = Set(byID.keys).subtracting(Set(cachedFeedback.map(\.recipeID)))
+        summary = makeSummary()
     }
 
     var days: [Date] { MealPlan.days(ofWeekContaining: weekStart) }
@@ -155,9 +163,9 @@ final class PlanViewModel {
         var totalSlots: Int
     }
 
-    var summary: Summary {
+    private func makeSummary() -> Summary {
         let scores = kidScores()
-        let newIDs = newRecipeIDs()
+        let newIDs = cachedNewRecipeIDs
         var sureThings = 0
         var newOnes = 0
         var planned = 0
@@ -211,8 +219,12 @@ final class PlanViewModel {
         )
     }
 
-    /// Every reaction ever recorded, flattened for the engines.
+    /// Every reaction ever recorded, flattened for the engines. Cached by `load()`.
     private func feedbackEntries() -> [FeedbackEntry] {
+        cachedFeedback
+    }
+
+    private func fetchFeedbackEntries() -> [FeedbackEntry] {
         ((try? context.fetch(FetchDescriptor<MealFeedback>())) ?? []).compactMap { entry in
             guard let recipe = entry.slot?.recipe, let member = entry.member else { return nil }
             return FeedbackEntry(
@@ -226,8 +238,7 @@ final class PlanViewModel {
 
     /// Recipes nobody has reacted to yet.
     private func newRecipeIDs() -> Set<String> {
-        let seen = Set(feedbackEntries().map(\.recipeID))
-        return Set(recipesByPlannerID.keys).subtracting(seen)
+        cachedNewRecipeIDs
     }
 
     private func kidScores() -> [String: Double] {

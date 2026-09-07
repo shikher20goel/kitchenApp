@@ -9,7 +9,7 @@ final class PantryUITests: XCTestCase {
 
     func testAddingAnIngredientShowsItInTheList() {
         let app = XCUIApplication()
-        app.launchArguments += ["-uiTesting", "-uiTestingDemoHousehold"]
+        app.launchArguments += ["-uiTesting", "-uiTestingDemoHousehold", "-uiTestingTab", "pantry"]
         app.launch()
 
         let tabBar = app.tabBars.firstMatch

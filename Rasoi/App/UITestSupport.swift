@@ -12,6 +12,15 @@ enum UITestSupport {
     /// Skip onboarding and start with the demo household (two adults, two children).
     static var startsWithDemoHousehold: Bool { flag("-uiTestingDemoHousehold") }
 
+    /// Open straight onto one tab, so a test never has to drive the tab bar to reach a screen.
+    /// Pass `-uiTestingTab plan` (today, plan, pantry, shop, more).
+    static var initialTab: String? {
+        let arguments = ProcessInfo.processInfo.arguments
+        guard let index = arguments.firstIndex(of: "-uiTestingTab"),
+              arguments.indices.contains(index + 1) else { return nil }
+        return arguments[index + 1].lowercased()
+    }
+
     private static func flag(_ name: String) -> Bool {
         ProcessInfo.processInfo.arguments.contains(name)
     }

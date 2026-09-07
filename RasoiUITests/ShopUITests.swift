@@ -9,7 +9,7 @@ final class ShopUITests: XCTestCase {
 
     func testBuildTheListAndCheckAnItem() {
         let app = XCUIApplication()
-        app.launchArguments += ["-uiTesting", "-uiTestingDemoHousehold"]
+        app.launchArguments += ["-uiTesting", "-uiTestingDemoHousehold", "-uiTestingTab", "shop"]
         app.launch()
 
         let tabBar = app.tabBars.firstMatch

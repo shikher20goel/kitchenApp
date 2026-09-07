@@ -9,7 +9,7 @@ final class CookModeUITests: XCTestCase {
 
     func testCookModeOpensFromARecipe() {
         let app = XCUIApplication()
-        app.launchArguments += ["-uiTesting", "-uiTestingDemoHousehold"]
+        app.launchArguments += ["-uiTesting", "-uiTestingDemoHousehold", "-uiTestingTab", "more"]
         app.launch()
 
         let tabBar = app.tabBars.firstMatch

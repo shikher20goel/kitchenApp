@@ -644,7 +644,7 @@
       ],
       "verify": "`bash scripts/verify.sh RasoiTests/QuickSnacksTests RasoiTests/TodayViewModelTests RasoiUITests/TodayUITests` green.",
       "gate": "AUTO",
-      "passes": false
+      "passes": true
     },
     {
       "id": "057",

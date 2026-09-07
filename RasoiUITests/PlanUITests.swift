@@ -9,31 +9,23 @@ final class PlanUITests: XCTestCase {
 
     func testGenerateAWeekThenSwapADinner() {
         let app = XCUIApplication()
-        app.launchArguments += ["-uiTesting", "-uiTestingDemoHousehold"]
+        app.launchArguments += ["-uiTesting", "-uiTestingDemoHousehold", "-uiTestingTab", "plan"]
         app.launch()
 
-        let tabBar = app.tabBars.firstMatch
-        XCTAssertTrue(tabBar.waitForExistence(timeout: 20))
-        tabBar.buttons["Plan"].tap()
-
-        let generate = app.buttons["plan.generate"]
-        XCTAssertTrue(generate.waitForExistence(timeout: 25))
-        generate.tap()
+        app.buttons["plan.generate"].waitAndTap("Generate week")
 
         // Seven day sections, each with four meals.
-        let mondayDinner = app.descendants(matching: .any)
-            .matching(NSPredicate(format: "identifier ENDSWITH '.dinner'"))
-            .firstMatch
-        XCTAssertTrue(mondayDinner.waitForExistence(timeout: 25), "The week fills with meals.")
-
+        let mondayDinner = app.buttons["plan.slot.0.dinner"]
+        XCTAssertTrue(mondayDinner.waitUntilHittable(), "The week fills with meals.")
+        let plannedTitle = mondayDinner.label
         mondayDinner.tap()
+
         let alternative = app.buttons.matching(identifier: "slot.alternative").firstMatch
-        XCTAssertTrue(alternative.waitForExistence(timeout: 25), "A slot offers alternatives with reasons.")
-        let swappedTitle = alternative.label
+        XCTAssertTrue(alternative.waitUntilHittable(), "A slot offers alternatives with reasons.")
         alternative.tap()
 
-        XCTAssertTrue(app.staticTexts[swappedTitle.components(separatedBy: ",").first ?? swappedTitle]
-            .waitForExistence(timeout: 25) || app.tabBars.firstMatch.exists,
-                      "The plan shows the swapped meal.")
+        // Back on the plan, the slot shows something else.
+        XCTAssertTrue(mondayDinner.waitUntilHittable())
+        XCTAssertNotEqual(mondayDinner.label, plannedTitle, "The swapped meal replaces the old one.")
     }
 }
