@@ -23,12 +23,12 @@ struct MoreView: View {
 
             Section("App") {
                 NavigationLink("Notifications") { NotificationsSettingsView(context: context) }
-                NavigationLink("Appearance") { ComingSoonView(title: "Appearance") }
+                NavigationLink("Appearance") { AppearanceView(context: context) }
                 NavigationLink("About") { AboutView() }
             }
 
             Section {
-                NavigationLink("Export your data") { ComingSoonView(title: "Export") }
+                NavigationLink("Export your data") { ExportView() }
                 Button(AppCopy.deleteAllDataTitle, role: .destructive) {
                     showDeleteDialog = true
                 }

@@ -689,7 +689,7 @@
       ],
       "verify": "`bash scripts/verify.sh RasoiTests/ExporterTests` green.",
       "gate": "AUTO",
-      "passes": false
+      "passes": true
     },
     {
       "id": "061",
