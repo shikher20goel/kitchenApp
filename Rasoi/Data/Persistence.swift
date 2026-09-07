@@ -19,6 +19,8 @@ enum Persistence {
             MealPlan.self,
             MealSlot.self,
             MealFeedback.self,
+            GroceryList.self,
+            GroceryItem.self,
         ]
     }
 

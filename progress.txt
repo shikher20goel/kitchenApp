@@ -34,3 +34,4 @@ TASK 017 done: Recipe (+MealType, RecipeSource, inline Codable RecipeIngredient,
 TASK 018 done: MealPlanTests written first (weekStart Monday incl. Sunday, slot uniqueness, feedback upsert, reaction weights).
 TASK 019 done: MealPlan/MealSlot/MealFeedback with Monday weekStart, per-day+meal slot upsert, per-member feedback upsert; 68 tests green.
 TASK 020 done: GroceryListTests written first (unique weekStart, item ownership, check stamps checkedAt, cascade delete).
+TASK 021 done: GroceryList/GroceryItem with unique weekStart, cascade items, setChecked timestamping; 74 tests green.
