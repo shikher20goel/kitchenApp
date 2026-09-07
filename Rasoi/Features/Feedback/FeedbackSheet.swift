@@ -7,7 +7,7 @@ struct FeedbackSheet: View {
     @Environment(\.dismiss) private var dismiss
     @State private var model: FeedbackViewModel
 
-    init(slot: MealSlot, context: ModelContext, depleter: FeedbackViewModel.Depleting? = nil) {
+    init(slot: MealSlot, context: ModelContext, depleter: FeedbackViewModel.Depleting = PantryDepletionService()) {
         _model = State(initialValue: FeedbackViewModel(slot: slot, context: context, depleter: depleter))
     }
 

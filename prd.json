@@ -486,7 +486,7 @@
       ],
       "verify": "`bash scripts/verify.sh RasoiTests/UnitsTests RasoiTests/PantryDepletionTests` green.",
       "gate": "AUTO",
-      "passes": false
+      "passes": true
     },
     {
       "id": "043",
