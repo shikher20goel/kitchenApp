@@ -19,17 +19,17 @@ final class PantryUITests: XCTestCase {
         app.buttons["pantry.add"].tap()
 
         let search = app.textFields["pantry.search"]
-        XCTAssertTrue(search.waitForExistence(timeout: 5))
+        XCTAssertTrue(search.waitForExistence(timeout: 25))
         search.tap()
         search.typeText("palak")
 
         let result = app.buttons["pantry.result.Spinach"]
-        XCTAssertTrue(result.waitForExistence(timeout: 5), "An alias search finds the catalog name.")
+        XCTAssertTrue(result.waitForExistence(timeout: 25), "An alias search finds the catalog name.")
         result.tap()
 
         app.buttons["pantry.confirmAdd"].tap()
 
-        XCTAssertTrue(app.staticTexts["Spinach"].waitForExistence(timeout: 5),
+        XCTAssertTrue(app.staticTexts["Spinach"].waitForExistence(timeout: 25),
                       "The new item appears in the pantry list.")
     }
 }

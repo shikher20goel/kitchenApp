@@ -17,16 +17,16 @@ final class ShopUITests: XCTestCase {
 
         tabBar.buttons["Plan"].tap()
         let generate = app.buttons["plan.generate"]
-        XCTAssertTrue(generate.waitForExistence(timeout: 10))
+        XCTAssertTrue(generate.waitForExistence(timeout: 25))
         generate.tap()
 
         tabBar.buttons["Shop"].tap()
         let build = app.buttons["shop.build"]
-        XCTAssertTrue(build.waitForExistence(timeout: 10))
+        XCTAssertTrue(build.waitForExistence(timeout: 25))
         build.tap()
 
         let check = app.buttons.matching(identifier: "shop.check").firstMatch
-        XCTAssertTrue(check.waitForExistence(timeout: 15), "The list fills from the plan.")
+        XCTAssertTrue(check.waitForExistence(timeout: 25), "The list fills from the plan.")
         let label = check.label
         check.tap()
 

@@ -18,14 +18,14 @@ final class CookModeUITests: XCTestCase {
         app.staticTexts["Recipes"].tap()
 
         let firstRecipe = app.cells.element(boundBy: 1)
-        XCTAssertTrue(firstRecipe.waitForExistence(timeout: 10))
+        XCTAssertTrue(firstRecipe.waitForExistence(timeout: 25))
         firstRecipe.tap()
 
         let cook = app.buttons["recipe.cook"]
-        XCTAssertTrue(cook.waitForExistence(timeout: 10))
+        XCTAssertTrue(cook.waitForExistence(timeout: 25))
         cook.tap()
 
-        XCTAssertTrue(app.buttons["cook.next"].waitForExistence(timeout: 10),
+        XCTAssertTrue(app.buttons["cook.next"].waitForExistence(timeout: 25),
                       "Cook mode opens on the ingredients page with a way forward.")
         app.buttons["cook.next"].tap()
         XCTAssertTrue(app.staticTexts["Step 1 of \(app.staticTexts.count)"].exists

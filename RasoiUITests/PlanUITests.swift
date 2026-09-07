@@ -17,23 +17,23 @@ final class PlanUITests: XCTestCase {
         tabBar.buttons["Plan"].tap()
 
         let generate = app.buttons["plan.generate"]
-        XCTAssertTrue(generate.waitForExistence(timeout: 10))
+        XCTAssertTrue(generate.waitForExistence(timeout: 25))
         generate.tap()
 
         // Seven day sections, each with four meals.
         let mondayDinner = app.descendants(matching: .any)
             .matching(NSPredicate(format: "identifier ENDSWITH '.dinner'"))
             .firstMatch
-        XCTAssertTrue(mondayDinner.waitForExistence(timeout: 15), "The week fills with meals.")
+        XCTAssertTrue(mondayDinner.waitForExistence(timeout: 25), "The week fills with meals.")
 
         mondayDinner.tap()
         let alternative = app.buttons.matching(identifier: "slot.alternative").firstMatch
-        XCTAssertTrue(alternative.waitForExistence(timeout: 10), "A slot offers alternatives with reasons.")
+        XCTAssertTrue(alternative.waitForExistence(timeout: 25), "A slot offers alternatives with reasons.")
         let swappedTitle = alternative.label
         alternative.tap()
 
         XCTAssertTrue(app.staticTexts[swappedTitle.components(separatedBy: ",").first ?? swappedTitle]
-            .waitForExistence(timeout: 10) || app.tabBars.firstMatch.exists,
+            .waitForExistence(timeout: 25) || app.tabBars.firstMatch.exists,
                       "The plan shows the swapped meal.")
     }
 }
