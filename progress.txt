@@ -46,3 +46,4 @@ TASK 025 done: SeedDTOs/SeedLoader/SeedImporter (idempotent upsert, keeps favour
 TASK 026 done: DietFilterTests + engine fixtures written first (each rule alone, alias exclusion, appliance, min age, combined).
 TASK 027 done: DietFilter + engine snapshots (RecipeSummary, IngredientFacts/Index, DietRules); 114 tests green.
 TASK 028 implemented, awaiting human review (docs/SEED-RECIPES.md — 51 recipes, 185 ingredients; regenerate with scripts/gen-seed-doc.py).
+TASK 029 done: FamilyViewModel (+10 tests), FamilyListView, MemberEditView, ChipField/FlowLayout design components.

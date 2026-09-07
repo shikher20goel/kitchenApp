@@ -340,7 +340,7 @@
       ],
       "verify": "`bash scripts/verify.sh RasoiTests/FamilyViewModelTests` green; app builds.",
       "gate": "AUTO",
-      "passes": false
+      "passes": true
     },
     {
       "id": "030",
