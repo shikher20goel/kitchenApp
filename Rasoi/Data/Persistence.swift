@@ -21,6 +21,7 @@ enum Persistence {
             MealFeedback.self,
             GroceryList.self,
             GroceryItem.self,
+            AppSettings.self,
         ]
     }
 

@@ -36,3 +36,4 @@ TASK 019 done: MealPlan/MealSlot/MealFeedback with Monday weekStart, per-day+mea
 TASK 020 done: GroceryListTests written first (unique weekStart, item ownership, check stamps checkedAt, cascade delete).
 TASK 021 done: GroceryList/GroceryItem with unique weekStart, cascade items, setChecked timestamping; 74 tests green.
 TASK 022 done: AppSettingsTests written first (SPEC defaults, idempotent singleton, master switch).
+TASK 023 done: AppSettings singleton (reminder toggles/times, master switch, appearance); 80 tests green.
