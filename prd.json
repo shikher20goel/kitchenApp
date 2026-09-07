@@ -43,7 +43,7 @@
       ],
       "verify": "`xcodebuild -project Rasoi.xcodeproj -scheme Rasoi -destination 'generic/platform=iOS Simulator' CODE_SIGNING_ALLOWED=NO build` succeeds.",
       "gate": "AUTO",
-      "passes": false
+      "passes": true
     },
     {
       "id": "003",

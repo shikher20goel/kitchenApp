@@ -4,3 +4,4 @@ Session start. No tasks complete yet. Kit generated 2026-09-07 by the orchestrat
 # TASK 028 implemented, awaiting human review (seed recipes).
 TASK 000 done: repo initialised on autonomous-build, kit committed and pushed.
 TASK 001 done: RasoiApp.swift + Assets.xcassets added; xcodegen generates 3 targets.
+TASK 002 done: ContentView 5 tabs + Theme design tokens; generic iOS Simulator build green.

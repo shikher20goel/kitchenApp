@@ -4,7 +4,7 @@ import SwiftUI
 struct RasoiApp: App {
     var body: some Scene {
         WindowGroup {
-            Text("Rasoi")
+            ContentView()
         }
     }
 }
