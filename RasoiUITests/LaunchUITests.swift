@@ -9,6 +9,7 @@ final class LaunchUITests: XCTestCase {
 
     func testAppLaunchesWithTabBar() {
         let app = XCUIApplication()
+        app.launchArguments += ["-uiTesting", "-uiTestingDemoHousehold"]
         app.launch()
 
         let tabBar = app.tabBars.firstMatch

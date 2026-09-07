@@ -55,3 +55,4 @@ LESSON (task 030): same container-lifetime trap as task 007, now via a test help
   And killing verify.sh mid-build corrupts build/DerivedData ("disk I/O error" on build.db):
   rm -rf build/DerivedData and re-run.
 TASK 030 done: DietSettingsViewModel (+12 tests: zip validation, alias-canonical exclusions, appliance/cuisine toggles, clamps), DietSettingsView, AppCopy started.
+TASK 031 done: RootView bootstrap (singletons, store seed, catalog import), 4-page OnboardingFlow, UITestSupport launch flags, OnboardingUITests green.
