@@ -3,7 +3,10 @@ import SwiftUI
 
 /// Browse the catalog (SPEC §4.5). The default list is what this household can cook today.
 struct RecipeListView: View {
+    @Environment(\.modelContext) private var context
     @State private var model: RecipesViewModel
+    @State private var isAddingRecipe = false
+    @State private var editingRecipe: Recipe?
 
     init(context: ModelContext) {
         _model = State(initialValue: RecipesViewModel(context: context))
@@ -37,6 +40,11 @@ struct RecipeListView: View {
         .navigationTitle("Recipes")
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
+                Button { isAddingRecipe = true } label: { Image(systemName: "plus") }
+                    .accessibilityIdentifier("recipes.add")
+                    .accessibilityLabel("New recipe")
+            }
+            ToolbarItem(placement: .topBarTrailing) {
                 Menu {
                     Toggle("Quick (≤15 min)", isOn: $model.quickOnly)
                     Toggle("Favourites", isOn: $model.favouritesOnly)
@@ -62,6 +70,9 @@ struct RecipeListView: View {
                 }
                 .accessibilityLabel("Filter recipes")
             }
+        }
+        .sheet(isPresented: $isAddingRecipe, onDismiss: { model.load() }) {
+            RecipeEditView(context: context)
         }
         .onAppear { model.load() }
     }

@@ -61,3 +61,4 @@ TASK 033 done: PantryViewModelTests written first (alias search, expiry from she
 TASK 034 done: PantryViewModel (alias search, upsert add, mark used, ran-out staple rule, expiring window, sorts); 11 tests green.
 TASK 035 done: PantryView (location segments, expiring-first section, steppers, swipe mark-used/ran-out, add sheet with alias search); PantryUITests green.
 TASK 036 done: RecipesViewModel (+10 tests: combining filters, alias search, ineligible hidden by default with reasons), RecipeListView, RecipeDetailView with pantry ticks.
+TASK 037 done: RecipeDraft (validation + allergen/nutrition tags derived from ingredients) + RecipeEditorViewModel (+11 tests), RecipeEditView wired into list and detail.

@@ -7,7 +7,8 @@ struct RecipeDetailView: View {
     @Bindable var recipe: Recipe
     let model: RecipesViewModel
 
-    @State private var isCooking = false
+    @Environment(\.modelContext) private var context
+    @State private var isEditing = false
 
     private var pantryNames: Set<String> { model.pantryCoverage(for: recipe) }
 
@@ -93,6 +94,9 @@ struct RecipeDetailView: View {
         }
         .navigationTitle(recipe.title)
         .navigationBarTitleDisplayMode(.inline)
+        .sheet(isPresented: $isEditing, onDismiss: { model.load() }) {
+            RecipeEditView(context: context, recipe: recipe)
+        }
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Menu {
@@ -107,6 +111,13 @@ struct RecipeDetailView: View {
                     } label: {
                         Label(recipe.isHidden ? "Show again" : "Hide from suggestions",
                               systemImage: recipe.isHidden ? "eye" : "eye.slash")
+                    }
+                    if recipe.source == .user {
+                        Button {
+                            isEditing = true
+                        } label: {
+                            Label("Edit recipe", systemImage: "pencil")
+                        }
                     }
                 } label: {
                     Image(systemName: "ellipsis.circle")
