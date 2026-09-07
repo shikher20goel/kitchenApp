@@ -83,3 +83,4 @@ TASK 047 done: PlanView (7 day sections x 4 meals, summary card, generate/regene
 TASK 048 done: GroceryBuilderTests written first (aggregate, scale, normalise, alias merge, pantry subtraction, staple top-ups, store affinity, stable order, idempotent merge).
 TASK 049 done: GroceryBuilder (aggregate+scale+normalise, pantry subtraction, staple pack sizes by dimension, speciality-first store assignment, idempotent merge that protects checked and manual lines); 19 tests green.
 TASK 050 done: ShopViewModel (idempotent build/merge, check restocks pantry with shelf life, uncheck reverses, manual adds survive, store→category sections, share text) +11 tests; ShopView + ShopUITests green.
+TASK 051 done: StoresViewModel (+7 tests: reorder persists, preferred toggle, affinity editing, safe removal) with StoresView + StoreEditView.

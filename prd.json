@@ -587,7 +587,7 @@
       ],
       "verify": "`bash scripts/verify.sh RasoiTests/StoresViewModelTests` green.",
       "gate": "AUTO",
-      "passes": false
+      "passes": true
     },
     {
       "id": "052",

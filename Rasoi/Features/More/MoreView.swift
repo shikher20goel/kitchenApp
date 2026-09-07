@@ -13,7 +13,7 @@ struct MoreView: View {
             Section("Household") {
                 NavigationLink("Family") { FamilyListView(context: context) }
                 NavigationLink("Diet & Kitchen") { DietSettingsView(context: context) }
-                NavigationLink("Stores") { ComingSoonView(title: "Stores") }
+                NavigationLink("Stores") { StoresView(context: context) }
             }
 
             Section("Cooking") {
