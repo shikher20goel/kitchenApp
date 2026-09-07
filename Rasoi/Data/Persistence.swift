@@ -15,6 +15,7 @@ enum Persistence {
             Store.self,
             Ingredient.self,
             PantryItem.self,
+            Recipe.self,
         ]
     }
 
