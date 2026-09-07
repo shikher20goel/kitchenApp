@@ -406,7 +406,7 @@
       ],
       "verify": "`bash scripts/verify.sh RasoiUITests/PantryUITests` green.",
       "gate": "AUTO",
-      "passes": false
+      "passes": true
     },
     {
       "id": "036",

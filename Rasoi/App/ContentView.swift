@@ -1,8 +1,11 @@
+import SwiftData
 import SwiftUI
 
 /// The five tabs of Rasoi (SPEC §4). Each tab owns a `NavigationStack`; the feature screens
 /// replace these placeholders as their milestones land.
 struct ContentView: View {
+    @Environment(\.modelContext) private var context
+
     enum Tab: Hashable {
         case today, plan, pantry, shop, more
     }
@@ -19,7 +22,7 @@ struct ContentView: View {
                 .tabItem { Label("Plan", systemImage: "calendar") }
                 .tag(Tab.plan)
 
-            placeholder(title: "Pantry", detail: "What's in the fridge, the pantry and the freezer.")
+            NavigationStack { PantryView(context: context) }
                 .tabItem { Label("Pantry", systemImage: "refrigerator") }
                 .tag(Tab.pantry)
 
