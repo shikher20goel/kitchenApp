@@ -81,3 +81,4 @@ LESSON (task 047): a `.bottomBar` toolbar item inside a NavigationStack that liv
   bottom bar.
 TASK 047 done: PlanView (7 day sections x 4 meals, summary card, generate/regenerate), SlotSheet (why-this, lock, servings, status, ranked swaps); PlanUITests green.
 TASK 048 done: GroceryBuilderTests written first (aggregate, scale, normalise, alias merge, pantry subtraction, staple top-ups, store affinity, stable order, idempotent merge).
+TASK 049 done: GroceryBuilder (aggregate+scale+normalise, pantry subtraction, staple pack sizes by dimension, speciality-first store assignment, idempotent merge that protects checked and manual lines); 19 tests green.

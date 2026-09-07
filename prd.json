@@ -564,7 +564,7 @@
       ],
       "verify": "`bash scripts/verify.sh RasoiTests/GroceryBuilderTests` green.",
       "gate": "AUTO",
-      "passes": false
+      "passes": true
     },
     {
       "id": "050",
