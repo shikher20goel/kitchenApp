@@ -75,3 +75,8 @@ NOTE (task 045): SPEC §5 rule 4 says "≤2 new recipes per week", but on a fres
   family without dinner. MealPlannerTests covers both directions.
 TASK 045 done: MealPlanner (tiered constraints, pantry-first/use-it-up, kid-score ranking, quotas, nutrition nudges, breakfast rotation, per-slot reasons, deterministic id tie-break); 23 tests green.
 TASK 046 done: PlanViewModel bridges SwiftData to the planner (snapshots, kid scores, resting, history) +13 tests; MealPlanner gained a ranked alternatives API; weights reordered to SPEC §5 rule priority.
+LESSON (task 047): a `.bottomBar` toolbar item inside a NavigationStack that lives in a TabView
+  sits on top of the tab bar — the UI test's tap on "Generate week" selected the Pantry tab
+  instead. Primary actions on a tab screen go in the content or the navigation bar, never the
+  bottom bar.
+TASK 047 done: PlanView (7 day sections x 4 meals, summary card, generate/regenerate), SlotSheet (why-this, lock, servings, status, ranked swaps); PlanUITests green.

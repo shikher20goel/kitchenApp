@@ -18,7 +18,7 @@ struct ContentView: View {
                 .tabItem { Label("Today", systemImage: "sun.max") }
                 .tag(Tab.today)
 
-            placeholder(title: "Plan", detail: "The week's meals, generated from your pantry and what the kids like.")
+            NavigationStack { PlanView(context: context) }
                 .tabItem { Label("Plan", systemImage: "calendar") }
                 .tag(Tab.plan)
 

@@ -542,7 +542,7 @@
       ],
       "verify": "`bash scripts/verify.sh RasoiUITests/PlanUITests` green.",
       "gate": "AUTO",
-      "passes": false
+      "passes": true
     },
     {
       "id": "048",
