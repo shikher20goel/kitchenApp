@@ -112,6 +112,7 @@ struct PantryView: View {
             Image(systemName: item.ingredient?.category.symbolName ?? "shippingbox")
                 .foregroundStyle(Theme.sage)
                 .frame(width: 28)
+                .accessibilityHidden(true)
             VStack(alignment: .leading, spacing: 2) {
                 Text(item.ingredient?.name ?? "Unknown")
                     .font(.body)

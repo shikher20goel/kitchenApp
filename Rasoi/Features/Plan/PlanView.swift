@@ -85,6 +85,7 @@ struct PlanView: View {
                 Image(systemName: mealType.symbolName)
                     .foregroundStyle(Theme.saffron)
                     .frame(width: 24)
+                    .accessibilityHidden(true)
                 VStack(alignment: .leading, spacing: 2) {
                     Text(mealType.label)
                         .font(.caption)
@@ -107,6 +108,7 @@ struct PlanView: View {
                     Image(systemName: "lock.fill")
                         .font(.caption)
                         .foregroundStyle(Theme.textSecondary)
+                        .accessibilityLabel("Kept")
                 }
             }
             .padding(.vertical, 2)

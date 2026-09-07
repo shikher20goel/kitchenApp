@@ -87,6 +87,7 @@ struct FamilyListView: View {
             Image(systemName: "chevron.right")
                 .font(.footnote)
                 .foregroundStyle(Theme.textSecondary)
+                .accessibilityHidden(true)
         }
         .padding(.vertical, Theme.Spacing.xs)
         .accessibilityElement(children: .combine)

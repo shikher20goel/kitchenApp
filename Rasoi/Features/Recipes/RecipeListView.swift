@@ -117,6 +117,7 @@ struct RecipeListView: View {
                     Image(systemName: "heart.fill")
                         .font(.caption)
                         .foregroundStyle(Theme.terracotta)
+                        .accessibilityLabel("Favourite")
                 }
             }
             HStack(spacing: Theme.Spacing.s) {

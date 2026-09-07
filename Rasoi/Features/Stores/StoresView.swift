@@ -62,6 +62,7 @@ struct StoresView: View {
             Image(systemName: store.kind.symbolName)
                 .foregroundStyle(store.isPreferred ? Theme.saffron : Theme.textSecondary)
                 .frame(width: 28)
+                .accessibilityHidden(true)
             VStack(alignment: .leading, spacing: 2) {
                 Text(store.name)
                     .foregroundStyle(Theme.textPrimary)

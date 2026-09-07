@@ -700,7 +700,7 @@
       ],
       "verify": "`bash scripts/verify.sh RasoiUITests/AccessibilityUITests` green.",
       "gate": "AUTO",
-      "passes": false
+      "passes": true
     },
     {
       "id": "062",

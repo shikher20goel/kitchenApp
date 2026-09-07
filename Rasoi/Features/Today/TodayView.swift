@@ -173,6 +173,7 @@ struct TodayView: View {
             Image(systemName: slot.mealType.symbolName)
                 .foregroundStyle(Theme.saffron)
                 .frame(width: 24)
+                .accessibilityHidden(true)
             VStack(alignment: .leading, spacing: 2) {
                 Text(slot.mealType.label)
                     .font(.caption)
