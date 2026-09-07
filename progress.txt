@@ -25,3 +25,4 @@ NOTE (task 011): plan.md said supermarket/warehouse affinity = "everything else"
   first in store assignment; the six defaults ship with only Walmart/Costco/Stop & Shop preferred,
   so nothing routes to an address-less speciality shop until the household opts in.
 TASK 011 done: Store + StoreKind + IngredientCategory + StoreSeeder (6 idempotent defaults); 29 tests green.
+TASK 012 done: IngredientTests written first (category round-trip, unique name, type-ahead incl. aliases).
