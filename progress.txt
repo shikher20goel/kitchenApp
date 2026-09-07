@@ -43,3 +43,4 @@ NOTE (task 025): edited seed/recipes.json — dn-pasta-hidden-veg "Red chili pow
   recipe's allergen flags are checked against its REQUIRED ingredients only: seven recipes carry
   an optional yogurt/naan/pita/cheese/peanut garnish and are correctly unflagged.
 TASK 025 done: SeedDTOs/SeedLoader/SeedImporter (idempotent upsert, keeps favourites + user recipes); 99 tests green.
+TASK 026 done: DietFilterTests + engine fixtures written first (each rule alone, alias exclusion, appliance, min age, combined).
