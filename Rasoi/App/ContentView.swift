@@ -27,7 +27,7 @@ struct ContentView: View {
                 .tabItem { Label("Shop", systemImage: "cart") }
                 .tag(Tab.shop)
 
-            placeholder(title: "More", detail: "Family, diet, stores, recipes and settings.")
+            NavigationStack { MoreView() }
                 .tabItem { Label("More", systemImage: "ellipsis.circle") }
                 .tag(Tab.more)
         }
