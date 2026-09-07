@@ -531,7 +531,7 @@
       ],
       "verify": "`bash scripts/verify.sh RasoiTests/PlanViewModelTests` green.",
       "gate": "AUTO",
-      "passes": false
+      "passes": true
     },
     {
       "id": "047",

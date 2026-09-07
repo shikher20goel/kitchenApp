@@ -81,11 +81,13 @@ struct MealPlannerInput: Sendable {
 /// broken by recipe id ascending (SPEC R5).
 enum MealPlanner {
     /// How much each factor is worth when ranking candidates.
+    /// The order of the numbers mirrors the order of the rules in SPEC §5: using something up
+    /// beats cooking from the pantry, which beats the kid score, which beats a nutrition nudge.
     private enum Weight {
         static let kidScore = 1.0
-        static let pantryCoverage = 0.6
-        static let useItUp = 0.7
-        static let nutritionGap = 0.5
+        static let pantryCoverage = 1.2
+        static let useItUp = 1.6
+        static let nutritionGap = 0.25
         static let weekendLongCook = 0.4
         static let favourite = 0.2
         /// Large enough to act as a rule while still yielding when there is no alternative.
@@ -98,6 +100,26 @@ enum MealPlanner {
     static let repeatWindowDays = 3
     /// Food groups a day is nudged to cover (SPEC §5 rule 5).
     static let dailyVegetableTarget = 2
+
+    /// A swap option for one slot: the recipe, and why the planner would pick it.
+    struct Alternative: Hashable, Sendable {
+        var recipeID: String
+        var reasons: [String]
+    }
+
+    /// Ranked alternatives for one slot. `input.lockedSlots` should carry the rest of the week so
+    /// variety and time rules are judged in context; the slot being swapped is simply left out.
+    static func alternatives(
+        _ input: MealPlannerInput,
+        on day: Date,
+        mealType: MealType,
+        limit: Int = 6
+    ) -> [Alternative] {
+        let state = PlanState(input: input, days: MealPlan.days(ofWeekContaining: input.weekStart))
+        return state.rankedCandidates(day: day, mealType: mealType)
+            .prefix(limit)
+            .map { Alternative(recipeID: $0.id, reasons: state.explanation(for: $0, day: day, mealType: mealType)) }
+    }
 
     static func plan(_ input: MealPlannerInput) -> [PlannedMeal] {
         let days = MealPlan.days(ofWeekContaining: input.weekStart)
@@ -147,11 +169,26 @@ enum MealPlanner {
             let key = Key(date: Calendar.rasoi.startOfDay(for: day), mealType: mealType)
             if chosen[key] != nil { return } // locked
 
-            let pool = input.recipes.filter { $0.serves(mealType) }
-            guard !pool.isEmpty else {
+            let ranked = rankedCandidates(day: key.date, mealType: mealType)
+            guard let best = ranked.first else {
                 chosen[key] = PlannedMeal(date: key.date, mealType: mealType, recipeID: nil)
                 return
             }
+
+            chosen[key] = PlannedMeal(
+                date: key.date,
+                mealType: mealType,
+                recipeID: best.id,
+                reasons: reasons(for: best, on: key.date, mealType: mealType)
+            )
+        }
+
+        /// Every recipe that could fill this slot, best first. Ties break by id ascending so the
+        /// order never changes between runs (SPEC R5).
+        func rankedCandidates(day: Date, mealType: MealType) -> [RecipeSummary] {
+            let key = Key(date: Calendar.rasoi.startOfDay(for: day), mealType: mealType)
+            let pool = input.recipes.filter { $0.serves(mealType) }
+            guard !pool.isEmpty else { return [] }
 
             // Constraints are relaxed one at a time, softest first, so a thin catalog still
             // yields a full week rather than an empty slot — and dropping one rule never
@@ -171,10 +208,7 @@ enum MealPlanner {
                 }
                 if !candidates.isEmpty { break }
             }
-            guard !candidates.isEmpty else {
-                chosen[key] = PlannedMeal(date: key.date, mealType: mealType, recipeID: nil)
-                return
-            }
+            guard !candidates.isEmpty else { return [] }
 
             var ranked: [(recipe: RecipeSummary, score: Double)] = []
             for candidate in candidates {
@@ -184,18 +218,12 @@ enum MealPlanner {
                 if left.score != right.score { return left.score > right.score }
                 return left.recipe.id < right.recipe.id     // ties break by id ascending
             }
+            return ranked.map(\.recipe)
+        }
 
-            guard let best = ranked.first?.recipe else {
-                chosen[key] = PlannedMeal(date: key.date, mealType: mealType, recipeID: nil)
-                return
-            }
-
-            chosen[key] = PlannedMeal(
-                date: key.date,
-                mealType: mealType,
-                recipeID: best.id,
-                reasons: reasons(for: best, on: key.date, mealType: mealType)
-            )
+        /// The reasons a given recipe would carry in this slot.
+        func explanation(for recipe: RecipeSummary, day: Date, mealType: MealType) -> [String] {
+            reasons(for: recipe, on: Calendar.rasoi.startOfDay(for: day), mealType: mealType)
         }
 
         // MARK: Constraints
