@@ -241,7 +241,7 @@
       ],
       "verify": "Test file(s) exist and reference the API named in the next task; `bash scripts/verify.sh --build-only` may fail — acceptable ONLY for this task pair.",
       "gate": "AUTO",
-      "passes": false
+      "passes": true
     },
     {
       "id": "021",
