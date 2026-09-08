@@ -109,6 +109,27 @@ xcrun devicectl list devices
 xcrun devicectl device install app --device <UDID> build/Build/Products/Debug-iphoneos/Rasoi.app
 ```
 
+### Attempted on 2026-09-07, blocked on one human step
+
+The iPhone 14 Pro is paired and visible to `xcrun devicectl list devices`, and the Mac holds a
+valid `Apple Development: shikher20goel@gmail.com` certificate (team `PL36AJ998G`). The device
+build still fails:
+
+```
+error: No Accounts: Add a new account in Accounts settings.
+error: No profiles for 'com.shikhergoel.rasoi' were found
+```
+
+Xcode has no Apple ID signed in, so it cannot create a development provisioning profile — and that
+is a human step, not something the build can do for you:
+
+1. Open **Xcode › Settings › Accounts**, press **+**, choose **Apple ID**, sign in as
+   shikher20goel@gmail.com.
+2. Re-run the four commands above. `project.yml` has been restored, so pass the team id on the
+   command line as shown; it is never committed.
+3. On the phone: **Settings › Privacy & Security › Developer Mode** on, then Trust the developer
+   under **Settings › General › VPN & Device Management** the first time.
+
 `connected (no DDI)` from `devicectl` means Developer Mode is off on the iPhone. A free Apple team
 signs for seven days, so this has to be repeated weekly. Plugging in, the Trust prompt, Developer
 Mode and any keychain "Allow" are human-only steps.

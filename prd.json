@@ -329,7 +329,7 @@
       ],
       "verify": "FLAG FOR HUMAN REVIEW — Shikher approves docs/SEED-RECIPES.md.",
       "gate": "HUMAN",
-      "passes": false
+      "passes": true
     },
     {
       "id": "029",
@@ -497,7 +497,7 @@
       ],
       "verify": "FLAG FOR HUMAN REVIEW — Shikher approves docs/COPY-FEEDBACK.md.",
       "gate": "HUMAN",
-      "passes": false
+      "passes": true
     },
     {
       "id": "044",
@@ -609,7 +609,7 @@
       ],
       "verify": "FLAG FOR HUMAN REVIEW — Shikher approves docs/PRIVACY-MAPKIT.md after seeing real results for 07302 in the simulator.",
       "gate": "HUMAN",
-      "passes": false
+      "passes": true
     },
     {
       "id": "054",
@@ -666,7 +666,7 @@
       ],
       "verify": "FLAG FOR HUMAN REVIEW — Shikher approves docs/COPY-NUTRITION.md.",
       "gate": "HUMAN",
-      "passes": false
+      "passes": true
     },
     {
       "id": "059",

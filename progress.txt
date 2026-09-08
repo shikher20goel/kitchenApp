@@ -117,3 +117,11 @@ TASK 066 implemented, awaiting human review (docs/REVIEW.md finalised; device in
 ALL 62 AUTO TASKS PASS. verify.sh green (385 test cases), privacy-audit.sh clean.
 Open HUMAN gates: 028 (seed catalog), 043 (feedback/settings copy), 053 (MapKit privacy),
 058 (nutrition copy), 066 (final review + iPhone install).
+TASK 066 blocked on a human step: the iPhone 14 Pro (FCE9725F-A4EF-5A45-845D-BC015674C826) is
+  paired and available, and a valid "Apple Development: shikher20goel@gmail.com" certificate exists
+  (team OU PL36AJ998G), but xcodebuild -allowProvisioningUpdates fails with:
+    "No Accounts: Add a new account in Accounts settings"
+    "No profiles for 'com.shikhergoel.rasoi' were found"
+  Xcode has no Apple ID signed in, so it cannot create a development provisioning profile.
+  Human step: Xcode › Settings › Accounts › + › Apple ID (shikher20goel@gmail.com), then re-run
+  the install block in docs/REVIEW.md. project.yml was restored so no team ID is committed.
