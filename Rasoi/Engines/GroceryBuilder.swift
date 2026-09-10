@@ -31,6 +31,9 @@ struct ExistingGroceryLine: Hashable, Sendable {
     var unit: MeasurementUnit
     var isChecked: Bool
     var addedManually: Bool
+    /// Recipe titles currently recorded against the line, so a rebuild can notice that the meal
+    /// that needed it has been cooked.
+    var neededFor: [String] = []
 }
 
 /// Turns a week of planned meals into a shopping list (SPEC §5).
@@ -209,7 +212,8 @@ enum GroceryBuilder {
             }
             guard !current.isChecked else { continue }
             let sameQuantity = current.unit == line.unit && abs(current.quantity - line.quantity) < 0.0001
-            if !sameQuantity {
+            let sameReasons = current.neededFor == line.neededFor
+            if !sameQuantity || !sameReasons {
                 plan.updates.append(
                     MergePlan.Update(
                         ingredientName: line.ingredientName,

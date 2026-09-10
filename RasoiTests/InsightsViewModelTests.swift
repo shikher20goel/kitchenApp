@@ -144,9 +144,16 @@ final class InsightsViewModelTests: XCTestCase {
     func testTheWeeklyHintNamesAFoodGroupAndNothingElse() throws {
         let harness = try makeHarness()
         let context = harness.stack.context
-        // A week of nothing but one plain grain dish leaves obvious gaps.
+        // A week of one dish that covers no fruit and no dairy leaves an obvious gap.
         let pasta = try XCTUnwrap(
-            try context.fetch(FetchDescriptor<Recipe>()).first { $0.nutritionTags.contains("grain") }
+            try context.fetch(FetchDescriptor<Recipe>(sortBy: [SortDescriptor(\.title)]))
+                .first { recipe in
+                    let groups = NutritionCoverage.groups(
+                        for: RecipeSummary(recipe: recipe),
+                        index: IngredientIndex(ingredients: (try? context.fetch(FetchDescriptor<Ingredient>())) ?? [])
+                    )
+                    return !groups.contains(.fruit) && !groups.contains(.dairy)
+                }
         )
         let plan = MealPlan.plan(forWeekContaining: today, in: context)
         for day in plan.days {

@@ -147,18 +147,28 @@ final class ShopViewModelTests: XCTestCase {
     @MainActor
     func testCookedMealsAreNotShoppedFor() throws {
         let harness = try makeHarness()
-        harness.plan.generateWeek()
-        // Pick a meal whose recipe is planned only once, so "cooked" really does remove it.
-        let counts = harness.plan.slots.compactMap { $0.recipe?.title }
-            .reduce(into: [String: Int]()) { $0[$1, default: 0] += 1 }
-        let slot = try XCTUnwrap(harness.plan.slots.first {
-            $0.mealType == .dinner && counts[$0.recipe?.title ?? ""] == 1
-        })
-        let title = try XCTUnwrap(slot.recipe?.title)
-        harness.plan.setStatus(.cooked, for: slot)
+        let context = harness.stack.context
 
+        // Build the week by hand so exactly one slot holds this recipe — a generated week can
+        // repeat a recipe at lunch and dinner, and then it is still needed.
+        let plan = MealPlan.plan(forWeekContaining: monday, in: context)
+        let recipe = try XCTUnwrap(
+            try context.fetch(FetchDescriptor<Recipe>(sortBy: [SortDescriptor(\.title)]))
+                .first { $0.serves(.dinner) }
+        )
+        let slot = MealSlot.slot(in: plan, on: monday, mealType: .dinner, in: context)
+        slot.recipe = recipe
+        slot.servings = 4
+        try context.save()
         harness.shop.buildFromPlan()
-        XCTAssertFalse(harness.shop.items.contains { $0.neededFor.contains(title) },
+
+        XCTAssertTrue(harness.shop.items.contains { $0.neededFor.contains(recipe.title) },
+                      "The planned dinner puts its ingredients on the list.")
+
+        harness.plan.setStatus(.cooked, for: slot)
+        harness.shop.buildFromPlan()
+
+        XCTAssertFalse(harness.shop.items.contains { $0.neededFor.contains(recipe.title) },
                        "Dinner that is already on the table is not on the list.")
     }
 

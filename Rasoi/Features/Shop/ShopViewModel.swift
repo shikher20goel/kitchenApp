@@ -56,7 +56,8 @@ final class ShopViewModel {
                 quantity: $0.quantity,
                 unit: $0.unit,
                 isChecked: $0.isChecked,
-                addedManually: $0.addedManually
+                addedManually: $0.addedManually,
+                neededFor: $0.neededFor
             )
         }
         let plan = GroceryBuilder.merge(built, into: existing)

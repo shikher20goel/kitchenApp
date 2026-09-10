@@ -214,7 +214,7 @@
    "appliances": [
     "stovetop"
    ],
-   "prepMinutes": 5,
+   "prepMinutes": 10,
    "cookMinutes": 15,
    "servings": 4,
    "minAgeYears": 2,
@@ -224,78 +224,121 @@
      "quantity": 200,
      "unit": "g",
      "isOptional": false,
-     "note": ""
+     "note": "about 1½ cups, sifted"
     },
     {
      "ingredientName": "Onion",
      "quantity": 1,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "small, very finely chopped"
     },
     {
      "ingredientName": "Tomato",
      "quantity": 1,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "small, deseeded and finely chopped"
+    },
+    {
+     "ingredientName": "Bell pepper",
+     "quantity": 0.5,
+     "unit": "count",
+     "isOptional": true,
+     "note": "finely chopped"
     },
     {
      "ingredientName": "Cilantro",
-     "quantity": 1,
+     "quantity": 0.25,
      "unit": "bunch",
      "isOptional": false,
-     "note": ""
+     "note": "chopped"
+    },
+    {
+     "ingredientName": "Ginger",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": "2 cm piece, grated (1 tsp)"
     },
     {
      "ingredientName": "Turmeric",
-     "quantity": 1,
-     "unit": "g",
+     "quantity": 0.5,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
+    },
+    {
+     "ingredientName": "Red chili powder",
+     "quantity": 0.25,
+     "unit": "tsp",
+     "isOptional": true,
+     "note": ""
+    },
+    {
+     "ingredientName": "Ground cumin",
+     "quantity": 0.75,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Ajwain",
+     "quantity": 0.5,
+     "unit": "tsp",
+     "isOptional": true,
+     "note": "carom seeds — they make besan easier to digest"
     },
     {
      "ingredientName": "Salt",
-     "quantity": 3,
-     "unit": "g",
+     "quantity": 1,
+     "unit": "tsp",
      "isOptional": false,
-     "note": ""
+     "note": "level"
     },
     {
      "ingredientName": "Vegetable oil",
-     "quantity": 15,
-     "unit": "ml",
+     "quantity": 3,
+     "unit": "tbsp",
      "isOptional": false,
-     "note": ""
+     "note": "for cooking"
     },
     {
      "ingredientName": "Plain yogurt",
-     "quantity": 150,
+     "quantity": 200,
      "unit": "g",
      "isOptional": true,
-     "note": ""
+     "note": "to serve"
     }
    ],
    "steps": [
-    "Whisk besan with 300 ml water, turmeric, salt to a pancake batter.",
-    "Stir in finely chopped onion, tomato, cilantro.",
-    "Ladle onto a hot oiled pan; cook 2 min each side.",
-    "Serve with yogurt for dipping."
+    "Sift 200 g besan into a bowl with ½ tsp turmeric, ¾ tsp ground cumin, ¼ tsp chilli powder, ½ tsp ajwain and 1 tsp salt.",
+    "Add 250 ml water a little at a time, whisking, until the batter is smooth and about as thick as double cream. Lumps now become lumps in the pan.",
+    "Rest the batter for 10 minutes. Besan absorbs water as it sits, so check it again after resting and loosen with a splash if needed.",
+    "Stir in the finely chopped onion, tomato, pepper, grated ginger and coriander. Chop everything small; big pieces tear the chilla when you flip it.",
+    "Heat a non-stick tawa on medium until a drop of water dances on it. Rub it with a little oil using a folded paper towel.",
+    "Pour a ladleful of batter and spread it outwards in a spiral with the back of the ladle to about 15 cm.",
+    "Drizzle ½ tsp oil around the edge and cook for 2–3 minutes, until the top looks dry and the edges lift away from the pan.",
+    "Flip and cook the second side for 1½–2 minutes, pressing lightly, until both sides are golden with brown freckles.",
+    "Keep the cooked chillas in a covered plate while you make the rest — they stay soft.",
+    "Serve hot with yogurt or ketchup, cut into strips for small hands."
    ],
    "nutritionTags": [
-    "fibre",
     "protein",
-    "vegetable"
+    "vegetable",
+    "iron"
    ],
    "isQuick": false,
    "kidBaseline": 4,
-   "kidFriendlyNote": "Make small 'mini pancakes' and let kids dip in yogurt or ketchup.",
+   "kidFriendlyNote": "Make them small — three little chillas beat one big one — and let a child dip them in yogurt or ketchup. Grate the vegetables so nothing is recognisable.",
    "lunchboxOK": true,
    "source": "seed",
    "containsEgg": false,
    "containsDairy": false,
    "containsNuts": false,
-   "containsGluten": false
+   "containsGluten": false,
+   "sourceNote": "Written for Rasoi — the standard besan batter, rested and thinned to a coating",
+   "sourceURL": ""
   },
   {
    "seedID": "bf-veg-upma",
@@ -3593,96 +3636,152 @@
     "stovetop"
    ],
    "prepMinutes": 10,
-   "cookMinutes": 10,
+   "cookMinutes": 15,
    "servings": 4,
    "minAgeYears": 1,
    "ingredients": [
     {
      "ingredientName": "Whole wheat tortillas",
-     "quantity": 4,
+     "quantity": 8,
      "unit": "count",
      "isOptional": false,
      "note": ""
     },
     {
      "ingredientName": "Black beans",
-     "quantity": 250,
+     "quantity": 400,
      "unit": "g",
      "isOptional": false,
-     "note": ""
+     "note": "one tin, drained and rinsed"
     },
     {
      "ingredientName": "Cheddar cheese",
-     "quantity": 120,
+     "quantity": 200,
      "unit": "g",
      "isOptional": false,
-     "note": ""
+     "note": "grated"
     },
     {
-     "ingredientName": "Corn",
-     "quantity": 100,
-     "unit": "g",
+     "ingredientName": "Onion",
+     "quantity": 1,
+     "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "small, finely chopped"
     },
     {
      "ingredientName": "Bell pepper",
      "quantity": 1,
      "unit": "count",
      "isOptional": false,
+     "note": "finely chopped"
+    },
+    {
+     "ingredientName": "Corn",
+     "quantity": 100,
+     "unit": "g",
+     "isOptional": false,
+     "note": "frozen or tinned"
+    },
+    {
+     "ingredientName": "Olive oil",
+     "quantity": 1,
+     "unit": "tbsp",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Garlic",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": false,
+     "note": "cloves, minced (2 tsp)"
+    },
+    {
+     "ingredientName": "Ground cumin",
+     "quantity": 1,
+     "unit": "tsp",
+     "isOptional": false,
      "note": ""
     },
     {
      "ingredientName": "Taco seasoning",
-     "quantity": 5,
-     "unit": "g",
+     "quantity": 1,
+     "unit": "tsp",
+     "isOptional": true,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 0.75,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "level"
+    },
+    {
+     "ingredientName": "Black pepper",
+     "quantity": 0.25,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
+    },
+    {
+     "ingredientName": "Lime",
+     "quantity": 0.5,
+     "unit": "count",
+     "isOptional": false,
+     "note": "juice"
+    },
+    {
+     "ingredientName": "Cilantro",
+     "quantity": 0.25,
+     "unit": "bunch",
+     "isOptional": false,
+     "note": "chopped"
     },
     {
      "ingredientName": "Salsa",
-     "quantity": 100,
-     "unit": "g",
-     "isOptional": false,
-     "note": ""
+     "quantity": 4,
+     "unit": "tbsp",
+     "isOptional": true,
+     "note": "to serve"
     },
     {
-     "ingredientName": "Plain yogurt",
-     "quantity": 100,
-     "unit": "g",
+     "ingredientName": "Sour cream",
+     "quantity": 4,
+     "unit": "tbsp",
      "isOptional": true,
-     "note": ""
-    },
-    {
-     "ingredientName": "Avocado",
-     "quantity": 1,
-     "unit": "count",
-     "isOptional": true,
-     "note": ""
+     "note": "to serve"
     }
    ],
    "steps": [
-    "Mash beans with taco seasoning; mix with corn and diced pepper.",
-    "Spread on half a tortilla, add cheese, fold.",
-    "Toast in a dry pan 3 min per side until crisp; cut into wedges.",
-    "Serve with salsa, yogurt, avocado."
+    "Warm 1 tbsp olive oil in a pan and cook the onion and pepper for 5 minutes until soft.",
+    "Add the garlic, 1 tsp ground cumin and 1 tsp taco seasoning and cook 1 minute.",
+    "Add the drained beans, the corn, ¾ tsp salt and ¼ tsp pepper, and cook 3 minutes.",
+    "Mash about half the beans against the side of the pan. Half-mashed is the right texture: it holds together without turning into a paste.",
+    "Squeeze in the lime juice, stir in the coriander, and take the pan off the heat.",
+    "Lay a tortilla in a dry pan over medium heat. Scatter a quarter of the cheese over half of it, spoon a quarter of the bean mixture on top, and fold the tortilla over.",
+    "Cook for 2–3 minutes, pressing down with a spatula, until the underside has brown spots.",
+    "Flip carefully and cook the second side for 2 minutes, until the cheese has melted all the way through.",
+    "Slide onto a board and let it sit for a minute before cutting — cutting straight away makes the filling run out.",
+    "Cut into triangles and serve with salsa and sour cream for dipping."
    ],
    "nutritionTags": [
+    "protein",
     "calcium",
     "fibre",
-    "protein",
-    "vegetable",
-    "wholeGrain"
+    "grain"
    ],
    "isQuick": false,
    "kidBaseline": 5,
-   "kidFriendlyNote": "Triangles for dipping — reliably eaten by both kids.",
+   "kidFriendlyNote": "Cut into triangles and let them dip. Mashing half the beans stops the filling falling out of the first bite, which is what usually causes the complaints.",
    "lunchboxOK": true,
    "source": "seed",
    "containsEgg": false,
    "containsDairy": true,
    "containsNuts": false,
-   "containsGluten": true
+   "containsGluten": true,
+   "sourceNote": "Written for Rasoi — dry-pan method so the tortilla crisps rather than fries",
+   "sourceURL": ""
   },
   {
    "seedID": "dn-veg-tacos",
@@ -3697,106 +3796,156 @@
    "prepMinutes": 15,
    "cookMinutes": 15,
    "servings": 4,
-   "minAgeYears": 2,
+   "minAgeYears": 1,
    "ingredients": [
     {
      "ingredientName": "Corn tortillas",
-     "quantity": 8,
+     "quantity": 12,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "small"
     },
     {
-     "ingredientName": "Pinto beans",
-     "quantity": 250,
+     "ingredientName": "Black beans",
+     "quantity": 400,
      "unit": "g",
      "isOptional": false,
-     "note": ""
+     "note": "one tin, drained"
     },
     {
      "ingredientName": "Sweet potato",
      "quantity": 2,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "medium, in 2 cm dice"
     },
     {
-     "ingredientName": "Corn",
-     "quantity": 100,
-     "unit": "g",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Lettuce",
-     "quantity": 1,
-     "unit": "bunch",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Tomato",
+     "ingredientName": "Bell pepper",
      "quantity": 2,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "sliced"
     },
     {
-     "ingredientName": "Cheddar cheese",
-     "quantity": 80,
-     "unit": "g",
+     "ingredientName": "Onion",
+     "quantity": 1,
+     "unit": "count",
      "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Taco seasoning",
-     "quantity": 5,
-     "unit": "g",
-     "isOptional": false,
-     "note": ""
+     "note": "sliced"
     },
     {
      "ingredientName": "Olive oil",
-     "quantity": 15,
-     "unit": "ml",
+     "quantity": 2,
+     "unit": "tbsp",
      "isOptional": false,
      "note": ""
+    },
+    {
+     "ingredientName": "Ground cumin",
+     "quantity": 2,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "1½ for the vegetables, ½ for the beans"
+    },
+    {
+     "ingredientName": "Taco seasoning",
+     "quantity": 2,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Red chili powder",
+     "quantity": 0.5,
+     "unit": "tsp",
+     "isOptional": true,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 1.25,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "level"
     },
     {
      "ingredientName": "Lime",
      "quantity": 1,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "cut into wedges"
     },
     {
-     "ingredientName": "Sour cream",
+     "ingredientName": "Avocado",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": "sliced or mashed"
+    },
+    {
+     "ingredientName": "Lettuce",
+     "quantity": 0.5,
+     "unit": "count",
+     "isOptional": false,
+     "note": "shredded"
+    },
+    {
+     "ingredientName": "Tomato",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": false,
+     "note": "diced"
+    },
+    {
+     "ingredientName": "Cheddar cheese",
      "quantity": 100,
      "unit": "g",
      "isOptional": true,
+     "note": "grated"
+    },
+    {
+     "ingredientName": "Sour cream",
+     "quantity": 4,
+     "unit": "tbsp",
+     "isOptional": true,
      "note": ""
+    },
+    {
+     "ingredientName": "Cilantro",
+     "quantity": 0.25,
+     "unit": "bunch",
+     "isOptional": false,
+     "note": "chopped"
     }
    ],
    "steps": [
-    "Roast diced sweet potato with oil + seasoning 15 min (oven or air fryer).",
-    "Warm beans and corn.",
-    "Set out warm tortillas and bowls of everything; everyone builds their own."
+    "Heat the oven to 220°C (200°C fan).",
+    "Toss the diced sweet potato, peppers and onion with 2 tbsp olive oil, 1½ tsp ground cumin, 2 tsp taco seasoning and ¾ tsp salt.",
+    "Spread on a lined tray in a single layer — crowded vegetables steam instead of roasting — and roast 20 minutes, turning once, until the edges are browned.",
+    "Meanwhile warm the beans in a small pan with ½ tsp cumin, ½ tsp salt and 3 tbsp water, mashing a few against the side, for 5 minutes.",
+    "Prepare the cold toppings while the tray is in the oven: shred the lettuce, dice the tomatoes, slice the avocado, grate the cheese, chop the coriander.",
+    "Warm the tortillas one at a time in a dry pan, 20 seconds a side, and stack them under a clean cloth so they stay soft and pliable.",
+    "Put everything on the table in its own bowl, with lime wedges.",
+    "Squeeze lime over the roasted vegetables just before serving — it lifts the whole tray.",
+    "Let everyone build their own: beans first, then vegetables, then the cold toppings."
    ],
    "nutritionTags": [
-    "fibre",
     "protein",
     "vegetable",
-    "vitaminA"
+    "fibre",
+    "grain"
    ],
    "isQuick": false,
    "kidBaseline": 5,
-   "kidFriendlyNote": "Choice = buy-in. Let kids assemble; keep toppings mild.",
+   "kidFriendlyNote": "Everything in separate bowls, everyone builds their own. Choosing what goes in is the reason children eat vegetables at a taco dinner and not at any other.",
    "lunchboxOK": false,
    "source": "seed",
    "containsEgg": false,
-   "containsDairy": true,
+   "containsDairy": false,
    "containsNuts": false,
-   "containsGluten": false
+   "containsGluten": false,
+   "sourceNote": "Written for Rasoi — roasted vegetables and spiced beans, assembled at the table",
+   "sourceURL": ""
   },
   {
    "seedID": "dn-burrito-bowl",
@@ -3809,36 +3958,99 @@
    "appliances": [
     "instantPot"
    ],
-   "prepMinutes": 10,
+   "prepMinutes": 15,
    "cookMinutes": 20,
    "servings": 4,
-   "minAgeYears": 2,
+   "minAgeYears": 1,
    "ingredients": [
     {
-     "ingredientName": "Brown rice",
+     "ingredientName": "Basmati rice",
      "quantity": 300,
      "unit": "g",
      "isOptional": false,
-     "note": ""
+     "note": "or long-grain white rice"
     },
     {
      "ingredientName": "Black beans",
-     "quantity": 250,
+     "quantity": 400,
      "unit": "g",
      "isOptional": false,
-     "note": ""
+     "note": "one tin, drained"
     },
     {
      "ingredientName": "Corn",
-     "quantity": 150,
+     "quantity": 200,
      "unit": "g",
+     "isOptional": false,
+     "note": "frozen or tinned"
+    },
+    {
+     "ingredientName": "Bell pepper",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": "sliced"
+    },
+    {
+     "ingredientName": "Onion",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": "sliced"
+    },
+    {
+     "ingredientName": "Olive oil",
+     "quantity": 2,
+     "unit": "tbsp",
      "isOptional": false,
      "note": ""
     },
     {
-     "ingredientName": "Tomato",
+     "ingredientName": "Ground cumin",
+     "quantity": 1.5,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Taco seasoning",
+     "quantity": 1,
+     "unit": "tsp",
+     "isOptional": true,
+     "note": ""
+    },
+    {
+     "ingredientName": "Garlic",
      "quantity": 2,
      "unit": "count",
+     "isOptional": false,
+     "note": "cloves, minced (2 tsp)"
+    },
+    {
+     "ingredientName": "Lime",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": false,
+     "note": "juice of one, wedges from the other"
+    },
+    {
+     "ingredientName": "Cilantro",
+     "quantity": 0.5,
+     "unit": "bunch",
+     "isOptional": false,
+     "note": "chopped, most of it into the rice"
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 1.5,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "level"
+    },
+    {
+     "ingredientName": "Black pepper",
+     "quantity": 0.25,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
     },
@@ -3847,64 +4059,65 @@
      "quantity": 1,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "sliced"
+    },
+    {
+     "ingredientName": "Tomato",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": false,
+     "note": "diced"
+    },
+    {
+     "ingredientName": "Lettuce",
+     "quantity": 0.5,
+     "unit": "count",
+     "isOptional": false,
+     "note": "shredded"
     },
     {
      "ingredientName": "Cheddar cheese",
-     "quantity": 80,
-     "unit": "g",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Cilantro",
-     "quantity": 1,
-     "unit": "bunch",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Lime",
-     "quantity": 1,
-     "unit": "count",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Salsa",
      "quantity": 100,
      "unit": "g",
-     "isOptional": false,
-     "note": ""
+     "isOptional": true,
+     "note": "grated"
     },
     {
-     "ingredientName": "Salt",
-     "quantity": 3,
-     "unit": "g",
-     "isOptional": false,
+     "ingredientName": "Sour cream",
+     "quantity": 4,
+     "unit": "tbsp",
+     "isOptional": true,
      "note": ""
     }
    ],
    "steps": [
-    "Pressure cook brown rice (1:1.25 water) 22 min.",
-    "Stir lime, cilantro, salt into rice.",
-    "Layer rice, beans, corn, tomato, avocado, cheese, salsa."
+    "Rinse 300 g rice until the water runs clear and cook it in 600 ml water with ½ tsp salt: 12 minutes covered on low, then 5 minutes off the heat without lifting the lid.",
+    "While the rice cooks, heat 1 tbsp olive oil and fry the sliced onion and pepper on high for 5 minutes, so they take on colour rather than just softening.",
+    "Add the garlic, 1 tsp of the cumin, 1 tsp taco seasoning and ½ tsp salt and cook 1 minute. Tip into a bowl.",
+    "In the same pan warm the beans and corn with ½ tsp cumin, ½ tsp salt and 2 tbsp water for 4 minutes.",
+    "Fluff the cooked rice with a fork, then fold in the juice of one lime, most of the chopped coriander and 1 tbsp olive oil. Doing this off the heat keeps the coriander green.",
+    "Taste the rice: it should be bright and a little salty on its own.",
+    "Prepare the cold toppings — dice the tomato, shred the lettuce, slice the avocado.",
+    "Build each bowl: rice on the bottom, then beans and corn, then the peppers and onion, then the cold toppings in their own sections.",
+    "Finish with cheese, sour cream, the rest of the coriander and a lime wedge on the side."
    ],
    "nutritionTags": [
-    "fibre",
-    "healthyFat",
     "protein",
-    "wholeGrain"
+    "grain",
+    "vegetable",
+    "fibre"
    ],
    "isQuick": false,
    "kidBaseline": 4,
-   "kidFriendlyNote": "Serve components separately for the 4-year-old.",
+   "kidFriendlyNote": "A deconstructed plate: keep each element in its own corner of the bowl so a child who dislikes one thing can still eat everything else.",
    "lunchboxOK": true,
    "source": "seed",
    "containsEgg": false,
-   "containsDairy": true,
+   "containsDairy": false,
    "containsNuts": false,
-   "containsGluten": false
+   "containsGluten": false,
+   "sourceNote": "Written for Rasoi — lime and coriander stirred into the rice after cooking",
+   "sourceURL": ""
   },
   {
    "seedID": "dn-pasta-hidden-veg",
@@ -3919,7 +4132,7 @@
     "stovetop"
    ],
    "prepMinutes": 10,
-   "cookMinutes": 20,
+   "cookMinutes": 25,
    "servings": 4,
    "minAgeYears": 1,
    "ingredients": [
@@ -3931,88 +4144,120 @@
      "note": ""
     },
     {
-     "ingredientName": "Marinara sauce",
-     "quantity": 400,
+     "ingredientName": "Tomato puree",
+     "quantity": 700,
      "unit": "g",
      "isOptional": false,
-     "note": ""
+     "note": "passata, or 2 tins of chopped tomatoes blended"
     },
     {
      "ingredientName": "Carrot",
      "quantity": 2,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "medium, diced"
     },
     {
      "ingredientName": "Zucchini",
      "quantity": 1,
      "unit": "count",
      "isOptional": false,
+     "note": "medium, diced"
+    },
+    {
+     "ingredientName": "Onion",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": "medium, finely chopped"
+    },
+    {
+     "ingredientName": "Garlic",
+     "quantity": 3,
+     "unit": "count",
+     "isOptional": false,
+     "note": "cloves, sliced"
+    },
+    {
+     "ingredientName": "Olive oil",
+     "quantity": 2,
+     "unit": "tbsp",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Italian seasoning",
+     "quantity": 1.5,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "or a handful of fresh basil"
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 2,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "1½ for the pasta water, ½ for the sauce"
+    },
+    {
+     "ingredientName": "Sugar",
+     "quantity": 0.5,
+     "unit": "tsp",
+     "isOptional": true,
+     "note": "only if the tomatoes are sharp"
+    },
+    {
+     "ingredientName": "Black pepper",
+     "quantity": 0.25,
+     "unit": "tsp",
+     "isOptional": false,
      "note": ""
     },
     {
      "ingredientName": "Red chili powder",
-     "quantity": 1,
-     "unit": "g",
+     "quantity": 0.25,
+     "unit": "tsp",
      "isOptional": true,
-     "note": ""
-    },
-    {
-     "ingredientName": "Garlic",
-     "quantity": 2,
-     "unit": "count",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Olive oil",
-     "quantity": 15,
-     "unit": "ml",
-     "isOptional": false,
      "note": ""
     },
     {
      "ingredientName": "Parmesan",
      "quantity": 40,
      "unit": "g",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Italian seasoning",
-     "quantity": 2,
-     "unit": "g",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Salt",
-     "quantity": 3,
-     "unit": "g",
-     "isOptional": false,
-     "note": ""
+     "isOptional": true,
+     "note": "grated, to serve"
     }
    ],
    "steps": [
-    "Steam carrot + zucchini 8 min; blend with marinara in Vitamix until smooth.",
-    "Sauté garlic in oil; add sauce, seasoning; simmer 5 min.",
-    "Toss with cooked pasta; top with parmesan."
+    "Warm 2 tbsp olive oil in a saucepan over medium heat. Add the chopped onion and cook 5 minutes until translucent — soft, not browned.",
+    "Add the sliced garlic and cook 1 minute, until it smells sweet. Browned garlic turns the whole sauce bitter.",
+    "Add the diced carrot and courgette with ¼ tsp salt and cook 8 minutes, stirring now and then, until the carrot is soft enough to crush against the pan.",
+    "Pour in 700 g passata, add 1½ tsp Italian seasoning, ¼ tsp black pepper and the remaining ¼ tsp salt, and bring to a gentle simmer.",
+    "Simmer uncovered for 12 minutes, stirring occasionally. The sauce is ready when a spoon drawn through it leaves a channel for a second.",
+    "Taste. If it is sharp, add ½ tsp sugar — a small amount of sugar in tomato sauce is seasoning, not sweetening.",
+    "Blend the sauce smooth with a stick blender, right in the pan. This is what hides the vegetables.",
+    "Meanwhile bring a large pot of water to a rolling boil, add 1½ tsp salt, and cook 350 g pasta for one minute less than the packet says.",
+    "Scoop out a mugful of pasta water before draining. Starchy water is what makes the sauce cling.",
+    "Drain the pasta and return it to the pot with the sauce. Toss over low heat for 1 minute, loosening with pasta water a splash at a time until it coats every piece.",
+    "Serve with grated parmesan, and keep any leftover sauce — it freezes well for a night when nobody wants to cook."
    ],
    "nutritionTags": [
+    "grain",
     "vegetable",
-    "vitaminA",
-    "wholeGrain"
+    "wholeGrain",
+    "vitaminC"
    ],
    "isQuick": false,
    "kidBaseline": 5,
-   "kidFriendlyNote": "Sauce is smooth and orange-red; kids never spot the vegetables.",
+   "kidFriendlyNote": "Blending the sauce is the point: carrot and courgette disappear completely and it tastes sweeter than a plain tomato sauce. Keep a little pasta water to loosen it.",
    "lunchboxOK": true,
    "source": "seed",
    "containsEgg": false,
-   "containsDairy": true,
+   "containsDairy": false,
    "containsNuts": false,
-   "containsGluten": true
+   "containsGluten": true,
+   "sourceNote": "Written for Rasoi — soffritto method with the vegetables blended into the sauce",
+   "sourceURL": ""
   },
   {
    "seedID": "dn-mac-cheese-cauli",
@@ -4026,87 +4271,117 @@
     "stovetop"
    ],
    "prepMinutes": 10,
-   "cookMinutes": 20,
+   "cookMinutes": 25,
    "servings": 4,
    "minAgeYears": 1,
    "ingredients": [
     {
      "ingredientName": "Pasta",
-     "quantity": 350,
+     "quantity": 300,
      "unit": "g",
      "isOptional": false,
-     "note": ""
+     "note": "macaroni or small shells"
     },
     {
      "ingredientName": "Cauliflower",
-     "quantity": 0.5,
-     "unit": "count",
+     "quantity": 350,
+     "unit": "g",
      "isOptional": false,
-     "note": ""
+     "note": "small florets"
     },
     {
      "ingredientName": "Milk",
-     "quantity": 300,
+     "quantity": 600,
      "unit": "ml",
      "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Cheddar cheese",
-     "quantity": 150,
-     "unit": "g",
-     "isOptional": false,
-     "note": ""
+     "note": "warmed"
     },
     {
      "ingredientName": "Butter",
-     "quantity": 20,
-     "unit": "g",
+     "quantity": 3,
+     "unit": "tbsp",
      "isOptional": false,
-     "note": ""
+     "note": "about 45 g"
     },
     {
      "ingredientName": "All-purpose flour",
-     "quantity": 20,
+     "quantity": 3,
+     "unit": "tbsp",
+     "isOptional": false,
+     "note": "about 25 g"
+    },
+    {
+     "ingredientName": "Cheddar cheese",
+     "quantity": 200,
      "unit": "g",
      "isOptional": false,
-     "note": ""
+     "note": "grated, sharp"
+    },
+    {
+     "ingredientName": "Parmesan",
+     "quantity": 30,
+     "unit": "g",
+     "isOptional": true,
+     "note": "grated"
     },
     {
      "ingredientName": "Salt",
-     "quantity": 3,
-     "unit": "g",
+     "quantity": 1.75,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "1¼ for the water, ½ for the sauce"
+    },
+    {
+     "ingredientName": "Black pepper",
+     "quantity": 0.25,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
     },
     {
-     "ingredientName": "Peas",
-     "quantity": 100,
-     "unit": "g",
+     "ingredientName": "Nutmeg",
+     "quantity": 0.125,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "a scrape — the classic béchamel seasoning"
+    },
+    {
+     "ingredientName": "Bread crumbs",
+     "quantity": 3,
+     "unit": "tbsp",
      "isOptional": true,
-     "note": ""
+     "note": "for the top"
     }
    ],
    "steps": [
-    "Boil pasta; steam cauliflower florets until soft.",
-    "Blend cauliflower with milk in Vitamix.",
-    "Make roux with butter + flour; whisk in cauliflower-milk; melt in cheese.",
-    "Toss with pasta and peas."
+    "Bring a large pot of water to the boil and add 1¼ tsp salt.",
+    "Cook 300 g pasta for 2 minutes less than the packet says, adding the cauliflower florets for the last 5 minutes. One pot, both jobs.",
+    "While that cooks, melt 3 tbsp butter in a saucepan over medium heat.",
+    "Whisk in 3 tbsp flour and cook for 2 minutes, whisking constantly. It should smell biscuity — that is the raw flour taste cooking out.",
+    "Pour in the warm milk a third at a time, whisking smooth after each addition before adding more. Adding it all at once is how lumps happen.",
+    "Simmer gently for 4–5 minutes, whisking, until the sauce coats the back of a spoon.",
+    "Take the pan off the heat. Add ½ tsp salt, ¼ tsp black pepper and a scrape of nutmeg.",
+    "Add 200 g grated cheddar a handful at a time, stirring until each is melted. Off the heat is essential: boiled cheese sauce splits and goes oily.",
+    "Drain the pasta and cauliflower and fold them into the sauce, breaking up the softest florets with the spoon so they melt into it.",
+    "Serve as it is, or spread it in a dish, scatter over the parmesan and breadcrumbs and grill for 4 minutes until the top is spotted brown."
    ],
    "nutritionTags": [
     "calcium",
     "protein",
-    "vegetable"
+    "vegetable",
+    "grain"
    ],
    "isQuick": false,
    "kidBaseline": 5,
-   "kidFriendlyNote": "The 4-year-old's favourite; half the sauce is cauliflower.",
+   "kidFriendlyNote": "The cauliflower cooks with the pasta and disappears into the sauce. Grate the cheese yourself — pre-grated cheese has starch on it and makes the sauce grainy.",
    "lunchboxOK": false,
    "source": "seed",
    "containsEgg": false,
    "containsDairy": true,
    "containsNuts": false,
-   "containsGluten": true
+   "containsGluten": true,
+   "sourceNote": "Written for Rasoi — béchamel method, cheese added off the heat",
+   "sourceURL": ""
   },
   {
    "seedID": "dn-veg-pizza",
@@ -4121,91 +4396,135 @@
    "prepMinutes": 15,
    "cookMinutes": 15,
    "servings": 4,
-   "minAgeYears": 2,
+   "minAgeYears": 1,
    "ingredients": [
     {
      "ingredientName": "Pizza dough",
      "quantity": 500,
      "unit": "g",
      "isOptional": false,
-     "note": ""
+     "note": "shop-bought or your own, at room temperature"
     },
     {
-     "ingredientName": "Marinara sauce",
+     "ingredientName": "Tomato puree",
      "quantity": 200,
      "unit": "g",
      "isOptional": false,
-     "note": ""
+     "note": "passata"
     },
     {
      "ingredientName": "Mozzarella",
-     "quantity": 200,
+     "quantity": 250,
      "unit": "g",
      "isOptional": false,
-     "note": ""
+     "note": "grated or torn"
     },
     {
      "ingredientName": "Bell pepper",
      "quantity": 1,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "thinly sliced"
+    },
+    {
+     "ingredientName": "Mushrooms",
+     "quantity": 150,
+     "unit": "g",
+     "isOptional": false,
+     "note": "thinly sliced"
+    },
+    {
+     "ingredientName": "Onion",
+     "quantity": 0.5,
+     "unit": "count",
+     "isOptional": false,
+     "note": "thinly sliced"
     },
     {
      "ingredientName": "Corn",
      "quantity": 80,
      "unit": "g",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Mushrooms",
-     "quantity": 100,
-     "unit": "g",
-     "isOptional": true,
-     "note": ""
-    },
-    {
-     "ingredientName": "Spinach",
-     "quantity": 1,
-     "unit": "bunch",
      "isOptional": true,
      "note": ""
     },
     {
      "ingredientName": "Olive oil",
-     "quantity": 10,
-     "unit": "ml",
+     "quantity": 2,
+     "unit": "tbsp",
      "isOptional": false,
      "note": ""
     },
     {
+     "ingredientName": "Garlic",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": "clove, crushed into the sauce"
+    },
+    {
      "ingredientName": "Italian seasoning",
-     "quantity": 2,
-     "unit": "g",
+     "quantity": 1.5,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 1,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "level, ¾ in the sauce"
+    },
+    {
+     "ingredientName": "Sugar",
+     "quantity": 0.25,
+     "unit": "tsp",
+     "isOptional": true,
+     "note": "if the passata is sharp"
+    },
+    {
+     "ingredientName": "Black pepper",
+     "quantity": 0.25,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Parmesan",
+     "quantity": 30,
+     "unit": "g",
+     "isOptional": true,
+     "note": "grated"
     }
    ],
    "steps": [
-    "Preheat oven to 245 °C.",
-    "Stretch dough; spread sauce; kids add cheese and toppings.",
-    "Bake 12–14 min until bubbling."
+    "Put a heavy baking tray or a pizza stone in the oven and heat it to the highest setting your oven has, at least 240°C. Give it a full 20 minutes to get properly hot.",
+    "Make the sauce without cooking it: mix 200 g passata with the crushed garlic, 1 tsp Italian seasoning, ¾ tsp salt, ¼ tsp pepper, 1 tbsp olive oil and the sugar if needed. An uncooked sauce tastes fresher after the fierce heat of the oven.",
+    "Slice the vegetables thinly — thick slices release water and make the middle soggy.",
+    "Divide the dough in two and stretch each piece on a floured sheet of baking paper to about 25 cm, leaving the rim slightly thicker.",
+    "Spread half the sauce on each base, leaving a 2 cm border, and go lightly: too much sauce is the most common home-pizza mistake.",
+    "Scatter over the mozzarella, then the vegetables. Cheese under the vegetables stops them drying out.",
+    "Slide the pizza, still on its paper, onto the hot tray. Bake 10–12 minutes, until the crust is blistered and the cheese is bubbling with brown spots.",
+    "Bake the second pizza the same way while the first one rests.",
+    "Brush the crust rim with the remaining olive oil, add the parmesan and the last ½ tsp Italian seasoning, and let it sit 2 minutes before cutting so the cheese sets."
    ],
    "nutritionTags": [
-    "calcium",
     "grain",
-    "vegetable"
+    "calcium",
+    "vegetable",
+    "protein"
    ],
    "isQuick": false,
    "kidBaseline": 5,
-   "kidFriendlyNote": "Friday pizza night; each kid decorates their own half.",
+   "kidFriendlyNote": "Let each child top their own quarter. A hot tray or stone is what gives a crisp base at home — a cold tray makes the bottom soft and disappointing.",
    "lunchboxOK": false,
    "source": "seed",
    "containsEgg": false,
    "containsDairy": true,
    "containsNuts": false,
-   "containsGluten": true
+   "containsGluten": true,
+   "sourceNote": "Written for Rasoi — hot-tray method with a no-cook tomato sauce",
+   "sourceURL": ""
   },
   {
    "seedID": "dn-veg-fried-rice",
@@ -4225,65 +4544,100 @@
    "ingredients": [
     {
      "ingredientName": "Basmati rice",
-     "quantity": 300,
+     "quantity": 600,
      "unit": "g",
      "isOptional": false,
-     "note": "cooked and cooled"
+     "note": "cooked and chilled overnight, about 4 cups"
     },
     {
      "ingredientName": "Eggs",
      "quantity": 3,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "beaten with a pinch of salt"
     },
     {
      "ingredientName": "Frozen mixed vegetables",
-     "quantity": 250,
+     "quantity": 200,
      "unit": "g",
      "isOptional": false,
-     "note": ""
+     "note": "carrot, peas, beans and corn"
+    },
+    {
+     "ingredientName": "Spring onion",
+     "quantity": 4,
+     "unit": "count",
+     "isOptional": false,
+     "note": "whites and greens separated"
     },
     {
      "ingredientName": "Garlic",
-     "quantity": 2,
+     "quantity": 3,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "cloves, minced (1 tbsp)"
     },
     {
-     "ingredientName": "Soy sauce",
-     "quantity": 20,
-     "unit": "ml",
+     "ingredientName": "Ginger",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": "2 cm piece, grated (1 tsp)"
+    },
+    {
+     "ingredientName": "Vegetable oil",
+     "quantity": 2,
+     "unit": "tbsp",
      "isOptional": false,
      "note": ""
     },
     {
      "ingredientName": "Sesame oil",
-     "quantity": 5,
-     "unit": "ml",
+     "quantity": 1,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "at the end, off the heat"
+    },
+    {
+     "ingredientName": "Soy sauce",
+     "quantity": 2,
+     "unit": "tbsp",
      "isOptional": false,
      "note": ""
     },
     {
-     "ingredientName": "Vegetable oil",
-     "quantity": 15,
-     "unit": "ml",
+     "ingredientName": "Vinegar",
+     "quantity": 1,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "rice vinegar if you have it"
+    },
+    {
+     "ingredientName": "Black pepper",
+     "quantity": 0.5,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
     },
     {
      "ingredientName": "Salt",
-     "quantity": 2,
-     "unit": "g",
+     "quantity": 0.5,
+     "unit": "tsp",
      "isOptional": false,
-     "note": ""
+     "note": "level — the soy sauce brings plenty"
     }
    ],
    "steps": [
-    "Scramble eggs in a hot wok; set aside.",
-    "Stir-fry garlic, veg 3 min; add rice, soy sauce; toss 3 min.",
-    "Return eggs; finish with sesame oil."
+    "Break up the cold rice with your fingers so there are no lumps. This takes two minutes and decides whether the dish is fried rice or rice pudding.",
+    "Line everything up beside the stove: beaten eggs, vegetables, aromatics, sauces. Once the wok is hot there is no time to chop.",
+    "Heat 1 tbsp oil in a wok or your widest pan over the highest heat until it shimmers.",
+    "Pour in the beaten eggs and let them set for 20 seconds, then scramble them in big soft curds. Tip them out onto a plate while they are still slightly wet.",
+    "Add the remaining 1 tbsp oil, then the garlic, ginger and the white parts of the spring onions. Stir for 30 seconds — no longer, or the garlic burns.",
+    "Add the frozen vegetables and stir-fry 2 minutes until they are hot and any water has boiled off.",
+    "Add the rice and press it into the pan, then toss. Keep it moving for 3–4 minutes so it heats through and picks up a little colour.",
+    "Pour 2 tbsp soy sauce and 1 tsp vinegar around the edge of the pan rather than over the rice — it sizzles and caramelises instead of making things soggy.",
+    "Return the egg, add ½ tsp black pepper and ½ tsp salt, and toss everything together for 1 minute.",
+    "Turn off the heat, add 1 tsp sesame oil and the green parts of the spring onions, toss once and serve immediately."
    ],
    "nutritionTags": [
     "grain",
@@ -4292,13 +4646,15 @@
    ],
    "isQuick": false,
    "kidBaseline": 5,
-   "kidFriendlyNote": "Great use of leftover rice; skip egg for an egg-free version (add tofu).",
+   "kidFriendlyNote": "Cold leftover rice is the secret — fresh rice steams and clumps. Scramble the egg separately so children who are unsure about egg can see exactly what is in it.",
    "lunchboxOK": true,
    "source": "seed",
    "containsEgg": true,
    "containsDairy": false,
    "containsNuts": false,
-   "containsGluten": true
+   "containsGluten": true,
+   "sourceNote": "Written for Rasoi — day-old rice, high heat, everything prepped before the wok",
+   "sourceURL": ""
   },
   {
    "seedID": "dn-tofu-stirfry-noodles",
@@ -4310,11 +4666,18 @@
    "appliances": [
     "stovetop"
    ],
-   "prepMinutes": 10,
+   "prepMinutes": 15,
    "cookMinutes": 15,
    "servings": 4,
    "minAgeYears": 2,
    "ingredients": [
+    {
+     "ingredientName": "Firm tofu",
+     "quantity": 400,
+     "unit": "g",
+     "isOptional": false,
+     "note": "pressed 20 minutes, in 2 cm cubes"
+    },
     {
      "ingredientName": "Rice noodles",
      "quantity": 250,
@@ -4323,89 +4686,133 @@
      "note": ""
     },
     {
-     "ingredientName": "Firm tofu",
-     "quantity": 400,
+     "ingredientName": "Broccoli",
+     "quantity": 300,
      "unit": "g",
      "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Broccoli",
-     "quantity": 1,
-     "unit": "count",
-     "isOptional": false,
-     "note": ""
+     "note": "small florets"
     },
     {
      "ingredientName": "Carrot",
      "quantity": 1,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "cut into matchsticks"
+    },
+    {
+     "ingredientName": "Bell pepper",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": "sliced"
     },
     {
      "ingredientName": "Garlic",
-     "quantity": 2,
+     "quantity": 3,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "cloves, minced (1 tbsp)"
     },
     {
      "ingredientName": "Ginger",
-     "quantity": 5,
-     "unit": "g",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": "3 cm piece, grated (1 tbsp)"
+    },
+    {
+     "ingredientName": "Cornstarch",
+     "quantity": 1,
+     "unit": "tbsp",
+     "isOptional": false,
+     "note": "for dusting the tofu"
+    },
+    {
+     "ingredientName": "Vegetable oil",
+     "quantity": 3,
+     "unit": "tbsp",
      "isOptional": false,
      "note": ""
     },
     {
      "ingredientName": "Soy sauce",
-     "quantity": 30,
-     "unit": "ml",
+     "quantity": 3,
+     "unit": "tbsp",
      "isOptional": false,
      "note": ""
     },
     {
      "ingredientName": "Honey",
-     "quantity": 10,
-     "unit": "g",
+     "quantity": 1,
+     "unit": "tbsp",
+     "isOptional": false,
+     "note": "or maple syrup"
+    },
+    {
+     "ingredientName": "Vinegar",
+     "quantity": 1,
+     "unit": "tbsp",
      "isOptional": false,
      "note": ""
     },
     {
-     "ingredientName": "Cornstarch",
-     "quantity": 10,
-     "unit": "g",
+     "ingredientName": "Sesame oil",
+     "quantity": 1,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
     },
     {
-     "ingredientName": "Vegetable oil",
-     "quantity": 20,
-     "unit": "ml",
+     "ingredientName": "Sesame seeds",
+     "quantity": 1,
+     "unit": "tsp",
+     "isOptional": true,
+     "note": "toasted, to finish"
+    },
+    {
+     "ingredientName": "Black pepper",
+     "quantity": 0.5,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 0.5,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
     }
    ],
    "steps": [
-    "Toss pressed tofu cubes in cornstarch; pan-fry until golden.",
-    "Stir-fry broccoli, carrot, garlic, ginger 4 min.",
-    "Add soaked noodles, soy-honey sauce, tofu; toss 2 min."
+    "Press the tofu: wrap the block in a clean cloth, put a plate and a tin on top, and leave it 20 minutes. Water squeezed out now is flavour absorbed later.",
+    "Cut it into 2 cm cubes and toss with 1 tbsp cornstarch and ½ tsp salt — the coating is what makes the crust.",
+    "Mix the sauce in a cup: 3 tbsp soy sauce, 1 tbsp honey, 1 tbsp vinegar, 1 tbsp grated ginger, half the garlic and 4 tbsp water.",
+    "Cook the noodles one minute short of the packet time, drain, rinse cold and toss with 1 tsp sesame oil.",
+    "Heat 2 tbsp oil in a wide pan on medium-high. Lay the tofu in one layer and leave it for 3 minutes without touching it — moving it early is why tofu sticks and falls apart.",
+    "Turn the cubes and brown the other sides, about 4 minutes in total, then lift them out.",
+    "Add the last 1 tbsp oil, the broccoli and the carrot, and stir-fry 3 minutes.",
+    "Add 3 tbsp water and cover for 2 minutes to steam the broccoli through, then uncover and let the water boil away.",
+    "Add the pepper and remaining garlic and stir-fry 1 minute.",
+    "Return the tofu, add the noodles and pour the sauce around the edge of the pan. Toss for 2 minutes until everything is glossy and the sauce clings.",
+    "Finish with ½ tsp black pepper and the toasted sesame seeds, and serve straight away."
    ],
    "nutritionTags": [
-    "calcium",
-    "iron",
     "protein",
-    "vegetable"
+    "vegetable",
+    "grain"
    ],
    "isQuick": false,
    "kidBaseline": 4,
-   "kidFriendlyNote": "Crispy tofu cubes eaten as finger food; cut broccoli into 'little trees'.",
+   "kidFriendlyNote": "Pressing and browning the tofu gives it a chewy edge rather than a wobbly one, which is usually the difference between eaten and pushed aside.",
    "lunchboxOK": false,
    "source": "seed",
    "containsEgg": false,
    "containsDairy": false,
    "containsNuts": false,
-   "containsGluten": true
+   "containsGluten": true,
+   "sourceNote": "Written for Rasoi — pressed and seared tofu with a soy, honey and ginger glaze",
+   "sourceURL": ""
   },
   {
    "seedID": "dn-lentil-soup-bread",
@@ -4429,54 +4836,96 @@
      "quantity": 250,
      "unit": "g",
      "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Carrot",
-     "quantity": 2,
-     "unit": "count",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Celery",
-     "quantity": 2,
-     "unit": "count",
-     "isOptional": false,
-     "note": ""
+     "note": "red lentils, rinsed"
     },
     {
      "ingredientName": "Onion",
      "quantity": 1,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "large, chopped"
+    },
+    {
+     "ingredientName": "Carrot",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": false,
+     "note": "medium, chopped"
+    },
+    {
+     "ingredientName": "Celery",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": true,
+     "note": "sticks, chopped"
     },
     {
      "ingredientName": "Garlic",
-     "quantity": 3,
+     "quantity": 5,
      "unit": "count",
+     "isOptional": false,
+     "note": "cloves: 3 for the soup, 2 for the bread"
+    },
+    {
+     "ingredientName": "Tomato",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": false,
+     "note": "chopped, or 200 g tinned"
+    },
+    {
+     "ingredientName": "Olive oil",
+     "quantity": 2,
+     "unit": "tbsp",
      "isOptional": false,
      "note": ""
     },
     {
      "ingredientName": "Ground cumin",
-     "quantity": 3,
-     "unit": "g",
+     "quantity": 1.5,
+     "unit": "tsp",
      "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Coriander powder",
+     "quantity": 1,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Turmeric",
+     "quantity": 0.5,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Red chili powder",
+     "quantity": 0.25,
+     "unit": "tsp",
+     "isOptional": true,
      "note": ""
     },
     {
      "ingredientName": "Vegetable stock",
-     "quantity": 1000,
-     "unit": "ml",
+     "quantity": 1.2,
+     "unit": "l",
      "isOptional": false,
-     "note": ""
+     "note": "or water with a stock cube"
     },
     {
-     "ingredientName": "Olive oil",
-     "quantity": 20,
-     "unit": "ml",
+     "ingredientName": "Salt",
+     "quantity": 1.5,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "level"
+    },
+    {
+     "ingredientName": "Black pepper",
+     "quantity": 0.5,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
     },
@@ -4485,51 +4934,60 @@
      "quantity": 1,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "juice, about 2 tbsp — do not skip this"
     },
     {
      "ingredientName": "Whole wheat bread",
-     "quantity": 4,
+     "quantity": 8,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "slices, for the garlic bread"
     },
     {
      "ingredientName": "Butter",
-     "quantity": 20,
-     "unit": "g",
+     "quantity": 2,
+     "unit": "tbsp",
      "isOptional": false,
-     "note": ""
+     "note": "softened, for the bread"
     },
     {
-     "ingredientName": "Salt",
-     "quantity": 3,
-     "unit": "g",
+     "ingredientName": "Cilantro",
+     "quantity": 0.25,
+     "unit": "bunch",
      "isOptional": false,
-     "note": ""
+     "note": "chopped"
     }
    ],
    "steps": [
-    "Sauté onion, carrot, celery, garlic in oil 4 min.",
-    "Add lentils, cumin, stock; pressure cook 8 min.",
-    "Blend partly for creaminess; lemon to taste.",
-    "Butter + garlic on bread; toast."
+    "Rinse 250 g red lentils until the water runs clear. They cook down to nothing, so grit matters.",
+    "Set the Instant Pot to Sauté and warm 2 tbsp olive oil. Cook the onion, carrot and celery for 6 minutes until the onion is soft and translucent.",
+    "Add 3 minced garlic cloves and cook 1 minute.",
+    "Add 1½ tsp ground cumin, 1 tsp coriander powder, ½ tsp turmeric and ¼ tsp chilli powder and fry 1 minute, until the kitchen smells of cumin.",
+    "Add the tomatoes and cook 3 minutes until they break down.",
+    "Add the lentils, 1.2 litres stock, 1½ tsp salt and ½ tsp black pepper.",
+    "Cancel Sauté, close the lid and pressure cook on high for 8 minutes with a 10-minute natural release. On the stovetop, simmer covered for 25 minutes.",
+    "Blend about half the soup with a stick blender, leaving the rest with texture. Adjust with hot stock if it has gone too thick.",
+    "For the bread: mash 2 tbsp softened butter with the remaining 2 garlic cloves, crushed, spread it on the slices and grill for 3 minutes until the edges are crisp.",
+    "Stir 2 tbsp lemon juice into the soup off the heat and taste. Lentil soup without acid tastes flat, and the lemon is what wakes it up.",
+    "Serve in bowls with the coriander scattered over and the garlic bread alongside."
    ],
    "nutritionTags": [
-    "fibre",
-    "iron",
     "protein",
+    "iron",
+    "fibre",
     "vegetable"
    ],
    "isQuick": false,
    "kidBaseline": 4,
-   "kidFriendlyNote": "Smooth soup + bread for dunking; sneaks in celery and carrot.",
+   "kidFriendlyNote": "Blend half the soup and leave the rest chunky — smooth enough for a small child, with something to chew for everyone else. The garlic bread does the persuading.",
    "lunchboxOK": true,
    "source": "seed",
    "containsEgg": false,
    "containsDairy": true,
    "containsNuts": false,
-   "containsGluten": true
+   "containsGluten": true,
+   "sourceNote": "Written for Rasoi — Middle Eastern style, finished with lemon and cumin",
+   "sourceURL": ""
   },
   {
    "seedID": "dn-veg-chow-mein",
@@ -4542,86 +5000,128 @@
    "appliances": [
     "stovetop"
    ],
-   "prepMinutes": 10,
-   "cookMinutes": 15,
+   "prepMinutes": 12,
+   "cookMinutes": 13,
    "servings": 4,
    "minAgeYears": 2,
    "ingredients": [
     {
-     "ingredientName": "Whole wheat pasta",
+     "ingredientName": "Rice noodles",
      "quantity": 300,
      "unit": "g",
      "isOptional": false,
-     "note": "or hakka noodles"
+     "note": "or wheat hakka noodles"
     },
     {
      "ingredientName": "Cabbage",
-     "quantity": 0.25,
-     "unit": "count",
+     "quantity": 150,
+     "unit": "g",
      "isOptional": false,
-     "note": ""
+     "note": "shredded fine"
     },
     {
      "ingredientName": "Carrot",
-     "quantity": 1,
+     "quantity": 2,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "cut into matchsticks"
     },
     {
      "ingredientName": "Bell pepper",
      "quantity": 1,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "cut into thin strips"
+    },
+    {
+     "ingredientName": "Green beans",
+     "quantity": 100,
+     "unit": "g",
+     "isOptional": false,
+     "note": "sliced on the diagonal"
+    },
+    {
+     "ingredientName": "Spring onion",
+     "quantity": 4,
+     "unit": "count",
+     "isOptional": false,
+     "note": "whites and greens separated"
     },
     {
      "ingredientName": "Garlic",
-     "quantity": 3,
+     "quantity": 4,
      "unit": "count",
+     "isOptional": false,
+     "note": "cloves, minced (1 tbsp)"
+    },
+    {
+     "ingredientName": "Ginger",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": "2 cm piece, grated (1 tsp)"
+    },
+    {
+     "ingredientName": "Vegetable oil",
+     "quantity": 2.5,
+     "unit": "tbsp",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Sesame oil",
+     "quantity": 1,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
     },
     {
      "ingredientName": "Soy sauce",
-     "quantity": 25,
-     "unit": "ml",
+     "quantity": 2.5,
+     "unit": "tbsp",
      "isOptional": false,
      "note": ""
     },
     {
      "ingredientName": "Vinegar",
-     "quantity": 10,
-     "unit": "ml",
+     "quantity": 2,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
     },
     {
-     "ingredientName": "Vegetable oil",
-     "quantity": 20,
-     "unit": "ml",
-     "isOptional": false,
-     "note": ""
+     "ingredientName": "Sriracha",
+     "quantity": 1,
+     "unit": "tsp",
+     "isOptional": true,
+     "note": "on the side for the adults"
     },
     {
      "ingredientName": "Black pepper",
-     "quantity": 1,
-     "unit": "g",
+     "quantity": 0.75,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
     },
     {
      "ingredientName": "Salt",
-     "quantity": 2,
-     "unit": "g",
+     "quantity": 1.5,
+     "unit": "tsp",
      "isOptional": false,
-     "note": ""
+     "note": "1 for the noodle water, ½ for the wok"
     }
    ],
    "steps": [
-    "Boil noodles; drain and toss in a little oil.",
-    "Stir-fry garlic and julienned veg on high 3 min.",
-    "Add noodles, soy, vinegar, pepper; toss 2 min."
+    "Bring a large pot of water to the boil with 1 tsp salt and cook the noodles for one minute less than the packet says, so they still have bite.",
+    "Drain, rinse under cold water to stop them cooking, and toss with 1 tsp sesame oil. This is what keeps them from welding together in the wok.",
+    "Cut the vegetables into matchsticks of about the same size while the noodles cool — in a stir-fry everything cooks in three minutes, so it all has to be the same thickness.",
+    "Heat 2½ tbsp oil in your widest pan over the highest heat until it just begins to smoke.",
+    "Add the garlic, ginger and spring onion whites and stir for 20 seconds.",
+    "Add the carrot and beans and stir-fry 2 minutes, keeping everything moving.",
+    "Add the pepper and cabbage and stir-fry 2 minutes more. The vegetables should still be bright and crunchy — this is not a curry.",
+    "Add the noodles and toss with two spatulas, lifting from the bottom, for 2 minutes.",
+    "Pour 2½ tbsp soy sauce and 2 tsp vinegar around the edge of the pan, add ¾ tsp black pepper and ½ tsp salt, and toss for another minute until everything is coated and glossy.",
+    "Turn off the heat, fold through the spring onion greens, and serve with sriracha on the side for whoever wants it."
    ],
    "nutritionTags": [
     "grain",
@@ -4629,13 +5129,15 @@
    ],
    "isQuick": false,
    "kidBaseline": 5,
-   "kidFriendlyNote": "Noodles + crunchy veg; keep the sauce mild.",
+   "kidFriendlyNote": "Cut everything into matchsticks so it twirls onto a fork with the noodles. Keep the chilli sauce on the side and let each child add their own.",
    "lunchboxOK": true,
    "source": "seed",
    "containsEgg": false,
    "containsDairy": false,
    "containsNuts": false,
-   "containsGluten": true
+   "containsGluten": true,
+   "sourceNote": "Written for Rasoi — Indo-Chinese method: par-cooked noodles, very high heat",
+   "sourceURL": ""
   },
   {
    "seedID": "dn-sheet-pan-veg-paneer",
@@ -5116,7 +5618,7 @@
    "appliances": [
     "oven"
    ],
-   "prepMinutes": 15,
+   "prepMinutes": 20,
    "cookMinutes": 20,
    "servings": 4,
    "minAgeYears": 2,
@@ -5126,40 +5628,82 @@
      "quantity": 2,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "medium, about 400 g"
     },
     {
      "ingredientName": "Black beans",
-     "quantity": 250,
+     "quantity": 400,
      "unit": "g",
      "isOptional": false,
-     "note": ""
+     "note": "one tin, drained, rinsed and dried well"
     },
     {
      "ingredientName": "Rolled oats",
-     "quantity": 80,
+     "quantity": 60,
+     "unit": "g",
+     "isOptional": false,
+     "note": "blitzed to a coarse flour"
+    },
+    {
+     "ingredientName": "Bread crumbs",
+     "quantity": 40,
      "unit": "g",
      "isOptional": false,
      "note": ""
     },
     {
      "ingredientName": "Onion",
-     "quantity": 0.5,
+     "quantity": 1,
      "unit": "count",
+     "isOptional": false,
+     "note": "small, finely chopped"
+    },
+    {
+     "ingredientName": "Garlic",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": false,
+     "note": "cloves, minced (2 tsp)"
+    },
+    {
+     "ingredientName": "Ground cumin",
+     "quantity": 1.5,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
     },
     {
-     "ingredientName": "Ground cumin",
-     "quantity": 3,
-     "unit": "g",
+     "ingredientName": "Coriander powder",
+     "quantity": 1,
+     "unit": "tsp",
      "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Red chili powder",
+     "quantity": 0.5,
+     "unit": "tsp",
+     "isOptional": true,
      "note": ""
     },
     {
      "ingredientName": "Salt",
+     "quantity": 1.25,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "level"
+    },
+    {
+     "ingredientName": "Black pepper",
+     "quantity": 0.5,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Olive oil",
      "quantity": 3,
-     "unit": "g",
+     "unit": "tbsp",
      "isOptional": false,
      "note": ""
     },
@@ -5168,50 +5712,67 @@
      "quantity": 4,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "or burger buns"
     },
     {
      "ingredientName": "Lettuce",
-     "quantity": 1,
-     "unit": "bunch",
+     "quantity": 0.25,
+     "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "leaves, to serve"
     },
     {
      "ingredientName": "Tomato",
      "quantity": 1,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "sliced"
     },
     {
      "ingredientName": "Cheddar cheese",
-     "quantity": 60,
-     "unit": "g",
+     "quantity": 4,
+     "unit": "count",
+     "isOptional": true,
+     "note": "slices"
+    },
+    {
+     "ingredientName": "Tomato ketchup",
+     "quantity": 2,
+     "unit": "tbsp",
      "isOptional": true,
      "note": ""
     }
    ],
    "steps": [
-    "Microwave sweet potato until soft; mash with beans, oats, onion, cumin, salt.",
-    "Shape patties; bake 200 °C 20 min, flipping once.",
-    "Serve in buns with lettuce, tomato, cheese."
+    "Heat the oven to 200°C. Prick the sweet potatoes and roast them whole for 40 minutes until completely soft, or microwave them for 8 minutes. Roasting drives off water; boiling adds it, and wet mixture means falling-apart burgers.",
+    "Scoop the flesh into a bowl and mash it. You want about 300 g.",
+    "Dry the drained beans on a cloth, then add them to the bowl and mash roughly, leaving about a third of them whole for texture.",
+    "Warm 1 tbsp olive oil in a pan and cook the onion for 5 minutes until soft, then add the garlic, 1½ tsp cumin, 1 tsp coriander powder and ½ tsp chilli powder for 1 minute.",
+    "Scrape the onion mixture into the bowl with 60 g blitzed oats, 40 g breadcrumbs, 1¼ tsp salt and ½ tsp black pepper.",
+    "Mix with your hands until it holds together when squeezed. If it feels wet, add breadcrumbs a tablespoon at a time.",
+    "Shape into 4 patties about 2 cm thick, pressing them firmly, and chill for at least 15 minutes. This step is the difference between a burger and a hash.",
+    "Heat 2 tbsp olive oil in a heavy pan on medium. Cook the patties 4–5 minutes on the first side without moving them, until a crust forms.",
+    "Turn once, carefully, and cook another 4 minutes. Add a slice of cheese for the last minute and cover so it melts.",
+    "Toast the buns cut-side down in the same pan for 1 minute.",
+    "Build with lettuce, tomato and ketchup, and serve immediately while the crust is still crisp."
    ],
    "nutritionTags": [
-    "fibre",
     "protein",
-    "vitaminA",
-    "wholeGrain"
+    "fibre",
+    "vegetable",
+    "grain"
    ],
    "isQuick": false,
    "kidBaseline": 4,
-   "kidFriendlyNote": "Burger night — kids can hold it; make mini sliders.",
+   "kidFriendlyNote": "Chilling the patties for 15 minutes is what stops them falling apart in the pan, which is the thing children remember about a homemade burger.",
    "lunchboxOK": false,
    "source": "seed",
    "containsEgg": false,
    "containsDairy": false,
    "containsNuts": false,
-   "containsGluten": true
+   "containsGluten": true,
+   "sourceNote": "Written for Rasoi — roasted sweet potato base, bound with oats and breadcrumbs",
+   "sourceURL": ""
   },
   {
    "seedID": "dn-egg-curry",

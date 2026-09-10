@@ -215,6 +215,19 @@ final class GroceryBuilderTests: XCTestCase {
 
     // MARK: - Merging into an existing list
 
+    func testMergeRefreshesWhyALineIsThereWhenTheMealChanges() {
+        let built = build(meals: [meal("Dal", [("Toor dal", 200, .gram)])])
+        let existing = [
+            ExistingGroceryLine(ingredientName: "Toor dal", quantity: 200, unit: .gram,
+                                isChecked: false, addedManually: false,
+                                neededFor: ["Dal", "Curry that was already cooked"]),
+        ]
+        let plan = GroceryBuilder.merge(built, into: existing)
+
+        XCTAssertEqual(plan.updates.first?.neededFor, ["Dal"],
+                       "A line stays, but it no longer claims to be for a meal that is done.")
+    }
+
     func testMergeAddsWhatIsNewAndUpdatesWhatChanged() {
         let built = build(meals: [meal("Dal", [("Toor dal", 300, .gram), ("Onion", 2, .count)])])
         let existing = [
@@ -271,7 +284,8 @@ final class GroceryBuilderTests: XCTestCase {
         let built = build(meals: [meal("Dal", [("Toor dal", 200, .gram), ("Onion", 2, .count)])])
         let existing = built.map {
             ExistingGroceryLine(ingredientName: $0.ingredientName, quantity: $0.quantity,
-                                unit: $0.unit, isChecked: false, addedManually: false)
+                                unit: $0.unit, isChecked: false, addedManually: false,
+                                neededFor: $0.neededFor)
         }
         let plan = GroceryBuilder.merge(built, into: existing)
         XCTAssertTrue(plan.inserts.isEmpty)

@@ -3664,6 +3664,46 @@
    "containsNuts": false,
    "containsGluten": false,
    "isQuickHealthySnack": false
+  },
+  {
+   "name": "Spring onion",
+   "aliases": [
+    "scallion",
+    "green onion",
+    "hara pyaz"
+   ],
+   "category": "vegetable",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 7,
+   "isStaple": false,
+   "defaultStoreKind": "supermarket",
+   "nutritionTags": [
+    "vegetable",
+    "vitaminC"
+   ],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Ajwain",
+   "aliases": [
+    "carom seeds"
+   ],
+   "category": "spice",
+   "defaultUnit": "g",
+   "typicalShelfLifeDays": 730,
+   "isStaple": false,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 3.2
   }
  ]
 }
