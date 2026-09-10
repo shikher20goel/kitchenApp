@@ -95,6 +95,29 @@ struct RecipeDetailView: View {
                 }
             }
 
+            if !recipe.sourceNote.isEmpty || recipe.isUserEdited {
+                Section("Where this comes from") {
+                    if !recipe.sourceNote.isEmpty {
+                        if let url = URL(string: recipe.sourceURL), !recipe.sourceURL.isEmpty {
+                            Link(destination: url) {
+                                Label(recipe.sourceNote, systemImage: "link")
+                                    .font(.footnote)
+                            }
+                        } else {
+                            Text(recipe.sourceNote)
+                                .font(.footnote)
+                                .foregroundStyle(Theme.textSecondary)
+                        }
+                    }
+                    if recipe.isUserEdited {
+                        Label("You have edited this one, so updates to the catalog leave it alone.",
+                              systemImage: "pencil")
+                            .font(.footnote)
+                            .foregroundStyle(Theme.textSecondary)
+                    }
+                }
+            }
+
             if !recipe.nutritionTags.isEmpty {
                 Section("Food groups") {
                     FlowLayout(spacing: Theme.Spacing.s) {
@@ -132,11 +155,17 @@ struct RecipeDetailView: View {
                         Label(recipe.isHidden ? "Show again" : "Hide from suggestions",
                               systemImage: recipe.isHidden ? "eye" : "eye.slash")
                     }
-                    if recipe.source == .user {
+                    Button {
+                        isEditing = true
+                    } label: {
+                        Label("Edit recipe", systemImage: "pencil")
+                    }
+                    if recipe.isUserEdited {
                         Button {
-                            isEditing = true
+                            try? SeedImporter.restoreFromSeed(recipe, in: context)
+                            model.load()
                         } label: {
-                            Label("Edit recipe", systemImage: "pencil")
+                            Label("Restore the original", systemImage: "arrow.uturn.backward")
                         }
                     }
                 } label: {

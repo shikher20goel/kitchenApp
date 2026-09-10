@@ -46,6 +46,9 @@ struct RecipeDTO: Codable, Sendable {
     var kidBaseline: Int
     var kidFriendlyNote: String
     var lunchboxOK: Bool
+    /// Attribution, e.g. "Adapted from Hebbar's Kitchen". Optional so older seed files still load.
+    var sourceNote: String?
+    var sourceURL: String?
     var source: String
     var containsEgg: Bool
     var containsDairy: Bool

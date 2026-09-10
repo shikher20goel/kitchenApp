@@ -16,6 +16,9 @@ struct RecipeDraft: Equatable, Sendable {
     var steps: [String] = []
     var kidFriendlyNote: String = ""
     var lunchboxOK: Bool = false
+    /// Kept so an edit of a seeded recipe does not lose its attribution.
+    var sourceNote: String = ""
+    var sourceURL: String = ""
 
     init() {}
 
@@ -32,6 +35,8 @@ struct RecipeDraft: Equatable, Sendable {
         steps = recipe.steps
         kidFriendlyNote = recipe.kidFriendlyNote
         lunchboxOK = recipe.lunchboxOK
+        sourceNote = recipe.sourceNote
+        sourceURL = recipe.sourceURL
     }
 
     /// Allergen flags a recipe carries, worked out from its ingredients rather than typed by hand.
@@ -165,6 +170,8 @@ final class RecipeEditorViewModel {
         recipe.steps = draft.nonEmptySteps
         recipe.kidFriendlyNote = draft.kidFriendlyNote.trimmingCharacters(in: .whitespacesAndNewlines)
         recipe.lunchboxOK = draft.lunchboxOK
+        recipe.sourceNote = draft.sourceNote
+        recipe.sourceURL = draft.sourceURL
         recipe.containsEgg = flags.containsEgg
         recipe.containsDairy = flags.containsDairy
         recipe.containsNuts = flags.containsNuts
@@ -173,6 +180,9 @@ final class RecipeEditorViewModel {
 
         if existing == nil {
             context.insert(recipe)
+        } else if recipe.seedID != nil {
+            // The household has made this recipe their own: a reseed must not overwrite it.
+            recipe.isUserEdited = true
         }
         try? context.save()
         return recipe

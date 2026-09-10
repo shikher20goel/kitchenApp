@@ -134,3 +134,4 @@ FIX: the real team id had leaked into project.yml in commit f8367ca (a `git add 
   not rewritten — the repo is private and a team id is not a credential — but the working tree and
   HEAD are clean. configure-signing.sh must always be followed by `git checkout project.yml`
   BEFORE any commit.
+TASK 067 done: seeded recipes are editable (isUserEdited), attribution fields added, reseed preserves edits, export includes them.

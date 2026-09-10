@@ -116,3 +116,93 @@ final class SeedImporterTests: XCTestCase {
         }
     }
 }
+
+/// A household that edits a seeded recipe owns it from then on (SPEC R6).
+final class SeedRecipeEditingTests: XCTestCase {
+    @MainActor
+    private func seededStack() throws -> TestStack {
+        let stack = try TestContainer.makeStack()
+        try SeedImporter.reimport(in: stack.context)
+        return stack
+    }
+
+    @MainActor
+    private func firstSeedRecipe(_ stack: TestStack) throws -> Recipe {
+        try XCTUnwrap(
+            try stack.context.fetch(FetchDescriptor<Recipe>(sortBy: [SortDescriptor(\.title)]))
+                .first { $0.seedID != nil }
+        )
+    }
+
+    @MainActor
+    func testEditingASeededRecipeMarksItAsTheHouseholds() throws {
+        let stack = try seededStack()
+        let recipe = try firstSeedRecipe(stack)
+        XCTAssertFalse(recipe.isUserEdited)
+
+        let editor = RecipeEditorViewModel(context: stack.context, recipe: recipe)
+        editor.draft.steps = ["My own way of doing it."]
+        XCTAssertNotNil(editor.save())
+
+        XCTAssertTrue(recipe.isUserEdited)
+        XCTAssertEqual(recipe.steps, ["My own way of doing it."])
+        XCTAssertNotNil(recipe.seedID, "It is still the same catalog recipe, not a copy.")
+    }
+
+    @MainActor
+    func testAReimportLeavesAnEditedRecipeAlone() throws {
+        let stack = try seededStack()
+        let recipe = try firstSeedRecipe(stack)
+        let seedID = try XCTUnwrap(recipe.seedID)
+
+        let editor = RecipeEditorViewModel(context: stack.context, recipe: recipe)
+        editor.draft.steps = ["Simmer gently for ten minutes.", "Rest, then serve."]
+        editor.draft.title = "Our version"
+        _ = editor.save()
+
+        try SeedImporter.reimport(in: stack.context)
+
+        let after = try XCTUnwrap(
+            try stack.context.fetch(FetchDescriptor<Recipe>()).first { $0.seedID == seedID }
+        )
+        XCTAssertEqual(after.title, "Our version")
+        XCTAssertEqual(after.steps.count, 2, "The household's steps survive a catalog update.")
+    }
+
+    @MainActor
+    func testRestoringTheOriginalBringsTheSeedBack() throws {
+        let stack = try seededStack()
+        let recipe = try firstSeedRecipe(stack)
+        let seedID = try XCTUnwrap(recipe.seedID)
+        let originalTitle = recipe.title
+        let originalSteps = recipe.steps
+
+        let editor = RecipeEditorViewModel(context: stack.context, recipe: recipe)
+        editor.draft.title = "Our version"
+        editor.draft.steps = ["Do it my way."]
+        _ = editor.save()
+
+        try SeedImporter.restoreFromSeed(recipe, in: stack.context)
+
+        XCTAssertEqual(recipe.title, originalTitle)
+        XCTAssertEqual(recipe.steps, originalSteps)
+        XCTAssertFalse(recipe.isUserEdited)
+        XCTAssertEqual(recipe.seedID, seedID)
+    }
+
+    @MainActor
+    func testAttributionSurvivesAnEdit() throws {
+        let stack = try seededStack()
+        let recipe = try firstSeedRecipe(stack)
+        recipe.sourceNote = "Adapted from Somewhere"
+        recipe.sourceURL = "https://example.com/recipe"
+        try stack.context.save()
+
+        let editor = RecipeEditorViewModel(context: stack.context, recipe: recipe)
+        editor.draft.steps = ["One step."]
+        _ = editor.save()
+
+        XCTAssertEqual(recipe.sourceNote, "Adapted from Somewhere")
+        XCTAssertEqual(recipe.sourceURL, "https://example.com/recipe")
+    }
+}

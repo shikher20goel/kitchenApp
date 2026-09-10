@@ -63,6 +63,7 @@ final class ExporterTests: XCTestCase {
         XCTAssertEqual(export.stores.count, 6)
         XCTAssertEqual(export.pantry.map(\.ingredient), ["Spinach"])
         XCTAssertEqual(export.userRecipes.map(\.title), ["Ira's pancakes"])
+        XCTAssertTrue(export.editedSeedRecipes.isEmpty, "Nothing has been edited yet.")
         XCTAssertEqual(export.recipeFlags.count, 1)
         XCTAssertEqual(export.plans.count, 1)
         XCTAssertEqual(export.feedback.map(\.member), ["Ira"])
@@ -78,6 +79,21 @@ final class ExporterTests: XCTestCase {
         XCTAssertEqual(export.userRecipes.count, 1, "Only what the household wrote.")
         XCTAssertTrue(export.recipeFlags.allSatisfy { $0.isFavorite || $0.isHidden },
                       "Only the seeded recipes the household marked.")
+    }
+
+    @MainActor
+    func testASeededRecipeTheHouseholdRewroteIsExported() throws {
+        let stack = try makeStack()
+        let context = stack.context
+        let recipe = try XCTUnwrap(try context.fetch(FetchDescriptor<Recipe>()).first { $0.seedID != nil })
+        let editor = RecipeEditorViewModel(context: context, recipe: recipe)
+        editor.draft.steps = ["My own first step.", "My own second step."]
+        _ = editor.save()
+
+        let export = try Exporter.makeExport(in: context, on: today)
+        let edited = try XCTUnwrap(export.editedSeedRecipes.first)
+        XCTAssertEqual(edited.seedID, recipe.seedID)
+        XCTAssertEqual(edited.steps.count, 2)
     }
 
     @MainActor

@@ -61,7 +61,10 @@ enum SeedImporter {
 
         for dto in recipeFile.recipes {
             if let existing = recipesBySeedID[dto.seedID] {
-                apply(dto, to: existing)
+                // A recipe the household has edited is theirs now; the seed does not overwrite it.
+                if !existing.isUserEdited {
+                    apply(dto, to: existing)
+                }
                 result.recipesUpdated += 1
             } else {
                 let recipe = make(dto)
@@ -125,6 +128,17 @@ enum SeedImporter {
         return recipe
     }
 
+    /// Puts a seeded recipe back the way it shipped, discarding the household's edits.
+    @MainActor
+    static func restoreFromSeed(_ recipe: Recipe, in context: ModelContext, bundle: Bundle = .main) throws {
+        guard let seedID = recipe.seedID else { return }
+        guard let dto = try SeedLoader.loadRecipes(from: bundle).recipes.first(where: { $0.seedID == seedID })
+        else { return }
+        apply(dto, to: recipe)
+        recipe.isUserEdited = false
+        try context.save()
+    }
+
     /// Recipe content comes from the seed; `isFavorite` and `isHidden` belong to the household and
     /// are deliberately left alone (SPEC R6).
     private static func apply(_ dto: RecipeDTO, to recipe: Recipe) {
@@ -146,6 +160,8 @@ enum SeedImporter {
         recipe.kidBaseline = dto.kidBaseline
         recipe.kidFriendlyNote = dto.kidFriendlyNote
         recipe.lunchboxOK = dto.lunchboxOK
+        recipe.sourceNote = dto.sourceNote ?? ""
+        recipe.sourceURL = dto.sourceURL ?? ""
         recipe.source = .seed
         recipe.seedID = dto.seedID
     }

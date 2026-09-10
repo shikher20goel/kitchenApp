@@ -14,6 +14,8 @@ struct RasoiExport: Codable, Equatable, Sendable {
     var stores: [StoreRecord]
     var pantry: [PantryRecord]
     var userRecipes: [RecipeRecord]
+    /// Seeded recipes the household has rewritten — their version, not the catalog's.
+    var editedSeedRecipes: [RecipeRecord]
     var recipeFlags: [RecipeFlag]
     var plans: [Plan]
     var feedback: [Feedback]
@@ -61,6 +63,8 @@ struct RasoiExport: Codable, Equatable, Sendable {
     }
 
     struct RecipeRecord: Codable, Equatable, Sendable {
+        /// Set for a seeded recipe the household edited; nil for one they wrote themselves.
+        var seedID: String?
         var title: String
         var cuisine: String
         var mealTypes: [String]
@@ -174,6 +178,7 @@ enum Exporter {
                                                 addedAt: item.addedAt, expiresAt: item.expiresAt)
             },
             userRecipes: recipes.filter { $0.source == .user }.map(recipeRecord),
+            editedSeedRecipes: recipes.filter { $0.isUserEdited && $0.seedID != nil }.map(recipeRecord),
             recipeFlags: recipes.compactMap { recipe in
                 guard let seedID = recipe.seedID, recipe.isFavorite || recipe.isHidden else { return nil }
                 return RasoiExport.RecipeFlag(seedID: seedID, isFavorite: recipe.isFavorite,
@@ -220,6 +225,7 @@ enum Exporter {
 
     private static func recipeRecord(_ recipe: Recipe) -> RasoiExport.RecipeRecord {
         RasoiExport.RecipeRecord(
+            seedID: recipe.isUserEdited ? recipe.seedID : nil,
             title: recipe.title, cuisine: recipe.cuisine, mealTypes: recipe.mealTypeRaw,
             appliances: recipe.appliances, prepMinutes: recipe.prepMinutes,
             cookMinutes: recipe.cookMinutes, servings: recipe.servings,

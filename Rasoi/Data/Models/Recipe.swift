@@ -31,6 +31,13 @@ final class Recipe {
     var lunchboxOK: Bool = false
     var isFavorite: Bool = false
     var isHidden: Bool = false
+    /// Where the recipe came from, e.g. "Adapted from Hebbar's Kitchen". Shown on the recipe.
+    var sourceNote: String = ""
+    /// The page it was adapted from, so the original is one tap away.
+    var sourceURL: String = ""
+    /// Set when the household edits a seeded recipe. A reseed then leaves their version alone,
+    /// and "Restore original" is offered instead (SPEC R6).
+    var isUserEdited: Bool = false
     var sourceRaw: String = RecipeSource.seed.rawValue
     /// Stable key for the seeded catalog; `nil` for recipes the household wrote.
     @Attribute(.unique) var seedID: String?
@@ -56,6 +63,8 @@ final class Recipe {
         lunchboxOK: Bool = false,
         isFavorite: Bool = false,
         isHidden: Bool = false,
+        sourceNote: String = "",
+        sourceURL: String = "",
         source: RecipeSource = .seed,
         seedID: String? = nil
     ) {
@@ -79,6 +88,8 @@ final class Recipe {
         self.lunchboxOK = lunchboxOK
         self.isFavorite = isFavorite
         self.isHidden = isHidden
+        self.sourceNote = sourceNote
+        self.sourceURL = sourceURL
         self.sourceRaw = source.rawValue
         self.seedID = seedID
     }

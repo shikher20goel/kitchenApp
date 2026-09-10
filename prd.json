@@ -756,6 +756,17 @@
       "verify": "FLAG FOR HUMAN REVIEW — Rasoi launches on the iPhone and Shikher approves docs/REVIEW.md.",
       "gate": "HUMAN",
       "passes": true
+    },
+    {
+      "id": "067",
+      "title": "Editable seeded recipes + recipe attribution (follow-up request)",
+      "milestone": "M12",
+      "depends_on": [
+        "066"
+      ],
+      "verify": "`bash scripts/verify.sh RasoiTests/SeedRecipeEditingTests` green; a seeded recipe can be edited, survives a reseed, and can be restored.",
+      "gate": "AUTO",
+      "passes": true
     }
   ]
 }
