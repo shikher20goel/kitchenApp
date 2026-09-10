@@ -109,7 +109,17 @@ xcrun devicectl list devices
 xcrun devicectl device install app --device <UDID> build/Build/Products/Debug-iphoneos/Rasoi.app
 ```
 
-### Attempted on 2026-09-07, blocked on one human step
+### Installed on 2026-09-09 ✅
+
+Built signed with team `PL36AJ998G` (`Apple Development: shikher20goel@gmail.com`) and installed on
+**Shikher Phone** (iPhone 14 Pro, `FCE9725F-A4EF-5A45-845D-BC015674C826`), then launched with
+`xcrun devicectl device process launch`. `project.yml` was restored afterwards, so no team id is
+committed. A free personal team signs for seven days — re-run the four commands above to refresh.
+
+The blocker below is kept for the record; it was resolved by adding the Apple ID in Xcode and
+quitting Xcode so the account was written to disk.
+
+### Earlier attempt, blocked on one human step
 
 The iPhone 14 Pro is paired and visible to `xcrun devicectl list devices`, and the Mac holds a
 valid `Apple Development: shikher20goel@gmail.com` certificate (team `PL36AJ998G`). The device

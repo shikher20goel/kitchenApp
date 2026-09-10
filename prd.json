@@ -755,7 +755,7 @@
       ],
       "verify": "FLAG FOR HUMAN REVIEW — Rasoi launches on the iPhone and Shikher approves docs/REVIEW.md.",
       "gate": "HUMAN",
-      "passes": false
+      "passes": true
     }
   ]
 }

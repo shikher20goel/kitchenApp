@@ -125,3 +125,7 @@ TASK 066 blocked on a human step: the iPhone 14 Pro (FCE9725F-A4EF-5A45-845D-BC0
   Xcode has no Apple ID signed in, so it cannot create a development provisioning profile.
   Human step: Xcode › Settings › Accounts › + › Apple ID (shikher20goel@gmail.com), then re-run
   the install block in docs/REVIEW.md. project.yml was restored so no team ID is committed.
+TASK 066: Rasoi built signed (team PL36AJ998G, Apple Development: shikher20goel@gmail.com) and
+  INSTALLED on Shikher Phone (iPhone 14 Pro, FCE9725F-A4EF-5A45-845D-BC015674C826); launched with
+  devicectl. Free team: reinstall every 7 days. project.yml restored, no team id committed.
+  Human gates 028/043/053/058 approved by Shikher; 066 install done.
