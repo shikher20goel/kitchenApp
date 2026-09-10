@@ -2761,7 +2761,7 @@
    "appliances": [
     "instantPot"
    ],
-   "prepMinutes": 10,
+   "prepMinutes": 15,
    "cookMinutes": 25,
    "servings": 4,
    "minAgeYears": 2,
@@ -2771,6 +2771,34 @@
      "quantity": 200,
      "unit": "g",
      "isOptional": false,
+     "note": "1 cup, rinsed"
+    },
+    {
+     "ingredientName": "Basmati rice",
+     "quantity": 300,
+     "unit": "g",
+     "isOptional": false,
+     "note": "1½ cups, to serve"
+    },
+    {
+     "ingredientName": "Tamarind paste",
+     "quantity": 1.5,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "or a lime-sized ball soaked in 120 ml hot water"
+    },
+    {
+     "ingredientName": "Sambar powder",
+     "quantity": 2,
+     "unit": "tbsp",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Turmeric",
+     "quantity": 0.5,
+     "unit": "tsp",
+     "isOptional": false,
      "note": ""
     },
     {
@@ -2778,106 +2806,130 @@
      "quantity": 1,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "cut into 3 cm batons"
+    },
+    {
+     "ingredientName": "Bottle gourd",
+     "quantity": 200,
+     "unit": "g",
+     "isOptional": false,
+     "note": "or pumpkin, in 3 cm pieces"
     },
     {
      "ingredientName": "Green beans",
      "quantity": 100,
      "unit": "g",
      "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Pumpkin",
-     "quantity": 200,
-     "unit": "g",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Onion",
-     "quantity": 1,
-     "unit": "count",
-     "isOptional": false,
-     "note": ""
+     "note": "cut into 3 cm lengths"
     },
     {
      "ingredientName": "Tomato",
      "quantity": 1,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "large, chopped"
     },
     {
-     "ingredientName": "Sambar powder",
-     "quantity": 10,
-     "unit": "g",
+     "ingredientName": "Onion",
+     "quantity": 1,
+     "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "small, quartered"
     },
     {
-     "ingredientName": "Tamarind paste",
-     "quantity": 10,
-     "unit": "g",
+     "ingredientName": "Ghee",
+     "quantity": 1.5,
+     "unit": "tbsp",
      "isOptional": false,
-     "note": ""
+     "note": "or oil, for the tempering"
     },
     {
      "ingredientName": "Mustard seeds",
-     "quantity": 3,
-     "unit": "g",
+     "quantity": 1,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
     },
     {
-     "ingredientName": "Curry leaves",
-     "quantity": 1,
-     "unit": "bunch",
-     "isOptional": true,
+     "ingredientName": "Cumin seeds",
+     "quantity": 0.5,
+     "unit": "tsp",
+     "isOptional": false,
      "note": ""
     },
     {
-     "ingredientName": "Vegetable oil",
-     "quantity": 15,
-     "unit": "ml",
+     "ingredientName": "Asafoetida",
+     "quantity": 0.25,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Dried red chili",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": true,
+     "note": "broken"
+    },
+    {
+     "ingredientName": "Curry leaves",
+     "quantity": 12,
+     "unit": "count",
      "isOptional": false,
      "note": ""
     },
     {
      "ingredientName": "Salt",
-     "quantity": 4,
-     "unit": "g",
+     "quantity": 1.5,
+     "unit": "tsp",
      "isOptional": false,
-     "note": ""
+     "note": "level"
     },
     {
-     "ingredientName": "Basmati rice",
-     "quantity": 300,
-     "unit": "g",
+     "ingredientName": "Jaggery",
+     "quantity": 1,
+     "unit": "tsp",
+     "isOptional": true,
+     "note": "the traditional balance to the tamarind"
+    },
+    {
+     "ingredientName": "Cilantro",
+     "quantity": 0.25,
+     "unit": "bunch",
      "isOptional": false,
-     "note": ""
+     "note": "chopped"
     }
    ],
    "steps": [
-    "Temper mustard seeds, curry leaves in oil; add onion, tomato.",
-    "Add dal, veg, sambar powder, tamarind, salt, 1 l water; pressure cook 10 min.",
-    "Whisk; serve with rice (pot-in-pot)."
+    "Rinse 200 g toor dal until the water runs clear, then pressure cook it with 600 ml water and ¼ tsp turmeric: 8 minutes on high with natural release, or 3 whistles.",
+    "Rinse 300 g rice and simmer it in 600 ml water with a pinch of salt: 12 minutes covered on low, then 5 minutes off the heat.",
+    "Whisk the cooked dal smooth with a ladle and set it aside.",
+    "In the same pot on Sauté, add 400 ml water, the carrot, bottle gourd, beans, onion and tomato with ¼ tsp turmeric and 1 tsp of the salt. Simmer 8–10 minutes until the vegetables are tender but still holding their shape.",
+    "Stir 1½ tsp tamarind paste into 120 ml hot water and add it to the pot. Simmer 5 minutes — cooking off the raw tamarind is what stops sambar tasting harsh.",
+    "Add 2 tbsp sambar powder and the remaining ½ tsp salt, and simmer another 3 minutes.",
+    "Pour in the whisked dal with 200 ml hot water. Sambar should pour easily from a ladle; add more hot water if it does not.",
+    "Simmer gently for 5 minutes, then stir in 1 tsp jaggery if you are using it and taste. It should read sour, then salty, then sweet in the background.",
+    "For the tempering, heat 1½ tbsp ghee in a small pan. Add 1 tsp mustard seeds and wait for them to pop, then ½ tsp cumin seeds, the broken chillies and the curry leaves.",
+    "As soon as the curry leaves crackle — about 15 seconds — add ¼ tsp asafoetida and pour the whole thing into the sambar. Cover for a minute to trap the aroma.",
+    "Stir in the coriander and serve over the rice, with the remaining sambar in a bowl for second helpings."
    ],
    "nutritionTags": [
-    "fibre",
-    "grain",
     "protein",
-    "vegetable"
+    "vegetable",
+    "fibre",
+    "grain"
    ],
    "isQuick": false,
-   "kidBaseline": 3,
-   "kidFriendlyNote": "Serve mild and a little sweet (add a pinch of jaggery) for the kids.",
+   "kidBaseline": 4,
+   "kidFriendlyNote": "Sambar is sour and savoury rather than hot. Ladle it thin over rice with a spoon of ghee, and keep the vegetables in big enough pieces to pick out if a child wants to.",
    "lunchboxOK": false,
    "source": "seed",
    "containsEgg": false,
-   "containsDairy": false,
+   "containsDairy": true,
    "containsNuts": false,
-   "containsGluten": false
+   "containsGluten": false,
+   "sourceNote": "Written for Rasoi — the standard South Indian toor dal and tamarind method",
+   "sourceURL": ""
   },
   {
    "seedID": "dn-paneer-frankie",
@@ -2890,101 +2942,167 @@
    "appliances": [
     "stovetop"
    ],
-   "prepMinutes": 10,
+   "prepMinutes": 15,
    "cookMinutes": 15,
    "servings": 4,
    "minAgeYears": 2,
    "ingredients": [
     {
      "ingredientName": "Paneer",
-     "quantity": 250,
+     "quantity": 300,
      "unit": "g",
      "isOptional": false,
-     "note": ""
+     "note": "cut into 1 cm batons"
     },
     {
      "ingredientName": "Whole wheat tortillas",
      "quantity": 4,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "or fresh rotis"
+    },
+    {
+     "ingredientName": "Plain yogurt",
+     "quantity": 3,
+     "unit": "tbsp",
+     "isOptional": false,
+     "note": "for the marinade"
     },
     {
      "ingredientName": "Onion",
      "quantity": 1,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "medium: half sliced for the filling, half raw for the top"
     },
     {
      "ingredientName": "Bell pepper",
      "quantity": 1,
      "unit": "count",
      "isOptional": false,
+     "note": "sliced thin"
+    },
+    {
+     "ingredientName": "Cabbage",
+     "quantity": 100,
+     "unit": "g",
+     "isOptional": false,
+     "note": "shredded, for crunch"
+    },
+    {
+     "ingredientName": "Vegetable oil",
+     "quantity": 2,
+     "unit": "tbsp",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Ginger",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": "2 cm piece, grated (1 tsp)"
+    },
+    {
+     "ingredientName": "Garlic",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": false,
+     "note": "cloves, minced (1 tsp)"
+    },
+    {
+     "ingredientName": "Turmeric",
+     "quantity": 0.25,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Red chili powder",
+     "quantity": 0.5,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "Kashmiri"
+    },
+    {
+     "ingredientName": "Coriander powder",
+     "quantity": 1,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Garam masala",
+     "quantity": 0.5,
+     "unit": "tsp",
+     "isOptional": false,
      "note": ""
     },
     {
      "ingredientName": "Chaat masala",
-     "quantity": 3,
-     "unit": "g",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Turmeric",
      "quantity": 1,
-     "unit": "g",
+     "unit": "tsp",
      "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Vegetable oil",
-     "quantity": 15,
-     "unit": "ml",
-     "isOptional": false,
-     "note": ""
+     "note": "sprinkled at the end — this is the frankie flavour"
     },
     {
      "ingredientName": "Salt",
-     "quantity": 3,
-     "unit": "g",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Plain yogurt",
-     "quantity": 100,
-     "unit": "g",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Cucumber",
      "quantity": 1,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "level"
+    },
+    {
+     "ingredientName": "Lemon",
+     "quantity": 0.5,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "juice"
+    },
+    {
+     "ingredientName": "Cilantro",
+     "quantity": 0.25,
+     "unit": "bunch",
+     "isOptional": false,
+     "note": "chopped"
+    },
+    {
+     "ingredientName": "Tomato ketchup",
+     "quantity": 2,
+     "unit": "tbsp",
+     "isOptional": true,
+     "note": "or green chutney, to spread"
     }
    ],
    "steps": [
-    "Stir-fry paneer strips, onion, pepper with turmeric, chaat masala, salt 5 min.",
-    "Warm tortillas; spread yogurt; fill; roll tight and wrap in foil."
+    "Cut 300 g paneer into 1 cm batons and toss them with 3 tbsp yogurt, ¼ tsp turmeric, ½ tsp chilli powder, 1 tsp coriander powder, 1 tsp ginger, 1 tsp garlic and ½ tsp salt. Leave for 10 minutes while you cut the vegetables.",
+    "Slice half the onion, the bell pepper and the cabbage as thinly as you can — thin slices cook in the time the paneer takes and stay crunchy in the wrap.",
+    "Heat 1 tbsp oil in a wide pan on medium-high. Add the paneer in a single layer and leave it alone for 2 minutes so it browns before you turn it.",
+    "Turn the pieces, cook 2 minutes more, then lift them out. Overcooked paneer goes squeaky.",
+    "Add the last 1 tbsp oil to the pan with the sliced onion and pepper. Stir-fry 3 minutes on high — you want colour on the edges and bite in the middle.",
+    "Add the cabbage and the remaining ½ tsp salt and stir-fry 1 minute.",
+    "Return the paneer, add ½ tsp garam masala and squeeze over the lemon. Toss once and turn the heat off.",
+    "Warm the tortillas one at a time on a dry tawa, about 30 seconds a side, until soft and flexible but not crisp.",
+    "Spread each tortilla with ketchup or green chutney, spoon the filling down the middle, and scatter raw onion, coriander and ¼ tsp chaat masala over it.",
+    "Roll tightly, wrap the bottom half in foil or greaseproof paper, and serve while the paneer is still warm."
    ],
    "nutritionTags": [
-    "calcium",
     "protein",
-    "vegetable",
-    "wholeGrain"
+    "calcium",
+    "grain",
+    "vegetable"
    ],
    "isQuick": false,
    "kidBaseline": 5,
-   "kidFriendlyNote": "Roll-ups are a lunchbox winner; cut in half for small hands.",
+   "kidFriendlyNote": "Wraps beat plates. Let each child build their own and roll it in foil or paper so they can hold it — and keep the chaat masala on the table rather than in the pan.",
    "lunchboxOK": true,
    "source": "seed",
    "containsEgg": false,
    "containsDairy": true,
    "containsNuts": false,
-   "containsGluten": true
+   "containsGluten": true,
+   "sourceNote": "Written for Rasoi — the Mumbai street-style frankie, made on a tawa",
+   "sourceURL": ""
   },
   {
    "seedID": "dn-ip-veg-biryani",
@@ -2996,7 +3114,7 @@
    "appliances": [
     "instantPot"
    ],
-   "prepMinutes": 15,
+   "prepMinutes": 20,
    "cookMinutes": 25,
    "servings": 4,
    "minAgeYears": 3,
@@ -3006,119 +3124,179 @@
      "quantity": 300,
      "unit": "g",
      "isOptional": false,
-     "note": ""
+     "note": "1½ cups, rinsed and soaked 20 minutes"
     },
     {
-     "ingredientName": "Cauliflower",
-     "quantity": 0.5,
-     "unit": "count",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Carrot",
-     "quantity": 1,
-     "unit": "count",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Peas",
-     "quantity": 100,
+     "ingredientName": "Plain yogurt",
+     "quantity": 150,
      "unit": "g",
      "isOptional": false,
-     "note": ""
+     "note": "whisked, for the marinade"
     },
     {
-     "ingredientName": "Potato",
-     "quantity": 1,
-     "unit": "count",
+     "ingredientName": "Frozen mixed vegetables",
+     "quantity": 250,
+     "unit": "g",
      "isOptional": false,
-     "note": ""
+     "note": "carrot, beans, peas and corn"
+    },
+    {
+     "ingredientName": "Paneer",
+     "quantity": 150,
+     "unit": "g",
+     "isOptional": true,
+     "note": "in 2 cm cubes"
     },
     {
      "ingredientName": "Onion",
      "quantity": 2,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "large, thinly sliced"
     },
     {
-     "ingredientName": "Plain yogurt",
-     "quantity": 100,
-     "unit": "g",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Ginger",
-     "quantity": 10,
-     "unit": "g",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Garlic",
+     "ingredientName": "Ghee",
      "quantity": 3,
+     "unit": "tbsp",
+     "isOptional": false,
+     "note": "two for frying the onion, one to finish"
+    },
+    {
+     "ingredientName": "Bay leaf",
+     "quantity": 1,
      "unit": "count",
      "isOptional": false,
      "note": ""
     },
     {
-     "ingredientName": "Garam masala",
-     "quantity": 3,
-     "unit": "g",
+     "ingredientName": "Cinnamon",
+     "quantity": 0.5,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "one 2 cm stick"
+    },
+    {
+     "ingredientName": "Cardamom",
+     "quantity": 4,
+     "unit": "count",
+     "isOptional": false,
+     "note": "green pods, crushed"
+    },
+    {
+     "ingredientName": "Cloves",
+     "quantity": 4,
+     "unit": "count",
      "isOptional": false,
      "note": ""
     },
     {
+     "ingredientName": "Cumin seeds",
+     "quantity": 0.75,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Ginger",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": "3 cm piece, grated (1 tbsp)"
+    },
+    {
+     "ingredientName": "Garlic",
+     "quantity": 4,
+     "unit": "count",
+     "isOptional": false,
+     "note": "cloves, minced (1 tbsp)"
+    },
+    {
+     "ingredientName": "Green chili",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": true,
+     "note": "slit"
+    },
+    {
      "ingredientName": "Turmeric",
-     "quantity": 2,
-     "unit": "g",
+     "quantity": 0.25,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Red chili powder",
+     "quantity": 0.5,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "Kashmiri"
+    },
+    {
+     "ingredientName": "Garam masala",
+     "quantity": 1,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
     },
     {
      "ingredientName": "Mint",
-     "quantity": 1,
+     "quantity": 0.5,
      "unit": "bunch",
-     "isOptional": true,
-     "note": ""
+     "isOptional": false,
+     "note": "leaves, a large handful"
     },
     {
-     "ingredientName": "Ghee",
-     "quantity": 25,
-     "unit": "g",
+     "ingredientName": "Cilantro",
+     "quantity": 0.25,
+     "unit": "bunch",
      "isOptional": false,
-     "note": ""
+     "note": "chopped"
     },
     {
      "ingredientName": "Salt",
-     "quantity": 4,
-     "unit": "g",
+     "quantity": 1.5,
+     "unit": "tsp",
      "isOptional": false,
-     "note": ""
+     "note": "level"
+    },
+    {
+     "ingredientName": "Lemon",
+     "quantity": 0.5,
+     "unit": "count",
+     "isOptional": false,
+     "note": "juice, 1 tbsp"
     }
    ],
    "steps": [
-    "Sauté onions in ghee until golden; add ginger-garlic, yogurt, spices.",
-    "Add veg, soaked rice, 400 ml water, mint; pressure cook 5 min, natural release 5 min.",
-    "Fluff and serve with raita."
+    "Rinse 300 g basmati until the water runs clear, soak 20 minutes, then drain in a sieve for 10 minutes. Draining matters — wet rice makes a claggy biryani.",
+    "Mix the frozen vegetables and paneer with 150 g yogurt, ½ tbsp of the ginger, ½ tbsp of the garlic, ¼ tsp turmeric, ½ tsp chilli powder, ½ tsp garam masala and ½ tsp salt. Leave to marinate while you fry the onions.",
+    "Set the Instant Pot to Sauté and heat 2 tbsp ghee. Fry the sliced onions for 8–10 minutes, stirring often, until deep golden. Take half out and keep them for the top.",
+    "To the onions in the pot add the bay leaf, cinnamon, cardamom, cloves and ¾ tsp cumin seeds and let them sizzle 30 seconds.",
+    "Add the remaining ginger and garlic and the slit chilli; cook 1 minute.",
+    "Tip in the marinated vegetables and cook on Sauté for 4 minutes, until the yogurt thickens and clings rather than pooling.",
+    "Add half the mint and coriander and stir through.",
+    "Spread the drained rice on top in an even layer and pour over 420 ml water with the remaining 1 tsp salt. Do not stir — the rice should sit above the masala.",
+    "Cancel Sauté, close the lid and pressure cook on high for 5 minutes, then let the pressure release naturally for 10 minutes.",
+    "Open the pot, drizzle over the last 1 tbsp ghee and 1 tbsp lemon juice, and fold once or twice with a fork — folding, not stirring, keeps the grains whole.",
+    "Scatter the reserved fried onions and the rest of the mint and coriander over the top and let it stand 5 minutes before serving with raita."
    ],
    "nutritionTags": [
-    "calcium",
     "grain",
-    "vegetable"
+    "vegetable",
+    "protein",
+    "calcium"
    ],
    "isQuick": false,
    "kidBaseline": 4,
-   "kidFriendlyNote": "Pick out whole spices before serving the kids.",
+   "kidFriendlyNote": "A one-pot biryani rather than a layered one, so it is quick and everything is soft. Mint and yogurt do the work that chilli usually does.",
    "lunchboxOK": false,
    "source": "seed",
    "containsEgg": false,
    "containsDairy": true,
    "containsNuts": false,
-   "containsGluten": false
+   "containsGluten": false,
+   "sourceNote": "Written for Rasoi — one-pot pressure-cooker method with a yogurt marinade",
+   "sourceURL": ""
   },
   {
    "seedID": "dn-kadhi-chawal",
@@ -3282,7 +3460,7 @@
    "appliances": [
     "stovetop"
    ],
-   "prepMinutes": 15,
+   "prepMinutes": 20,
    "cookMinutes": 20,
    "servings": 4,
    "minAgeYears": 2,
@@ -3292,77 +3470,116 @@
      "quantity": 300,
      "unit": "g",
      "isOptional": false,
-     "note": ""
+     "note": "2 cups whole wheat flour"
     },
     {
      "ingredientName": "Methi leaves",
      "quantity": 1,
      "unit": "bunch",
      "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Besan",
-     "quantity": 30,
-     "unit": "g",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Turmeric",
-     "quantity": 2,
-     "unit": "g",
-     "isOptional": false,
-     "note": ""
+     "note": "about 100 g, leaves only, finely chopped"
     },
     {
      "ingredientName": "Plain yogurt",
-     "quantity": 200,
+     "quantity": 120,
      "unit": "g",
+     "isOptional": false,
+     "note": "½ cup, plus more to serve"
+    },
+    {
+     "ingredientName": "Vegetable oil",
+     "quantity": 3,
+     "unit": "tbsp",
+     "isOptional": false,
+     "note": "1 in the dough, the rest for cooking"
+    },
+    {
+     "ingredientName": "Turmeric",
+     "quantity": 0.5,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
     },
     {
-     "ingredientName": "Vegetable oil",
-     "quantity": 20,
-     "unit": "ml",
+     "ingredientName": "Red chili powder",
+     "quantity": 0.5,
+     "unit": "tsp",
      "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Coriander powder",
+     "quantity": 1,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Ground cumin",
+     "quantity": 0.5,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Ginger",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": "2 cm piece, grated (1 tsp)"
+    },
+    {
+     "ingredientName": "Sesame seeds",
+     "quantity": 1,
+     "unit": "tsp",
+     "isOptional": true,
      "note": ""
     },
     {
      "ingredientName": "Salt",
-     "quantity": 3,
-     "unit": "g",
+     "quantity": 1,
+     "unit": "tsp",
      "isOptional": false,
-     "note": ""
+     "note": "level"
     },
     {
-     "ingredientName": "Sesame seeds",
-     "quantity": 5,
-     "unit": "g",
-     "isOptional": true,
-     "note": ""
+     "ingredientName": "Sugar",
+     "quantity": 0.5,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "balances the methi"
     }
    ],
    "steps": [
-    "Knead atta, besan, chopped methi, turmeric, salt, 50 g yogurt and water into a soft dough.",
-    "Roll thin; cook on a hot pan with a little oil, 1 min per side.",
-    "Serve with yogurt."
+    "Pick the methi leaves off their stems — the stems are where most of the bitterness sits — wash them well and chop finely. You want about 1 packed cup.",
+    "In a wide bowl mix 300 g atta, the chopped methi, ½ tsp turmeric, ½ tsp chilli powder, 1 tsp coriander powder, ½ tsp cumin, 1 tsp grated ginger, 1 tsp salt, ½ tsp sugar and the sesame seeds.",
+    "Add 120 g yogurt and 1 tbsp oil and rub everything together with your fingers until it looks like damp breadcrumbs.",
+    "Add water a tablespoon at a time — usually 60–90 ml — and knead for 4–5 minutes into a soft dough, softer than you would make for roti. The methi keeps releasing water, so go slowly.",
+    "Cover the dough and rest it for 15 minutes. Rested dough rolls thin without tearing.",
+    "Divide into 12 balls. Roll each one out to about 15 cm, dusting with flour as needed.",
+    "Heat a tawa on medium until a drop of water skitters across it.",
+    "Cook a thepla for 30 seconds, until small bubbles appear, then flip.",
+    "Brush the top with oil, flip again, and press the edges down with a folded cloth so it puffs. Cook until both sides have brown freckles — about 2 minutes in total.",
+    "Stack the cooked thepla in a covered container or wrapped in a cloth; trapped steam is what keeps them soft.",
+    "Serve warm with thick yogurt, and pack the leftovers cold for lunch the next day."
    ],
    "nutritionTags": [
-    "calcium",
+    "grain",
     "iron",
+    "calcium",
     "wholeGrain"
    ],
    "isQuick": false,
    "kidBaseline": 4,
-   "kidFriendlyNote": "Roll small ones; great cold in a lunchbox.",
+   "kidFriendlyNote": "Thepla are soft when made with yogurt in the dough and stay soft in a lunchbox. Chop the methi finely so the bitterness is spread thin.",
    "lunchboxOK": true,
    "source": "seed",
    "containsEgg": false,
    "containsDairy": true,
    "containsNuts": false,
-   "containsGluten": true
+   "containsGluten": true,
+   "sourceNote": "Written for Rasoi — the standard Gujarati yogurt-dough method",
+   "sourceURL": ""
   },
   {
    "seedID": "dn-veg-quesadilla",
@@ -4432,7 +4649,7 @@
     "airFryer"
    ],
    "prepMinutes": 15,
-   "cookMinutes": 20,
+   "cookMinutes": 25,
    "servings": 4,
    "minAgeYears": 2,
    "ingredients": [
@@ -4441,105 +4658,157 @@
      "quantity": 300,
      "unit": "g",
      "isOptional": false,
-     "note": ""
+     "note": "in 3 cm cubes"
     },
     {
      "ingredientName": "Bell pepper",
      "quantity": 2,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "in 3 cm squares"
     },
     {
      "ingredientName": "Onion",
      "quantity": 1,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "large, in 3 cm petals"
     },
     {
-     "ingredientName": "Broccoli",
-     "quantity": 1,
-     "unit": "count",
+     "ingredientName": "Cauliflower",
+     "quantity": 200,
+     "unit": "g",
      "isOptional": false,
-     "note": ""
+     "note": "small florets"
     },
     {
-     "ingredientName": "Plain yogurt",
+     "ingredientName": "Greek yogurt",
      "quantity": 150,
      "unit": "g",
      "isOptional": false,
+     "note": "thick, or hung curd"
+    },
+    {
+     "ingredientName": "Besan",
+     "quantity": 1,
+     "unit": "tbsp",
+     "isOptional": false,
+     "note": "stops the marinade sliding off"
+    },
+    {
+     "ingredientName": "Vegetable oil",
+     "quantity": 2,
+     "unit": "tbsp",
+     "isOptional": false,
      "note": ""
     },
     {
+     "ingredientName": "Ginger",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": "2 cm piece, grated (1 tsp)"
+    },
+    {
+     "ingredientName": "Garlic",
+     "quantity": 3,
+     "unit": "count",
+     "isOptional": false,
+     "note": "cloves, minced (1 tsp)"
+    },
+    {
+     "ingredientName": "Red chili powder",
+     "quantity": 1,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "Kashmiri, for the colour"
+    },
+    {
      "ingredientName": "Turmeric",
-     "quantity": 2,
-     "unit": "g",
+     "quantity": 0.25,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
     },
     {
      "ingredientName": "Coriander powder",
-     "quantity": 4,
-     "unit": "g",
+     "quantity": 1,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
     },
     {
      "ingredientName": "Garam masala",
-     "quantity": 2,
-     "unit": "g",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Lemon",
      "quantity": 1,
-     "unit": "count",
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
     },
     {
-     "ingredientName": "Vegetable oil",
-     "quantity": 15,
-     "unit": "ml",
+     "ingredientName": "Chaat masala",
+     "quantity": 0.5,
+     "unit": "tsp",
      "isOptional": false,
-     "note": ""
+     "note": "sprinkled after roasting"
+    },
+    {
+     "ingredientName": "Kasuri methi",
+     "quantity": 1,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "crushed into the marinade"
     },
     {
      "ingredientName": "Salt",
-     "quantity": 3,
-     "unit": "g",
+     "quantity": 1.25,
+     "unit": "tsp",
      "isOptional": false,
-     "note": ""
+     "note": "level"
+    },
+    {
+     "ingredientName": "Lemon",
+     "quantity": 0.5,
+     "unit": "count",
+     "isOptional": false,
+     "note": "juice, plus wedges to serve"
     },
     {
      "ingredientName": "Naan",
      "quantity": 4,
      "unit": "count",
      "isOptional": true,
-     "note": ""
+     "note": "to serve"
     }
    ],
    "steps": [
-    "Marinate paneer + veg in yogurt, spices, lemon, oil, salt 15 min.",
-    "Roast at 220 °C for 18–20 min (or air fry 12 min at 200 °C).",
-    "Serve with naan."
+    "Heat the oven to 220°C (200°C fan). A properly hot oven is what chars the edges instead of steaming everything.",
+    "Toast 1 tbsp besan in a dry pan for 1 minute until it smells nutty, then let it cool. Raw besan tastes chalky in a marinade.",
+    "Whisk 150 g thick yogurt with the toasted besan, 2 tbsp oil, 1 tsp ginger, 1 tsp garlic, 1 tsp chilli powder, ¼ tsp turmeric, 1 tsp coriander powder, 1 tsp garam masala, 1 tsp crushed kasuri methi, 1¼ tsp salt and the lemon juice.",
+    "Cut the paneer, peppers, onion and cauliflower into pieces of roughly the same size so they finish together.",
+    "Fold the vegetables through the marinade first, then the paneer — paneer breaks if it is stirred too much, so add it last and turn gently.",
+    "Leave to marinate 15 minutes if you have time; an hour in the fridge is better.",
+    "Spread everything on a large lined tray in one layer with space between the pieces. A crowded tray steams; use two trays rather than piling it up.",
+    "Roast 15 minutes, then turn the pieces with a spatula.",
+    "Roast another 8–10 minutes, until the paneer is golden and the cauliflower has dark spots on its edges.",
+    "Sprinkle ½ tsp chaat masala over the hot tray and squeeze over a little more lemon.",
+    "Serve straight from the tray with warm naan and a bowl of plain yogurt."
    ],
    "nutritionTags": [
-    "calcium",
     "protein",
-    "vegetable"
+    "vegetable",
+    "calcium"
    ],
    "isQuick": false,
    "kidBaseline": 4,
-   "kidFriendlyNote": "Skewer-free 'tikka' cubes; kids eat with fingers.",
+   "kidFriendlyNote": "Everything roasts on one tray, so the edges char slightly and taste sweet rather than spicy. Serve with naan and a bowl of yogurt for dipping.",
    "lunchboxOK": false,
    "source": "seed",
    "containsEgg": false,
    "containsDairy": true,
    "containsNuts": false,
-   "containsGluten": false
+   "containsGluten": false,
+   "sourceNote": "Written for Rasoi — oven adaptation of the classic yogurt-and-besan tikka marinade",
+   "sourceURL": ""
   },
   {
    "seedID": "dn-dahi-aloo",
@@ -4553,94 +4822,137 @@
     "stovetop"
    ],
    "prepMinutes": 10,
-   "cookMinutes": 15,
+   "cookMinutes": 20,
    "servings": 4,
-   "minAgeYears": 1,
+   "minAgeYears": 2,
    "ingredients": [
     {
      "ingredientName": "Potato",
-     "quantity": 4,
-     "unit": "count",
+     "quantity": 500,
+     "unit": "g",
      "isOptional": false,
-     "note": ""
+     "note": "small potatoes, boiled and peeled, halved"
     },
     {
      "ingredientName": "Plain yogurt",
-     "quantity": 250,
+     "quantity": 400,
      "unit": "g",
+     "isOptional": false,
+     "note": "whisked smooth"
+    },
+    {
+     "ingredientName": "Besan",
+     "quantity": 2,
+     "unit": "tbsp",
+     "isOptional": false,
+     "note": "about 15 g, whisked into the yogurt"
+    },
+    {
+     "ingredientName": "Ghee",
+     "quantity": 1.5,
+     "unit": "tbsp",
      "isOptional": false,
      "note": ""
     },
     {
      "ingredientName": "Cumin seeds",
-     "quantity": 3,
-     "unit": "g",
+     "quantity": 0.75,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
     },
     {
+     "ingredientName": "Asafoetida",
+     "quantity": 0.125,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "a pinch"
+    },
+    {
+     "ingredientName": "Ginger",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": "2 cm piece, grated (1 tsp)"
+    },
+    {
+     "ingredientName": "Green chili",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": true,
+     "note": "slit, lifted out later"
+    },
+    {
      "ingredientName": "Turmeric",
-     "quantity": 2,
-     "unit": "g",
+     "quantity": 0.5,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
     },
     {
      "ingredientName": "Coriander powder",
-     "quantity": 4,
-     "unit": "g",
+     "quantity": 1.5,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
     },
     {
-     "ingredientName": "Ginger",
-     "quantity": 5,
-     "unit": "g",
-     "isOptional": false,
+     "ingredientName": "Red chili powder",
+     "quantity": 0.25,
+     "unit": "tsp",
+     "isOptional": true,
      "note": ""
     },
     {
-     "ingredientName": "Ghee",
-     "quantity": 15,
-     "unit": "g",
+     "ingredientName": "Garam masala",
+     "quantity": 0.5,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
     },
     {
      "ingredientName": "Salt",
-     "quantity": 3,
-     "unit": "g",
+     "quantity": 1.25,
+     "unit": "tsp",
      "isOptional": false,
-     "note": ""
+     "note": "level"
     },
     {
-     "ingredientName": "Atta",
-     "quantity": 300,
-     "unit": "g",
+     "ingredientName": "Cilantro",
+     "quantity": 0.25,
+     "unit": "bunch",
      "isOptional": false,
-     "note": ""
+     "note": "chopped"
     }
    ],
    "steps": [
-    "Boil and cube potatoes.",
-    "Temper cumin, ginger in ghee; add spices, whisked yogurt on low; stir 3 min.",
-    "Add potatoes, 150 ml water; simmer 5 min. Serve with rotis."
+    "Boil 500 g small potatoes until a knife slides in easily, about 15 minutes, then peel them and cut any large ones in half.",
+    "Whisk 400 g yogurt with 2 tbsp besan and 300 ml water until completely smooth. The besan is insurance: it holds the yogurt together when it heats.",
+    "Warm 1½ tbsp ghee in a pan. Add ¾ tsp cumin seeds and a pinch of asafoetida and let them sizzle 20 seconds.",
+    "Add 1 tsp grated ginger and the slit chilli and fry 30 seconds.",
+    "Turn the heat low and add ½ tsp turmeric, 1½ tsp coriander powder and ¼ tsp chilli powder. Fry for 30 seconds only — these burn fast in ghee.",
+    "Pour in the yogurt mixture and add 1¼ tsp salt, stirring constantly.",
+    "Keep stirring in one direction until it comes to a simmer. Do not walk away: yogurt that boils before it is stirred smooth will split.",
+    "Once simmering, add the potatoes and cook uncovered on low for 10 minutes, so the gravy thickens and the potatoes take on the flavour.",
+    "Crush a couple of potato halves against the side of the pan to thicken the gravy further.",
+    "Turn off the heat, stir in ½ tsp garam masala and the coriander, lift out the chilli, and serve with rice or puri."
    ],
    "nutritionTags": [
-    "calcium",
-    "grain",
     "protein",
-    "wholeGrain"
+    "calcium",
+    "vegetable"
    ],
    "isQuick": false,
    "kidBaseline": 4,
-   "kidFriendlyNote": "Mild, soft, tangy — easy for the 4-year-old.",
+   "kidFriendlyNote": "Mild, creamy and almost sweet — a good one for a child who says everything is too spicy. Whisk besan into the yogurt so the gravy cannot split.",
    "lunchboxOK": false,
    "source": "seed",
    "containsEgg": false,
    "containsDairy": true,
    "containsNuts": false,
-   "containsGluten": true
+   "containsGluten": false,
+   "sourceNote": "Written for Rasoi — the classic no-onion, no-garlic yogurt gravy",
+   "sourceURL": ""
   },
   {
    "seedID": "dn-quinoa-veg-pulao",
@@ -4660,10 +4972,10 @@
    "ingredients": [
     {
      "ingredientName": "Quinoa",
-     "quantity": 300,
+     "quantity": 250,
      "unit": "g",
      "isOptional": false,
-     "note": ""
+     "note": "1½ cups, rinsed in a fine sieve for a full minute"
     },
     {
      "ingredientName": "Frozen mixed vegetables",
@@ -4677,70 +4989,122 @@
      "quantity": 1,
      "unit": "count",
      "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Cumin seeds",
-     "quantity": 3,
-     "unit": "g",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Turmeric",
-     "quantity": 1,
-     "unit": "g",
-     "isOptional": false,
-     "note": ""
+     "note": "medium, thinly sliced"
     },
     {
      "ingredientName": "Ghee",
-     "quantity": 15,
-     "unit": "g",
+     "quantity": 1.5,
+     "unit": "tbsp",
+     "isOptional": false,
+     "note": "or oil"
+    },
+    {
+     "ingredientName": "Cumin seeds",
+     "quantity": 0.75,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Bay leaf",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": true,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cardamom",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": true,
+     "note": "green pods"
+    },
+    {
+     "ingredientName": "Ginger",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": "2 cm piece, grated (1 tsp)"
+    },
+    {
+     "ingredientName": "Garlic",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": false,
+     "note": "cloves, minced (1 tsp)"
+    },
+    {
+     "ingredientName": "Green chili",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": true,
+     "note": "slit"
+    },
+    {
+     "ingredientName": "Turmeric",
+     "quantity": 0.25,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Garam masala",
+     "quantity": 0.75,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
     },
     {
      "ingredientName": "Salt",
-     "quantity": 4,
-     "unit": "g",
+     "quantity": 1.25,
+     "unit": "tsp",
      "isOptional": false,
-     "note": ""
+     "note": "level"
     },
     {
      "ingredientName": "Lemon",
-     "quantity": 1,
+     "quantity": 0.5,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "juice, 1 tbsp"
     },
     {
-     "ingredientName": "Plain yogurt",
-     "quantity": 200,
-     "unit": "g",
+     "ingredientName": "Cilantro",
+     "quantity": 0.25,
+     "unit": "bunch",
      "isOptional": false,
-     "note": ""
+     "note": "chopped"
     }
    ],
    "steps": [
-    "Sauté cumin, onion in ghee; add veg 2 min.",
-    "Add rinsed quinoa, turmeric, salt, 450 ml water; pressure cook 1 min, natural release 10 min.",
-    "Fluff with lemon; serve with yogurt."
+    "Rinse 250 g quinoa in a fine sieve under cold running water for a full minute, rubbing it with your fingers. The bitter saponin coating is why quinoa gets rejected.",
+    "Set the Instant Pot to Sauté and warm 1½ tbsp ghee. Add ¾ tsp cumin seeds, the bay leaf and cardamom and let them sizzle 20 seconds.",
+    "Add the sliced onion and fry 4 minutes until soft and golden at the edges.",
+    "Stir in 1 tsp ginger, 1 tsp garlic and the slit chilli; cook 1 minute.",
+    "Add the frozen vegetables and ¼ tsp turmeric and stir for 2 minutes.",
+    "Add the drained quinoa and turn it through the spices for 1 minute so every grain is coated.",
+    "Pour in 375 ml water with 1¼ tsp salt — quinoa needs far less water than rice, about 1 part quinoa to 1¼ parts water.",
+    "Cancel Sauté, close the lid and pressure cook on high for 1 minute, then let the pressure release naturally for 10 minutes. One minute is not a typo; quinoa cooks in the residual heat.",
+    "Open the pot: the grains should have uncurled little white tails. Fluff with a fork.",
+    "Stir in ¾ tsp garam masala, 1 tbsp lemon juice and the coriander, and serve with yogurt."
    ],
    "nutritionTags": [
     "protein",
     "vegetable",
-    "wholeGrain"
+    "wholeGrain",
+    "fibre"
    ],
    "isQuick": false,
    "kidBaseline": 3,
-   "kidFriendlyNote": "Looks like rice; a little ghee helps acceptance.",
+   "kidFriendlyNote": "Rinsing the quinoa properly is the whole trick — unrinsed quinoa tastes soapy and children notice immediately. Serve with yogurt to soften the texture.",
    "lunchboxOK": true,
    "source": "seed",
    "containsEgg": false,
    "containsDairy": true,
    "containsNuts": false,
-   "containsGluten": false
+   "containsGluten": false,
+   "sourceNote": "Written for Rasoi — pulao method adapted to quinoa's 1:1.25 water ratio",
+   "sourceURL": ""
   },
   {
    "seedID": "dn-veggie-burgers",
@@ -4860,7 +5224,7 @@
     "instantPot"
    ],
    "prepMinutes": 10,
-   "cookMinutes": 20,
+   "cookMinutes": 25,
    "servings": 4,
    "minAgeYears": 3,
    "ingredients": [
@@ -4872,94 +5236,162 @@
      "note": ""
     },
     {
+     "ingredientName": "Basmati rice",
+     "quantity": 300,
+     "unit": "g",
+     "isOptional": false,
+     "note": "1½ cups, to serve"
+    },
+    {
+     "ingredientName": "Vegetable oil",
+     "quantity": 2,
+     "unit": "tbsp",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Ghee",
+     "quantity": 1,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "for frying the eggs"
+    },
+    {
+     "ingredientName": "Bay leaf",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": true,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cinnamon",
+     "quantity": 0.25,
+     "unit": "tsp",
+     "isOptional": true,
+     "note": "one small piece"
+    },
+    {
+     "ingredientName": "Cardamom",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": true,
+     "note": "green pods"
+    },
+    {
      "ingredientName": "Onion",
      "quantity": 2,
      "unit": "count",
      "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Tomato",
-     "quantity": 3,
-     "unit": "count",
-     "isOptional": false,
-     "note": ""
+     "note": "medium, finely chopped (1¼ cups)"
     },
     {
      "ingredientName": "Ginger",
-     "quantity": 5,
-     "unit": "g",
+     "quantity": 1,
+     "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "2 cm piece, grated (½ tsp)"
     },
     {
      "ingredientName": "Garlic",
-     "quantity": 3,
+     "quantity": 2,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "cloves, minced (½ tsp)"
     },
     {
-     "ingredientName": "Coriander powder",
-     "quantity": 5,
-     "unit": "g",
+     "ingredientName": "Tomato",
+     "quantity": 2,
+     "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "medium, puréed (1 cup)"
     },
     {
      "ingredientName": "Turmeric",
-     "quantity": 2,
-     "unit": "g",
+     "quantity": 0.125,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Red chili powder",
+     "quantity": 0.5,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "Kashmiri"
+    },
+    {
+     "ingredientName": "Coriander powder",
+     "quantity": 1,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
     },
     {
      "ingredientName": "Garam masala",
-     "quantity": 2,
-     "unit": "g",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Vegetable oil",
-     "quantity": 20,
-     "unit": "ml",
+     "quantity": 0.75,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
     },
     {
      "ingredientName": "Salt",
-     "quantity": 4,
-     "unit": "g",
+     "quantity": 1,
+     "unit": "tsp",
      "isOptional": false,
-     "note": ""
+     "note": "level"
     },
     {
-     "ingredientName": "Basmati rice",
-     "quantity": 300,
-     "unit": "g",
+     "ingredientName": "Sugar",
+     "quantity": 0.5,
+     "unit": "tsp",
+     "isOptional": true,
+     "note": "balances the tomato"
+    },
+    {
+     "ingredientName": "Kasuri methi",
+     "quantity": 0.25,
+     "unit": "tsp",
+     "isOptional": true,
+     "note": "crushed"
+    },
+    {
+     "ingredientName": "Cilantro",
+     "quantity": 0.25,
+     "unit": "bunch",
      "isOptional": false,
-     "note": ""
+     "note": "chopped"
     }
    ],
    "steps": [
-    "Pressure cook eggs 5 min; peel.",
-    "Sauté onion, ginger-garlic, tomato, spices 8 min; add 300 ml water; simmer 5 min.",
-    "Add halved eggs; serve with rice."
+    "Lower 6 eggs into boiling water and cook for 9 minutes, then move them straight into cold water for 5 minutes. Nine minutes gives a set yolk without the grey ring.",
+    "Peel the eggs and pat them dry. Prick each one two or three times with a fork so the gravy can get inside.",
+    "Warm 1 tsp ghee in the pot and roll the eggs around for 2 minutes until they blister and turn golden in patches. Lift them out.",
+    "Rinse 300 g rice until clear and simmer in 600 ml water with a pinch of salt: 12 minutes covered on low, then 5 minutes resting.",
+    "In the same pot, warm 2 tbsp oil. Add the bay leaf, cinnamon and cardamom and let them sizzle 20 seconds.",
+    "Add the chopped onion and fry 6–7 minutes, until golden and the raw smell has gone.",
+    "Stir in ½ tsp ginger and ½ tsp garlic; cook 1 minute.",
+    "Pour in the tomato purée with ½ tsp of the salt and cook 5–6 minutes, until it thickens and the oil separates at the edges.",
+    "Lower the heat and add ⅛ tsp turmeric, ½ tsp chilli powder, 1 tsp coriander powder and ½ tsp of the garam masala. Fry 2 minutes.",
+    "Add 300 ml water, the remaining ½ tsp salt and the sugar if using. Simmer covered for 8 minutes until the gravy thickens.",
+    "Slide the eggs in, crush ¼ tsp kasuri methi over the pot and simmer 3 minutes, spooning gravy over them.",
+    "Turn off the heat, add the last ¼ tsp garam masala and the coriander, and halve the eggs as you serve them over the rice."
    ],
    "nutritionTags": [
-    "grain",
-    "protein"
+    "protein",
+    "iron",
+    "grain"
    ],
    "isQuick": false,
-   "kidBaseline": 3,
-   "kidFriendlyNote": "Serve eggs halved with gravy on the side for the little one.",
+   "kidBaseline": 4,
+   "kidFriendlyNote": "Halve the eggs before serving so a child can see what they are eating, and give them the yolk-side up in a little gravy over rice.",
    "lunchboxOK": false,
    "source": "seed",
    "containsEgg": true,
-   "containsDairy": false,
+   "containsDairy": true,
    "containsNuts": false,
-   "containsGluten": false
+   "containsGluten": false,
+   "sourceNote": "Adapted from Swasthi's Punjabi Egg Curry (Indian Healthy Recipes)",
+   "sourceURL": "https://www.indianhealthyrecipes.com/punjabi-egg-curry-anda-curry-dhaba-style/"
   },
   {
    "seedID": "dn-veg-korma",
