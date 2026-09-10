@@ -1095,96 +1095,139 @@
    "ingredients": [
     {
      "ingredientName": "Basmati rice",
-     "quantity": 200,
+     "quantity": 150,
      "unit": "g",
      "isOptional": false,
-     "note": ""
+     "note": "¾ cup, rinsed"
     },
     {
      "ingredientName": "Moong dal",
      "quantity": 150,
      "unit": "g",
      "isOptional": false,
+     "note": "¾ cup, rinsed with the rice"
+    },
+    {
+     "ingredientName": "Ghee",
+     "quantity": 2,
+     "unit": "tbsp",
+     "isOptional": false,
+     "note": "one for cooking, one to finish"
+    },
+    {
+     "ingredientName": "Cumin seeds",
+     "quantity": 0.75,
+     "unit": "tsp",
+     "isOptional": false,
      "note": ""
+    },
+    {
+     "ingredientName": "Asafoetida",
+     "quantity": 0.125,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "a pinch"
+    },
+    {
+     "ingredientName": "Onion",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": "medium, finely chopped"
+    },
+    {
+     "ingredientName": "Ginger",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": "2 cm piece, grated (1 tsp)"
+    },
+    {
+     "ingredientName": "Tomato",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": "medium, chopped"
     },
     {
      "ingredientName": "Carrot",
      "quantity": 1,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "medium, diced small"
     },
     {
-     "ingredientName": "Peas",
-     "quantity": 80,
-     "unit": "g",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Potato",
-     "quantity": 1,
-     "unit": "count",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Ghee",
-     "quantity": 20,
-     "unit": "g",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Cumin seeds",
-     "quantity": 3,
+     "ingredientName": "Frozen peas",
+     "quantity": 100,
      "unit": "g",
      "isOptional": false,
      "note": ""
     },
     {
      "ingredientName": "Turmeric",
-     "quantity": 2,
-     "unit": "g",
+     "quantity": 0.5,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
     },
     {
      "ingredientName": "Salt",
-     "quantity": 4,
-     "unit": "g",
+     "quantity": 1.5,
+     "unit": "tsp",
      "isOptional": false,
-     "note": ""
+     "note": "level"
     },
     {
-     "ingredientName": "Plain yogurt",
-     "quantity": 150,
-     "unit": "g",
+     "ingredientName": "Black pepper",
+     "quantity": 0.25,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "instead of chilli, for young children"
+    },
+    {
+     "ingredientName": "Cilantro",
+     "quantity": 0.25,
+     "unit": "bunch",
+     "isOptional": false,
+     "note": "chopped"
+    },
+    {
+     "ingredientName": "Lemon",
+     "quantity": 0.5,
+     "unit": "count",
      "isOptional": true,
-     "note": ""
+     "note": "wedges to serve"
     }
    ],
    "steps": [
-    "Rinse rice + dal.",
-    "Sauté mode: ghee, cumin, then veg 2 min.",
-    "Add rice, dal, turmeric, salt, 1.2 l water.",
-    "Pressure cook 8 min, natural release 10 min. Serve with yogurt."
+    "Rinse 150 g rice and 150 g moong dal together in three changes of water until it runs almost clear.",
+    "Set the Instant Pot to Sauté and warm 1 tbsp ghee. Add ¾ tsp cumin seeds and a pinch of asafoetida and wait 20 seconds for them to sizzle.",
+    "Add the chopped onion and fry 4 minutes until soft and just golden.",
+    "Stir in 1 tsp grated ginger, then the tomato and diced carrot. Cook 3 minutes.",
+    "Add the drained rice and dal, ½ tsp turmeric, 1½ tsp salt and ¼ tsp black pepper. Stir once to coat.",
+    "Pour in 1 litre water — khichdi wants roughly 1 part grains to 3½ parts water, softer than plain rice.",
+    "Cancel Sauté, close the lid and pressure cook on high for 8 minutes, then let the pressure release naturally for 10 minutes. On the stovetop: 3 whistles on medium.",
+    "Open the pot and stir in the frozen peas; the residual heat cooks them in 2 minutes and keeps them green.",
+    "Stir well, mashing a little against the side of the pot. If it is stiffer than you like, beat in hot water 50 ml at a time — it thickens as it stands.",
+    "Finish with the last 1 tbsp ghee and the chopped coriander, and serve with lemon wedges and yogurt."
    ],
    "nutritionTags": [
-    "grain",
-    "iron",
     "protein",
-    "vegetable"
+    "grain",
+    "vegetable",
+    "fibre"
    ],
    "isQuick": false,
    "kidBaseline": 5,
-   "kidFriendlyNote": "Soft, one-pot comfort food; add extra ghee on top for the kids.",
+   "kidFriendlyNote": "The most forgiving meal in the app: soft, mild and one bowl. A spoon of ghee on top at the table is what children remember about it.",
    "lunchboxOK": true,
    "source": "seed",
    "containsEgg": false,
    "containsDairy": true,
    "containsNuts": false,
-   "containsGluten": false
+   "containsGluten": false,
+   "sourceNote": "Adapted from Swasthi's Dal Khichdi (Indian Healthy Recipes)",
+   "sourceURL": "https://www.indianhealthyrecipes.com/dal-khichdi-recipe/"
   },
   {
    "seedID": "dn-ip-dal-fry",
@@ -1200,107 +1243,166 @@
    "prepMinutes": 10,
    "cookMinutes": 25,
    "servings": 4,
-   "minAgeYears": 1,
+   "minAgeYears": 2,
    "ingredients": [
     {
      "ingredientName": "Toor dal",
-     "quantity": 250,
+     "quantity": 200,
      "unit": "g",
      "isOptional": false,
-     "note": ""
+     "note": "1 cup, rinsed in three changes of water"
     },
     {
      "ingredientName": "Basmati rice",
      "quantity": 300,
      "unit": "g",
      "isOptional": false,
+     "note": "1½ cups, to serve"
+    },
+    {
+     "ingredientName": "Ghee",
+     "quantity": 2,
+     "unit": "tbsp",
+     "isOptional": false,
+     "note": "or vegetable oil"
+    },
+    {
+     "ingredientName": "Cumin seeds",
+     "quantity": 0.75,
+     "unit": "tsp",
+     "isOptional": false,
      "note": ""
+    },
+    {
+     "ingredientName": "Asafoetida",
+     "quantity": 0.125,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "a generous pinch"
     },
     {
      "ingredientName": "Onion",
      "quantity": 1,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "medium, finely chopped (about 1 cup)"
     },
     {
-     "ingredientName": "Tomato",
-     "quantity": 2,
+     "ingredientName": "Green chili",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": true,
+     "note": "slit lengthways, left whole"
+    },
+    {
+     "ingredientName": "Ginger",
+     "quantity": 1,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "3 cm piece, finely grated (1 tsp)"
     },
     {
      "ingredientName": "Garlic",
      "quantity": 3,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "cloves, minced (1 tsp)"
     },
     {
-     "ingredientName": "Ginger",
-     "quantity": 5,
-     "unit": "g",
+     "ingredientName": "Tomato",
+     "quantity": 1,
+     "unit": "count",
      "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Cumin seeds",
-     "quantity": 3,
-     "unit": "g",
-     "isOptional": false,
-     "note": ""
+     "note": "large, chopped (about ¾ cup)"
     },
     {
      "ingredientName": "Turmeric",
-     "quantity": 2,
-     "unit": "g",
+     "quantity": 0.25,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
     },
     {
-     "ingredientName": "Ghee",
-     "quantity": 20,
-     "unit": "g",
+     "ingredientName": "Red chili powder",
+     "quantity": 0.5,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "Kashmiri, for colour rather than heat"
+    },
+    {
+     "ingredientName": "Coriander powder",
+     "quantity": 1,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
+    },
+    {
+     "ingredientName": "Garam masala",
+     "quantity": 0.5,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "stirred in at the end"
     },
     {
      "ingredientName": "Salt",
-     "quantity": 4,
-     "unit": "g",
+     "quantity": 1.25,
+     "unit": "tsp",
      "isOptional": false,
-     "note": ""
+     "note": "level, plus a pinch for the rice"
+    },
+    {
+     "ingredientName": "Kasuri methi",
+     "quantity": 1,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "crushed between your palms"
     },
     {
      "ingredientName": "Cilantro",
-     "quantity": 1,
+     "quantity": 0.25,
      "unit": "bunch",
+     "isOptional": false,
+     "note": "leaves and tender stems, chopped"
+    },
+    {
+     "ingredientName": "Lemon",
+     "quantity": 0.5,
+     "unit": "count",
      "isOptional": true,
-     "note": ""
+     "note": "cut into wedges"
     }
    ],
    "steps": [
-    "Sauté ghee, cumin, onion, ginger-garlic 3 min; add tomato 2 min.",
-    "Add rinsed dal, turmeric, salt, 900 ml water; pot-in-pot rice with 1:1.5 water on a trivet.",
-    "Pressure cook 10 min, natural release.",
-    "Whisk dal, top with cilantro."
+    "Rinse 200 g toor dal in three changes of water, rubbing the grains between your fingers until the water runs almost clear. This is what keeps the dal from tasting muddy.",
+    "Put the dal in the Instant Pot with 600 ml water and ¼ tsp of the turmeric. Pressure cook on high for 8 minutes, then let the pressure release naturally for 10 minutes. On the stovetop: 3 whistles on medium, then leave it alone until the pressure drops.",
+    "While the dal cooks, rinse 300 g basmati rice until the water is clear, then simmer it in 600 ml water with a pinch of salt: 12 minutes covered on low, then 5 minutes off the heat without lifting the lid.",
+    "Open the pot and whisk the dal for a few seconds. It should be soft enough to fall off the whisk in ribbons; if it is stiff, whisk in 100 ml hot water. Tip it into a bowl and wipe the pot dry.",
+    "Set the pot to Sauté (or use a kadai on medium). Warm 2 tbsp ghee, add ¾ tsp cumin seeds and wait for them to darken by a shade and smell toasted — about 20 seconds.",
+    "Add ⅛ tsp asafoetida and the slit green chilli, then the chopped onion. Fry for 5–6 minutes, stirring often, until the onion is golden at the edges. Do not rush this; pale onion is the usual reason dal tastes flat.",
+    "Stir in 1 tsp grated ginger and 1 tsp minced garlic and fry for 45 seconds, until the raw smell goes.",
+    "Add the chopped tomato and ½ tsp of the salt. Cook for 5–6 minutes, mashing with the back of the spoon, until the tomato collapses and the ghee separates at the edges.",
+    "Turn the heat low and add ¼ tsp turmeric, ½ tsp red chilli powder and 1 tsp coriander powder. Fry for 60 seconds — off the boil, so the spices bloom instead of burning.",
+    "Pour the dal back in with the remaining ¾ tsp salt. Simmer uncovered for 6–8 minutes, stirring now and then, adding hot water a splash at a time until it pours like thin cream — it thickens as it sits.",
+    "Turn off the heat. Crush 1 tsp kasuri methi between your palms over the pot, add ½ tsp garam masala and the chopped coriander, and stir once.",
+    "Lift out the green chilli. Taste and adjust the salt, then serve over the rice with lemon wedges on the side."
    ],
    "nutritionTags": [
-    "fibre",
-    "grain",
+    "protein",
     "iron",
-    "protein"
+    "fibre",
+    "grain"
    ],
    "isQuick": false,
    "kidBaseline": 5,
-   "kidFriendlyNote": "The classic — mild, yellow, spoonable. Mix with rice and a little ghee.",
+   "kidFriendlyNote": "Keep the green chilli whole and lift it out before serving, and put a spoon of ghee and a lemon wedge on the table so each child can finish their own bowl.",
    "lunchboxOK": true,
    "source": "seed",
    "containsEgg": false,
    "containsDairy": true,
    "containsNuts": false,
-   "containsGluten": false
+   "containsGluten": false,
+   "sourceNote": "Adapted from Swasthi's Dal Fry (Indian Healthy Recipes)",
+   "sourceURL": "https://www.indianhealthyrecipes.com/dal-fry/"
   },
   {
    "seedID": "dn-ip-rajma",
@@ -1313,117 +1415,164 @@
    "appliances": [
     "instantPot"
    ],
-   "prepMinutes": 10,
-   "cookMinutes": 45,
+   "prepMinutes": 15,
+   "cookMinutes": 40,
    "servings": 4,
    "minAgeYears": 2,
    "ingredients": [
     {
      "ingredientName": "Rajma",
-     "quantity": 250,
+     "quantity": 200,
      "unit": "g",
      "isOptional": false,
-     "note": ""
+     "note": "1 cup, soaked 8 hours in plenty of cold water"
     },
     {
      "ingredientName": "Basmati rice",
      "quantity": 300,
      "unit": "g",
      "isOptional": false,
+     "note": "1½ cups, to serve"
+    },
+    {
+     "ingredientName": "Ghee",
+     "quantity": 2,
+     "unit": "tbsp",
+     "isOptional": false,
+     "note": "or vegetable oil"
+    },
+    {
+     "ingredientName": "Cumin seeds",
+     "quantity": 0.5,
+     "unit": "tsp",
+     "isOptional": false,
      "note": ""
+    },
+    {
+     "ingredientName": "Bay leaf",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": true,
+     "note": "small"
     },
     {
      "ingredientName": "Onion",
      "quantity": 2,
      "unit": "count",
      "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Tomato",
-     "quantity": 3,
-     "unit": "count",
-     "isOptional": false,
-     "note": ""
+     "note": "medium, finely chopped (about 1 cup)"
     },
     {
      "ingredientName": "Ginger",
-     "quantity": 10,
-     "unit": "g",
+     "quantity": 1,
+     "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "3 cm piece, grated (1 tsp)"
     },
     {
      "ingredientName": "Garlic",
      "quantity": 4,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "cloves, minced (1½ tsp)"
     },
     {
-     "ingredientName": "Cumin seeds",
+     "ingredientName": "Tomato",
      "quantity": 3,
-     "unit": "g",
+     "unit": "count",
+     "isOptional": false,
+     "note": "medium, blended smooth (about 1½ cups purée)"
+    },
+    {
+     "ingredientName": "Turmeric",
+     "quantity": 0.25,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
     },
     {
+     "ingredientName": "Red chili powder",
+     "quantity": 0.5,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "Kashmiri"
+    },
+    {
      "ingredientName": "Coriander powder",
-     "quantity": 5,
-     "unit": "g",
+     "quantity": 2,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Ground cumin",
+     "quantity": 1,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
     },
     {
      "ingredientName": "Garam masala",
-     "quantity": 3,
-     "unit": "g",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Turmeric",
-     "quantity": 2,
-     "unit": "g",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Vegetable oil",
-     "quantity": 20,
-     "unit": "ml",
+     "quantity": 0.75,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
     },
     {
      "ingredientName": "Salt",
-     "quantity": 4,
-     "unit": "g",
+     "quantity": 1.5,
+     "unit": "tsp",
      "isOptional": false,
-     "note": ""
+     "note": "level, in two additions"
+    },
+    {
+     "ingredientName": "Kasuri methi",
+     "quantity": 1,
+     "unit": "tbsp",
+     "isOptional": false,
+     "note": "crushed"
+    },
+    {
+     "ingredientName": "Cilantro",
+     "quantity": 0.25,
+     "unit": "bunch",
+     "isOptional": false,
+     "note": "chopped"
     }
    ],
    "steps": [
-    "(Soak rajma 8 h or use quick-soak.)",
-    "Sauté onion, ginger, garlic in oil 5 min; add tomato + spices 3 min.",
-    "Add rajma + 750 ml water; pressure cook 30 min, natural release.",
-    "Mash a few beans to thicken; serve over rice."
+    "The night before, rinse 200 g rajma and soak it in 1 litre of cold water. Eight hours is the minimum; beans that have not soaked stay chalky however long you cook them.",
+    "Drain the soaking water and rinse the beans again — this is what makes them easier on everyone's stomach.",
+    "Pressure cook the beans in 400 ml fresh water for 16 minutes on high with a natural release, or 5 whistles on the stovetop. A cooked bean squashes to a paste between two fingers with no grit in the middle.",
+    "Meanwhile rinse 300 g basmati rice until the water runs clear and simmer in 600 ml water with a pinch of salt: 12 minutes covered on low, then 5 minutes resting off the heat.",
+    "Lift the beans out with a slotted spoon and keep the cooking liquid — it is the body of the gravy. Set the pot to Sauté.",
+    "Warm 2 tbsp ghee, add ½ tsp cumin seeds and the bay leaf, and wait 20 seconds for the seeds to sizzle and smell toasted.",
+    "Add the chopped onion and fry for 8–9 minutes, stirring often, until it is properly golden — not just soft. This is the single step that decides how the dish tastes.",
+    "Stir in 1 tsp grated ginger and 1½ tsp minced garlic; fry 1 minute until the raw edge is gone.",
+    "Pour in the tomato purée and ½ tsp salt. Cook for 6–8 minutes, until it darkens, thickens and the ghee separates out at the sides.",
+    "Lower the heat and add ¼ tsp turmeric, ½ tsp chilli powder, 2 tsp coriander powder and 1 tsp ground cumin. Fry for 2 minutes, adding a spoon of water if the pan looks dry.",
+    "Add the beans, 250 ml of their cooking liquid and the remaining 1 tsp salt. Simmer uncovered for 12–15 minutes.",
+    "Mash about a quarter of the beans against the side of the pot with the back of a ladle. The gravy should coat a spoon rather than run off it.",
+    "Turn off the heat, crush 1 tbsp kasuri methi between your palms into the pot, add ¾ tsp garam masala and the coriander, and stir once.",
+    "Let it sit for 5 minutes before serving over the rice — rajma is better five minutes late than five minutes early."
    ],
    "nutritionTags": [
-    "fibre",
-    "grain",
+    "protein",
     "iron",
-    "protein"
+    "fibre",
+    "grain"
    ],
    "isQuick": false,
    "kidBaseline": 5,
-   "kidFriendlyNote": "Kids' top request; keep chili out, add a squeeze of lemon.",
+   "kidFriendlyNote": "Mash a few beans against the side of the pot so the gravy is thick and easy to eat with a spoon, and keep the chilli powder at ½ tsp — the flavour is in the onion and the kasuri methi, not the heat.",
    "lunchboxOK": true,
    "source": "seed",
    "containsEgg": false,
-   "containsDairy": false,
+   "containsDairy": true,
    "containsNuts": false,
-   "containsGluten": false
+   "containsGluten": false,
+   "sourceNote": "Adapted from Swasthi's Rajma Masala (Indian Healthy Recipes)",
+   "sourceURL": "https://www.indianhealthyrecipes.com/rajma-recipe-rajma-masala/"
   },
   {
    "seedID": "dn-ip-chole",
@@ -1436,16 +1585,44 @@
    "appliances": [
     "instantPot"
    ],
-   "prepMinutes": 10,
-   "cookMinutes": 40,
+   "prepMinutes": 15,
+   "cookMinutes": 35,
    "servings": 4,
    "minAgeYears": 2,
    "ingredients": [
     {
      "ingredientName": "Chickpeas",
-     "quantity": 250,
+     "quantity": 200,
      "unit": "g",
      "isOptional": false,
+     "note": "1 cup dried, soaked 8 hours"
+    },
+    {
+     "ingredientName": "Vegetable oil",
+     "quantity": 2,
+     "unit": "tbsp",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Bay leaf",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": true,
+     "note": "small"
+    },
+    {
+     "ingredientName": "Cinnamon",
+     "quantity": 0.5,
+     "unit": "tsp",
+     "isOptional": true,
+     "note": "one 2 cm piece"
+    },
+    {
+     "ingredientName": "Cloves",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": true,
      "note": ""
     },
     {
@@ -1453,99 +1630,123 @@
      "quantity": 2,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "medium, finely chopped (1½ cups)"
+    },
+    {
+     "ingredientName": "Ginger",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": "3 cm piece, grated (1 tsp)"
+    },
+    {
+     "ingredientName": "Garlic",
+     "quantity": 4,
+     "unit": "count",
+     "isOptional": false,
+     "note": "cloves, minced (1½ tsp)"
     },
     {
      "ingredientName": "Tomato",
      "quantity": 3,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "medium, chopped (1½ cups)"
     },
     {
-     "ingredientName": "Ginger",
-     "quantity": 10,
-     "unit": "g",
+     "ingredientName": "Turmeric",
+     "quantity": 0.25,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
     },
     {
-     "ingredientName": "Garlic",
-     "quantity": 3,
-     "unit": "count",
+     "ingredientName": "Red chili powder",
+     "quantity": 1,
+     "unit": "tsp",
      "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Cumin seeds",
-     "quantity": 3,
-     "unit": "g",
-     "isOptional": false,
-     "note": ""
+     "note": "Kashmiri — colour, not heat"
     },
     {
      "ingredientName": "Coriander powder",
-     "quantity": 5,
-     "unit": "g",
+     "quantity": 2,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Ground cumin",
+     "quantity": 0.5,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
     },
     {
      "ingredientName": "Garam masala",
-     "quantity": 3,
-     "unit": "g",
+     "quantity": 1,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
     },
     {
      "ingredientName": "Amchur",
-     "quantity": 3,
-     "unit": "g",
-     "isOptional": true,
-     "note": ""
+     "quantity": 0.5,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "or a squeeze of lemon"
     },
     {
-     "ingredientName": "Vegetable oil",
-     "quantity": 20,
-     "unit": "ml",
+     "ingredientName": "Kasuri methi",
+     "quantity": 1,
+     "unit": "tsp",
      "isOptional": false,
-     "note": ""
+     "note": "crushed"
     },
     {
      "ingredientName": "Salt",
-     "quantity": 4,
-     "unit": "g",
+     "quantity": 1.5,
+     "unit": "tsp",
      "isOptional": false,
-     "note": ""
+     "note": "level, in two additions"
     },
     {
-     "ingredientName": "Basmati rice",
-     "quantity": 300,
-     "unit": "g",
+     "ingredientName": "Cilantro",
+     "quantity": 0.25,
+     "unit": "bunch",
      "isOptional": false,
-     "note": ""
+     "note": "chopped"
     }
    ],
    "steps": [
-    "Soak chickpeas 8 h.",
-    "Sauté aromatics + spices; add tomato until jammy.",
-    "Add chickpeas + 700 ml water; pressure cook 35 min, natural release.",
-    "Serve with rice or whole wheat tortillas."
+    "Soak 200 g dried chickpeas in 1 litre of water for at least 8 hours, or overnight. Drain and rinse.",
+    "Pressure cook them in 400 ml fresh water for 18 minutes on high with a natural release (5–6 whistles on the stovetop). A cooked chickpea mashes completely with no hard core.",
+    "Scoop the chickpeas out, keeping the cooking stock. Set the pot to Sauté and warm 2 tbsp oil.",
+    "Add the bay leaf, cinnamon and cloves and let them sizzle for 20 seconds — this is where the warm background flavour comes from.",
+    "Add the chopped onion and fry for 8–9 minutes to a proper golden brown, stirring so the edges do not catch.",
+    "Stir in 1 tsp ginger and 1½ tsp garlic and cook for 1 minute.",
+    "Add the tomatoes and ¾ tsp salt. Cook for 6–7 minutes, pressing them down, until they are mushy and the oil beads at the edge of the pan.",
+    "Turn the heat low. Add ¼ tsp turmeric, 1 tsp chilli powder, 2 tsp coriander powder and ½ tsp ground cumin, and fry for 3 minutes until the mixture smells sweet rather than raw.",
+    "Add the chickpeas, 300 ml of their stock and the remaining ¾ tsp salt. Simmer uncovered for 15 minutes, until the gravy is thick enough to sit on a spoon.",
+    "Crush a ladleful of chickpeas against the side of the pot to thicken the gravy naturally.",
+    "Turn off the heat and stir in 1 tsp garam masala, ½ tsp amchur and 1 tsp crushed kasuri methi. Taste: it should be tangy first, warm second.",
+    "Scatter the coriander over and let it stand 5 minutes before serving."
    ],
    "nutritionTags": [
-    "fibre",
+    "protein",
     "iron",
-    "protein"
+    "fibre"
    ],
    "isQuick": false,
    "kidBaseline": 4,
-   "kidFriendlyNote": "Serve with a yogurt swirl and cucumber slices.",
+   "kidFriendlyNote": "Serve with plain rice or a soft roti and a bowl of yogurt; the amchur at the end gives the tang children expect from chole without any extra chilli.",
    "lunchboxOK": true,
    "source": "seed",
    "containsEgg": false,
    "containsDairy": false,
    "containsNuts": false,
-   "containsGluten": false
+   "containsGluten": false,
+   "sourceNote": "Adapted from Swasthi's Chana Masala (Indian Healthy Recipes)",
+   "sourceURL": "https://www.indianhealthyrecipes.com/chana-masala/"
   },
   {
    "seedID": "dn-palak-paneer",
@@ -1558,22 +1759,43 @@
     "vitamix",
     "stovetop"
    ],
-   "prepMinutes": 10,
+   "prepMinutes": 15,
    "cookMinutes": 20,
    "servings": 4,
    "minAgeYears": 2,
    "ingredients": [
     {
      "ingredientName": "Spinach",
-     "quantity": 3,
+     "quantity": 2,
      "unit": "bunch",
      "isOptional": false,
-     "note": ""
+     "note": "about 250 g, thick stems removed"
     },
     {
      "ingredientName": "Paneer",
      "quantity": 250,
      "unit": "g",
+     "isOptional": false,
+     "note": "cut into 2 cm cubes"
+    },
+    {
+     "ingredientName": "Vegetable oil",
+     "quantity": 1,
+     "unit": "tbsp",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Butter",
+     "quantity": 1,
+     "unit": "tbsp",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cumin seeds",
+     "quantity": 0.5,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
     },
@@ -1582,86 +1804,103 @@
      "quantity": 1,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "medium, finely chopped (¾ cup)"
+    },
+    {
+     "ingredientName": "Green chili",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": true,
+     "note": "for the purée"
+    },
+    {
+     "ingredientName": "Cashews",
+     "quantity": 10,
+     "unit": "count",
+     "isOptional": false,
+     "note": "about 15 g, for body"
+    },
+    {
+     "ingredientName": "Ginger",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": "2 cm piece, grated (¾ tsp)"
+    },
+    {
+     "ingredientName": "Garlic",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": false,
+     "note": "cloves, minced (¾ tsp)"
     },
     {
      "ingredientName": "Tomato",
      "quantity": 1,
      "unit": "count",
      "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Garlic",
-     "quantity": 3,
-     "unit": "count",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Ginger",
-     "quantity": 5,
-     "unit": "g",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Cumin seeds",
-     "quantity": 3,
-     "unit": "g",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Garam masala",
-     "quantity": 2,
-     "unit": "g",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Butter",
-     "quantity": 15,
-     "unit": "g",
-     "isOptional": false,
-     "note": ""
+     "note": "deseeded and chopped (½ cup)"
     },
     {
      "ingredientName": "Salt",
-     "quantity": 4,
-     "unit": "g",
+     "quantity": 1,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "level"
+    },
+    {
+     "ingredientName": "Garam masala",
+     "quantity": 0.75,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
     },
     {
+     "ingredientName": "Kasuri methi",
+     "quantity": 0.5,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "crushed"
+    },
+    {
      "ingredientName": "Milk",
-     "quantity": 50,
+     "quantity": 60,
      "unit": "ml",
      "isOptional": true,
-     "note": ""
+     "note": "or cream, to finish"
     }
    ],
    "steps": [
-    "Blanch spinach 2 min; blend smooth in Vitamix.",
-    "Sauté cumin, onion, ginger-garlic, tomato in butter.",
-    "Add spinach purée, salt, garam masala; simmer 5 min.",
-    "Fold in paneer cubes; splash of milk for creaminess."
+    "Bring a wide pan of water to the boil with ½ tsp salt. Have a bowl of iced water ready beside it.",
+    "Drop the spinach into the boiling water for exactly 2 minutes, then lift it straight into the iced water. The shock is what keeps the finished dish green instead of grey.",
+    "Squeeze the spinach lightly and blend it with the cashews, the green chilli if you are using it, and 60 ml water until completely smooth — 30 seconds on high in a Vitamix. Set the purée aside.",
+    "Cut 250 g paneer into 2 cm cubes. If it has been in the fridge, soak the cubes in hot water for 10 minutes so they stay soft in the curry.",
+    "Warm 1 tbsp oil with 1 tbsp butter in a wide pan. Add ½ tsp cumin seeds and let them crackle for 20 seconds.",
+    "Add the chopped onion and fry for 5–6 minutes until golden at the edges.",
+    "Stir in ¾ tsp ginger and ¾ tsp garlic and cook for 1 minute.",
+    "Add the deseeded tomato and ½ tsp salt and cook for 4–5 minutes, until soft and jammy.",
+    "Sprinkle in ¾ tsp garam masala and fry for 1 minute.",
+    "Turn the heat to low and pour in the spinach purée with 100 ml water and the remaining ½ tsp salt. Cook for just 3 minutes — long boiling is what dulls the colour.",
+    "Slide in the paneer, crush ½ tsp kasuri methi over the pan and stir gently so the cubes stay whole. Cook 2 minutes more.",
+    "Turn off the heat, swirl in the milk or cream if using, and serve straight away with roti or rice."
    ],
    "nutritionTags": [
-    "calcium",
-    "iron",
     "protein",
-    "vegetable"
+    "vegetable",
+    "iron",
+    "calcium"
    ],
    "isQuick": false,
    "kidBaseline": 4,
-   "kidFriendlyNote": "Green sauce hides the spinach; kids dunk roti or rice into it.",
+   "kidFriendlyNote": "Blanching and shocking the spinach keeps it bright green rather than khaki, which matters more to children than anything else on the plate. Leave the chilli out and add a spoon of cream at the end.",
    "lunchboxOK": false,
    "source": "seed",
    "containsEgg": false,
    "containsDairy": true,
-   "containsNuts": false,
-   "containsGluten": false
+   "containsNuts": true,
+   "containsGluten": false,
+   "sourceNote": "Adapted from Swasthi's Palak Paneer (Indian Healthy Recipes)",
+   "sourceURL": "https://www.indianhealthyrecipes.com/palak-paneer-recipe/"
   },
   {
    "seedID": "dn-matar-paneer",
@@ -1675,8 +1914,8 @@
     "stovetop",
     "instantPot"
    ],
-   "prepMinutes": 10,
-   "cookMinutes": 20,
+   "prepMinutes": 15,
+   "cookMinutes": 25,
    "servings": 4,
    "minAgeYears": 2,
    "ingredients": [
@@ -1685,112 +1924,157 @@
      "quantity": 250,
      "unit": "g",
      "isOptional": false,
-     "note": ""
+     "note": "cut into 2 cm cubes"
     },
     {
-     "ingredientName": "Peas",
-     "quantity": 200,
+     "ingredientName": "Frozen peas",
+     "quantity": 160,
      "unit": "g",
      "isOptional": false,
-     "note": ""
+     "note": "1 cup, no need to thaw"
+    },
+    {
+     "ingredientName": "Vegetable oil",
+     "quantity": 1,
+     "unit": "tbsp",
+     "isOptional": false,
+     "note": "for the base"
+    },
+    {
+     "ingredientName": "Ghee",
+     "quantity": 1.5,
+     "unit": "tbsp",
+     "isOptional": false,
+     "note": "for the curry"
     },
     {
      "ingredientName": "Onion",
      "quantity": 1,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "large, roughly cubed (1 cup)"
     },
     {
      "ingredientName": "Tomato",
      "quantity": 3,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "medium, quartered (about 340 g)"
+    },
+    {
+     "ingredientName": "Cashews",
+     "quantity": 12,
+     "unit": "count",
+     "isOptional": false,
+     "note": "about 20 g — this is what makes it creamy"
     },
     {
      "ingredientName": "Ginger",
-     "quantity": 5,
-     "unit": "g",
+     "quantity": 1,
+     "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "2 cm piece (1 tsp)"
     },
     {
      "ingredientName": "Garlic",
-     "quantity": 2,
+     "quantity": 3,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "cloves (1 tsp)"
     },
     {
      "ingredientName": "Cumin seeds",
-     "quantity": 3,
-     "unit": "g",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Coriander powder",
-     "quantity": 4,
-     "unit": "g",
+     "quantity": 0.5,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
     },
     {
      "ingredientName": "Turmeric",
-     "quantity": 2,
-     "unit": "g",
+     "quantity": 0.25,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Red chili powder",
+     "quantity": 0.75,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "Kashmiri"
+    },
+    {
+     "ingredientName": "Coriander powder",
+     "quantity": 1,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
     },
     {
      "ingredientName": "Garam masala",
-     "quantity": 2,
-     "unit": "g",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Vegetable oil",
-     "quantity": 15,
-     "unit": "ml",
+     "quantity": 0.5,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
     },
     {
      "ingredientName": "Salt",
-     "quantity": 4,
-     "unit": "g",
+     "quantity": 1.25,
+     "unit": "tsp",
      "isOptional": false,
-     "note": ""
+     "note": "level, in two additions"
     },
     {
      "ingredientName": "Kasuri methi",
      "quantity": 1,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "crushed"
+    },
+    {
+     "ingredientName": "Plain yogurt",
+     "quantity": 60,
      "unit": "g",
      "isOptional": true,
-     "note": ""
+     "note": "whisked smooth, or 60 ml cream"
+    },
+    {
+     "ingredientName": "Cilantro",
+     "quantity": 0.25,
+     "unit": "bunch",
+     "isOptional": false,
+     "note": "chopped"
     }
    ],
    "steps": [
-    "Blend onion, tomato, ginger, garlic to a purée.",
-    "Fry cumin, add purée + spices; cook 8 min until oil separates.",
-    "Add peas, 200 ml water; simmer 5 min; add paneer 3 min."
+    "Warm 1 tbsp oil in a pan and fry the cubed onion for 5–6 minutes until golden at the edges.",
+    "Add the tomatoes, cashews, ginger, garlic and ½ tsp salt. Cover and cook for 8 minutes, until the tomatoes are collapsing and the cashews are soft enough to blend.",
+    "Let it cool for a few minutes, then blend to a completely smooth paste — 30 seconds on high. Straining it through a sieve is optional but gives a restaurant texture.",
+    "Cut 250 g paneer into 2 cm cubes and soak them in hot water while you make the gravy; they stay soft instead of squeaky.",
+    "Warm 1½ tbsp ghee in the same pan. Add ½ tsp cumin seeds and let them crackle for 20 seconds.",
+    "Turn the heat low and add ¼ tsp turmeric, ¾ tsp chilli powder and 1 tsp coriander powder. Fry for 30 seconds — low heat, or ground spices scorch and turn bitter.",
+    "Pour in the blended paste (it will spit, so stand back) and cook for 3–4 minutes on medium, stirring, until it thickens and the ghee shows at the edges.",
+    "Add 250 ml water, 160 g frozen peas and the remaining ¾ tsp salt. Simmer uncovered for 10 minutes, until the peas are tender and the gravy coats a spoon.",
+    "If you are using yogurt, take the pan off the heat and whisk it in a spoonful at a time so it cannot split, then return to a low heat.",
+    "Drain the paneer and slide it in. Crush 1 tsp kasuri methi over the pan, add ½ tsp garam masala and simmer for just 2 minutes — longer makes paneer rubbery.",
+    "Scatter the coriander over and serve with roti, naan or plain rice."
    ],
    "nutritionTags": [
-    "calcium",
     "protein",
-    "vegetable"
+    "vegetable",
+    "calcium"
    ],
    "isQuick": false,
    "kidBaseline": 5,
-   "kidFriendlyNote": "Sweet peas + soft paneer = kid gold. Serve with roti or rice.",
+   "kidFriendlyNote": "Blending the base makes it smooth, so there are no chunks of onion to argue with. Frozen peas straight from the bag keep their sweetness and their colour.",
    "lunchboxOK": true,
    "source": "seed",
    "containsEgg": false,
    "containsDairy": true,
-   "containsNuts": false,
-   "containsGluten": false
+   "containsNuts": true,
+   "containsGluten": false,
+   "sourceNote": "Adapted from Swasthi's Matar Paneer (Indian Healthy Recipes)",
+   "sourceURL": "https://www.indianhealthyrecipes.com/matar-paneer/"
   },
   {
    "seedID": "dn-aloo-gobi",
@@ -1803,102 +2087,168 @@
    "appliances": [
     "stovetop"
    ],
-   "prepMinutes": 10,
-   "cookMinutes": 20,
+   "prepMinutes": 15,
+   "cookMinutes": 25,
    "servings": 4,
    "minAgeYears": 2,
    "ingredients": [
     {
      "ingredientName": "Potato",
-     "quantity": 3,
+     "quantity": 2,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "medium, cut into 2 cm cubes"
     },
     {
      "ingredientName": "Cauliflower",
-     "quantity": 1,
-     "unit": "count",
+     "quantity": 400,
+     "unit": "g",
      "isOptional": false,
-     "note": ""
+     "note": "about half a head, in 4 cm florets"
     },
     {
      "ingredientName": "Onion",
      "quantity": 1,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "medium, finely chopped"
     },
     {
-     "ingredientName": "Ginger",
-     "quantity": 5,
-     "unit": "g",
+     "ingredientName": "Tomato",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": false,
+     "note": "medium, finely chopped"
+    },
+    {
+     "ingredientName": "Vegetable oil",
+     "quantity": 2.5,
+     "unit": "tbsp",
      "isOptional": false,
      "note": ""
     },
     {
      "ingredientName": "Cumin seeds",
-     "quantity": 3,
-     "unit": "g",
+     "quantity": 0.5,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
+    },
+    {
+     "ingredientName": "Ginger",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": "2 cm piece, minced (½ tbsp)"
+    },
+    {
+     "ingredientName": "Garlic",
+     "quantity": 4,
+     "unit": "count",
+     "isOptional": false,
+     "note": "cloves, minced (½ tbsp)"
+    },
+    {
+     "ingredientName": "Green chili",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": true,
+     "note": "slit"
     },
     {
      "ingredientName": "Turmeric",
-     "quantity": 2,
-     "unit": "g",
+     "quantity": 0.25,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
+    },
+    {
+     "ingredientName": "Red chili powder",
+     "quantity": 0.75,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "Kashmiri"
     },
     {
      "ingredientName": "Coriander powder",
-     "quantity": 4,
-     "unit": "g",
+     "quantity": 1,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
     },
     {
-     "ingredientName": "Vegetable oil",
-     "quantity": 20,
-     "unit": "ml",
+     "ingredientName": "Ground cumin",
+     "quantity": 0.5,
+     "unit": "tsp",
      "isOptional": false,
+     "note": "roasted"
+    },
+    {
+     "ingredientName": "Garam masala",
+     "quantity": 1,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Amchur",
+     "quantity": 0.5,
+     "unit": "tsp",
+     "isOptional": true,
      "note": ""
     },
     {
      "ingredientName": "Salt",
-     "quantity": 4,
-     "unit": "g",
+     "quantity": 1,
+     "unit": "tsp",
      "isOptional": false,
-     "note": ""
+     "note": "level, added late"
     },
     {
-     "ingredientName": "Atta",
-     "quantity": 300,
-     "unit": "g",
+     "ingredientName": "Kasuri methi",
+     "quantity": 1,
+     "unit": "tbsp",
      "isOptional": false,
-     "note": ""
+     "note": "crushed"
+    },
+    {
+     "ingredientName": "Cilantro",
+     "quantity": 0.25,
+     "unit": "bunch",
+     "isOptional": false,
+     "note": "chopped"
     }
    ],
    "steps": [
-    "Fry cumin; add onion, ginger 2 min.",
-    "Add potato, cauliflower, spices, salt; cover on low 15 min, stirring twice.",
-    "Make rotis from atta while it cooks."
+    "Cut the potatoes into 2 cm cubes and keep them in a bowl of water so they do not brown. Break the cauliflower into 4 cm florets.",
+    "Soak the florets in hot water for 3–4 minutes, then drain them well and pat dry. Wet cauliflower steams instead of frying, and steamed cauliflower is what goes soggy.",
+    "Heat 2½ tbsp oil in a wide, heavy pan on medium. Add ½ tsp cumin seeds and wait for them to sizzle.",
+    "Add the ginger, garlic and green chilli; fry 30 seconds. Add the onion and cook 4–5 minutes until translucent and just turning gold.",
+    "Drain the potatoes and add them. Stir-fry 3 minutes, then cover and cook 8–9 minutes on low, stirring twice, until half done. Add a tablespoon of water only if they catch.",
+    "Add the cauliflower and stir-fry uncovered for 3 minutes, letting a few florets brown — that browning is most of the flavour.",
+    "Sprinkle in ¼ tsp turmeric, ¾ tsp chilli powder, 1 tsp coriander powder and ½ tsp roasted cumin. Toss to coat, then sprinkle 2 tbsp water around the sides of the pan.",
+    "Cover and cook on low for 6–8 minutes, stirring gently every couple of minutes, until a potato cube gives easily to a knife but the cauliflower still has a slight crunch.",
+    "Now add 1 tsp salt and the chopped tomatoes. Salt earlier draws water out and softens the cauliflower too far.",
+    "Raise the heat and stir-fry uncovered for 2–3 minutes until the tomato loses its raw smell and clings to the vegetables.",
+    "Turn off the heat. Crush 1 tbsp kasuri methi over the pan, add 1 tsp garam masala and ½ tsp amchur, and fold through once.",
+    "Finish with the chopped coriander and serve with roti or as a side with dal and rice."
    ],
    "nutritionTags": [
-    "fibre",
-    "grain",
     "vegetable",
-    "wholeGrain"
+    "fibre",
+    "vitaminC"
    ],
    "isQuick": false,
    "kidBaseline": 4,
-   "kidFriendlyNote": "Roll it into a roti wrap for the 4-year-old.",
+   "kidFriendlyNote": "Cut the potato small so it cooks through, and stop while the cauliflower still has a little bite — children reject it once it goes soft and grey.",
    "lunchboxOK": true,
    "source": "seed",
    "containsEgg": false,
    "containsDairy": false,
    "containsNuts": false,
-   "containsGluten": true
+   "containsGluten": false,
+   "sourceNote": "Adapted from Swasthi's Aloo Gobi (Indian Healthy Recipes)",
+   "sourceURL": "https://www.indianhealthyrecipes.com/aloo-gobi/"
   },
   {
    "seedID": "dn-dal-palak",
@@ -1918,95 +2268,139 @@
    "ingredients": [
     {
      "ingredientName": "Moong dal",
-     "quantity": 150,
+     "quantity": 100,
      "unit": "g",
      "isOptional": false,
-     "note": ""
+     "note": "½ cup, rinsed"
     },
     {
      "ingredientName": "Masoor dal",
      "quantity": 100,
      "unit": "g",
      "isOptional": false,
-     "note": ""
+     "note": "½ cup, rinsed"
     },
     {
      "ingredientName": "Spinach",
-     "quantity": 2,
+     "quantity": 1.5,
      "unit": "bunch",
      "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Tomato",
-     "quantity": 2,
-     "unit": "count",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Garlic",
-     "quantity": 3,
-     "unit": "count",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Cumin seeds",
-     "quantity": 3,
-     "unit": "g",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Turmeric",
-     "quantity": 2,
-     "unit": "g",
-     "isOptional": false,
-     "note": ""
+     "note": "about 200 g, chopped small"
     },
     {
      "ingredientName": "Ghee",
-     "quantity": 15,
-     "unit": "g",
+     "quantity": 1.5,
+     "unit": "tbsp",
      "isOptional": false,
+     "note": "or oil"
+    },
+    {
+     "ingredientName": "Cumin seeds",
+     "quantity": 0.75,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Asafoetida",
+     "quantity": 0.125,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "a pinch"
+    },
+    {
+     "ingredientName": "Garlic",
+     "quantity": 4,
+     "unit": "count",
+     "isOptional": false,
+     "note": "cloves, sliced (1 tbsp)"
+    },
+    {
+     "ingredientName": "Ginger",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": "2 cm piece, grated (1 tsp)"
+    },
+    {
+     "ingredientName": "Green chili",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": true,
+     "note": "slit, lifted out before serving"
+    },
+    {
+     "ingredientName": "Tomato",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": "medium, chopped"
+    },
+    {
+     "ingredientName": "Turmeric",
+     "quantity": 0.25,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Red chili powder",
+     "quantity": 0.25,
+     "unit": "tsp",
+     "isOptional": true,
      "note": ""
     },
     {
      "ingredientName": "Salt",
-     "quantity": 4,
-     "unit": "g",
+     "quantity": 1.25,
+     "unit": "tsp",
      "isOptional": false,
-     "note": ""
+     "note": "level"
     },
     {
-     "ingredientName": "Basmati rice",
-     "quantity": 300,
-     "unit": "g",
+     "ingredientName": "Lemon",
+     "quantity": 0.5,
+     "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "juice, about 1 tbsp"
+    },
+    {
+     "ingredientName": "Cilantro",
+     "quantity": 0.25,
+     "unit": "bunch",
+     "isOptional": false,
+     "note": "chopped"
     }
    ],
    "steps": [
-    "Sauté cumin, garlic, tomato in ghee 3 min.",
-    "Add dals, turmeric, salt, 800 ml water; pressure cook 8 min.",
-    "Stir in chopped spinach on Sauté 2 min. Serve with rice."
+    "Rinse 100 g moong dal and 100 g masoor dal together until the water runs clear — three changes is usually enough.",
+    "Pressure cook the dals with 600 ml water and ¼ tsp turmeric: 8 minutes on high with a 10-minute natural release, or 2 whistles on the stovetop.",
+    "While that cooks, wash the spinach well and chop it small — stems and all, as long as they are tender.",
+    "Open the pot and whisk the dal briefly; it should be soft and pourable. Tip it into a bowl.",
+    "Set the pot to Sauté and warm 1½ tbsp ghee. Add ¾ tsp cumin seeds and let them crackle for 20 seconds.",
+    "Add a pinch of asafoetida, then the sliced garlic. Fry for 1 minute until the garlic is pale gold — it turns bitter the moment it goes brown.",
+    "Add the grated ginger and the slit chilli, then the chopped tomato and ½ tsp of the salt. Cook 4 minutes until the tomato softens.",
+    "Add the spinach in handfuls, stirring as it wilts. Two to three minutes is plenty; long cooking turns it grey.",
+    "Pour the dal back in with the remaining ¾ tsp salt and 100 ml hot water. Simmer for 5 minutes so the flavours meet.",
+    "Turn off the heat, stir in 1 tbsp lemon juice and the coriander, and lift out the green chilli.",
+    "Serve with rice or roti. It thickens as it stands, so keep a little hot water by the stove to loosen it."
    ],
    "nutritionTags": [
-    "grain",
-    "iron",
     "protein",
+    "iron",
     "vegetable"
    ],
    "isQuick": false,
    "kidBaseline": 4,
-   "kidFriendlyNote": "Blend half with an immersion blender if kids dislike leaf bits.",
+   "kidFriendlyNote": "Chop the spinach small so it disappears into the dal, and finish with lemon — the sourness is what makes children come back for a second bowl.",
    "lunchboxOK": true,
    "source": "seed",
    "containsEgg": false,
    "containsDairy": true,
    "containsNuts": false,
-   "containsGluten": false
+   "containsGluten": false,
+   "sourceNote": "Adapted from Swasthi's Dal Palak (Indian Healthy Recipes)",
+   "sourceURL": "https://www.indianhealthyrecipes.com/dal-palak/"
   },
   {
    "seedID": "dn-veg-pulao",
@@ -2019,7 +2413,7 @@
    "appliances": [
     "instantPot"
    ],
-   "prepMinutes": 10,
+   "prepMinutes": 15,
    "cookMinutes": 20,
    "servings": 4,
    "minAgeYears": 2,
@@ -2029,91 +2423,151 @@
      "quantity": 300,
      "unit": "g",
      "isOptional": false,
-     "note": ""
+     "note": "1½ cups, rinsed and soaked 20 minutes"
     },
     {
      "ingredientName": "Frozen mixed vegetables",
-     "quantity": 250,
+     "quantity": 200,
      "unit": "g",
      "isOptional": false,
-     "note": ""
+     "note": "carrot, beans, peas and corn"
     },
     {
      "ingredientName": "Onion",
      "quantity": 1,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "medium, thinly sliced"
     },
     {
-     "ingredientName": "Cumin seeds",
-     "quantity": 3,
-     "unit": "g",
+     "ingredientName": "Ghee",
+     "quantity": 2,
+     "unit": "tbsp",
+     "isOptional": false,
+     "note": "or oil"
+    },
+    {
+     "ingredientName": "Bay leaf",
+     "quantity": 1,
+     "unit": "count",
      "isOptional": false,
      "note": ""
     },
     {
      "ingredientName": "Cinnamon",
-     "quantity": 1,
-     "unit": "g",
+     "quantity": 0.5,
+     "unit": "tsp",
      "isOptional": false,
-     "note": ""
+     "note": "one 2 cm stick"
     },
     {
      "ingredientName": "Cardamom",
-     "quantity": 1,
-     "unit": "g",
+     "quantity": 4,
+     "unit": "count",
+     "isOptional": false,
+     "note": "green pods, lightly crushed"
+    },
+    {
+     "ingredientName": "Cloves",
+     "quantity": 4,
+     "unit": "count",
      "isOptional": false,
      "note": ""
     },
     {
-     "ingredientName": "Ghee",
-     "quantity": 20,
-     "unit": "g",
+     "ingredientName": "Cumin seeds",
+     "quantity": 0.75,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
+    },
+    {
+     "ingredientName": "Ginger",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": "2 cm piece, grated (1 tsp)"
+    },
+    {
+     "ingredientName": "Garlic",
+     "quantity": 3,
+     "unit": "count",
+     "isOptional": false,
+     "note": "cloves, minced (1 tsp)"
+    },
+    {
+     "ingredientName": "Green chili",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": true,
+     "note": "slit"
+    },
+    {
+     "ingredientName": "Mint",
+     "quantity": 0.25,
+     "unit": "bunch",
+     "isOptional": true,
+     "note": "leaves only, a small handful"
     },
     {
      "ingredientName": "Salt",
-     "quantity": 4,
-     "unit": "g",
+     "quantity": 1.25,
+     "unit": "tsp",
      "isOptional": false,
-     "note": ""
+     "note": "level"
     },
     {
      "ingredientName": "Plain yogurt",
-     "quantity": 250,
+     "quantity": 300,
      "unit": "g",
      "isOptional": false,
-     "note": ""
+     "note": "for the raita"
     },
     {
      "ingredientName": "Cucumber",
      "quantity": 1,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "grated and squeezed dry"
+    },
+    {
+     "ingredientName": "Ground cumin",
+     "quantity": 0.5,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "roasted, for the raita"
     }
    ],
    "steps": [
-    "Sauté ghee, cumin, whole spices, onion 3 min.",
-    "Add veg, rinsed rice, salt, 450 ml water; pressure cook 5 min, natural release 5 min.",
-    "Grate cucumber into yogurt with salt for raita."
+    "Rinse 300 g basmati rice until the water runs clear, then soak it for 20 minutes and drain well. Soaked rice cooks into separate grains; unsoaked rice clumps.",
+    "Set the Instant Pot to Sauté and warm 2 tbsp ghee.",
+    "Add the bay leaf, cinnamon, cardamom pods, cloves and ¾ tsp cumin seeds. Wait about 30 seconds, until they smell fragrant and the cumin darkens a shade.",
+    "Add the sliced onion and fry for 4–5 minutes until golden at the edges.",
+    "Stir in 1 tsp ginger, 1 tsp garlic and the slit chilli; cook 1 minute.",
+    "Add the mixed vegetables and the mint leaves and stir for 2 minutes.",
+    "Add the drained rice and turn it over gently two or three times to coat it in the ghee — gently, or the soaked grains break.",
+    "Pour in 420 ml water and add 1¼ tsp salt. Taste the water: it should be a little saltier than you want the finished rice.",
+    "Cancel Sauté, close the lid and pressure cook on high for 5 minutes, then let the pressure release naturally for 5 minutes before opening.",
+    "While it cooks, make the raita: whisk 300 g yogurt smooth, stir in the grated and squeezed cucumber, ½ tsp roasted cumin and a pinch of salt.",
+    "Open the pot, lift the rice with a fork rather than stirring it, and let it stand uncovered for 5 minutes so the grains firm up.",
+    "Serve with the raita, pushing the whole spices aside as you spoon it out."
    ],
    "nutritionTags": [
-    "calcium",
     "grain",
-    "vegetable"
+    "vegetable",
+    "calcium"
    ],
    "isQuick": false,
    "kidBaseline": 5,
-   "kidFriendlyNote": "Fragrant and mild; serve with raita and papad.",
+   "kidFriendlyNote": "Whole spices are for flavour, not for eating — push the cinnamon and cardamom to the side of the pot as you serve. The cool raita is what makes it a whole meal.",
    "lunchboxOK": true,
    "source": "seed",
    "containsEgg": false,
    "containsDairy": true,
    "containsNuts": false,
-   "containsGluten": false
+   "containsGluten": false,
+   "sourceNote": "Adapted from Swasthi's Veg Pulao (Indian Healthy Recipes)",
+   "sourceURL": "https://www.indianhealthyrecipes.com/pulao-recipe-veg-pulao-recipe/"
   },
   {
    "seedID": "dn-pav-bhaji",
@@ -2127,77 +2581,126 @@
     "stovetop"
    ],
    "prepMinutes": 15,
-   "cookMinutes": 25,
+   "cookMinutes": 30,
    "servings": 4,
    "minAgeYears": 2,
    "ingredients": [
     {
      "ingredientName": "Potato",
-     "quantity": 3,
+     "quantity": 2,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "large, diced (300 g)"
     },
     {
      "ingredientName": "Cauliflower",
-     "quantity": 0.5,
-     "unit": "count",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Peas",
      "quantity": 100,
      "unit": "g",
      "isOptional": false,
-     "note": ""
+     "note": "small florets"
     },
     {
      "ingredientName": "Carrot",
      "quantity": 1,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "medium, diced (75 g)"
+    },
+    {
+     "ingredientName": "Frozen peas",
+     "quantity": 75,
+     "unit": "g",
+     "isOptional": false,
+     "note": "½ cup"
     },
     {
      "ingredientName": "Onion",
-     "quantity": 2,
+     "quantity": 1,
      "unit": "count",
      "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Tomato",
-     "quantity": 3,
-     "unit": "count",
-     "isOptional": false,
-     "note": ""
+     "note": "large, finely chopped, plus extra raw to serve"
     },
     {
      "ingredientName": "Bell pepper",
      "quantity": 1,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "medium, finely chopped"
     },
     {
-     "ingredientName": "Pav bhaji masala",
-     "quantity": 10,
-     "unit": "g",
+     "ingredientName": "Tomato",
+     "quantity": 3,
+     "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "medium, finely chopped (125 g)"
     },
     {
      "ingredientName": "Butter",
-     "quantity": 40,
-     "unit": "g",
+     "quantity": 3,
+     "unit": "tbsp",
+     "isOptional": false,
+     "note": "two for the bhaji, one for the pav"
+    },
+    {
+     "ingredientName": "Vegetable oil",
+     "quantity": 1,
+     "unit": "tbsp",
      "isOptional": false,
      "note": ""
     },
     {
-     "ingredientName": "Salt",
+     "ingredientName": "Ginger",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": "2 cm piece, grated (½ tbsp)"
+    },
+    {
+     "ingredientName": "Garlic",
      "quantity": 4,
-     "unit": "g",
+     "unit": "count",
+     "isOptional": false,
+     "note": "cloves, minced (½ tbsp)"
+    },
+    {
+     "ingredientName": "Pav bhaji masala",
+     "quantity": 1.5,
+     "unit": "tbsp",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Red chili powder",
+     "quantity": 1,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "Kashmiri, for the colour"
+    },
+    {
+     "ingredientName": "Turmeric",
+     "quantity": 0.25,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Kasuri methi",
+     "quantity": 0.75,
+     "unit": "tbsp",
+     "isOptional": false,
+     "note": "crushed"
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 1.25,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "level"
+    },
+    {
+     "ingredientName": "Pav buns",
+     "quantity": 8,
+     "unit": "count",
      "isOptional": false,
      "note": ""
     },
@@ -2206,35 +2709,46 @@
      "quantity": 1,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "cut into wedges"
     },
     {
-     "ingredientName": "Pav buns",
-     "quantity": 8,
-     "unit": "count",
+     "ingredientName": "Cilantro",
+     "quantity": 0.25,
+     "unit": "bunch",
      "isOptional": false,
-     "note": ""
+     "note": "chopped"
     }
    ],
    "steps": [
-    "Pressure cook potato, cauliflower, peas, carrot 5 min; mash.",
-    "Fry onion, pepper, tomato in butter; add masala; add mash + water; simmer 10 min.",
-    "Toast buns in butter; serve with lemon and onion."
+    "Pressure cook the diced potato, cauliflower, carrot and peas with 350 ml water for 4 minutes on high (1–2 whistles on the stovetop), until everything is completely soft.",
+    "Drain, keeping the cooking water, and mash the vegetables roughly with a potato masher. Leave some texture — this is a mash, not a purée.",
+    "Warm 2 tbsp butter with 1 tbsp oil in a wide pan. Fry the chopped onion for 5 minutes until translucent.",
+    "Add the grated ginger and minced garlic and cook 1 minute.",
+    "Add the chopped bell pepper and fry 3–4 minutes until it softens.",
+    "Add the tomatoes and ¾ tsp of the salt and cook 6–7 minutes, pressing them down, until they are completely mushy and the butter separates.",
+    "Turn the heat low and add 1½ tbsp pav bhaji masala, 1 tsp chilli powder and ¼ tsp turmeric. Fry for 2 minutes.",
+    "Add the mashed vegetables and 150 ml of the reserved cooking water with the remaining ½ tsp salt. Mash again in the pan and simmer for 5 minutes.",
+    "Keep mashing and stirring as it simmers; the bhaji is ready when it is thick, glossy and a deep red-brown, about 8 minutes in total.",
+    "Crush ¾ tbsp kasuri methi over the pan and stir through.",
+    "Slit the pav almost in half. Melt the last 1 tbsp butter on a griddle, sprinkle a pinch of pav bhaji masala into it, and toast the cut sides for 1–2 minutes until lightly crisp.",
+    "Serve the bhaji with a knob of butter on top, the toasted pav, raw chopped onion, coriander and lemon wedges."
    ],
    "nutritionTags": [
+    "vegetable",
     "fibre",
-    "grain",
-    "vegetable"
+    "grain"
    ],
    "isQuick": false,
    "kidBaseline": 5,
-   "kidFriendlyNote": "Kids love the buttery buns; go light on masala for their portion.",
+   "kidFriendlyNote": "This is the most reliable way to get four vegetables into a child in one bowl. Toast the pav in butter — the buttered bun is half the appeal — and keep the chilli powder to 1 tsp.",
    "lunchboxOK": false,
    "source": "seed",
    "containsEgg": false,
    "containsDairy": true,
    "containsNuts": false,
-   "containsGluten": true
+   "containsGluten": true,
+   "sourceNote": "Adapted from Swasthi's Pav Bhaji (Indian Healthy Recipes)",
+   "sourceURL": "https://www.indianhealthyrecipes.com/pav-bhaji-recipe/"
   },
   {
    "seedID": "dn-veg-sambar-rice",
@@ -2618,7 +3132,7 @@
     "instantPot"
    ],
    "prepMinutes": 10,
-   "cookMinutes": 20,
+   "cookMinutes": 25,
    "servings": 4,
    "minAgeYears": 2,
    "ingredients": [
@@ -2627,91 +3141,135 @@
      "quantity": 400,
      "unit": "g",
      "isOptional": false,
-     "note": ""
+     "note": "sour is better here; whisked smooth"
     },
     {
      "ingredientName": "Besan",
-     "quantity": 60,
-     "unit": "g",
+     "quantity": 6,
+     "unit": "tbsp",
      "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Turmeric",
-     "quantity": 2,
-     "unit": "g",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Cumin seeds",
-     "quantity": 3,
-     "unit": "g",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Mustard seeds",
-     "quantity": 2,
-     "unit": "g",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Ginger",
-     "quantity": 5,
-     "unit": "g",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Curry leaves",
-     "quantity": 1,
-     "unit": "bunch",
-     "isOptional": true,
-     "note": ""
-    },
-    {
-     "ingredientName": "Ghee",
-     "quantity": 15,
-     "unit": "g",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Salt",
-     "quantity": 4,
-     "unit": "g",
-     "isOptional": false,
-     "note": ""
+     "note": "about 45 g, sifted"
     },
     {
      "ingredientName": "Basmati rice",
      "quantity": 300,
      "unit": "g",
      "isOptional": false,
+     "note": "1½ cups, to serve"
+    },
+    {
+     "ingredientName": "Ghee",
+     "quantity": 2,
+     "unit": "tbsp",
+     "isOptional": false,
      "note": ""
+    },
+    {
+     "ingredientName": "Cumin seeds",
+     "quantity": 0.75,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Mustard seeds",
+     "quantity": 0.5,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Asafoetida",
+     "quantity": 0.125,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "a pinch"
+    },
+    {
+     "ingredientName": "Dried red chili",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": true,
+     "note": "broken, lifted out before serving"
+    },
+    {
+     "ingredientName": "Curry leaves",
+     "quantity": 10,
+     "unit": "count",
+     "isOptional": true,
+     "note": ""
+    },
+    {
+     "ingredientName": "Onion",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": "medium, finely chopped"
+    },
+    {
+     "ingredientName": "Ginger",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": "2 cm piece, grated (1 tsp)"
+    },
+    {
+     "ingredientName": "Turmeric",
+     "quantity": 0.5,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Red chili powder",
+     "quantity": 0.25,
+     "unit": "tsp",
+     "isOptional": true,
+     "note": ""
+    },
+    {
+     "ingredientName": "Salt",
+     "quantity": 1.25,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "level"
+    },
+    {
+     "ingredientName": "Cilantro",
+     "quantity": 0.25,
+     "unit": "bunch",
+     "isOptional": false,
+     "note": "chopped"
     }
    ],
    "steps": [
-    "Whisk yogurt, besan, turmeric, salt with 700 ml water.",
-    "Temper cumin, mustard, ginger, curry leaves in ghee; add mixture.",
-    "Pressure cook 5 min; whisk. Serve with rice."
+    "Whisk 400 g yogurt with 6 tbsp besan and 600 ml water until there is not a single lump. A minute with a balloon whisk, or 20 seconds in a blender.",
+    "Rinse 300 g rice until clear and simmer in 600 ml water with a pinch of salt: 12 minutes covered on low, then 5 minutes off the heat.",
+    "Set the Instant Pot to Sauté and warm 2 tbsp ghee. Add ¾ tsp cumin and ½ tsp mustard seeds and wait for the mustard to pop.",
+    "Add a pinch of asafoetida, the broken red chillies and the curry leaves; stand back, they spit.",
+    "Add the chopped onion and fry 4 minutes until soft, then the grated ginger for 1 minute.",
+    "Turn the heat to low and pour in the yogurt mixture with ½ tsp turmeric and 1¼ tsp salt.",
+    "Stir constantly until it comes to a simmer. This is the step that matters: unstirred yogurt splits, and split kadhi never comes back together.",
+    "Once it simmers, cook on the lowest heat for 15 minutes, stirring every couple of minutes, until it thickens enough to coat the spoon and the raw besan taste is gone.",
+    "Taste and adjust the salt; add a little hot water if it has gone past pouring consistency.",
+    "Lift out the dried chillies, stir in the coriander, and ladle over the rice."
    ],
    "nutritionTags": [
+    "protein",
     "calcium",
-    "grain",
-    "protein"
+    "grain"
    ],
    "isQuick": false,
    "kidBaseline": 4,
-   "kidFriendlyNote": "Tangy-creamy; kids mix it into rice like a soup.",
+   "kidFriendlyNote": "Kadhi is tangy rather than spicy, and children usually like it poured over plain rice. Whisk the yogurt and besan really smooth so there are no lumps to find.",
    "lunchboxOK": false,
    "source": "seed",
    "containsEgg": false,
    "containsDairy": true,
    "containsNuts": false,
-   "containsGluten": false
+   "containsGluten": false,
+   "sourceNote": "Written for Rasoi — the classic Punjabi besan-and-yogurt method",
+   "sourceURL": ""
   },
   {
    "seedID": "dn-methi-thepla",
@@ -4415,42 +4973,56 @@
     "vitamix"
    ],
    "prepMinutes": 15,
-   "cookMinutes": 25,
+   "cookMinutes": 30,
    "servings": 4,
    "minAgeYears": 2,
    "ingredients": [
     {
-     "ingredientName": "Cauliflower",
-     "quantity": 0.5,
+     "ingredientName": "Cashews",
+     "quantity": 12,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "about 20 g, for the paste"
+    },
+    {
+     "ingredientName": "Shredded coconut",
+     "quantity": 4,
+     "unit": "tbsp",
+     "isOptional": false,
+     "note": "fresh or frozen, for the paste"
+    },
+    {
+     "ingredientName": "Potato",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": "large, in 1 cm dice"
     },
     {
      "ingredientName": "Carrot",
-     "quantity": 2,
+     "quantity": 1,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "large, in 1 cm dice"
     },
     {
      "ingredientName": "Green beans",
      "quantity": 100,
      "unit": "g",
      "isOptional": false,
-     "note": ""
+     "note": "cut into 1 cm lengths"
     },
     {
-     "ingredientName": "Peas",
-     "quantity": 100,
+     "ingredientName": "Cauliflower",
+     "quantity": 150,
      "unit": "g",
      "isOptional": false,
-     "note": ""
+     "note": "small florets"
     },
     {
-     "ingredientName": "Potato",
-     "quantity": 1,
-     "unit": "count",
+     "ingredientName": "Frozen peas",
+     "quantity": 100,
+     "unit": "g",
      "isOptional": false,
      "note": ""
     },
@@ -4459,91 +5031,137 @@
      "quantity": 1,
      "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "large, finely chopped"
     },
     {
-     "ingredientName": "Cashews",
-     "quantity": 40,
-     "unit": "g",
+     "ingredientName": "Tomato",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": false,
+     "note": "medium, chopped"
+    },
+    {
+     "ingredientName": "Vegetable oil",
+     "quantity": 2,
+     "unit": "tbsp",
      "isOptional": false,
      "note": ""
     },
     {
-     "ingredientName": "Coconut milk",
-     "quantity": 200,
-     "unit": "ml",
+     "ingredientName": "Bay leaf",
+     "quantity": 1,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cinnamon",
+     "quantity": 0.5,
+     "unit": "tsp",
+     "isOptional": false,
+     "note": "one 2 cm stick"
+    },
+    {
+     "ingredientName": "Cardamom",
+     "quantity": 2,
+     "unit": "count",
+     "isOptional": false,
+     "note": "green pods"
+    },
+    {
+     "ingredientName": "Cloves",
+     "quantity": 3,
+     "unit": "count",
+     "isOptional": false,
+     "note": ""
+    },
+    {
+     "ingredientName": "Cumin seeds",
+     "quantity": 0.5,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
     },
     {
      "ingredientName": "Ginger",
-     "quantity": 5,
-     "unit": "g",
+     "quantity": 1,
+     "unit": "count",
      "isOptional": false,
-     "note": ""
+     "note": "2 cm piece, grated (1 tsp)"
     },
     {
      "ingredientName": "Garlic",
-     "quantity": 2,
+     "quantity": 3,
      "unit": "count",
+     "isOptional": false,
+     "note": "cloves, minced (1 tsp)"
+    },
+    {
+     "ingredientName": "Turmeric",
+     "quantity": 0.25,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
     },
     {
-     "ingredientName": "Coriander powder",
-     "quantity": 4,
-     "unit": "g",
+     "ingredientName": "Red chili powder",
+     "quantity": 1,
+     "unit": "tsp",
      "isOptional": false,
-     "note": ""
+     "note": "Kashmiri"
     },
     {
      "ingredientName": "Garam masala",
-     "quantity": 2,
-     "unit": "g",
-     "isOptional": false,
-     "note": ""
-    },
-    {
-     "ingredientName": "Vegetable oil",
-     "quantity": 15,
-     "unit": "ml",
+     "quantity": 1.25,
+     "unit": "tsp",
      "isOptional": false,
      "note": ""
     },
     {
      "ingredientName": "Salt",
-     "quantity": 4,
-     "unit": "g",
+     "quantity": 1.25,
+     "unit": "tsp",
      "isOptional": false,
-     "note": ""
+     "note": "level"
     },
     {
-     "ingredientName": "Naan",
-     "quantity": 4,
-     "unit": "count",
-     "isOptional": true,
-     "note": ""
+     "ingredientName": "Cilantro",
+     "quantity": 0.25,
+     "unit": "bunch",
+     "isOptional": false,
+     "note": "chopped"
     }
    ],
    "steps": [
-    "Blend cashews, onion, ginger, garlic with 100 ml water in Vitamix.",
-    "Fry paste in oil 5 min; add spices, coconut milk, veg, salt, 200 ml water.",
-    "Simmer covered 15 min. Serve with naan or rice."
+    "Blend 12 cashews and 4 tbsp coconut with 90 ml water into a completely smooth paste. Any grittiness here shows up in the finished gravy, so give it a full minute.",
+    "Cut the potato, carrot and beans into 1 cm dice and break the cauliflower into small florets, so everything cooks in the same time.",
+    "Heat 2 tbsp oil in a wide pan. Add the bay leaf, cinnamon, cardamom, cloves and ½ tsp cumin seeds and let them sizzle for 30 seconds.",
+    "Add the chopped onion and fry 4–5 minutes until soft and pale gold.",
+    "Stir in 1 tsp ginger and 1 tsp garlic; cook 1 minute.",
+    "Add the tomatoes and ½ tsp of the salt and cook 5 minutes until mushy.",
+    "Turn the heat low and add ¼ tsp turmeric, 1 tsp chilli powder and ¾ tsp of the garam masala. Fry 2 minutes.",
+    "Add the cashew-coconut paste and fry for 3 minutes, stirring constantly — it catches easily and burnt cashew paste cannot be rescued.",
+    "Add all the vegetables except the peas, turn them through the masala for 2 minutes, then pour in 400 ml hot water with the remaining ¾ tsp salt.",
+    "Simmer covered for 15 minutes, until a potato cube gives to a knife with no resistance.",
+    "Stir in the frozen peas and simmer 3 minutes more, uncovered, so the gravy thickens to the point where it coats the vegetables.",
+    "Turn off the heat, stir in the remaining ½ tsp garam masala and the coriander, and serve with roti or rice."
    ],
    "nutritionTags": [
-    "fibre",
-    "healthyFat",
-    "vegetable"
+    "vegetable",
+    "protein",
+    "healthyFat"
    ],
    "isQuick": false,
    "kidBaseline": 4,
-   "kidFriendlyNote": "Creamy and sweet; a good 'introduce a vegetable' dish.",
+   "kidFriendlyNote": "The cashew-coconut paste makes it creamy and sweet rather than hot — the chilli powder is there for colour. Serve with soft roti so it can be scooped.",
    "lunchboxOK": false,
    "source": "seed",
    "containsEgg": false,
    "containsDairy": false,
    "containsNuts": true,
-   "containsGluten": false
+   "containsGluten": false,
+   "sourceNote": "Adapted from Swasthi's Veg Kurma (Indian Healthy Recipes)",
+   "sourceURL": "https://www.indianhealthyrecipes.com/veg-kurma-recipe-vegetable-korma-recipe/"
   },
   {
    "seedID": "sn-spinach-smoothie",

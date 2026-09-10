@@ -3613,6 +3613,57 @@
    "containsNuts": false,
    "containsGluten": true,
    "isQuickHealthySnack": false
+  },
+  {
+   "name": "Bay leaf",
+   "aliases": [
+    "tej patta"
+   ],
+   "category": "spice",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 730,
+   "isStaple": false,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Cloves",
+   "aliases": [
+    "laung"
+   ],
+   "category": "spice",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 730,
+   "isStaple": false,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
+  },
+  {
+   "name": "Dried red chili",
+   "aliases": [
+    "sukhi lal mirch"
+   ],
+   "category": "spice",
+   "defaultUnit": "count",
+   "typicalShelfLifeDays": 365,
+   "isStaple": false,
+   "defaultStoreKind": "indian",
+   "nutritionTags": [],
+   "containsEgg": false,
+   "containsDairy": false,
+   "containsNuts": false,
+   "containsGluten": false,
+   "isQuickHealthySnack": false
   }
  ]
 }
