@@ -60,9 +60,12 @@ enum PantryDepletion {
 
             for row in rows {
                 guard remaining.amount > 0 else { break }
-                guard let available = Units.convert(row.quantity, from: row.unit, to: remaining.unit) else { continue }
+                // A teaspoon of turmeric has to come out of a jar measured in grams.
+                let density = row.ingredient?.gramsPerTeaspoon
+                guard let available = Units.convert(row.quantity, from: row.unit, to: remaining.unit,
+                                                    gramsPerTeaspoon: density) else { continue }
                 let take = min(available, remaining.amount)
-                row.consume(quantity: take, unit: remaining.unit)
+                row.consume(quantity: take, unit: remaining.unit, gramsPerTeaspoon: density)
                 remaining.amount -= take
             }
         }

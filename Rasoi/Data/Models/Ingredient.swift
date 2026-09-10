@@ -21,6 +21,10 @@ final class Ingredient {
     var containsGluten: Bool = false
     /// Feeds the Today screen's quick-snack strip: things a child can eat with no cooking.
     var isQuickHealthySnack: Bool = false
+    /// What one level teaspoon of this weighs. Set for anything a cook measures in spoons but
+    /// buys by weight — salt, sugar, ground spices, honey — so "1 tsp" and "500 g" can be
+    /// reconciled on the shopping list and in the pantry.
+    var gramsPerTeaspoon: Double?
 
     init(
         name: String,
@@ -35,7 +39,8 @@ final class Ingredient {
         containsDairy: Bool = false,
         containsNuts: Bool = false,
         containsGluten: Bool = false,
-        isQuickHealthySnack: Bool = false
+        isQuickHealthySnack: Bool = false,
+        gramsPerTeaspoon: Double? = nil
     ) {
         self.name = name
         self.aliases = aliases
@@ -50,6 +55,7 @@ final class Ingredient {
         self.containsNuts = containsNuts
         self.containsGluten = containsGluten
         self.isQuickHealthySnack = isQuickHealthySnack
+        self.gramsPerTeaspoon = gramsPerTeaspoon
     }
 
     var category: IngredientCategory {

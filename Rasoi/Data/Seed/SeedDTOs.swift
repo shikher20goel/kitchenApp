@@ -22,6 +22,8 @@ struct IngredientDTO: Codable, Sendable {
     var containsNuts: Bool
     var containsGluten: Bool
     var isQuickHealthySnack: Bool
+    /// Weight of one level teaspoon, for ingredients measured in spoons but bought by weight.
+    var gramsPerTeaspoon: Double?
 }
 
 struct RecipeSeedFile: Codable, Sendable {

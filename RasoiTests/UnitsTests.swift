@@ -60,3 +60,91 @@ final class UnitsTests: XCTestCase {
         XCTAssertEqual(Units.display(Quantity(2, .cup)), "480 ml")
     }
 }
+
+/// Spoons and grams have to meet: recipes measure salt and spices in teaspoons, the pantry and
+/// the shop deal in grams.
+final class UnitDensityTests: XCTestCase {
+    /// A level teaspoon of fine salt weighs about six grams.
+    private let saltDensity = 6.0
+
+    func testATeaspoonBecomesGramsWhenTheDensityIsKnown() {
+        XCTAssertEqual(Units.convert(1, from: .teaspoon, to: .gram, gramsPerTeaspoon: saltDensity) ?? 0,
+                       6, accuracy: 0.0001)
+        XCTAssertEqual(Units.convert(1, from: .tablespoon, to: .gram, gramsPerTeaspoon: saltDensity) ?? 0,
+                       18, accuracy: 0.0001, "A tablespoon is three teaspoons.")
+    }
+
+    func testGramsBecomeTeaspoons() {
+        XCTAssertEqual(Units.convert(30, from: .gram, to: .teaspoon, gramsPerTeaspoon: saltDensity) ?? 0,
+                       5, accuracy: 0.0001)
+    }
+
+    func testWithoutADensityTheDimensionsStayApart() {
+        XCTAssertNil(Units.convert(1, from: .teaspoon, to: .gram))
+        XCTAssertNil(Units.convert(1, from: .teaspoon, to: .gram, gramsPerTeaspoon: 0))
+    }
+
+    func testSubtractingSpoonsFromAJarMeasuredInGrams() {
+        let jar = Quantity(500, .gram)
+        let used = Quantity(2, .teaspoon)
+        XCTAssertEqual(Units.subtract(jar, used, gramsPerTeaspoon: saltDensity)?.amount ?? 0,
+                       488, accuracy: 0.0001)
+    }
+
+    func testAddingSpoonsToGrams() {
+        let total = Units.add(Quantity(10, .gram), Quantity(1, .teaspoon), gramsPerTeaspoon: saltDensity)
+        XCTAssertEqual(total?.amount ?? 0, 16, accuracy: 0.0001)
+    }
+
+    func testCountsStillNeverConvert() {
+        XCTAssertNil(Units.convert(2, from: .count, to: .gram, gramsPerTeaspoon: saltDensity))
+    }
+}
+
+/// The end of the story: a recipe asking for spoons of a spice you already have does not put that
+/// spice back on the shopping list.
+final class SpoonMeasuredShoppingTests: XCTestCase {
+    private let index = IngredientIndex(facts: [
+        IngredientFacts(name: "Salt", category: .spice, defaultUnit: .gram, typicalShelfLifeDays: 3650,
+                        isStaple: true, gramsPerTeaspoon: 6),
+        IngredientFacts(name: "Turmeric", category: .spice, defaultUnit: .gram, typicalShelfLifeDays: 730,
+                        gramsPerTeaspoon: 3),
+    ])
+
+    private let stores = [
+        StoreSnapshot(id: "Walmart", name: "Walmart", kind: .supermarket, isPreferred: true,
+                      sortOrder: 0, affinities: Set(IngredientCategory.allCases)),
+    ]
+
+    @MainActor
+    func testSpiceYouAlreadyHaveIsNotRebought() {
+        let meal = PlannedRecipe(
+            recipeID: "dal", title: "Dal",
+            ingredients: [
+                RecipeIngredient(ingredientName: "Salt", quantity: 1.25, unit: .teaspoon),
+                RecipeIngredient(ingredientName: "Turmeric", quantity: 0.5, unit: .teaspoon),
+            ],
+            recipeServings: 4, servings: 4
+        )
+        let pantry = PantrySnapshot(items: [
+            PantryStock(name: "Salt", quantity: 500, unit: .gram, expiresAt: nil),
+            PantryStock(name: "Turmeric", quantity: 100, unit: .gram, expiresAt: nil),
+        ])
+
+        let lines = GroceryBuilder.build(meals: [meal], pantry: pantry, index: index,
+                                         stores: stores, includeStaples: false)
+        XCTAssertTrue(lines.isEmpty, "A jar of salt covers a teaspoon of salt: \(lines)")
+    }
+
+    @MainActor
+    func testAnEmptyJarStillLandsOnTheList() {
+        let meal = PlannedRecipe(
+            recipeID: "dal", title: "Dal",
+            ingredients: [RecipeIngredient(ingredientName: "Turmeric", quantity: 2, unit: .teaspoon)],
+            recipeServings: 4, servings: 4
+        )
+        let lines = GroceryBuilder.build(meals: [meal], pantry: PantrySnapshot(items: []),
+                                         index: index, stores: stores, includeStaples: false)
+        XCTAssertEqual(lines.map(\.ingredientName), ["Turmeric"])
+    }
+}

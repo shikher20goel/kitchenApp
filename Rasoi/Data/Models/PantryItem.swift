@@ -73,8 +73,9 @@ final class PantryItem {
 
     /// Takes stock away. Never goes below zero — a recipe that used more than was recorded just
     /// empties the row rather than inventing a negative pantry.
-    func consume(quantity amount: Double, unit incomingUnit: MeasurementUnit) {
-        quantity = max(0, quantity - convert(amount, from: incomingUnit))
+    func consume(quantity amount: Double, unit incomingUnit: MeasurementUnit,
+                 gramsPerTeaspoon: Double? = nil) {
+        quantity = max(0, quantity - convert(amount, from: incomingUnit, gramsPerTeaspoon: gramsPerTeaspoon))
     }
 
     /// Recomputes `expiresAt` from the catalog shelf life for the current location.
@@ -89,10 +90,14 @@ final class PantryItem {
 
     /// Converts an incoming amount into this row's unit; incompatible dimensions are taken at
     /// face value rather than dropped, so a mis-tagged recipe can never silently lose stock.
-    private func convert(_ amount: Double, from incoming: MeasurementUnit) -> Double {
+    private func convert(_ amount: Double, from incoming: MeasurementUnit,
+                         gramsPerTeaspoon: Double? = nil) -> Double {
         guard incoming != unit else { return amount }
-        guard incoming.dimension == unit.dimension, unit.canonicalFactor > 0 else { return amount }
-        return amount * incoming.canonicalFactor / unit.canonicalFactor
+        let density = gramsPerTeaspoon ?? ingredient?.gramsPerTeaspoon
+        if let converted = Units.convert(amount, from: incoming, to: unit, gramsPerTeaspoon: density) {
+            return converted
+        }
+        return amount
     }
 }
 

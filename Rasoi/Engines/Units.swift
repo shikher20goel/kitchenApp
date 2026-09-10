@@ -22,9 +22,27 @@ struct Quantity: Hashable, Sendable {
 /// through a canonical unit (grams for mass, millilitres for volume) and counted things stay
 /// counted. Cups, tablespoons and teaspoons are the US measures the seeded recipes use.
 enum Units {
-    /// Converts between two units of the same dimension. Returns nil when they do not measure the
-    /// same kind of thing — grams of dal are not millilitres of milk.
-    static func convert(_ amount: Double, from source: MeasurementUnit, to target: MeasurementUnit) -> Double? {
+    /// One teaspoon, in millilitres. The bridge between spoons and grams.
+    static let millilitresPerTeaspoon = MeasurementUnit.teaspoon.canonicalFactor
+
+    /// Converts between two units.
+    ///
+    /// Within a dimension this is the ordinary table. Across dimensions it needs a density:
+    /// pass `gramsPerTeaspoon` — which the ingredient catalog carries for anything measured in
+    /// spoons but bought by weight — and "1 tsp of salt" and "500 g of salt" become comparable,
+    /// so the shopping list stops asking for salt you already have.
+    static func convert(
+        _ amount: Double,
+        from source: MeasurementUnit,
+        to target: MeasurementUnit,
+        gramsPerTeaspoon: Double? = nil
+    ) -> Double? {
+        if source.dimension != target.dimension,
+           let gramsPerTeaspoon, gramsPerTeaspoon > 0,
+           let bridged = acrossDimensions(amount, from: source, to: target,
+                                          gramsPerTeaspoon: gramsPerTeaspoon) {
+            return bridged
+        }
         guard source.dimension == target.dimension else { return nil }
         guard source.dimension != .discrete || source == target else {
             // A "bunch" is not a number of anything in particular, so it never becomes a count.
@@ -34,15 +52,38 @@ enum Units {
         return amount * source.canonicalFactor / target.canonicalFactor
     }
 
+    /// Volume ↔ mass, through the teaspoon.
+    private static func acrossDimensions(
+        _ amount: Double,
+        from source: MeasurementUnit,
+        to target: MeasurementUnit,
+        gramsPerTeaspoon: Double
+    ) -> Double? {
+        switch (source.dimension, target.dimension) {
+        case (.volume, .mass):
+            let millilitres = amount * source.canonicalFactor
+            let grams = millilitres / millilitresPerTeaspoon * gramsPerTeaspoon
+            return grams / target.canonicalFactor
+        case (.mass, .volume):
+            let grams = amount * source.canonicalFactor
+            let millilitres = grams / gramsPerTeaspoon * millilitresPerTeaspoon
+            return millilitres / target.canonicalFactor
+        default:
+            return nil
+        }
+    }
+
     /// Adds two amounts, in the unit of the first. Nil when they cannot be combined.
-    static func add(_ left: Quantity, _ right: Quantity) -> Quantity? {
-        guard let converted = convert(right.amount, from: right.unit, to: left.unit) else { return nil }
+    static func add(_ left: Quantity, _ right: Quantity, gramsPerTeaspoon: Double? = nil) -> Quantity? {
+        guard let converted = convert(right.amount, from: right.unit, to: left.unit,
+                                      gramsPerTeaspoon: gramsPerTeaspoon) else { return nil }
         return Quantity(left.amount + converted, left.unit)
     }
 
     /// Subtracts, never going below zero, in the unit of the first. Nil when incompatible.
-    static func subtract(_ left: Quantity, _ right: Quantity) -> Quantity? {
-        guard let converted = convert(right.amount, from: right.unit, to: left.unit) else { return nil }
+    static func subtract(_ left: Quantity, _ right: Quantity, gramsPerTeaspoon: Double? = nil) -> Quantity? {
+        guard let converted = convert(right.amount, from: right.unit, to: left.unit,
+                                      gramsPerTeaspoon: gramsPerTeaspoon) else { return nil }
         return Quantity(max(0, left.amount - converted), left.unit)
     }
 

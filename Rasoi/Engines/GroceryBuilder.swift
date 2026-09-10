@@ -68,7 +68,9 @@ enum GroceryBuilder {
                 names[key] = canonical
                 neededFor[key, default: []].insert(meal.title)
                 let quantity = Quantity(item.quantity, item.unit).canonical
-                if let existing = totals[key], let combined = Units.add(existing, quantity) {
+                let density = index.facts(for: item.ingredientName)?.gramsPerTeaspoon
+                if let existing = totals[key],
+                   let combined = Units.add(existing, quantity, gramsPerTeaspoon: density) {
                     totals[key] = combined
                 } else if totals[key] == nil {
                     totals[key] = quantity
@@ -81,12 +83,13 @@ enum GroceryBuilder {
         for (key, needed) in totals {
             let name = names[key] ?? key
             var outstanding = needed
+            let facts = index.facts(for: name)
             if let stock = pantry.stock(for: name),
-               let remaining = Units.subtract(needed, Quantity(stock.quantity, stock.unit)) {
+               let remaining = Units.subtract(needed, Quantity(stock.quantity, stock.unit),
+                                              gramsPerTeaspoon: facts?.gramsPerTeaspoon) {
                 outstanding = remaining
             }
             guard outstanding.amount > 0.0001 else { continue }
-            let facts = index.facts(for: name)
             lines.append(
                 GroceryLine(
                     ingredientName: name,

@@ -107,6 +107,7 @@ enum SeedImporter {
         ingredient.containsNuts = dto.containsNuts
         ingredient.containsGluten = dto.containsGluten
         ingredient.isQuickHealthySnack = dto.isQuickHealthySnack
+        ingredient.gramsPerTeaspoon = dto.gramsPerTeaspoon
     }
 
     private static func make(_ dto: RecipeDTO) -> Recipe {

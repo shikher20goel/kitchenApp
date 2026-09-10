@@ -83,6 +83,8 @@ struct IngredientFacts: Hashable, Sendable {
     var containsNuts: Bool = false
     var containsGluten: Bool = false
     var isQuickHealthySnack: Bool = false
+    /// Weight of one level teaspoon; lets spoons and grams be reconciled (see `Units`).
+    var gramsPerTeaspoon: Double?
 
     init(ingredient: Ingredient) {
         self.init(
@@ -98,7 +100,8 @@ struct IngredientFacts: Hashable, Sendable {
             containsDairy: ingredient.containsDairy,
             containsNuts: ingredient.containsNuts,
             containsGluten: ingredient.containsGluten,
-            isQuickHealthySnack: ingredient.isQuickHealthySnack
+            isQuickHealthySnack: ingredient.isQuickHealthySnack,
+            gramsPerTeaspoon: ingredient.gramsPerTeaspoon
         )
     }
 
@@ -115,7 +118,8 @@ struct IngredientFacts: Hashable, Sendable {
         containsDairy: Bool = false,
         containsNuts: Bool = false,
         containsGluten: Bool = false,
-        isQuickHealthySnack: Bool = false
+        isQuickHealthySnack: Bool = false,
+        gramsPerTeaspoon: Double? = nil
     ) {
         self.name = name
         self.aliases = aliases
@@ -130,6 +134,7 @@ struct IngredientFacts: Hashable, Sendable {
         self.containsNuts = containsNuts
         self.containsGluten = containsGluten
         self.isQuickHealthySnack = isQuickHealthySnack
+        self.gramsPerTeaspoon = gramsPerTeaspoon
     }
 }
 

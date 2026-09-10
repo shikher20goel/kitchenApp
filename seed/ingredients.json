@@ -1989,7 +1989,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": true,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 2.9
   },
   {
    "name": "Besan",
@@ -2009,7 +2010,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 2.4
   },
   {
    "name": "All-purpose flour",
@@ -2029,7 +2031,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": true,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 2.6
   },
   {
    "name": "Whole wheat bread",
@@ -2141,7 +2144,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": true,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 1.8
   },
   {
    "name": "Rice flour",
@@ -2158,7 +2162,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 2.6
   },
   {
    "name": "Ragi flour",
@@ -2179,7 +2184,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 2.7
   },
   {
    "name": "Pav buns",
@@ -2233,7 +2239,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 4.0
   },
   {
    "name": "Baking soda",
@@ -2250,7 +2257,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 4.6
   },
   {
    "name": "Almonds",
@@ -2328,7 +2336,8 @@
    "containsDairy": false,
    "containsNuts": true,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 5.3
   },
   {
    "name": "Almond butter",
@@ -2346,7 +2355,8 @@
    "containsDairy": false,
    "containsNuts": true,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 5.3
   },
   {
    "name": "Walnuts",
@@ -2384,7 +2394,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 4.2
   },
   {
    "name": "Flax seeds",
@@ -2404,7 +2415,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 3.5
   },
   {
    "name": "Sesame seeds",
@@ -2424,7 +2436,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 3.0
   },
   {
    "name": "Pumpkin seeds",
@@ -2499,7 +2512,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 1.9
   },
   {
    "name": "Turmeric",
@@ -2516,7 +2530,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 3.0
   },
   {
    "name": "Cumin seeds",
@@ -2533,7 +2548,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 3.4
   },
   {
    "name": "Ground cumin",
@@ -2548,7 +2564,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 2.6
   },
   {
    "name": "Coriander powder",
@@ -2565,7 +2582,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 2.4
   },
   {
    "name": "Garam masala",
@@ -2580,7 +2598,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 2.5
   },
   {
    "name": "Red chili powder",
@@ -2599,7 +2618,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 2.7
   },
   {
    "name": "Mustard seeds",
@@ -2617,7 +2637,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 3.9
   },
   {
    "name": "Asafoetida",
@@ -2634,7 +2655,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 3.0
   },
   {
    "name": "Salt",
@@ -2651,7 +2673,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 6.0
   },
   {
    "name": "Black pepper",
@@ -2668,7 +2691,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 2.9
   },
   {
    "name": "Cinnamon",
@@ -2685,7 +2709,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 2.6
   },
   {
    "name": "Cardamom",
@@ -2702,7 +2727,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 2.0
   },
   {
    "name": "Chaat masala",
@@ -2717,7 +2743,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 3.0
   },
   {
    "name": "Amchur",
@@ -2734,7 +2761,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 2.6
   },
   {
    "name": "Kasuri methi",
@@ -2751,7 +2779,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 1.0
   },
   {
    "name": "Pav bhaji masala",
@@ -2766,7 +2795,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 2.6
   },
   {
    "name": "Sambar powder",
@@ -2781,7 +2811,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 2.6
   },
   {
    "name": "Italian seasoning",
@@ -2799,7 +2830,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 1.2
   },
   {
    "name": "Taco seasoning",
@@ -2814,7 +2846,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 2.8
   },
   {
    "name": "Curry powder",
@@ -2829,7 +2862,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 2.5
   },
   {
    "name": "Cumin-coriander (dhana jeera)",
@@ -2846,7 +2880,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 2.5
   },
   {
    "name": "Vanilla extract",
@@ -2861,7 +2896,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 4.2
   },
   {
    "name": "Cocoa powder",
@@ -2876,7 +2912,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 2.4
   },
   {
    "name": "Nutmeg",
@@ -2893,7 +2930,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 2.2
   },
   {
    "name": "Olive oil",
@@ -2912,7 +2950,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 4.5
   },
   {
    "name": "Vegetable oil",
@@ -2931,7 +2970,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 4.5
   },
   {
    "name": "Coconut oil",
@@ -2946,7 +2986,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 4.5
   },
   {
    "name": "Soy sauce",
@@ -2961,7 +3002,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": true,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 6.0
   },
   {
    "name": "Tomato puree",
@@ -2979,7 +3021,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 5.3
   },
   {
    "name": "Tomato ketchup",
@@ -2996,7 +3039,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 5.7
   },
   {
    "name": "Tamarind paste",
@@ -3013,7 +3057,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 5.5
   },
   {
    "name": "Honey",
@@ -3030,7 +3075,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 7.0
   },
   {
    "name": "Maple syrup",
@@ -3045,7 +3091,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 6.6
   },
   {
    "name": "Jaggery",
@@ -3064,7 +3111,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 4.6
   },
   {
    "name": "Sugar",
@@ -3081,7 +3129,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 4.2
   },
   {
    "name": "Vinegar",
@@ -3099,7 +3148,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 5.0
   },
   {
    "name": "Salsa",
@@ -3187,7 +3237,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 4.6
   },
   {
    "name": "Sriracha",
@@ -3204,7 +3255,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 5.5
   },
   {
    "name": "Sesame oil",
@@ -3221,7 +3273,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 4.5
   },
   {
    "name": "Pickle",
@@ -3255,7 +3308,8 @@
    "containsDairy": false,
    "containsNuts": false,
    "containsGluten": false,
-   "isQuickHealthySnack": false
+   "isQuickHealthySnack": false,
+   "gramsPerTeaspoon": 2.6
   },
   {
    "name": "Frozen peas",
