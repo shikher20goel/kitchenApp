@@ -129,3 +129,8 @@ TASK 066: Rasoi built signed (team PL36AJ998G, Apple Development: shikher20goel@
   INSTALLED on Shikher Phone (iPhone 14 Pro, FCE9725F-A4EF-5A45-845D-BC015674C826); launched with
   devicectl. Free team: reinstall every 7 days. project.yml restored, no team id committed.
   Human gates 028/043/053/058 approved by Shikher; 066 install done.
+FIX: the real team id had leaked into project.yml in commit f8367ca (a `git add -A` picked up the
+  file while signing was configured). Restored to DEVELOPMENT_TEAM: "" and committed. History is
+  not rewritten — the repo is private and a team id is not a credential — but the working tree and
+  HEAD are clean. configure-signing.sh must always be followed by `git checkout project.yml`
+  BEFORE any commit.
